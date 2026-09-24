@@ -2,7 +2,7 @@
 
 TEXTO = {
     "idioma": "Bahasa Indonesia",
-    "titulo_pagina": "Rackers · Satu papan skor, enam olahraga",
+    "titulo_pagina": "Rackers · Satu aplikasi, enam olahraga",
     "descripcion": "Papan skor padel, tenis, pickleball, squash, tenis meja, dan bulu tangkis di "
                    "iPhone dan Apple Watch. Detak jantungmu di tiap poin, kemajuan yang kelihatan, "
                    "dan turnamen yang tersusun sendiri.",
@@ -10,7 +10,7 @@ TEXTO = {
     "descargar": "Unduh",
     "pronto": "Segera di App Store",
     "pronto_corto": "Segera",
-    "hero_titulo": ["Satu papan skor,", "enam olahraga"],
+    "hero_titulo": ["Satu aplikasi,", "enam olahraga"],
     "hero_texto": "Padel, tenis, pickleball, squash, tenis meja, dan bulu tangkis. Catat skor "
                   "dari iPhone atau dari jam tangan, ukur detak jantungmu di tiap poin, dan "
                   "lihat dari laga ke laga apakah kamu membaik.",

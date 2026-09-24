@@ -2,14 +2,14 @@
 
 TEXTO = {
     "idioma": "한국어",
-    "titulo_pagina": "Rackers · 하나의 점수판, 여섯 종목",
+    "titulo_pagina": "Rackers · 하나의 앱, 여섯 종목",
     "descripcion": "패들, 테니스, 피클볼, 스쿼시, 탁구, 배드민턴 점수를 iPhone과 Apple Watch에서. "
                    "매 포인트의 심박수, 눈으로 확인하는 성장, 알아서 짜이는 대회까지.",
     "nav": ["무엇을 하나", "애플워치", "가격", "질문"],
     "descargar": "받기",
     "pronto": "곧 App Store에 출시",
     "pronto_corto": "출시 예정",
-    "hero_titulo": ["하나의 점수판,", "여섯 종목"],
+    "hero_titulo": ["하나의 앱,", "여섯 종목"],
     "hero_texto": "패들, 테니스, 피클볼, 스쿼시, 탁구, 배드민턴. iPhone에서도 Apple Watch에서도 "
                   "점수를 매기고, 매 포인트의 심박수를 재고, 경기가 쌓일수록 실력이 늘고 있는지 "
                   "눈으로 확인하세요.",

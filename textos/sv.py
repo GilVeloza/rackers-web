@@ -2,7 +2,7 @@
 
 TEXTO = {
     "idioma": "Svenska",
-    "titulo_pagina": "Rackers · En poängtavla, sex sporter",
+    "titulo_pagina": "Rackers · En app, sex sporter",
     "descripcion": "Poängtavla för padel, tennis, pickleball, squash, bordtennis och badminton "
                    "på iPhone och Apple Watch. Din puls på varje boll, framsteg du faktiskt ser "
                    "och turneringar som lägger upp sig själva.",
@@ -10,7 +10,7 @@ TEXTO = {
     "descargar": "Hämta",
     "pronto": "Snart i App Store",
     "pronto_corto": "Snart",
-    "hero_titulo": ["En poängtavla,", "sex sporter"],
+    "hero_titulo": ["En app,", "sex sporter"],
     "hero_texto": "Padel, tennis, pickleball, squash, bordtennis och badminton. Räkna från "
                   "iPhone eller från klockan, mät pulsen på varje boll och se, match efter "
                   "match, om du blir bättre.",

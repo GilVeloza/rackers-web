@@ -24,7 +24,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
-from textos import CAPTURAS, TEXTOS  # noqa: E402
+from textos import CAPTURAS, PASOS, TEXTOS  # noqa: E402
 
 AQUI = Path(__file__).parent
 RAIZ = AQUI.parent
@@ -33,7 +33,6 @@ ESTATICO = SALIDA / "static"
 FICHA = RAIZ / "design/app-store/idiomas"
 LOGO = RAIZ / "design/logo/final"
 MARCOS = RAIZ / "design/marcos"
-VIDEO_ORIGEN = RAIZ / "design/video/rally.mp4"
 # Las raquetas de las tarjetas de deportes, una por vídeo. Las saca con
 # Blender design/video/deportes/build.py.
 DEPORTES_ORIGEN = RAIZ / "design/video/deportes"
@@ -95,31 +94,14 @@ def reducir(origen: Path, destino: Path, ancho: int) -> None:
                    check=True, capture_output=True)
 
 
-def preparar_video() -> None:
-    """El vídeo del rally, tal cual, y el cartel del primer fotograma.
-
-    No se recodifica a propósito. El original ya viene como lo quiere un
-    navegador —H.264 1920 × 1080, sin pista de sonido y con la cabecera al
-    principio— así que cualquier pasada por ffmpeg solo le quitaría calidad.
-    Se copia y se queda igual de bien que en el archivo que nos dieron."""
-    destino = ESTATICO / "rally.mp4"
-    cartel = ESTATICO / "rally.jpg"
-    if not VIDEO_ORIGEN.exists():
-        sys.exit(f"Falta el vídeo: {VIDEO_ORIGEN}")
-    if (destino.exists() and cartel.exists()
-            and destino.stat().st_mtime >= VIDEO_ORIGEN.stat().st_mtime):
-        return
-    destino.parent.mkdir(parents=True, exist_ok=True)
-    shutil.copyfile(VIDEO_ORIGEN, destino)
-    primer_fotograma(VIDEO_ORIGEN, cartel)
-
-
 def preparar_deportes() -> None:
     """Las seis raquetas, cada una en su vídeo y con su cartel.
 
-    Como el rally, se copian tal cual: design/video/deportes/build.py ya los
-    saca como los quiere el navegador. El cartel es lo que se ve mientras
-    cargan, y lo único que ve quien pide menos movimiento."""
+    Los vídeos no se recodifican a propósito: design/video/deportes/build.py
+    ya los saca como los quiere un navegador —H.264, sin pista de sonido y con
+    la cabecera al principio—, así que cualquier pasada por ffmpeg solo les
+    quitaría calidad. El cartel es lo que se ve mientras cargan, y lo único que
+    ve quien pide menos movimiento."""
     for nombre in RAQUETAS:
         origen = DEPORTES_ORIGEN / f"{nombre}.mp4"
         destino = ESTATICO / f"deportes/{nombre}.mp4"
@@ -186,6 +168,25 @@ def movil(idioma: str, captura: str, clase: str = "") -> str:
              loading="lazy" alt="">
       </div>
     </div>'''
+
+
+def reloj(idioma: str) -> str:
+    """El marcador del reloj dentro del marco de Apple Watch, con el mismo
+    truco que el móvil: la captura debajo y el marco encima."""
+    izq, arr, anc, alt = (round(v * 100, 3) for v in HUECO_RELOJ)
+    return f'''<div class="marco-reloj">
+        <img class="pantalla-app" src="../static/capturas/{idioma}/reloj.jpg"
+             style="left:{izq}%;top:{arr}%;width:{anc}%;height:{alt}%"
+             loading="lazy" alt="">
+        <img class="bisel" src="../static/marco-reloj.png"
+             width="{ANCHO_MARCO_RELOJ}" height="{round(ANCHO_MARCO_RELOJ * 880 / 560)}"
+             loading="lazy" alt="">
+      </div>'''
+
+
+def pieza(idioma: str, captura: str) -> str:
+    """La captura de un paso: el marcador del reloj o una del móvil."""
+    return reloj(idioma) if captura == "reloj" else movil(idioma, captura)
 
 
 def marca(raiz: str = "") -> str:
@@ -317,13 +318,44 @@ def seccion_funcion(idioma: str, indice: int, funcion: tuple) -> str:
     </article>'''
 
 
+def tarjeta_funcion(funcion: tuple) -> str:
+    """Una función sin móvil, porque su captura ya sale en los pasos."""
+    _, titulo, texto, puntos = funcion
+    lista = "".join(f"<li>{p}</li>" for p in puntos)
+    return f'''<article class="funcion-suelta reveal">
+        <h3>{titulo}</h3>
+        <p>{texto}</p>
+        <ul class="marcas">{lista}</ul>
+      </article>'''
+
+
+def bloque_funciones(idioma: str, funciones: list) -> str:
+    """Las funciones en su orden. Las que tienen captura propia van con su
+    móvil, a un lado y al otro por turnos; las que ya la enseñan en los pasos
+    se juntan en tarjetas de texto, de dos en dos, en su sitio de la lista."""
+    bloques, sueltas, lado = [], [], 0
+    for funcion in funciones:
+        if funcion[0] in PASOS:
+            sueltas.append(tarjeta_funcion(funcion))
+            continue
+        if sueltas:
+            bloques.append(f'<div class="funciones-sueltas">{"".join(sueltas)}</div>')
+            sueltas = []
+        bloques.append(seccion_funcion(idioma, lado, funcion))
+        lado += 1
+    if sueltas:
+        bloques.append(f'<div class="funciones-sueltas">{"".join(sueltas)}</div>')
+    return "".join(bloques)
+
+
 # ---------------------------------------------------------------- la página
 
 def pagina(idioma: str, t: dict) -> str:
     dir_ = "rtl" if idioma.split("-")[0] in RTL else "ltr"
     pasos = "".join(
         f'<li class="paso reveal" style="--retraso: {i * 90}ms"><span class="numero">{i + 1}</span>'
-        f'<h3>{titulo}</h3><p>{texto}</p></li>'
+        f'<h3>{titulo}</h3><p>{texto}</p>'
+        f'<div class="paso-pieza" aria-hidden="true">{pieza(idioma, PASOS[i])}</div></li>'
         for i, (titulo, texto) in enumerate(t["pasos"]))
     # Sin autoplay a propósito: las arranca el JavaScript, las seis a la vez.
     deportes = "".join(
@@ -333,7 +365,7 @@ def pagina(idioma: str, t: dict) -> str:
         f' disablepictureinpicture aria-hidden="true"></video>'
         f'<h3>{nombre}</h3></li>'
         for i, nombre in enumerate(t["deportes"]))
-    funciones = "".join(seccion_funcion(idioma, i, f) for i, f in enumerate(t["funciones"]))
+    funciones = bloque_funciones(idioma, t["funciones"])
     reloj_puntos = "".join(f"<li>{p}</li>" for p in t["reloj_puntos"])
     faq = "".join(
         f'<details class="reveal"><summary>{p}</summary><p>{r}</p></details>'
@@ -352,8 +384,6 @@ def pagina(idioma: str, t: dict) -> str:
                 f'<ul class="marcas">{lista}</ul></div>')
 
     legal = enlaces_legales(t, "")
-    izq_r, arr_r, anc_r, alt_r = (round(v * 100, 3) for v in HUECO_RELOJ)
-    alto_marco_reloj = round(ANCHO_MARCO_RELOJ * 880 / 560)
     alternativos = "".join(f'<link rel="alternate" hreflang="{c}" href="../{c}/">' for c in TEXTOS)
 
     return f'''<!doctype html>
@@ -394,11 +424,6 @@ def pagina(idioma: str, t: dict) -> str:
       <p class="nota">{t["hero_nota"]}</p>
     </div>
     <div class="hero-pieza">
-      <!-- El corro de raquetas, dándole a la pelota sin parar. No lleva texto
-           a propósito: así vale igual en los 45 idiomas. -->
-      <video class="hero-video" src="../static/rally.mp4" poster="../static/rally.jpg"
-             autoplay muted loop playsinline preload="auto"
-             disablepictureinpicture aria-hidden="true"></video>
       {movil(idioma, "inicio", "hero-movil")}
     </div>
   </section>
@@ -426,13 +451,7 @@ def pagina(idioma: str, t: dict) -> str:
       <ul class="marcas">{reloj_puntos}</ul>
     </div>
     <div class="reloj-pieza" aria-hidden="true">
-      <div class="marco-reloj">
-        <img class="pantalla-app" src="../static/capturas/{idioma}/reloj.jpg"
-             style="left:{izq_r}%;top:{arr_r}%;width:{anc_r}%;height:{alt_r}%"
-             loading="lazy" alt="">
-        <img class="bisel" src="../static/marco-reloj.png"
-             width="{ANCHO_MARCO_RELOJ}" height="{alto_marco_reloj}" loading="lazy" alt="">
-      </div>
+      {reloj(idioma)}
     </div>
   </section>
 
@@ -543,11 +562,10 @@ p { color: var(--apagado); }
 .nota { font-size: 15px; color: var(--apagado); opacity: .8; }
 
 section { max-width: var(--ancho); margin: 0 auto; padding: clamp(60px, 8vw, 112px) 24px; }
-/* Al saltar a una sección —desde el menú o al acabar el vídeo— tiene que
-   quedar debajo de la cabecera, no tapada por ella. En pantalla ancha el
-   propio relleno de la sección ya la salvaba; en el móvil baja a 60 px y el
-   titular se comía la cabecera. El rally no lleva id a propósito: es el
-   único que tiene que quedar a ras, llenando la pantalla. */
+/* Al saltar a una sección desde el menú tiene que quedar debajo de la
+   cabecera, no tapada por ella. En pantalla ancha el propio relleno de la
+   sección ya la salvaba; en el móvil baja a 60 px y el titular se comía la
+   cabecera. */
 section[id] { scroll-margin-top: var(--cabecera); }
 
 /* --- Cabecera --- */
@@ -635,38 +653,7 @@ section[id] { scroll-margin-top: var(--cabecera); }
 .hero .entrada { margin-bottom: 30px; }
 .hero-botones { display: flex; align-items: center; gap: 22px; flex-wrap: wrap; margin-bottom: 16px; }
 
-/* El móvil, de pie en medio del corro de raquetas. El vídeo va detrás y es el
-   doble de ancho que su columna: así el corro rodea al teléfono en vez de
-   quedarse apretado detrás, y se sale por la derecha, que es donde no hay
-   nada.
-   Por la izquierda sí llega hasta el titular, y ahí el velo hace el trabajo:
-   medido sobre el propio vídeo, las raquetas van del 12,5 % al 89,7 % de
-   ancho y del 8,9 % al 96,7 % de alto, así que el velo se apaga justo antes
-   de la primera raqueta y el canto del recuadro no se ve sobre el texto. */
-.hero-pieza { position: relative; }
-.hero-video {
-  position: absolute; z-index: 0; top: 50%; left: 60%;
-  /* Medido: con 170 % y el centro corrido al 60 %, la primera raqueta cae
-     unos 40 px a la derecha de donde acaba el texto, y eso se cumple de
-     1100 px de ancho para arriba. Por la derecha el corro se sale un poco,
-     que es justo lo que se quiere: sigue más allá de la página. */
-  width: 170%; aspect-ratio: 16 / 9; object-fit: contain;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-  --velo-x: linear-gradient(to right, transparent 0, #000 11%, #000 96%, transparent 100%);
-  --velo-y: linear-gradient(to bottom, transparent 0, #000 4%, #000 97%, transparent 100%);
-  -webkit-mask-image: var(--velo-x), var(--velo-y);
-  -webkit-mask-composite: source-in;
-          mask-image: var(--velo-x), var(--velo-y);
-          mask-composite: intersect;
-}
-/* En árabe, hebreo y urdu la página va espejada: el texto queda a la derecha,
-   así que el corro tiene que salirse por la izquierda. */
-[dir="rtl"] .hero-video { left: 40%; }
-
-/* El texto y el teléfono, por delante del corro. */
-.hero-texto { position: relative; z-index: 3; }
-.hero-pieza .movil { position: relative; z-index: 2; width: min(100%, 300px); }
+.hero-pieza .movil { width: min(100%, 300px); }
 
 /* --- Deportes: seis cuadrados, uno por raqueta --- */
 /* El vídeo ya trae el fondo azul y el brillo de la app, así que la tarjeta
@@ -701,14 +688,31 @@ section[id] { scroll-margin-top: var(--cabecera); }
 
 /* --- Pasos --- */
 .rejilla-pasos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 44px; list-style: none; }
-.paso {
+.paso, .funcion-suelta {
   background: linear-gradient(180deg, rgba(244, 247, 255, .06), rgba(244, 247, 255, .02));
   border: 1px solid var(--borde); border-radius: var(--radio); padding: 28px;
   position: relative; overflow: hidden;
 }
-.paso::before {
+.paso::before, .funcion-suelta::before {
   content: ""; position: absolute; inset: 0 0 auto; height: 1px;
   background: linear-gradient(90deg, transparent, rgba(182, 242, 78, .6), transparent);
+}
+.paso { display: flex; flex-direction: column; }
+/* La captura de cada paso asoma por abajo de la tarjeta, cortada: se ve la
+   parte de arriba de la pantalla, que es la que cuenta, y la tarjeta no se
+   hace torre. Va pegada al fondo para que las tres queden a la misma altura
+   aunque los textos no midan lo mismo. */
+.paso-pieza {
+  margin: auto -28px -28px; padding-top: 26px; height: 400px; overflow: hidden;
+  -webkit-mask-image: linear-gradient(to bottom, #000 72%, transparent);
+          mask-image: linear-gradient(to bottom, #000 72%, transparent);
+}
+.paso-pieza .movil { width: min(74%, 250px); }
+.paso-pieza .marco-reloj { width: min(66%, 220px); margin: 12px auto 0; }
+/* Aquí el marco va sin su resplandor lima: la tarjeta corta la captura por
+   arriba y el resplandor se quedaba cortado en recto. */
+.paso-pieza .marco .bisel, .paso-pieza .marco-reloj .bisel {
+  filter: drop-shadow(0 24px 40px rgba(0, 0, 0, .55));
 }
 .numero {
   display: grid; place-items: center; width: 38px; height: 38px; border-radius: 12px;
@@ -725,6 +729,13 @@ section[id] { scroll-margin-top: var(--cabecera); }
 .funcion.derecha .funcion-texto { order: 2; }
 .funcion h3 { margin-bottom: 14px; }
 .funcion p { margin-bottom: 20px; font-size: 18px; }
+/* Las que ya enseñan su captura en los pasos: solo texto, de dos en dos. */
+.funciones-sueltas {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 20px;
+  margin-bottom: clamp(64px, 9vw, 130px);
+}
+.funcion-suelta h3 { margin-bottom: 12px; }
+.funcion-suelta p { margin-bottom: 18px; }
 .marcas { list-style: none; display: grid; gap: 10px; }
 .marcas li { position: relative; padding-inline-start: 26px; color: var(--crema); font-size: 16px; }
 .marcas li::before {
@@ -862,21 +873,8 @@ footer { border-top: 1px solid var(--borde); padding: 44px 24px 34px; }
   .hero, .funcion, .funcion.derecha, .reloj { grid-template-columns: 1fr; }
   .funcion.derecha .funcion-texto { order: 0; }
   .hero-movil .marco { transform: none; }
-  /* En una sola columna el teléfono tapa el corro: solo asoman las puntas de
-     las raquetas por los lados. Así que aquí el vídeo deja de ir detrás y
-     pasa a ser una tarjeta encima del móvil, donde se ven las seis. */
-  .hero-pieza { display: flex; flex-direction: column; align-items: center; gap: 22px; }
-  .hero-video {
-    position: static; transform: none; width: 100%;
-    border-radius: var(--radio); border: 1px solid var(--borde);
-    -webkit-mask-image: none; mask-image: none;
-  }
   .movil { max-width: 320px; margin: 0 auto; }
-  .rejilla-pasos { grid-template-columns: 1fr; }
-  /* El vídeo es apaisado y la pantalla del móvil es alta, así que se queda
-     pequeño en medio de mucho azul. Se deja así a propósito: recortarlo a lo
-     ancho se come dos raquetas del corro, y acortar la banda dejaba asomar la
-     sección siguiente por debajo mientras el vídeo todavía estaba pegado. */
+  .rejilla-pasos, .funciones-sueltas { grid-template-columns: 1fr; }
   /* Seis cuadrados: tres columnas en pantalla grande, dos aquí. */
   .rejilla-deportes { grid-template-columns: repeat(2, 1fr); gap: 14px; }
   .enlaces { display: none; }
@@ -1047,7 +1045,6 @@ def escribir(idiomas: list[str]) -> None:
     (ESTATICO / "rackers.css").write_text(CSS, encoding="utf-8")
     (ESTATICO / "rackers.js").write_text(JS, encoding="utf-8")
     preparar_imagenes(idiomas)
-    preparar_video()
     preparar_deportes()
     for idioma in idiomas:
         carpeta = SALIDA / idioma
@@ -1070,7 +1067,7 @@ class ConRangos(http.server.SimpleHTTPRequestHandler):
 
     Al navegador eso no le vale para el vídeo: si no puede pedir trozos
     sueltos lo marca como no navegable y `currentTime` se queda clavado en
-    cero, así que en local el rally no se movía aunque en Cloudflare sí.
+    cero, así que en local los vídeos no se movían aunque en Cloudflare sí.
     Esto responde a `Range` como responde la tienda de verdad."""
 
     def end_headers(self):

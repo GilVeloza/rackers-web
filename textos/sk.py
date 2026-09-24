@@ -2,7 +2,7 @@
 
 TEXTO = {
     "idioma": "Slovenčina",
-    "titulo_pagina": "Rackers · Tvoja tabuľa, šesť športov",
+    "titulo_pagina": "Rackers · Jedna appka, šesť športov",
     "descripcion": "Tabuľa pre padel, tenis, pickleball, squash, stolný tenis a "
                    "bedminton pre iPhone a Apple Watch. Meraj si pulz pri každom bode, "
                    "pozeraj, či sa zlepšuješ, a organizuj turnaje.",
@@ -10,7 +10,7 @@ TEXTO = {
     "descargar": "Stiahnuť",
     "pronto": "Čoskoro v App Store",
     "pronto_corto": "Čoskoro",
-    "hero_titulo": ["Tvoja tabuľa,", "šesť športov"],
+    "hero_titulo": ["Jedna appka,", "šesť športov"],
     "hero_texto": "Padel, tenis, pickleball, squash, stolný tenis a bedminton. Zapisuj "
                   "body z iPhonu alebo z hodiniek, meraj si pulz pri každom bode a "
                   "pozeraj, zápas po zápase, či sa zlepšuješ.",

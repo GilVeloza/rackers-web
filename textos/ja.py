@@ -2,7 +2,7 @@
 
 TEXTO = {
     "idioma": "日本語",
-    "titulo_pagina": "Rackers · ひとつの記録で、六つの競技",
+    "titulo_pagina": "Rackers · ひとつのアプリで、六つの競技",
     "descripcion": "パデル、テニス、ピックルボール、スカッシュ、卓球、バドミントンのスコアを "
                    "iPhoneとApple Watchで。一球ごとの心拍、目に見える上達、そして勝手に "
                    "組み上がる大会。",
@@ -10,7 +10,7 @@ TEXTO = {
     "descargar": "入手",
     "pronto": "近日App Storeに登場",
     "pronto_corto": "近日公開",
-    "hero_titulo": ["ひとつの記録で、", "六つの競技"],
+    "hero_titulo": ["ひとつのアプリで、", "六つの競技"],
     "hero_texto": "パデル、テニス、ピックルボール、スカッシュ、卓球、バドミントン。iPhoneでも "
                   "Apple Watchでも点を付けられて、一球ごとの心拍が残り、試合を重ねるほど "
                   "伸びているかがはっきり見えます。",

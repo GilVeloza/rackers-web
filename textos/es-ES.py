@@ -2,7 +2,7 @@
 
 TEXTO = {
     "idioma": "Español (España)",
-    "titulo_pagina": "Rackers · Tu marcador, seis deportes",
+    "titulo_pagina": "Rackers · Una app, seis deportes",
     "descripcion": "Marcador de pádel, tenis, pickleball, squash, tenis de mesa y bádminton "
                    "para iPhone y Apple Watch. Mide tu pulso en cada punto, mira si vas a "
                    "mejor y organiza torneos.",
@@ -10,7 +10,7 @@ TEXTO = {
     "descargar": "Descargar",
     "pronto": "Pronto en el App Store",
     "pronto_corto": "Pronto",
-    "hero_titulo": ["Tu marcador,", "seis deportes"],
+    "hero_titulo": ["Una app,", "seis deportes"],
     "hero_texto": "Pádel, tenis, pickleball, squash, tenis de mesa y bádminton. Puntúa desde "
                   "el iPhone o desde el reloj, mide tu pulso en cada punto y mira, partido a "
                   "partido, si vas a mejor.",

@@ -2,7 +2,7 @@
 
 TEXTO = {
     "idioma": "Bahasa Melayu",
-    "titulo_pagina": "Rackers · Papan mata anda, enam sukan",
+    "titulo_pagina": "Rackers · Satu aplikasi, enam sukan",
     "descripcion": "Papan mata untuk padel, tenis, pickleball, skuasy, ping pong dan "
                    "badminton untuk iPhone dan Apple Watch. Ukur nadi anda pada setiap "
                    "mata, lihat sama ada anda makin baik dan aturkan kejohanan.",
@@ -10,7 +10,7 @@ TEXTO = {
     "descargar": "Muat turun",
     "pronto": "Akan datang di App Store",
     "pronto_corto": "Akan datang",
-    "hero_titulo": ["Papan mata anda,", "enam sukan"],
+    "hero_titulo": ["Satu aplikasi,", "enam sukan"],
     "hero_texto": "Padel, tenis, pickleball, skuasy, ping pong dan badminton. Kira mata "
                   "dari iPhone atau dari jam tangan, ukur nadi pada setiap mata dan "
                   "lihat, perlawanan demi perlawanan, sama ada anda makin baik.",

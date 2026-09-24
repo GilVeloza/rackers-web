@@ -2,7 +2,7 @@
 
 TEXTO = {
     "idioma": "Tiếng Việt",
-    "titulo_pagina": "Rackers · Một bảng điểm, sáu môn",
+    "titulo_pagina": "Rackers · Một ứng dụng, sáu môn",
     "descripcion": "Bảng điểm cho padel, quần vợt, pickleball, squash, bóng bàn và cầu lông trên "
                    "iPhone và Apple Watch. Nhịp tim ở mỗi điểm, tiến bộ nhìn thấy được và giải "
                    "đấu tự xếp lịch.",
@@ -10,7 +10,7 @@ TEXTO = {
     "descargar": "Tải về",
     "pronto": "Sắp có trên App Store",
     "pronto_corto": "Sắp có",
-    "hero_titulo": ["Một bảng điểm,", "sáu môn"],
+    "hero_titulo": ["Một ứng dụng,", "sáu môn"],
     "hero_texto": "Padel, quần vợt, pickleball, squash, bóng bàn và cầu lông. Ghi điểm từ iPhone "
                   "hoặc từ đồng hồ, đo nhịp tim ở mỗi điểm và xem qua từng trận bạn có tiến bộ "
                   "hay không.",

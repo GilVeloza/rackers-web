@@ -2,7 +2,7 @@
 
 TEXTO = {
     "idioma": "Polski",
-    "titulo_pagina": "Rackers · Jedna tablica, sześć sportów",
+    "titulo_pagina": "Rackers · Jedna aplikacja, sześć sportów",
     "descripcion": "Tablica wyników do padla, tenisa, pickleballa, squasha, tenisa stołowego i "
                    "badmintona na iPhone'a i Apple Watch. Tętno przy każdej piłce, postęp, który "
                    "widać, i turnieje, które układają się same.",
@@ -10,7 +10,7 @@ TEXTO = {
     "descargar": "Pobierz",
     "pronto": "Wkrótce w App Store",
     "pronto_corto": "Wkrótce",
-    "hero_titulo": ["Jedna tablica,", "sześć sportów"],
+    "hero_titulo": ["Jedna aplikacja,", "sześć sportów"],
     "hero_texto": "Padel, tenis, pickleball, squash, tenis stołowy i badminton. Licz z iPhone'a "
                   "albo z zegarka, mierz tętno przy każdej piłce i patrz, mecz po meczu, czy "
                   "idziesz w górę.",

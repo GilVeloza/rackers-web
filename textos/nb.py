@@ -2,7 +2,7 @@
 
 TEXTO = {
     "idioma": "Norsk bokmål",
-    "titulo_pagina": "Rackers · Resultattavla di, seks idretter",
+    "titulo_pagina": "Rackers · Én app, seks idretter",
     "descripcion": "Resultattavle for padel, tennis, pickleball, squash, bordtennis og "
                    "badminton til iPhone og Apple Watch. Mål pulsen på hvert poeng, se "
                    "om du blir bedre, og arranger turneringer.",
@@ -10,7 +10,7 @@ TEXTO = {
     "descargar": "Last ned",
     "pronto": "Snart i App Store",
     "pronto_corto": "Snart",
-    "hero_titulo": ["Resultattavla di,", "seks idretter"],
+    "hero_titulo": ["Én app,", "seks idretter"],
     "hero_texto": "Padel, tennis, pickleball, squash, bordtennis og badminton. Tell "
                   "poeng fra iPhone eller fra klokka, mål pulsen på hvert poeng, og se "
                   "kamp for kamp om du blir bedre.",

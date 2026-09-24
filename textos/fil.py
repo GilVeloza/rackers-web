@@ -2,7 +2,7 @@
 
 TEXTO = {
     "idioma": "Filipino",
-    "titulo_pagina": "Rackers · Isang scoreboard, anim na isport",
+    "titulo_pagina": "Rackers · Isang app, anim na isport",
     "descripcion": "Scoreboard para sa padel, tennis, pickleball, squash, table tennis at "
                    "badminton sa iPhone at Apple Watch. Pulso mo sa bawat puntos, pag-unlad na "
                    "kita mo, at mga torneo na kusang nabubuo.",
@@ -10,7 +10,7 @@ TEXTO = {
     "descargar": "I-download",
     "pronto": "Malapit nang mapunta sa App Store",
     "pronto_corto": "Malapit na",
-    "hero_titulo": ["Isang scoreboard,", "anim na isport"],
+    "hero_titulo": ["Isang app,", "anim na isport"],
     "hero_texto": "Padel, tennis, pickleball, squash, table tennis at badminton. Mag-iskor mula "
                   "sa iPhone o sa relo, sukatin ang pulso mo sa bawat puntos, at tingnan laro "
                   "kada laro kung gumagaling ka na.",

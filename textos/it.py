@@ -2,7 +2,7 @@
 
 TEXTO = {
     "idioma": "Italiano",
-    "titulo_pagina": "Rackers · Un tabellone, sei sport",
+    "titulo_pagina": "Rackers · Un'app, sei sport",
     "descripcion": "Tabellone per padel, tennis, pickleball, squash, tennis da tavolo e "
                    "badminton su iPhone e Apple Watch. Il tuo battito su ogni punto, i "
                    "miglioramenti che si vedono e tornei che si montano da soli.",
@@ -10,7 +10,7 @@ TEXTO = {
     "descargar": "Scarica",
     "pronto": "Presto su App Store",
     "pronto_corto": "Presto",
-    "hero_titulo": ["Un tabellone,", "sei sport"],
+    "hero_titulo": ["Un'app,", "sei sport"],
     "hero_texto": "Padel, tennis, pickleball, squash, tennis da tavolo e badminton. Segna "
                   "dall'iPhone o dall'orologio, misura il battito su ogni punto e guarda, "
                   "partita dopo partita, se stai migliorando.",

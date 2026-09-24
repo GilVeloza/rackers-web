@@ -2,7 +2,7 @@
 
 TEXTO = {
     "idioma": "Dansk",
-    "titulo_pagina": "Rackers · Din scoretavle, seks sportsgrene",
+    "titulo_pagina": "Rackers · Én app, seks sportsgrene",
     "descripcion": "Scoretavle til padel, tennis, pickleball, squash, bordtennis og "
                    "badminton til iPhone og Apple Watch. Mål din puls på hvert point, "
                    "se om du bliver bedre, og arranger turneringer.",
@@ -10,7 +10,7 @@ TEXTO = {
     "descargar": "Hent",
     "pronto": "Snart i App Store",
     "pronto_corto": "Snart",
-    "hero_titulo": ["Din scoretavle,", "seks sportsgrene"],
+    "hero_titulo": ["Én app,", "seks sportsgrene"],
     "hero_texto": "Padel, tennis, pickleball, squash, bordtennis og badminton. Tæl point "
                   "fra iPhone eller fra uret, mål din puls på hvert point, og se kamp "
                   "for kamp, om du bliver bedre.",

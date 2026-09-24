@@ -2,7 +2,7 @@
 
 TEXTO = {
     "idioma": "Deutsch",
-    "titulo_pagina": "Rackers · Ein Spielstand, sechs Sportarten",
+    "titulo_pagina": "Rackers · Eine App, sechs Sportarten",
     "descripcion": "Spielstand für Padel, Tennis, Pickleball, Squash, Tischtennis und Badminton "
                    "auf iPhone und Apple Watch. Dein Puls bei jedem Punkt, sichtbare Fortschritte "
                    "und Turniere, die sich selbst organisieren.",
@@ -10,7 +10,7 @@ TEXTO = {
     "descargar": "Laden",
     "pronto": "Bald im App Store",
     "pronto_corto": "Bald",
-    "hero_titulo": ["Ein Spielstand,", "sechs Sportarten"],
+    "hero_titulo": ["Eine App,", "sechs Sportarten"],
     "hero_texto": "Padel, Tennis, Pickleball, Squash, Tischtennis und Badminton. Zähle vom iPhone "
                   "oder von der Uhr, miss deinen Puls bei jedem Punkt und sieh Match für Match, "
                   "ob du besser wirst.",

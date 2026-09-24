@@ -2,14 +2,14 @@
 
 TEXTO = {
     "idioma": "繁體中文",
-    "titulo_pagina": "Rackers · 一個記分板，六項運動",
+    "titulo_pagina": "Rackers · 一個 App，六項運動",
     "descripcion": "iPhone 和 Apple Watch 上的 Padel、網球、匹克球、Squash、桌球和羽球記分板。"
                    "每一分的心率、看得見的進步，還有自己排好的賽程。",
     "nav": ["能做什麼", "手錶", "價格", "常見問題"],
     "descargar": "下載",
     "pronto": "即將登陸 App Store",
     "pronto_corto": "即將推出",
-    "hero_titulo": ["一個記分板，", "六項運動"],
+    "hero_titulo": ["一個 App，", "六項運動"],
     "hero_texto": "Padel、網球、匹克球、Squash、桌球和羽球。用 iPhone 或手錶記分，每一分都記下"
                   "心率，一場接一場地看自己有沒有進步。",
     "hero_boton": "在 App Store 下載",

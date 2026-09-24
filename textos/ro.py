@@ -2,7 +2,7 @@
 
 TEXTO = {
     "idioma": "Română",
-    "titulo_pagina": "Rackers · Un scor, șase sporturi",
+    "titulo_pagina": "Rackers · O aplicație, șase sporturi",
     "descripcion": "Scor pentru padel, tenis, pickleball, squash, tenis de masă și badminton pe "
                    "iPhone și Apple Watch. Pulsul la fiecare punct, progresul care se vede și "
                    "turnee care se organizează singure.",
@@ -10,7 +10,7 @@ TEXTO = {
     "descargar": "Descarcă",
     "pronto": "În curând în App Store",
     "pronto_corto": "În curând",
-    "hero_titulo": ["Un scor,", "șase sporturi"],
+    "hero_titulo": ["O aplicație,", "șase sporturi"],
     "hero_texto": "Padel, tenis, pickleball, squash, tenis de masă și badminton. Ține scorul de "
                   "pe iPhone sau de pe ceas, măsoară-ți pulsul la fiecare punct și vezi, meci "
                   "după meci, dacă mergi mai bine.",

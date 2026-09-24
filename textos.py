@@ -38,6 +38,11 @@ CAPTURAS = {
     "torneos": "6-torneo",
 }
 
+# Y la de cada uno de los tres pasos, en orden: apuntar, medir y mejorar. Para
+# apuntar va el marcador del reloj, que es el único marcador de las capturas.
+# Las funciones que salen aquí ya no repiten su captura más abajo.
+PASOS = ["reloj", "partidos", "entrenador"]
+
 # De qué idioma sale cada variante.
 VARIANTES = {
     "en-GB": "en-US",

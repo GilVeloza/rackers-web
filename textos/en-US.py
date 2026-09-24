@@ -2,7 +2,7 @@
 
 TEXTO = {
     "idioma": "English (US)",
-    "titulo_pagina": "Rackers · One scoreboard, six sports",
+    "titulo_pagina": "Rackers · One app, six sports",
     "descripcion": "Scoreboard for padel, tennis, pickleball, squash, table tennis and "
                    "badminton on iPhone and Apple Watch. Your heart rate on every point, "
                    "proof that you're getting better, and tournaments that run themselves.",
@@ -10,7 +10,7 @@ TEXTO = {
     "descargar": "Download",
     "pronto": "Coming soon to the App Store",
     "pronto_corto": "Coming soon",
-    "hero_titulo": ["One scoreboard,", "six sports"],
+    "hero_titulo": ["One app,", "six sports"],
     "hero_texto": "Padel, tennis, pickleball, squash, table tennis and badminton. Score from "
                   "your iPhone or your watch, measure your heart rate on every point, and "
                   "see — match by match — whether you're getting better.",

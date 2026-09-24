@@ -2,7 +2,7 @@
 
 TEXTO = {
     "idioma": "Hrvatski",
-    "titulo_pagina": "Rackers · Tvoj semafor, šest sportova",
+    "titulo_pagina": "Rackers · Jedna aplikacija, šest sportova",
     "descripcion": "Semafor za padel, tenis, pickleball, squash, stolni tenis i "
                    "badminton za iPhone i Apple Watch. Mjeri puls u svakom poenu, "
                    "gledaj napreduješ li i organiziraj turnire.",
@@ -10,7 +10,7 @@ TEXTO = {
     "descargar": "Preuzmi",
     "pronto": "Uskoro na App Storeu",
     "pronto_corto": "Uskoro",
-    "hero_titulo": ["Tvoj semafor,", "šest sportova"],
+    "hero_titulo": ["Jedna aplikacija,", "šest sportova"],
     "hero_texto": "Padel, tenis, pickleball, squash, stolni tenis i badminton. Bilježi "
                   "poene s iPhonea ili sa sata, mjeri puls u svakom poenu i gledaj, meč "
                   "po meč, napreduješ li.",

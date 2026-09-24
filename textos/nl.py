@@ -2,7 +2,7 @@
 
 TEXTO = {
     "idioma": "Nederlands",
-    "titulo_pagina": "Rackers · Eén scorebord, zes sporten",
+    "titulo_pagina": "Rackers · Eén app, zes sporten",
     "descripcion": "Scorebord voor padel, tennis, pickleball, squash, tafeltennis en badminton "
                    "op iPhone en Apple Watch. Je hartslag bij elk punt, vooruitgang die je ziet "
                    "en toernooien die zichzelf indelen.",
@@ -10,7 +10,7 @@ TEXTO = {
     "descargar": "Download",
     "pronto": "Binnenkort in de App Store",
     "pronto_corto": "Binnenkort",
-    "hero_titulo": ["Eén scorebord,", "zes sporten"],
+    "hero_titulo": ["Eén app,", "zes sporten"],
     "hero_texto": "Padel, tennis, pickleball, squash, tafeltennis en badminton. Tel de punten op "
                   "je iPhone of op je horloge, meet je hartslag bij elk punt en zie, wedstrijd "
                   "na wedstrijd, of je beter wordt.",

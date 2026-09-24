@@ -2,7 +2,7 @@
 
 TEXTO = {
     "idioma": "Català",
-    "titulo_pagina": "Rackers · El teu marcador, sis esports",
+    "titulo_pagina": "Rackers · Una app, sis esports",
     "descripcion": "Marcador de pàdel, tennis, pickleball, esquaix, tennis taula i "
                    "bàdminton per a iPhone i Apple Watch. Mesura el teu pols a cada "
                    "punt, mira si vas a millor i organitza tornejos.",
@@ -10,7 +10,7 @@ TEXTO = {
     "descargar": "Descarregar",
     "pronto": "Aviat a l'App Store",
     "pronto_corto": "Aviat",
-    "hero_titulo": ["El teu marcador,", "sis esports"],
+    "hero_titulo": ["Una app,", "sis esports"],
     "hero_texto": "Pàdel, tennis, pickleball, esquaix, tennis taula i bàdminton. Puntua "
                   "des de l'iPhone o des del rellotge, mesura el teu pols a cada punt i "
                   "mira, partit a partit, si vas a millor.",

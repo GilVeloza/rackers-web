@@ -2,7 +2,7 @@
 
 TEXTO = {
     "idioma": "Português (Brasil)",
-    "titulo_pagina": "Rackers · Um placar, seis esportes",
+    "titulo_pagina": "Rackers · Um app, seis esportes",
     "descripcion": "Placar de padel, tênis, pickleball, squash, tênis de mesa e badminton para "
                    "iPhone e Apple Watch. Seus batimentos em cada ponto, a evolução que dá para "
                    "ver e torneios que se montam sozinhos.",
@@ -10,7 +10,7 @@ TEXTO = {
     "descargar": "Baixar",
     "pronto": "Em breve na App Store",
     "pronto_corto": "Em breve",
-    "hero_titulo": ["Um placar,", "seis esportes"],
+    "hero_titulo": ["Um app,", "seis esportes"],
     "hero_texto": "Padel, tênis, pickleball, squash, tênis de mesa e badminton. Marque pelo "
                   "iPhone ou pelo relógio, meça seus batimentos em cada ponto e veja, partida "
                   "após partida, se você está melhorando.",

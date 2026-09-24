@@ -2,7 +2,7 @@
 
 TEXTO = {
     "idioma": "Türkçe",
-    "titulo_pagina": "Rackers · Tek skorbord, altı spor",
+    "titulo_pagina": "Rackers · Tek uygulama, altı spor",
     "descripcion": "Padel, tenis, pickleball, squash, masa tenisi ve badminton için iPhone ve "
                    "Apple Watch skorbordu. Her sayıda nabzın, gözle görülür gelişim ve kendi "
                    "kendini kuran turnuvalar.",
@@ -10,7 +10,7 @@ TEXTO = {
     "descargar": "İndir",
     "pronto": "Yakında App Store’da",
     "pronto_corto": "Yakında",
-    "hero_titulo": ["Tek skorbord,", "altı spor"],
+    "hero_titulo": ["Tek uygulama,", "altı spor"],
     "hero_texto": "Padel, tenis, pickleball, squash, masa tenisi ve badminton. iPhone'dan ya da "
                   "saatten sayı tut, her sayıda nabzını ölç ve maç maç gelişip gelişmediğini gör.",
     "hero_boton": "App Store'dan indir",

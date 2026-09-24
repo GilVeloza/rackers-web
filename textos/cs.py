@@ -2,7 +2,7 @@
 
 TEXTO = {
     "idioma": "Čeština",
-    "titulo_pagina": "Rackers · Jedno skóre, šest sportů",
+    "titulo_pagina": "Rackers · Jedna aplikace, šest sportů",
     "descripcion": "Skóre pro padel, tenis, pickleball, squash, stolní tenis a badminton na "
                    "iPhonu a Apple Watch. Tep u každého míče, pokrok, který je vidět, a turnaje, "
                    "které se poskládají samy.",
@@ -10,7 +10,7 @@ TEXTO = {
     "descargar": "Stáhnout",
     "pronto": "Brzy v App Storu",
     "pronto_corto": "Brzy",
-    "hero_titulo": ["Jedno skóre,", "šest sportů"],
+    "hero_titulo": ["Jedna aplikace,", "šest sportů"],
     "hero_texto": "Padel, tenis, pickleball, squash, stolní tenis a badminton. Počítej z iPhonu "
                   "nebo z hodinek, měř si tep u každého míče a dívej se zápas po zápase, jestli "
                   "se lepšíš.",

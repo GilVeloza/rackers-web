@@ -2,7 +2,7 @@
 
 TEXTO = {
     "idioma": "Magyar",
-    "titulo_pagina": "Rackers · Egy eredményjelző, hat sportág",
+    "titulo_pagina": "Rackers · Egy app, hat sportág",
     "descripcion": "Eredményjelző padelhez, teniszhez, pickleballhoz, squash-hoz, asztaliteniszhez "
                    "és tollaslabdához iPhone-on és Apple Watchon. Pulzus minden labdánál, látható "
                    "fejlődés és tornák, amelyek maguktól állnak össze.",
@@ -10,7 +10,7 @@ TEXTO = {
     "descargar": "Letöltés",
     "pronto": "Hamarosan az App Store-ban",
     "pronto_corto": "Hamarosan",
-    "hero_titulo": ["Egy eredményjelző,", "hat sportág"],
+    "hero_titulo": ["Egy app,", "hat sportág"],
     "hero_texto": "Padel, tenisz, pickleball, squash, asztalitenisz és tollaslabda. Számolj az "
                   "iPhone-ról vagy az óráról, mérd a pulzusod minden labdánál, és meccsről "
                   "meccsre lásd, hogy javulsz-e.",

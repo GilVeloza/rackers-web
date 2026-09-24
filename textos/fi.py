@@ -2,7 +2,7 @@
 
 TEXTO = {
     "idioma": "Suomi",
-    "titulo_pagina": "Rackers · Tulostaulusi, kuusi lajia",
+    "titulo_pagina": "Rackers · Yksi sovellus, kuusi lajia",
     "descripcion": "Tulostaulu padeliin, tennikseen, pickleballiin, squashiin, "
                    "pöytätennikseen ja sulkapalloon iPhonelle ja Apple Watchille. Mittaa "
                    "syke joka pisteellä, katso kehitytkö ja järjestä turnauksia.",
@@ -10,7 +10,7 @@ TEXTO = {
     "descargar": "Lataa",
     "pronto": "Pian App Storessa",
     "pronto_corto": "Pian",
-    "hero_titulo": ["Tulostaulusi,", "kuusi lajia"],
+    "hero_titulo": ["Yksi sovellus,", "kuusi lajia"],
     "hero_texto": "Padel, tennis, pickleball, squash, pöytätennis ja sulkapallo. Pidä "
                   "pisteitä iPhonella tai kellolla, mittaa syke joka pisteellä ja katso "
                   "ottelu ottelulta, kehitytkö.",
