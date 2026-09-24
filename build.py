@@ -959,20 +959,32 @@ JS = """// Las animaciones de la web: aparecer al llegar, el móvil que flota, l
 
   // Las raquetas de los deportes. Cada una gira en un momento distinto del
   // bucle, así que si van a la par el giro pasa de una a otra como una ola.
-  // Arrancan las seis cuando la rejilla está a punto de verse, se paran al
-  // salir, y la que se descuelga (porque tardó en cargar o el móvil la frenó)
-  // vuelve al compás de la primera. Quien pide menos movimiento se queda con
-  // el cartel, que es el primer fotograma.
+  // Arrancan las seis cuando la rejilla está a punto de verse y se paran al
+  // salir. Quien pide menos movimiento se queda con el cartel, que es el
+  // primer fotograma.
   const raquetas = [...document.querySelectorAll('.deporte video')];
   if (suave && raquetas.length) {
+    // Cada una echa a andar según le llegan los datos, y el móvil puede
+    // frenar alguna. La que va detrás de la primera acelera un poco y la que
+    // va delante frena, hasta ir a la par. Saltar al segundo exacto no vale:
+    // en un móvil lento el salto tarda más que el desfase que corrige, se
+    // queda otra vez atrás y salta sin parar. Solo salta si se ha ido más de
+    // un segundo, y nunca mientras está saltando.
     const lider = raquetas[0];
     lider.addEventListener('timeupdate', () => {
-      const t = lider.currentTime;
+      const t = lider.currentTime, d = lider.duration;
       raquetas.forEach((v) => {
-        // Módulo la duración: justo al dar la vuelta una va en 5,99 s y la
-        // otra en 0,01, y eso no es ir descolgada.
-        const desfase = Math.abs(v.currentTime - t);
-        if (Math.min(desfase, lider.duration - desfase) > .15) v.currentTime = t;
+        if (v === lider) return;
+        let atras = t - v.currentTime;
+        // Módulo la duración: si la primera va en 5,99 s y otra ya ha dado
+        // la vuelta y va en 0,01, esa va 0,02 s por delante, no 5,98 detrás.
+        if (atras > d / 2) atras -= d;
+        if (atras < -d / 2) atras += d;
+        if (Math.abs(atras) > 1) {
+          if (!v.seeking) v.currentTime = t;
+        } else {
+          v.playbackRate = Math.abs(atras) < .03 ? 1 : 1 + Math.max(-.25, Math.min(.25, atras));
+        }
       });
     });
     const jugar = () => raquetas.forEach((v) => v.play().catch(() => {}));
