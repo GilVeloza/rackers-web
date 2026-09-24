@@ -1,0 +1,29 @@
+{
+  // La web de rackers.app: ficheros y nada más, sin código.
+  //
+  // La construye `python3 web/build.py` en `publico/` (39 idiomas, cada uno con
+  // su portada y sus tres páginas legales). Este Worker solo los sirve.
+  //
+  // La API es otro Worker, `racqer-api`, y sigue en `racqer.app`: son dos
+  // dominios distintos a propósito, así la web lleva el nombre nuevo y los
+  // endpoints no se mueven de donde ya estaban.
+  //
+  // Para publicar, desde la raíz del repo:
+  //   python3 web/build.py
+  //   npx wrangler@4 deploy --config web/wrangler.jsonc
+  "name": "rackers-web",
+  "compatibility_date": "2026-09-01",
+  // La cuenta de Cloudflare «racqer-api», la misma que la API.
+  "account_id": "5cac3e3413c9038fe20f6029f1af2f90",
+  // Nada de URL pública de pruebas: se ve en el dominio y ya.
+  "workers_dev": false,
+  "routes": [
+    {
+      "pattern": "rackers.app",
+      "custom_domain": true
+    }
+  ],
+  "assets": {
+    "directory": "./publico"
+  }
+}
