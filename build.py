@@ -34,6 +34,9 @@ FICHA = RAIZ / "design/app-store/idiomas"
 LOGO = RAIZ / "design/logo/final"
 MARCOS = RAIZ / "design/marcos"
 VIDEO_ORIGEN = RAIZ / "design/video/rally.mp4"
+# Las raquetas de las tarjetas de deportes, una por vídeo. Las saca con
+# Blender design/video/deportes/build.py.
+DEPORTES_ORIGEN = RAIZ / "design/video/deportes"
 
 # De derecha a izquierda.
 RTL = {"ar", "he", "ur"}
@@ -63,9 +66,10 @@ ANCHO_RELOJ = 360
 ANCHO_MARCO_MOVIL = 760
 ANCHO_MARCO_RELOJ = 620
 
-# El cuadrado de cada deporte se ve a unos 280 px: 560 es el doble, para
-# pantalla retina.
-ANCHO_DEPORTE = 560
+# El cuadrado de cada deporte se ve a unos 365 px en la rejilla de tres: el
+# vídeo es de 720, el doble, para pantalla retina. Aquí solo se le anuncia al
+# navegador; el tamaño de verdad lo decide LADO en design/video/deportes/build.py.
+ANCHO_DEPORTE = 720
 
 # Dónde cae la pantalla dentro de cada marco, medido sobre el PNG de Apple:
 # el iPhone 17 Pro Max tiene el hueco de 1320 × 2868 en (75, 66) de 1470 × 3000,
@@ -107,20 +111,39 @@ def preparar_video() -> None:
         return
     destino.parent.mkdir(parents=True, exist_ok=True)
     shutil.copyfile(VIDEO_ORIGEN, destino)
-    # El primer fotograma, para que el hueco no salga negro mientras carga.
+    primer_fotograma(VIDEO_ORIGEN, cartel)
+
+
+def preparar_deportes() -> None:
+    """Las seis raquetas, cada una en su vídeo y con su cartel.
+
+    Como el rally, se copian tal cual: design/video/deportes/build.py ya los
+    saca como los quiere el navegador. El cartel es lo que se ve mientras
+    cargan, y lo único que ve quien pide menos movimiento."""
+    for nombre in RAQUETAS:
+        origen = DEPORTES_ORIGEN / f"{nombre}.mp4"
+        destino = ESTATICO / f"deportes/{nombre}.mp4"
+        cartel = ESTATICO / f"deportes/{nombre}.jpg"
+        if not origen.exists():
+            sys.exit(f"Falta el vídeo: {origen}. Se saca con python3 design/video/deportes/build.py")
+        if (destino.exists() and cartel.exists()
+                and destino.stat().st_mtime >= origen.stat().st_mtime):
+            continue
+        destino.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copyfile(origen, destino)
+        primer_fotograma(origen, cartel)
+
+
+def primer_fotograma(video: Path, cartel: Path) -> None:
+    """El primer fotograma, para que el hueco no salga negro mientras carga."""
     if not shutil.which("ffmpeg"):
-        sys.exit("Hace falta ffmpeg para sacar el cartel del vídeo: brew install ffmpeg")
+        sys.exit("Hace falta ffmpeg para sacar el cartel de los vídeos: brew install ffmpeg")
     subprocess.run([
-        "ffmpeg", "-v", "error", "-y", "-i", str(VIDEO_ORIGEN),
+        "ffmpeg", "-v", "error", "-y", "-i", str(video),
         "-frames:v", "1", "-q:v", "4", str(cartel)], check=True)
 
 
 def preparar_imagenes(idiomas: list[str]) -> None:
-    # El cuadrado de cada deporte, con su fondo azul y su brillo. Va en JPEG
-    # porque el fondo es opaco: en PNG cada uno pesa nueve veces más.
-    for nombre in RAQUETAS:
-        reducir(LOGO / f"deportes/{nombre}.png",
-                ESTATICO / f"deportes/{nombre}.jpg", ANCHO_DEPORTE)
     reducir(LOGO / "rackers-icono-sin-fondo.png", ESTATICO / "rackers.png", 180)
     reducir(LOGO / "rackers-logotipo.png", ESTATICO / "rackers-logotipo.png", 520)
     # Los marcos oficiales de Apple (Apple Design Resources). Van encima de la
@@ -302,10 +325,12 @@ def pagina(idioma: str, t: dict) -> str:
         f'<li class="paso reveal" style="--retraso: {i * 90}ms"><span class="numero">{i + 1}</span>'
         f'<h3>{titulo}</h3><p>{texto}</p></li>'
         for i, (titulo, texto) in enumerate(t["pasos"]))
+    # Sin autoplay a propósito: las arranca el JavaScript, las seis a la vez.
     deportes = "".join(
         f'<li class="deporte reveal" style="--retraso: {i * 70}ms">'
-        f'<img src="../static/deportes/{RAQUETAS[i]}.jpg" width="{ANCHO_DEPORTE}"'
-        f' height="{ANCHO_DEPORTE}" loading="lazy" alt="">'
+        f'<video src="../static/deportes/{RAQUETAS[i]}.mp4" poster="../static/deportes/{RAQUETAS[i]}.jpg"'
+        f' width="{ANCHO_DEPORTE}" height="{ANCHO_DEPORTE}" muted loop playsinline preload="none"'
+        f' disablepictureinpicture aria-hidden="true"></video>'
         f'<h3>{nombre}</h3></li>'
         for i, nombre in enumerate(t["deportes"]))
     funciones = "".join(seccion_funcion(idioma, i, f) for i, f in enumerate(t["funciones"]))
@@ -644,8 +669,8 @@ section[id] { scroll-margin-top: var(--cabecera); }
 .hero-pieza .movil { position: relative; z-index: 2; width: min(100%, 300px); }
 
 /* --- Deportes: seis cuadrados, uno por raqueta --- */
-/* La imagen ya trae el fondo azul y el brillo de la app, así que la tarjeta
-   no pinta nada encima: solo la recorta, la enmarca y deja sitio al nombre. */
+/* El vídeo ya trae el fondo azul y el brillo de la app, así que la tarjeta
+   no pinta nada encima: solo lo recorta, lo enmarca y deja sitio al nombre. */
 .rejilla-deportes {
   list-style: none; padding: 0; margin: 44px 0 0;
   display: grid; gap: 18px;
@@ -657,7 +682,7 @@ section[id] { scroll-margin-top: var(--cabecera); }
   transition: transform .35s cubic-bezier(.2, .8, .3, 1),
               box-shadow .35s ease, border-color .35s ease;
 }
-.deporte img { display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; }
+.deporte video { display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; }
 /* Un velo de abajo arriba para que el nombre se lea sin tapar la raqueta. */
 .deporte::after {
   content: ""; position: absolute; inset: auto 0 0; height: 58%;
@@ -882,8 +907,8 @@ footer { border-top: 1px solid var(--borde); padding: 44px 24px 34px; }
 }
 """
 
-JS = """// Las animaciones de la web: aparecer al llegar, el móvil que flota y la
-// cabecera que se opaca. Nada de librerías.
+JS = """// Las animaciones de la web: aparecer al llegar, el móvil que flota, la
+// cabecera que se opaca y las raquetas de los deportes. Nada de librerías.
 (() => {
   const suave = !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -930,6 +955,37 @@ JS = """// Las animaciones de la web: aparecer al llegar, el móvil que flota y 
       requestAnimationFrame(mover);
     }, { passive: true });
     mover();
+  }
+
+  // Las raquetas de los deportes. Cada una gira en un momento distinto del
+  // bucle, así que si van a la par el giro pasa de una a otra como una ola.
+  // Arrancan las seis cuando la rejilla está a punto de verse, se paran al
+  // salir, y la que se descuelga (porque tardó en cargar o el móvil la frenó)
+  // vuelve al compás de la primera. Quien pide menos movimiento se queda con
+  // el cartel, que es el primer fotograma.
+  const raquetas = [...document.querySelectorAll('.deporte video')];
+  if (suave && raquetas.length) {
+    const lider = raquetas[0];
+    lider.addEventListener('timeupdate', () => {
+      const t = lider.currentTime;
+      raquetas.forEach((v) => {
+        // Módulo la duración: justo al dar la vuelta una va en 5,99 s y la
+        // otra en 0,01, y eso no es ir descolgada.
+        const desfase = Math.abs(v.currentTime - t);
+        if (Math.min(desfase, lider.duration - desfase) > .15) v.currentTime = t;
+      });
+    });
+    const jugar = () => raquetas.forEach((v) => v.play().catch(() => {}));
+    const parar = () => raquetas.forEach((v) => v.pause());
+    if ('IntersectionObserver' in window) {
+      // Si llegan varios avisos juntos (entrar y salir con un tirón de
+      // scroll), manda el último.
+      new IntersectionObserver((avisos) => (avisos[avisos.length - 1].isIntersecting ? jugar() : parar()),
+                               { rootMargin: '120px 0px' })
+        .observe(document.querySelector('.rejilla-deportes'));
+    } else {
+      jugar();
+    }
   }
 
   // Las pestañas del precio. Los tres paneles vienen escritos en el HTML, así
@@ -980,6 +1036,7 @@ def escribir(idiomas: list[str]) -> None:
     (ESTATICO / "rackers.js").write_text(JS, encoding="utf-8")
     preparar_imagenes(idiomas)
     preparar_video()
+    preparar_deportes()
     for idioma in idiomas:
         carpeta = SALIDA / idioma
         carpeta.mkdir(parents=True, exist_ok=True)
