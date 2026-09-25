@@ -37,6 +37,32 @@ MARCOS = RAIZ / "design/marcos"
 # Blender design/video/deportes/build.py.
 DEPORTES_ORIGEN = RAIZ / "design/video/deportes"
 
+# El peloteo del hero: dos raquetas que se pasan la pelota y, en cada golpe, la
+# que la recibe se convierte en el deporte siguiente; en medio, el móvil. El
+# máster es el encuadre «web» de design/video/peloteo/build.py: cuadrado, en
+# ProRes 4444 con transparencia y con el centro libre, porque va encima del
+# iPhone. De ahí salen los dos vídeos con alfa y el cartel.
+PELOTEO_ORIGEN = RAIZ / "design/video/peloteo/peloteo-web.mov"
+# Se ve a 600 px como mucho: con 960 va sobrado para pantalla retina.
+LADO_PELOTEO = 960
+
+# El logotipo escribiéndose, con las seis raquetas pasando por la Q. El máster
+# es ProRes 4444 con transparencia; de ahí salen los dos vídeos de la barra.
+LOGO_ORIGEN = RAIZ / "design/video/logo/rackers-logo-horizontal.mov"
+
+# El recorte, medido sobre los 285 fotogramas: todo lo que se pinta cabe en
+# x 122-1768 e y 346-720 de los 1920 × 1080, y el logotipo quieto del final
+# ocupa x 128-1768, y 402-683. El recorte va centrado en ese logotipo quieto,
+# así que el último fotograma cae exactamente donde está el PNG y el cambio
+# no se nota; el resto es el aire que necesitan las raquetas, que al girar se
+# salen por arriba y por abajo.
+#
+# Se saca a 420 × 102 —la cuarta parte— y a 24 imágenes por segundo, no más
+# grande: a 560 el códec repartía los mismos bits entre el doble de píxeles y
+# se veía un halo gris alrededor de las letras, sobre todo en Safari. Con 420
+# se ve a 1:1 en una pantalla retina, que es donde se mira.
+RECORTE_LOGO = "crop=1680:408:108:338,scale=420:102,fps=24"
+
 # De derecha a izquierda.
 RTL = {"ar", "he", "ur"}
 
@@ -116,6 +142,62 @@ def preparar_deportes() -> None:
         primer_fotograma(origen, cartel)
 
 
+def preparar_peloteo() -> None:
+    """El peloteo del hero, en los dos formatos con transparencia que saben
+    pintar los navegadores —WebM para Chrome, Firefox y Edge y HEVC para
+    Safari, como el logotipo de la barra— y su cartel: el primer fotograma en
+    PNG, que es con lo que se queda quien pide menos movimiento.
+
+    Lleva alfa porque va encima del móvil: la pelota cruza por delante de la
+    pantalla, y las raquetas quedan en la propia luz de la página, sin
+    recuadro."""
+    webm = ESTATICO / "peloteo.webm"
+    mp4 = ESTATICO / "peloteo.mp4"
+    cartel = ESTATICO / "peloteo.png"
+    if not PELOTEO_ORIGEN.exists():
+        sys.exit(f"Falta el peloteo: {PELOTEO_ORIGEN}. "
+                 "Se saca con python3 design/video/peloteo/build.py web")
+    hechos = (webm, mp4, cartel)
+    if (all(h.exists() for h in hechos)
+            and min(h.stat().st_mtime for h in hechos) >= PELOTEO_ORIGEN.stat().st_mtime):
+        return
+    if not shutil.which("ffmpeg"):
+        sys.exit("Hace falta ffmpeg para el peloteo del hero: brew install ffmpeg")
+    webm.parent.mkdir(parents=True, exist_ok=True)
+    print("  el peloteo del hero (tarda un poco)")
+    escala = f"scale={LADO_PELOTEO}:{LADO_PELOTEO}"
+    subprocess.run([
+        "ffmpeg", "-v", "error", "-y", "-i", str(PELOTEO_ORIGEN),
+        "-vf", escala, "-frames:v", "1", "-pix_fmt", "rgba", str(cartel)], check=True)
+    # VP9 con alfa para Chrome, Firefox y Edge. Con 28 pesa metro y medio;
+    # con 32 pesaba 1,2 MB y se veían mal un 12 % más de píxeles, y con 24
+    # pesa 1,9 MB y apenas mejora: lo que queda es del 4:2:0, no del crf.
+    subprocess.run([
+        "ffmpeg", "-v", "error", "-y", "-i", str(PELOTEO_ORIGEN),
+        "-vf", escala, "-c:v", "libvpx-vp9", "-pix_fmt", "yuva420p",
+        "-b:v", "0", "-crf", "28", "-row-mt", "1", "-auto-alt-ref", "0",
+        "-an", str(webm)], check=True)
+    # HEVC con alfa para Safari, premultiplicado por lo mismo que el
+    # logotipo (ver preparar_logo): VideoToolbox lo marca como
+    # «PremultipliedAlpha» y sin esto el halo de las raquetas sale a plomo.
+    # Y con el mismo `q:v` 85, medido otra vez aquí descodificando con el
+    # propio AVFoundation, que es lo que usa Safari: frente a 70 quita un 40 %
+    # de los píxeles que se ven mal, por 2 MB en vez de 1,2.
+    #
+    # El MP4 dice en su cabecera que es RGB de rango completo —ffmpeg copia
+    # lo del fotograma BGRA que le entra—, pero da igual: Apple descodifica
+    # con lo que dice el propio HEVC (BT.709, rango de vídeo), que es lo que
+    # ha escrito VideoToolbox. Un ffmpeg que lo descodifique sin decirle
+    # nada lo lee como BT.601 y los colores salen algo corridos; en Safari,
+    # no.
+    subprocess.run([
+        "ffmpeg", "-v", "error", "-y", "-i", str(PELOTEO_ORIGEN),
+        "-vf", f"{escala},format=rgba,premultiply=inplace=1,format=bgra",
+        "-c:v", "hevc_videotoolbox",
+        "-allow_sw", "1", "-alpha_quality", "0.7", "-q:v", "85",
+        "-tag:v", "hvc1", "-movflags", "+faststart", "-an", str(mp4)], check=True)
+
+
 def primer_fotograma(video: Path, cartel: Path) -> None:
     """El primer fotograma, para que el hueco no salga negro mientras carga."""
     if not shutil.which("ffmpeg"):
@@ -123,6 +205,59 @@ def primer_fotograma(video: Path, cartel: Path) -> None:
     subprocess.run([
         "ffmpeg", "-v", "error", "-y", "-i", str(video),
         "-frames:v", "1", "-q:v", "4", str(cartel)], check=True)
+
+
+def preparar_logo() -> None:
+    """El logotipo animado de la barra, en los dos formatos con transparencia
+    que saben pintar los navegadores.
+
+    No hay uno que valga para todos: Safari solo entiende el alfa en HEVC y
+    los demás solo en WebM, así que salen los dos del mismo máster. Quien no
+    sepa de ninguno se queda con el PNG, que es clavado al último fotograma."""
+    webm = ESTATICO / "rackers-logo.webm"
+    mp4 = ESTATICO / "rackers-logo.mp4"
+    if not LOGO_ORIGEN.exists():
+        sys.exit(f"Falta el vídeo del logotipo: {LOGO_ORIGEN}. "
+                 "Se saca con python3 design/video/logo/build.py")
+    if (webm.exists() and mp4.exists()
+            and min(webm.stat().st_mtime, mp4.stat().st_mtime) >= LOGO_ORIGEN.stat().st_mtime):
+        return
+    if not shutil.which("ffmpeg"):
+        sys.exit("Hace falta ffmpeg para el logotipo de la barra: brew install ffmpeg")
+    webm.parent.mkdir(parents=True, exist_ok=True)
+    print("  el logotipo de la barra (tarda un poco)")
+    # VP9 con alfa para Chrome, Firefox y Edge.
+    subprocess.run([
+        "ffmpeg", "-v", "error", "-y", "-i", str(LOGO_ORIGEN),
+        "-vf", RECORTE_LOGO, "-c:v", "libvpx-vp9", "-pix_fmt", "yuva420p",
+        "-b:v", "0", "-crf", "26", "-row-mt", "1", "-auto-alt-ref", "0",
+        "-an", str(webm)], check=True)
+    # HEVC con alfa para Safari, que es el único formato del que sabe. Lo saca
+    # VideoToolbox, o sea que esto solo se construye en un Mac; igual que las
+    # capturas, que las reduce `sips`.
+    #
+    # `premultiply` no es opcional: VideoToolbox marca el archivo como
+    # «PremultipliedAlpha» y no hay forma de decirle lo contrario desde
+    # ffmpeg, así que el color tiene que ir ya multiplicado por la
+    # transparencia. Sin esto Safari pinta el halo de las raquetas a plomo y
+    # con el borde a cuadros —el color del halo va a tope aunque casi no se
+    # vea— mientras que en Chrome, que recibe el WebM, se ve bien. El WebM no
+    # lleva esta pasada: en VP9 el alfa va sin multiplicar.
+    #
+    # Los dos números están medidos, no puestos a ojo, y sobre un fotograma
+    # con la raqueta girando, que es donde se rompe: en el logotipo quieto no
+    # se nota nada porque el códec lo predice entero del fotograma anterior.
+    #
+    # `alpha_quality` da igual —de 0,7 a 0,95 el archivo pasa de 310 kB a
+    # 720 kB y el error baja un 5 %—; el que manda es `q:v`, que de 50 a 85
+    # quita tres cuartas partes de los píxeles que se veían mal. Por encima de
+    # 85 ya no mejora: el doble de tamaño para un 20 % menos de error.
+    subprocess.run([
+        "ffmpeg", "-v", "error", "-y", "-i", str(LOGO_ORIGEN),
+        "-vf", f"{RECORTE_LOGO},format=rgba,premultiply=inplace=1,format=bgra",
+        "-c:v", "hevc_videotoolbox",
+        "-allow_sw", "1", "-alpha_quality", "0.7", "-q:v", "85",
+        "-tag:v", "hvc1", "-movflags", "+faststart", "-an", str(mp4)], check=True)
 
 
 def preparar_imagenes(idiomas: list[str]) -> None:
@@ -133,8 +268,13 @@ def preparar_imagenes(idiomas: list[str]) -> None:
     # 51 idiomas y las seis pantallas, en vez de 306 imágenes compuestas.
     reducir(MARCOS / "iphone.png", ESTATICO / "marco-iphone.png", ANCHO_MARCO_MOVIL)
     reducir(MARCOS / "reloj.png", ESTATICO / "marco-reloj.png", ANCHO_MARCO_RELOJ)
+    # Solo las que se ven, que cada captura son 51 archivos: la de inicio, que
+    # va en el móvil del hero, y las de los pasos y las funciones.
+    usadas = {CAPTURAS["inicio"]} | {CAPTURAS[paso] for paso in PASOS if paso != "reloj"}
     for idioma in idiomas:
-        for captura in CAPTURAS.values():
+        usadas |= {CAPTURAS[f[0]] for f in TEXTOS[idioma]["funciones"]}
+    for idioma in idiomas:
+        for captura in sorted(usadas):
             origen = FICHA / idioma / "app" / f"{captura}.png"
             if origen.exists():
                 reducir(origen, ESTATICO / f"capturas/{idioma}/{captura}.jpg", ANCHO_CAPTURA)
@@ -150,22 +290,24 @@ def capturas_de(idioma: str) -> Path:
 
 # ---------------------------------------------------------------- piezas
 
-def movil(idioma: str, captura: str, clase: str = "") -> str:
+def movil(idioma: str, captura: str, clase: str = "", carga: str = "lazy") -> str:
     """Una captura dentro del marco de iPhone de Apple.
 
     El marco es un PNG con el hueco de la pantalla transparente, así que la
     captura va debajo y el marco encima. La captura se redondea por las
     esquinas: el hueco de Apple es un *squircle* y una captura cuadrada
-    asomaría en pico por las cuatro puntas."""
+    asomaría en pico por las cuatro puntas.
+
+    `carga` es «eager» para el del hero, que se ve nada más entrar."""
     izq, arr, anc, alt = (round(v * 100, 3) for v in HUECO_MOVIL)
     return f'''<div class="movil {clase}">
       <div class="marco">
         <img class="pantalla-app" src="../static/capturas/{idioma}/{CAPTURAS[captura]}.jpg"
              style="left:{izq}%;top:{arr}%;width:{anc}%;height:{alt}%"
-             loading="lazy" alt="">
+             loading="{carga}" alt="">
         <img class="bisel" src="../static/marco-iphone.png"
              width="{ANCHO_MARCO_MOVIL}" height="{round(ANCHO_MARCO_MOVIL * 3000 / 1470)}"
-             loading="lazy" alt="">
+             loading="{carga}" alt="">
       </div>
     </div>'''
 
@@ -189,16 +331,24 @@ def pieza(idioma: str, captura: str) -> str:
     return reloj(idioma) if captura == "reloj" else movil(idioma, captura)
 
 
-def marca(raiz: str = "") -> str:
+def marca(raiz: str = "", viva: bool = False) -> str:
     """El logotipo entero —la raqueta y RACKERS en Unbounded—, no el icono con
     el nombre escrito al lado: así la barra lleva la tipografía de la marca y
     no la del sistema. El PNG es 520 × 88, o sea 2,6× de lo que se ve.
 
     `raiz` es a dónde vuelve el logo y desde dónde cuelga `static/`: en la
     portada basta con subir al ancla, y en las legales hay que salir de su
-    carpeta."""
+    carpeta.
+
+    `viva` es el de la barra, que se anima: RACKERS se escribe, las seis
+    raquetas pasan por la Q y la Q vuelve a su sitio, en bucle. El vídeo no
+    viene escrito aquí porque lleva transparencia y cada navegador la entiende
+    en un formato distinto: lo pone el JavaScript cuando sabe cuál sirve. Sin
+    JavaScript se queda este PNG, que es el último fotograma."""
     destino = "#arriba" if raiz == "" else raiz
-    return (f'<a class="marca" href="{destino}">'
+    datos = (f' aria-label="Rackers" data-webm="{raiz}../static/rackers-logo.webm"'
+             f' data-mp4="{raiz}../static/rackers-logo.mp4"') if viva else ""
+    return (f'<a class="marca{" viva" if viva else ""}" href="{destino}"{datos}>'
             f'<img src="{raiz}../static/rackers-logotipo.png" width="201" height="34" alt="Rackers">'
             '</a>')
 
@@ -257,7 +407,7 @@ def documento(idioma: str, t: dict, slug: str) -> str:
 
 <header class="cabecera">
   <nav>
-    {marca(raiz)}
+    {marca(raiz, viva=True)}
     <div class="acciones"><a class="volver" href="{raiz}">{t["legal_volver"]}</a></div>
   </nav>
 </header>
@@ -407,7 +557,7 @@ def pagina(idioma: str, t: dict) -> str:
 
 <header class="cabecera">
   <nav>
-    {marca()}
+    {marca(viva=True)}
     <div class="enlaces">{nav}</div>
     <div class="acciones">{selector(idioma)}{boton(t["pronto_corto"], "pequeno")}</div>
   </nav>
@@ -424,7 +574,16 @@ def pagina(idioma: str, t: dict) -> str:
       <p class="nota">{t["hero_nota"]}</p>
     </div>
     <div class="hero-pieza">
-      {movil(idioma, "inicio", "hero-movil")}
+      <!-- El peloteo: una raqueta a cada lado del móvil, que enseña Inicio en
+           el idioma de la página, y la pelota cruzando por delante. El vídeo
+           lleva transparencia y cada navegador la entiende en un formato
+           distinto, así que lo pone el JavaScript; hasta entonces se ve el
+           cartel, que es el primer fotograma. -->
+      <div class="hero-escena" data-webm="../static/peloteo.webm" data-mp4="../static/peloteo.mp4">
+        {movil(idioma, "inicio", "hero-movil", "eager")}
+        <img class="hero-cartel" src="../static/peloteo.png" width="{LADO_PELOTEO}" height="{LADO_PELOTEO}"
+             alt="" aria-hidden="true">
+      </div>
     </div>
   </section>
 
@@ -514,7 +673,7 @@ CSS = """/* El mismo azul, el mismo lima y la misma luz que la app. */
   --radio: 26px;
   --ancho: 1180px;
   /* Lo que mide la cabecera pegajosa, que es igual en todos los tamaños. */
-  --cabecera: 70px;
+  --cabecera: 78px;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -585,6 +744,15 @@ section[id] { scroll-margin-top: var(--cabecera); }
 /* El logotipo ya trae su resplandor dentro del PNG: nada de drop-shadow aquí,
    que se lo pondría también a las letras. */
 .marca img { height: 34px; width: auto; }
+/* El logotipo animado ocupa más alto que el PNG: las raquetas, al girar, se
+   salen por arriba y por abajo de las letras. El hueco mide lo del vídeo
+   desde el principio, esté puesto o no, para que al aparecer no dé el salto;
+   dentro, el PNG queda centrado justo donde cae el logotipo del vídeo. */
+.marca.viva { position: relative; height: 49px; }
+.marca video { display: block; height: 49px; width: auto; }
+/* Mientras arranca, el vídeo va encima del PNG sin ocupar sitio (ver el
+   JavaScript). Sus primeros fotogramas están vacíos, así que no se nota. */
+.marca video.aparte { position: absolute; left: 0; top: 0; }
 .enlaces { display: flex; gap: 22px; margin-inline-start: auto; font-size: 15px; color: var(--apagado); }
 .enlaces a { transition: color .2s ease; }
 .enlaces a:hover { color: var(--crema); }
@@ -623,7 +791,6 @@ section[id] { scroll-margin-top: var(--cabecera); }
 
 /* --- El móvil --- */
 .movil { perspective: 1200px; width: min(100%, 330px); margin-inline: auto; }
-.hero-movil { width: min(100%, 360px); }
 /* El marco es el PNG oficial de Apple con el hueco de la pantalla
    transparente: la captura va debajo, colocada en el hueco con los
    porcentajes que salen de medir el propio PNG. La sombra y el resplandor se
@@ -641,7 +808,6 @@ section[id] { scroll-margin-top: var(--cabecera); }
      el titanio y no se ve el corte. */
   border-radius: 17cqw;
 }
-.hero-movil .marco { transform: rotate(-2deg); }
 .flota { will-change: transform; }
 
 /* --- Hero --- */
@@ -653,7 +819,38 @@ section[id] { scroll-margin-top: var(--cabecera); }
 .hero .entrada { margin-bottom: 30px; }
 .hero-botones { display: flex; align-items: center; gap: 22px; flex-wrap: wrap; margin-bottom: 16px; }
 
-.hero-pieza .movil { width: min(100%, 300px); }
+/* El peloteo. El móvil va en medio, con Inicio, y encima el vídeo, que
+   lleva transparencia: una raqueta a cada lado y la pelota cruzando por
+   delante de la pantalla. El vídeo es cuadrado y deja libre el 41 % del
+   centro, que es justo lo que mide el móvil, así que casan a cualquier
+   tamaño. Sin caja ni recuadro: con el alfa, las raquetas están en la propia
+   luz de la página. Debajo, un halo azul que junta las tres piezas.
+
+   La escena se sale un 8 % de la columna por cada lado, como se salía el
+   rally: lo que se sale es el aire que el vídeo deja alrededor de las
+   raquetas, y así el móvil no se queda pequeño al lado del título. Pero
+   nunca más de lo que queda hasta el borde de la ventana (el margen de la
+   sección y, en pantallas más anchas que la página, lo que sobra a cada
+   lado): si no, a 1024 px la raqueta de la derecha sale cortada. */
+.hero-pieza { position: relative; min-width: 0; }
+.hero-escena {
+  --lado: min(116%, 660px, 100% + 48px + max(0px, 100vw - var(--ancho)));
+  position: relative; width: var(--lado); aspect-ratio: 1;
+  margin-inline: calc((100% - var(--lado)) / 2);
+}
+.hero-escena::before {
+  content: ""; position: absolute; z-index: 0; inset: 6% 0;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(32, 50, 92, .55), transparent 72%);
+  filter: blur(30px); pointer-events: none;
+}
+.hero-escena .movil {
+  position: absolute; z-index: 1; left: 50%; top: 50%;
+  width: 41%; max-width: none; margin: 0; transform: translate(-50%, -50%);
+}
+.hero-cartel, .hero-escena video {
+  position: absolute; z-index: 2; inset: 0; display: block;
+  width: 100%; height: 100%; pointer-events: none;
+}
 
 /* --- Deportes: seis cuadrados, uno por raqueta --- */
 /* El vídeo ya trae el fondo azul y el brillo de la app, así que la tarjeta
@@ -871,8 +1068,10 @@ footer { border-top: 1px solid var(--borde); padding: 44px 24px 34px; }
 /* --- Pantallas estrechas --- */
 @media (max-width: 900px) {
   .hero, .funcion, .funcion.derecha, .reloj { grid-template-columns: 1fr; }
+  /* Una columna: el peloteo va debajo del texto y, en el móvil, de lado a
+     lado de la pantalla, comiéndose el margen de la sección. */
+  .hero-escena { --lado: min(100% + 48px, 520px); }
   .funcion.derecha .funcion-texto { order: 0; }
-  .hero-movil .marco { transform: none; }
   .movil { max-width: 320px; margin: 0 auto; }
   .rejilla-pasos, .funciones-sueltas { grid-template-columns: 1fr; }
   /* Seis cuadrados: tres columnas en pantalla grande, dos aquí. */
@@ -890,6 +1089,8 @@ footer { border-top: 1px solid var(--borde); padding: 44px 24px 34px; }
   .deporte h3 { font-size: 16px; padding: 0 14px 13px; }
   .deporte::after { height: 70%; }
   .marca img { height: 28px; }
+  .marca.viva { height: 40px; }
+  .marca video { height: 40px; }
   /* En el móvil no caben logotipo, selector y botón: el selector se va, que
      el del pie hace lo mismo. Sin esto el botón se salía de la pantalla. */
   .acciones .idiomas { display: none; }
@@ -906,7 +1107,8 @@ footer { border-top: 1px solid var(--borde); padding: 44px 24px 34px; }
 """
 
 JS = """// Las animaciones de la web: aparecer al llegar, el móvil que flota, la
-// cabecera que se opaca y las raquetas de los deportes. Nada de librerías.
+// cabecera que se opaca y las raquetas, las del hero y las de los deportes.
+// Nada de librerías.
 (() => {
   const suave = !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -925,11 +1127,93 @@ JS = """// Las animaciones de la web: aparecer al llegar, el móvil que flota, l
     porVer.forEach((e) => vigia.observe(e));
   }
 
+  // El logotipo de la barra, animado: RACKERS se escribe, las seis raquetas
+  // pasan por la Q y la Q vuelve a su sitio, en bucle. Va por aquí y no
+  // escrito en el HTML porque el vídeo lleva transparencia y cada navegador
+  // la entiende en un formato distinto: Safari solo en HEVC y los demás solo
+  // en WebM. Si ninguno sirve —o si este archivo no llega— se queda el PNG,
+  // que es clavado al último fotograma, así que no se pierde nada.
+  const escudo = document.querySelector('.marca.viva');
+  if (suave && escudo) {
+    const manzana = navigator.vendor === 'Apple Computer, Inc.';
+    const fuente = manzana ? escudo.dataset.mp4 : escudo.dataset.webm;
+    const tipo = manzana ? 'video/mp4; codecs="hvc1"' : 'video/webm; codecs="vp9"';
+    if (fuente && document.createElement('video').canPlayType(tipo)) {
+      const cinta = document.createElement('video');
+      cinta.muted = true;
+      cinta.loop = true;
+      cinta.autoplay = true;
+      cinta.playsInline = true;
+      cinta.disablePictureInPicture = true;
+      cinta.preload = 'auto';
+      cinta.setAttribute('muted', '');
+      cinta.setAttribute('aria-hidden', 'true');
+      // Va dentro desde el principio: el iPhone no carga un vídeo que no
+      // está en la página hasta que se le da al play, y esperarlo fuera
+      // dejaba el PNG quieto para siempre. Hasta que corre va encima del PNG
+      // sin ocupar sitio; entonces se quita el PNG y el vídeo ocupa su hueco,
+      // que mide lo mismo, así que ni parpadea ni salta.
+      cinta.className = 'aparte';
+      const corre = () => {
+        if (cinta.currentTime <= 0) return;
+        cinta.removeEventListener('timeupdate', corre);
+        escudo.querySelector('img').style.display = 'none';
+        cinta.classList.remove('aparte');
+      };
+      cinta.addEventListener('timeupdate', corre);
+      cinta.src = fuente;
+      escudo.appendChild(cinta);
+      cinta.play().catch(() => {});
+    }
+  }
+
   // La cabecera se vuelve opaca en cuanto se baja.
   const cabecera = document.querySelector('.cabecera');
   const alBajar = () => cabecera.classList.toggle('pegada', window.scrollY > 12);
   alBajar();
   addEventListener('scroll', alBajar, { passive: true });
+
+  // El peloteo del hero. Como el logotipo, el vídeo lleva transparencia (va
+  // encima del móvil) y cada navegador la entiende en un formato distinto,
+  // así que se pone desde aquí. Va dentro de la escena desde el principio,
+  // con autoplay —el iPhone no carga un vídeo suelto hasta que se le da al
+  // play—, pero debajo del cartel, que es su primer fotograma; el cartel se
+  // quita cuando el vídeo ya corre, así que el cambio no se nota. Quien pide
+  // menos movimiento o no tiene JavaScript se queda con el cartel. Se para
+  // cuando el hero sale de la pantalla y sigue al volver.
+  const escena = document.querySelector('.hero-escena');
+  const cartel = escena && escena.querySelector('.hero-cartel');
+  if (suave && cartel) {
+    const manzana = navigator.vendor === 'Apple Computer, Inc.';
+    const fuente = manzana ? escena.dataset.mp4 : escena.dataset.webm;
+    const tipo = manzana ? 'video/mp4; codecs="hvc1"' : 'video/webm; codecs="vp9"';
+    if (fuente && document.createElement('video').canPlayType(tipo)) {
+      const peloteo = document.createElement('video');
+      peloteo.muted = true;
+      peloteo.loop = true;
+      peloteo.autoplay = true;
+      peloteo.playsInline = true;
+      peloteo.disablePictureInPicture = true;
+      peloteo.preload = 'auto';
+      peloteo.setAttribute('muted', '');
+      peloteo.setAttribute('aria-hidden', 'true');
+      const corre = () => {
+        if (peloteo.currentTime <= 0) return;
+        peloteo.removeEventListener('timeupdate', corre);
+        cartel.remove();
+      };
+      peloteo.addEventListener('timeupdate', corre);
+      peloteo.src = fuente;
+      escena.insertBefore(peloteo, cartel);
+      peloteo.play().catch(() => {});
+      if ('IntersectionObserver' in window) {
+        new IntersectionObserver((avisos) => {
+          if (avisos[avisos.length - 1].isIntersecting) peloteo.play().catch(() => {});
+          else peloteo.pause();
+        }).observe(escena);
+      }
+    }
+  }
 
   // Los móviles de las funciones se mueven un poco menos que la página: da
   // profundidad sin marear. Solo en pantallas anchas y con el motor del
@@ -1046,6 +1330,8 @@ def escribir(idiomas: list[str]) -> None:
     (ESTATICO / "rackers.js").write_text(JS, encoding="utf-8")
     preparar_imagenes(idiomas)
     preparar_deportes()
+    preparar_peloteo()
+    preparar_logo()
     for idioma in idiomas:
         carpeta = SALIDA / idioma
         carpeta.mkdir(parents=True, exist_ok=True)
