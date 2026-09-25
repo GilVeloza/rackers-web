@@ -10,7 +10,13 @@
 import { elegirIdioma, idiomasPedidos } from './idioma.js';
 import { trozo } from './rangos.js';
 
-const ENTRADAS = { '/': '', '/privacidad/': 'privacidad', '/condiciones/': 'condiciones', '/soporte/': 'soporte' };
+// Con su nombre en inglés también, que son los que van en App Store Connect
+// (ver PAGINAS_EN_INGLES en build.py).
+const ENTRADAS = {
+  '/': '',
+  '/privacidad/': 'privacidad', '/condiciones/': 'condiciones', '/soporte/': 'soporte',
+  '/privacy/': 'privacidad', '/terms/': 'condiciones', '/support/': 'soporte',
+};
 
 export default {
   async fetch(peticion, env) {

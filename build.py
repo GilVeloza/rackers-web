@@ -88,6 +88,11 @@ RAQUETAS = ["padel", "tenis", "pickleball", "squash", "tenis-de-mesa", "badminto
 # español, como el resto del proyecto (`publico/`, `textos/`), y el título de
 # cada una sale traducido de `footer_legal`.
 PAGINAS = ["privacidad", "condiciones", "soporte"]
+# Las mismas entradas sin idioma, con el nombre en inglés: son las que van en
+# App Store Connect. rackers.app/support/ hace lo mismo que /soporte/: manda a
+# cada uno al Soporte en su idioma. Si cambian, también en worker.js y en
+# run_worker_first de wrangler.jsonc.
+PAGINAS_EN_INGLES = {"privacy": "privacidad", "terms": "condiciones", "support": "soporte"}
 
 # A dónde escribe quien necesita ayuda. Va aquí y en un solo sitio: es lo que
 # se pone también en App Store Connect como correo de soporte.
@@ -159,10 +164,14 @@ def preparar_peloteo() -> None:
     webm = ESTATICO / "peloteo.webm"
     mp4 = ESTATICO / "peloteo.mp4"
     cartel = ESTATICO / "peloteo.png"
+    hechos = (webm, mp4, cartel)
+    # El máster pesa 200 MB y no está en git: si ya no está pero los vídeos
+    # que salieron de él sí, valen esos.
     if not PELOTEO_ORIGEN.exists():
+        if all(h.exists() for h in hechos):
+            return
         sys.exit(f"Falta el peloteo: {PELOTEO_ORIGEN}. "
                  "Se saca, en el repo de la app, con python3 design/video/peloteo/build.py web")
-    hechos = (webm, mp4, cartel)
     if (all(h.exists() for h in hechos)
             and min(h.stat().st_mtime for h in hechos) >= PELOTEO_ORIGEN.stat().st_mtime):
         return
@@ -221,7 +230,10 @@ def preparar_logo() -> None:
     sepa de ninguno se queda con el PNG, que es clavado al último fotograma."""
     webm = ESTATICO / "rackers-logo.webm"
     mp4 = ESTATICO / "rackers-logo.mp4"
+    # Igual que el peloteo: sin el máster, valen los vídeos ya sacados.
     if not LOGO_ORIGEN.exists():
+        if webm.exists() and mp4.exists():
+            return
         sys.exit(f"Falta el vídeo del logotipo: {LOGO_ORIGEN}. "
                  "Se saca, en el repo de la app, con python3 design/video/logo/build.py")
     if (webm.exists() and mp4.exists()
@@ -1419,6 +1431,9 @@ def escribir(idiomas: list[str]) -> None:
     for slug in PAGINAS:
         (SALIDA / slug).mkdir(parents=True, exist_ok=True)
         (SALIDA / slug / "index.html").write_text(portada(slug), encoding="utf-8")
+    for nombre, slug in PAGINAS_EN_INGLES.items():
+        (SALIDA / nombre).mkdir(parents=True, exist_ok=True)
+        (SALIDA / nombre / "index.html").write_text(portada(slug), encoding="utf-8")
 
 
 class ConRangos(http.server.SimpleHTTPRequestHandler):

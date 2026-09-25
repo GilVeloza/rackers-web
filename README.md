@@ -94,9 +94,10 @@ sacarlos con Blender antes de construir la web.
 Cloudflare sirve `publico/` tal cual (ver `wrangler.jsonc`), salvo dos cosas
 que pasan antes por el Worker, `worker.js`.
 
-**Las entradas sin idioma** —rackers.app/ y /privacidad/, /condiciones/ y
-/soporte/, que son las que van en la app y en App Store Connect— mandan a cada
-uno a su idioma con la regla de `idioma.js`:
+**Las entradas sin idioma** —rackers.app/, /privacidad/, /condiciones/ y
+/soporte/, y las mismas en inglés, /privacy/, /terms/ y /support/, que son las
+que van en App Store Connect— mandan a cada uno a su idioma con la regla de
+`idioma.js`:
 
 - Si ya eligió uno en el selector, ese: lo guarda la galleta `idioma`.
 - Si no, el de su navegador, no el de su país: quien tiene el móvil en inglés
