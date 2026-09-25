@@ -1335,13 +1335,22 @@ JS = """// Las animaciones de la web: aparecer al llegar, el móvil que flota, l
 """
 
 # La raíz manda a cada uno a su idioma, y si no lo tenemos, al inglés.
-def portada() -> str:
-    codigos = ", ".join(f'"{c}"' for c in TEXTOS)
-    enlaces = "".join(f'<li><a href="{c}/">{d["idioma"]}</a></li>' for c, d in
-                      sorted(TEXTOS.items(), key=lambda p: p[1]["idioma"]))
+def portada(slug: str = "") -> str:
+    """La que manda a cada visitante a su idioma: la portada de rackers.app y,
+    con `slug`, rackers.app/privacidad/, /condiciones/ y /soporte/.
+
+    Esas tres son las direcciones que van en App Store Connect y en la app
+    (PRIVACY_POLICY_URL): una sola por página, sin idioma, porque ni la app ni
+    la ficha de la tienda saben en cuál está quien la abre."""
+    raiz = "../" if slug else ""
+    destino = f"{slug}/" if slug else ""
+    idiomas = {c: d for c, d in TEXTOS.items() if not slug or f"{slug}_titulo" in d}
+    codigos = ", ".join(f'"{c}"' for c in idiomas)
+    enlaces = "".join(f'<li><a href="{raiz}{c}/{destino}">{d["idioma"]}</a></li>' for c, d in
+                      sorted(idiomas.items(), key=lambda p: p[1]["idioma"]))
     return f'''<!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Rackers</title><link rel="stylesheet" href="static/rackers.css">
+<title>Rackers</title><link rel="stylesheet" href="{raiz}static/rackers.css">
 <script>
   const hay = [{codigos}];
   const quiere = navigator.languages || [navigator.language || "en"];
@@ -1351,7 +1360,7 @@ def portada() -> str:
     const base = hay.find((c) => c.toLowerCase().startsWith(pedido.toLowerCase().split("-")[0]));
     if (exacto || base) {{ elegido = exacto || base; break; }}
   }}
-  location.replace(elegido + "/");
+  location.replace("{raiz}" + elegido + "/{destino}");
 </script></head>
 <body><section><h1>Rackers</h1><ul class="marcas">{enlaces}</ul></section></body></html>
 '''
@@ -1379,6 +1388,9 @@ def escribir(idiomas: list[str]) -> None:
             (aparte / "index.html").write_text(documento(idioma, TEXTOS[idioma], slug), encoding="utf-8")
         print(f"  {idioma}")
     (SALIDA / "index.html").write_text(portada(), encoding="utf-8")
+    for slug in PAGINAS:
+        (SALIDA / slug).mkdir(parents=True, exist_ok=True)
+        (SALIDA / slug / "index.html").write_text(portada(slug), encoding="utf-8")
 
 
 class ConRangos(http.server.SimpleHTTPRequestHandler):
