@@ -11,16 +11,10 @@ TEXTO = {
     "pronto": "Kmalu v App Store",
     "pronto_corto": "Kmalu",
     "hero_titulo": ["Ena aplikacija,", "šest športov"],
-    "hero_texto": "Padel, tenis, pickleball, squash, namizni tenis in badminton. "
-                  "Beleži točke z iPhona ali z ure, meri utrip pri vsaki točki in glej, "
-                  "tekmo za tekmo, ali napreduješ.",
     "hero_boton": "Prenesi v App Store",
     "hero_enlace": "Poglej, kaj zna",
     "hero_nota": "Brezplačno. Trener z UI je Pro.",
     "deportes_titulo": "Šest športov, vsak s svojimi pravili",
-    "deportes_texto": "Prednost ali zlata točka, podaljšana igra in super podaljšana "
-                      "igra, side-out ali rally point, nizi do 11 ali do 21. Aplikacija "
-                      "jih že pozna: ti samo šteješ točke.",
     "deportes": ["Padel", "Tenis", "Pickleball", "Squash", "Namizni tenis", "Badminton"],
     "pasos_titulo": "Tri stvari, in nobena te ne vzame iz igre",
     "pasos": [

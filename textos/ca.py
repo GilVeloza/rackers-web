@@ -11,16 +11,10 @@ TEXTO = {
     "pronto": "Aviat a l'App Store",
     "pronto_corto": "Aviat",
     "hero_titulo": ["Una app,", "sis esports"],
-    "hero_texto": "Pàdel, tennis, pickleball, esquaix, tennis taula i bàdminton. Puntua "
-                  "des de l'iPhone o des del rellotge, mesura el teu pols a cada punt i "
-                  "mira, partit a partit, si vas a millor.",
     "hero_boton": "Descarregar a l'App Store",
     "hero_enlace": "Veure què fa",
     "hero_nota": "Gratis. L'entrenador amb IA és Pro.",
     "deportes_titulo": "Sis esports, cadascun amb les seves regles",
-    "deportes_texto": "Avantatges o punt d'or, tie-break i super tie-break, side-out o "
-                      "rally point, sets a 11 o a 21. L'app ja les sap: tu només sumes "
-                      "punts.",
     "deportes": ["Pàdel", "Tennis", "Pickleball", "Esquaix", "Tennis taula", "Bàdminton"],
     "pasos_titulo": "Tres coses, i cap et treu del partit",
     "pasos": [

@@ -11,16 +11,10 @@ TEXTO = {
     "pronto": "Segera di App Store",
     "pronto_corto": "Segera",
     "hero_titulo": ["Satu aplikasi,", "enam olahraga"],
-    "hero_texto": "Padel, tenis, pickleball, squash, tenis meja, dan bulu tangkis. Catat skor "
-                  "dari iPhone atau dari jam tangan, ukur detak jantungmu di tiap poin, dan "
-                  "lihat dari laga ke laga apakah kamu membaik.",
     "hero_boton": "Unduh di App Store",
     "hero_enlace": "Lihat apa yang bisa",
     "hero_nota": "Gratis. Pelatih AI-nya yang Pro.",
     "deportes_titulo": "Enam olahraga, masing-masing dengan aturannya",
-    "deportes_texto": "Deuce atau poin emas, tie-break dan super tie-break, side-out atau rally "
-                      "point, game sampai 11 atau sampai 21. Aplikasinya sudah hafal — kamu "
-                      "tinggal menambah poin.",
     "deportes": ["Padel", "Tenis", "Pickleball", "Squash", "Tenis meja", "Bulu tangkis"],
     "pasos_titulo": "Tiga hal, dan tidak satu pun menarikmu keluar dari permainan",
     "pasos": [

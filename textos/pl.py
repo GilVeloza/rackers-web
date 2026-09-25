@@ -11,16 +11,10 @@ TEXTO = {
     "pronto": "Wkrótce w App Store",
     "pronto_corto": "Wkrótce",
     "hero_titulo": ["Jedna aplikacja,", "sześć sportów"],
-    "hero_texto": "Padel, tenis, pickleball, squash, tenis stołowy i badminton. Licz z iPhone'a "
-                  "albo z zegarka, mierz tętno przy każdej piłce i patrz, mecz po meczu, czy "
-                  "idziesz w górę.",
     "hero_boton": "Pobierz z App Store",
     "hero_enlace": "Zobacz, co potrafi",
     "hero_nota": "Za darmo. Trener z AI to Pro.",
     "deportes_titulo": "Sześć sportów, każdy ze swoimi zasadami",
-    "deportes_texto": "Przewagi albo złoty punkt, tie-break i super tie-break, side-out albo "
-                      "rally point, sety do 11 lub do 21. Aplikacja już je zna – ty tylko "
-                      "dodajesz punkty.",
     "deportes": ["Padel", "Tenis", "Pickleball", "Squash", "Tenis stołowy", "Badminton"],
     "pasos_titulo": "Trzy rzeczy i żadna nie wyciąga cię z meczu",
     "pasos": [

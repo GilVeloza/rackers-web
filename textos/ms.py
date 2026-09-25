@@ -11,16 +11,10 @@ TEXTO = {
     "pronto": "Akan datang di App Store",
     "pronto_corto": "Akan datang",
     "hero_titulo": ["Satu aplikasi,", "enam sukan"],
-    "hero_texto": "Padel, tenis, pickleball, skuasy, ping pong dan badminton. Kira mata "
-                  "dari iPhone atau dari jam tangan, ukur nadi pada setiap mata dan "
-                  "lihat, perlawanan demi perlawanan, sama ada anda makin baik.",
     "hero_boton": "Muat turun di App Store",
     "hero_enlace": "Lihat apa yang dibuat",
     "hero_nota": "Percuma. Jurulatih AI ialah Pro.",
     "deportes_titulo": "Enam sukan, setiap satu dengan peraturannya",
-    "deportes_texto": "Kelebihan atau mata emas, tie-break dan super tie-break, side-out "
-                      "atau rally point, set ke 11 atau ke 21. Aplikasi sudah tahu "
-                      "semuanya: anda cuma tambah mata.",
     "deportes": ["Padel", "Tenis", "Pickleball", "Skuasy", "Ping pong", "Badminton"],
     "pasos_titulo": "Tiga perkara, dan tiada satu pun mengeluarkan anda dari permainan",
     "pasos": [

@@ -11,16 +11,10 @@ TEXTO = {
     "pronto": "Sắp có trên App Store",
     "pronto_corto": "Sắp có",
     "hero_titulo": ["Một ứng dụng,", "sáu môn"],
-    "hero_texto": "Padel, quần vợt, pickleball, squash, bóng bàn và cầu lông. Ghi điểm từ iPhone "
-                  "hoặc từ đồng hồ, đo nhịp tim ở mỗi điểm và xem qua từng trận bạn có tiến bộ "
-                  "hay không.",
     "hero_boton": "Tải trên App Store",
     "hero_enlace": "Xem nó làm được gì",
     "hero_nota": "Miễn phí. Huấn luyện viên AI thuộc bản Pro.",
     "deportes_titulo": "Sáu môn, mỗi môn một luật",
-    "deportes_texto": "Lợi điểm hay điểm vàng, tie-break và super tie-break, side-out hay tính "
-                      "điểm mỗi pha, ván đến 11 hay đến 21. Ứng dụng nhớ hết — bạn chỉ việc cộng "
-                      "điểm.",
     "deportes": ["Padel", "Quần vợt", "Pickleball", "Squash", "Bóng bàn", "Cầu lông"],
     "pasos_titulo": "Ba việc, và không việc nào kéo bạn ra khỏi trận",
     "pasos": [

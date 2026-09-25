@@ -10,14 +10,10 @@ TEXTO = {
     "pronto": "即將登陸 App Store",
     "pronto_corto": "即將推出",
     "hero_titulo": ["一個 App，", "六項運動"],
-    "hero_texto": "Padel、網球、匹克球、Squash、桌球和羽球。用 iPhone 或手錶記分，每一分都記下"
-                  "心率，一場接一場地看自己有沒有進步。",
     "hero_boton": "在 App Store 下載",
     "hero_enlace": "看看能做什麼",
     "hero_nota": "免費。只有 AI 教練屬於 Pro。",
     "deportes_titulo": "六項運動，各有各的規則",
-    "deportes_texto": "佔先還是黃金分，搶七和超級搶七，發球權輪轉還是每球得分，打到 11 分還是 "
-                      "21 分。規則交給 App，你只管加分。",
     "deportes": ["Padel", "網球", "匹克球", "Squash", "桌球", "羽球"],
     "pasos_titulo": "三件事，沒有一件會把你拉出比賽",
     "pasos": [

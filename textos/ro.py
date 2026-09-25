@@ -11,16 +11,10 @@ TEXTO = {
     "pronto": "În curând în App Store",
     "pronto_corto": "În curând",
     "hero_titulo": ["O aplicație,", "șase sporturi"],
-    "hero_texto": "Padel, tenis, pickleball, squash, tenis de masă și badminton. Ține scorul de "
-                  "pe iPhone sau de pe ceas, măsoară-ți pulsul la fiecare punct și vezi, meci "
-                  "după meci, dacă mergi mai bine.",
     "hero_boton": "Descarcă din App Store",
     "hero_enlace": "Vezi ce face",
     "hero_nota": "Gratuit. Antrenorul cu IA e Pro.",
     "deportes_titulo": "Șase sporturi, fiecare cu regulile lui",
-    "deportes_texto": "Avantaje sau punct de aur, tie-break și super tie-break, side-out sau "
-                      "rally point, seturi până la 11 sau până la 21. Aplicația le știe deja – "
-                      "tu doar aduni punctele.",
     "deportes": ["Padel", "Tenis", "Pickleball", "Squash", "Tenis de masă", "Badminton"],
     "pasos_titulo": "Trei lucruri și niciunul nu te scoate din meci",
     "pasos": [

@@ -11,16 +11,10 @@ TEXTO = {
     "pronto": "Binnenkort in de App Store",
     "pronto_corto": "Binnenkort",
     "hero_titulo": ["Eén app,", "zes sporten"],
-    "hero_texto": "Padel, tennis, pickleball, squash, tafeltennis en badminton. Tel de punten op "
-                  "je iPhone of op je horloge, meet je hartslag bij elk punt en zie, wedstrijd "
-                  "na wedstrijd, of je beter wordt.",
     "hero_boton": "Download in de App Store",
     "hero_enlace": "Bekijk wat het doet",
     "hero_nota": "Gratis. De AI-coach is Pro.",
     "deportes_titulo": "Zes sporten, elk met eigen regels",
-    "deportes_texto": "Voordeel of gouden punt, tiebreak en supertiebreak, side-out of rally "
-                      "point, games tot 11 of tot 21. De app kent ze al: jij telt alleen de "
-                      "punten.",
     "deportes": ["Padel", "Tennis", "Pickleball", "Squash", "Tafeltennis", "Badminton"],
     "pasos_titulo": "Drie dingen, en geen ervan haalt je uit de wedstrijd",
     "pasos": [

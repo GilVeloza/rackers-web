@@ -11,16 +11,10 @@ TEXTO = {
     "pronto": "Malapit nang mapunta sa App Store",
     "pronto_corto": "Malapit na",
     "hero_titulo": ["Isang app,", "anim na isport"],
-    "hero_texto": "Padel, tennis, pickleball, squash, table tennis at badminton. Mag-iskor mula "
-                  "sa iPhone o sa relo, sukatin ang pulso mo sa bawat puntos, at tingnan laro "
-                  "kada laro kung gumagaling ka na.",
     "hero_boton": "I-download sa App Store",
     "hero_enlace": "Tingnan ang kaya nito",
     "hero_nota": "Libre. Ang AI coach ang Pro.",
     "deportes_titulo": "Anim na isport, bawat isa may sariling patakaran",
-    "deportes_texto": "Advantage o golden point, tie-break at super tie-break, side-out o rally "
-                      "point, game hanggang 11 o hanggang 21. Alam na ng app ang lahat — ikaw, "
-                      "magdagdag ka lang ng puntos.",
     "deportes": ["Padel", "Tennis", "Pickleball", "Squash", "Table tennis", "Badminton"],
     "pasos_titulo": "Tatlong bagay, at wala ni isang humahatak sa'yo palabas ng laro",
     "pasos": [

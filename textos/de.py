@@ -11,16 +11,10 @@ TEXTO = {
     "pronto": "Bald im App Store",
     "pronto_corto": "Bald",
     "hero_titulo": ["Eine App,", "sechs Sportarten"],
-    "hero_texto": "Padel, Tennis, Pickleball, Squash, Tischtennis und Badminton. Zähle vom iPhone "
-                  "oder von der Uhr, miss deinen Puls bei jedem Punkt und sieh Match für Match, "
-                  "ob du besser wirst.",
     "hero_boton": "Im App Store laden",
     "hero_enlace": "Ansehen, was sie kann",
     "hero_nota": "Kostenlos. Der KI-Coach ist Pro.",
     "deportes_titulo": "Sechs Sportarten, jede mit ihren Regeln",
-    "deportes_texto": "Vorteil oder Golden Point, Tie-Break und Super-Tie-Break, Side-out oder "
-                      "Rally Point, Sätze bis 11 oder bis 21. Die App kennt sie schon – du "
-                      "zählst nur die Punkte.",
     "deportes": ["Padel", "Tennis", "Pickleball", "Squash", "Tischtennis", "Badminton"],
     "pasos_titulo": "Drei Dinge, und keines holt dich aus dem Spiel",
     "pasos": [

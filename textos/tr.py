@@ -11,15 +11,10 @@ TEXTO = {
     "pronto": "Yakında App Store’da",
     "pronto_corto": "Yakında",
     "hero_titulo": ["Tek uygulama,", "altı spor"],
-    "hero_texto": "Padel, tenis, pickleball, squash, masa tenisi ve badminton. iPhone'dan ya da "
-                  "saatten sayı tut, her sayıda nabzını ölç ve maç maç gelişip gelişmediğini gör.",
     "hero_boton": "App Store'dan indir",
     "hero_enlace": "Neler yaptığına bak",
     "hero_nota": "Ücretsiz. Yapay zekâ antrenörü Pro'da.",
     "deportes_titulo": "Altı spor, her biri kendi kurallarıyla",
-    "deportes_texto": "Avantaj ya da altın sayı, tie-break ve süper tie-break, side-out ya da "
-                      "rally point, 11'e veya 21'e setler. Uygulama hepsini biliyor – sen sadece "
-                      "sayıları ekle.",
     "deportes": ["Padel", "Tenis", "Pickleball", "Squash", "Masa tenisi", "Badminton"],
     "pasos_titulo": "Üç şey, hiçbiri seni maçtan koparmıyor",
     "pasos": [

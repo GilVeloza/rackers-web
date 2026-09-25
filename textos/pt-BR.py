@@ -11,15 +11,10 @@ TEXTO = {
     "pronto": "Em breve na App Store",
     "pronto_corto": "Em breve",
     "hero_titulo": ["Um app,", "seis esportes"],
-    "hero_texto": "Padel, tênis, pickleball, squash, tênis de mesa e badminton. Marque pelo "
-                  "iPhone ou pelo relógio, meça seus batimentos em cada ponto e veja, partida "
-                  "após partida, se você está melhorando.",
     "hero_boton": "Baixar na App Store",
     "hero_enlace": "Ver o que ela faz",
     "hero_nota": "De graça. O treinador com IA é Pro.",
     "deportes_titulo": "Seis esportes, cada um com suas regras",
-    "deportes_texto": "Vantagem ou ponto de ouro, tie-break e super tie-break, side-out ou rally "
-                      "point, sets até 11 ou até 21. O app já sabe: você só marca os pontos.",
     "deportes": ["Padel", "Tênis", "Pickleball", "Squash", "Tênis de mesa", "Badminton"],
     "pasos_titulo": "Três coisas, e nenhuma tira você da partida",
     "pasos": [

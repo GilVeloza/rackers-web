@@ -11,16 +11,10 @@ TEXTO = {
     "pronto": "Pian App Storessa",
     "pronto_corto": "Pian",
     "hero_titulo": ["Yksi sovellus,", "kuusi lajia"],
-    "hero_texto": "Padel, tennis, pickleball, squash, pöytätennis ja sulkapallo. Pidä "
-                  "pisteitä iPhonella tai kellolla, mittaa syke joka pisteellä ja katso "
-                  "ottelu ottelulta, kehitytkö.",
     "hero_boton": "Lataa App Storesta",
     "hero_enlace": "Katso mitä se tekee",
     "hero_nota": "Ilmainen. Tekoälyvalmentaja on Pro.",
     "deportes_titulo": "Kuusi lajia, kullakin omat sääntönsä",
-    "deportes_texto": "Etu tai kultainen piste, tiebreak ja super tiebreak, side-out tai "
-                      "rally point, erät 11:een tai 21:een. Sovellus osaa ne jo: sinä "
-                      "vain lisäät pisteitä.",
     "deportes": ["Padel", "Tennis", "Pickleball", "Squash", "Pöytätennis", "Sulkapallo"],
     "pasos_titulo": "Kolme asiaa, eikä yksikään vie sinua pois pelistä",
     "pasos": [

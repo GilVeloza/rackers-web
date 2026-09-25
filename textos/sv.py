@@ -11,16 +11,10 @@ TEXTO = {
     "pronto": "Snart i App Store",
     "pronto_corto": "Snart",
     "hero_titulo": ["En app,", "sex sporter"],
-    "hero_texto": "Padel, tennis, pickleball, squash, bordtennis och badminton. Räkna från "
-                  "iPhone eller från klockan, mät pulsen på varje boll och se, match efter "
-                  "match, om du blir bättre.",
     "hero_boton": "Hämta i App Store",
     "hero_enlace": "Se vad den gör",
     "hero_nota": "Gratis. AI-tränaren är Pro.",
     "deportes_titulo": "Sex sporter, var och en med sina regler",
-    "deportes_texto": "Fördel eller golden point, tiebreak och supertiebreak, side-out eller "
-                      "rally point, game till 11 eller till 21. Appen kan dem redan – du räknar "
-                      "bara poängen.",
     "deportes": ["Padel", "Tennis", "Pickleball", "Squash", "Bordtennis", "Badminton"],
     "pasos_titulo": "Tre saker, och ingen av dem drar dig ur matchen",
     "pasos": [

@@ -11,16 +11,10 @@ TEXTO = {
     "pronto": "Čoskoro v App Store",
     "pronto_corto": "Čoskoro",
     "hero_titulo": ["Jedna appka,", "šesť športov"],
-    "hero_texto": "Padel, tenis, pickleball, squash, stolný tenis a bedminton. Zapisuj "
-                  "body z iPhonu alebo z hodiniek, meraj si pulz pri každom bode a "
-                  "pozeraj, zápas po zápase, či sa zlepšuješ.",
     "hero_boton": "Stiahnuť v App Store",
     "hero_enlace": "Pozri, čo robí",
     "hero_nota": "Zadarmo. Tréner s AI je Pro.",
     "deportes_titulo": "Šesť športov, každý so svojimi pravidlami",
-    "deportes_texto": "Výhoda alebo zlatý bod, tie-break a super tie-break, side-out "
-                      "alebo rally point, sety do 11 alebo do 21. Appka ich už pozná: "
-                      "ty len pridávaš body.",
     "deportes": ["Padel", "Tenis", "Pickleball", "Squash", "Stolný tenis", "Bedminton"],
     "pasos_titulo": "Tri veci, a ani jedna ťa nevytiahne zo zápasu",
     "pasos": [

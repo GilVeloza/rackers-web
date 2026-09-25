@@ -31,6 +31,6 @@
     "binding": "ASSETS",
     // Solo los vídeos pasan por el Worker. Lo demás lo sirve Cloudflare
     // directamente, sin gastar peticiones del Worker.
-    "run_worker_first": ["/static/*.mp4", "/static/*.webm", "/static/deportes/*.mp4"]
+    "run_worker_first": ["/static/*.mp4", "/static/*.webm"]
   }
 }

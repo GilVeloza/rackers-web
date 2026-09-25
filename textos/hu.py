@@ -11,16 +11,10 @@ TEXTO = {
     "pronto": "Hamarosan az App Store-ban",
     "pronto_corto": "Hamarosan",
     "hero_titulo": ["Egy app,", "hat sportág"],
-    "hero_texto": "Padel, tenisz, pickleball, squash, asztalitenisz és tollaslabda. Számolj az "
-                  "iPhone-ról vagy az óráról, mérd a pulzusod minden labdánál, és meccsről "
-                  "meccsre lásd, hogy javulsz-e.",
     "hero_boton": "Letöltés az App Store-ból",
     "hero_enlace": "Nézd meg, mit tud",
     "hero_nota": "Ingyenes. Az MI-edző Pro.",
     "deportes_titulo": "Hat sportág, mindegyik a saját szabályaival",
-    "deportes_texto": "Előny vagy aranylabda, tie-break és szuper tie-break, side-out vagy rally "
-                      "point, 11-ig vagy 21-ig tartó játszmák. Az app már tudja őket – te csak "
-                      "adod a pontokat.",
     "deportes": ["Padel", "Tenisz", "Pickleball", "Squash", "Asztalitenisz", "Tollaslabda"],
     "pasos_titulo": "Három dolog, és egyik sem szakít ki a meccsből",
     "pasos": [

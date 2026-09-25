@@ -11,16 +11,10 @@ TEXTO = {
     "pronto": "Coming soon to the App Store",
     "pronto_corto": "Coming soon",
     "hero_titulo": ["One app,", "six sports"],
-    "hero_texto": "Padel, tennis, pickleball, squash, table tennis and badminton. Score from "
-                  "your iPhone or your watch, measure your heart rate on every point, and "
-                  "see — match by match — whether you're getting better.",
     "hero_boton": "Download on the App Store",
     "hero_enlace": "See what it does",
     "hero_nota": "Free. The AI coach is Pro.",
     "deportes_titulo": "Six sports, each with its own rules",
-    "deportes_texto": "Ads or golden point, tie-break and super tie-break, side-out or rally "
-                      "scoring, games to 11 or to 21. The app already knows them: you just "
-                      "add points.",
     "deportes": ["Padel", "Tennis", "Pickleball", "Squash", "Table tennis", "Badminton"],
     "pasos_titulo": "Three things, and none of them pull you off the court",
     "pasos": [
