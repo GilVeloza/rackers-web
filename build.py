@@ -867,7 +867,9 @@ section[id] { scroll-margin-top: var(--cabecera); }
    cada golpe y el anillo del suelo— queda dentro y fuera solo hay aire.
    Menos por abajo, donde el anillo llega casi al borde: ahí la elipse aún
    está opaca y el canto se vería recto, así que los últimos píxeles se
-   apagan aparte. Debajo, el mismo halo azul que trae el vídeo, más grande y
+   apagan aparte. Lo mismo a los lados y arriba: la elipse llega al canto
+   aún medio opaca y se veía el corte contra las luces verdes de la página,
+   así que ahí también se apaga del todo antes del borde. Debajo, el mismo halo azul que trae el vídeo, más grande y
    más suave.
 
    Mide 1000 px como mucho y en el móvil va de lado a lado, comiéndose el
@@ -888,9 +890,11 @@ section[id] { scroll-margin-top: var(--cabecera); }
   display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: contain;
   --velo: radial-gradient(56% 60% at 50% 54%, #000 72%, transparent);
   --suelo: linear-gradient(to top, transparent, #000 4.5%);
-  -webkit-mask-image: var(--velo), var(--suelo);
+  --lados: linear-gradient(to right, transparent, rgba(0, 0, 0, .35) 5%, #000 13%, #000 87%, rgba(0, 0, 0, .35) 95%, transparent);
+  --cielo: linear-gradient(to bottom, transparent, #000 12%);
+  -webkit-mask-image: var(--velo), var(--lados), var(--cielo), var(--suelo);
   -webkit-mask-composite: source-in;
-          mask-image: var(--velo), var(--suelo);
+          mask-image: var(--velo), var(--lados), var(--cielo), var(--suelo);
           mask-composite: intersect;
 }
 /* Los seis nombres. Quietos —sin JavaScript o para quien pide menos
