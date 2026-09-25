@@ -19,6 +19,7 @@ con macOS: las capturas de la tienda son de 1320 px de ancho y en la web con
 
 import hashlib
 import http.server
+import json
 import os
 import re
 import shutil
@@ -443,7 +444,11 @@ def selector(idioma: str) -> str:
     opciones = "".join(
         f'<option value="{codigo}"{" selected" if codigo == idioma else ""}>{datos["idioma"]}</option>'
         for codigo, datos in sorted(TEXTOS.items(), key=lambda p: p[1]["idioma"]))
-    return f'<select class="idiomas" aria-label="Idioma" onchange="location.href=\'../\'+this.value+\'/\'">{opciones}</select>'
+    # La galleta `idioma` es lo que mira la entrada (idioma.js) antes que el
+    # navegador y el país: quien elige uno, se queda con ese.
+    guardar = "document.cookie='idioma='+this.value+';path=/;max-age=31536000;samesite=lax'"
+    return (f'<select class="idiomas" aria-label="Idioma" '
+            f'onchange="{guardar};location.href=\'../\'+this.value+\'/\'">{opciones}</select>')
 
 
 def boton(texto: str, clase: str = "principal") -> str:
@@ -1343,7 +1348,17 @@ JS = """// Las animaciones de la web: aparecer al llegar, el móvil que flota, l
 })();
 """
 
-# La raíz manda a cada uno a su idioma, y si no lo tenemos, al inglés.
+# Qué idioma ve cada uno al entrar sin idioma. Lo usa el Worker, que sabe el
+# país; la portada lo lleva también, sin país, por si no pasa por él (en
+# local con --servir, por ejemplo).
+IDIOMA_JS = re.sub(r"^export ", "", (AQUI / "idioma.js").read_text(encoding="utf-8"), flags=re.M)
+
+
+def idiomas_de(slug: str = "") -> list[str]:
+    """Los idiomas en que está la portada o, con `slug`, esa página legal."""
+    return [c for c, d in TEXTOS.items() if not slug or f"{slug}_titulo" in d]
+
+
 def portada(slug: str = "") -> str:
     """La que manda a cada visitante a su idioma: la portada de rackers.app y,
     con `slug`, rackers.app/privacidad/, /condiciones/ y /soporte/.
@@ -1353,7 +1368,7 @@ def portada(slug: str = "") -> str:
     la ficha de la tienda saben en cuál está quien la abre."""
     raiz = "../" if slug else ""
     destino = f"{slug}/" if slug else ""
-    idiomas = {c: d for c, d in TEXTOS.items() if not slug or f"{slug}_titulo" in d}
+    idiomas = {c: TEXTOS[c] for c in idiomas_de(slug)}
     codigos = ", ".join(f'"{c}"' for c in idiomas)
     enlaces = "".join(f'<li><a href="{raiz}{c}/{destino}">{d["idioma"]}</a></li>' for c, d in
                       sorted(idiomas.items(), key=lambda p: p[1]["idioma"]))
@@ -1361,15 +1376,16 @@ def portada(slug: str = "") -> str:
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Rackers</title><link rel="stylesheet" href="{raiz}static/rackers.css">
 <script>
-  const hay = [{codigos}];
-  const quiere = navigator.languages || [navigator.language || "en"];
-  let elegido = "en-US";
-  for (const pedido of quiere) {{
-    const exacto = hay.find((c) => c.toLowerCase() === pedido.toLowerCase());
-    const base = hay.find((c) => c.toLowerCase().startsWith(pedido.toLowerCase().split("-")[0]));
-    if (exacto || base) {{ elegido = exacto || base; break; }}
-  }}
+{IDIOMA_JS}
+{{
+  const galleta = /(?:^|;\s*)idioma=([^;]+)/.exec(document.cookie);
+  const elegido = elegirIdioma({{
+    hay: [{codigos}],
+    pedidos: navigator.languages || [navigator.language || "en"],
+    guardado: galleta ? decodeURIComponent(galleta[1]) : null,
+  }});
   location.replace("{raiz}" + elegido + "/{destino}");
+}}
 </script></head>
 <body><section><h1>Rackers</h1><ul class="marcas">{enlaces}</ul></section></body></html>
 '''
@@ -1397,6 +1413,9 @@ def escribir(idiomas: list[str]) -> None:
             (aparte / "index.html").write_text(documento(idioma, TEXTOS[idioma], slug), encoding="utf-8")
         print(f"  {idioma}")
     (SALIDA / "index.html").write_text(portada(), encoding="utf-8")
+    # Para el Worker: en qué idiomas está cada entrada sin idioma.
+    (ESTATICO / "idiomas.json").write_text(
+        json.dumps({slug: idiomas_de(slug) for slug in ["", *PAGINAS]}), encoding="utf-8")
     for slug in PAGINAS:
         (SALIDA / slug).mkdir(parents=True, exist_ok=True)
         (SALIDA / slug / "index.html").write_text(portada(slug), encoding="utf-8")

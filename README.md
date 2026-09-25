@@ -23,7 +23,8 @@ python3 build.py --servir    # y la sirve en localhost:8000
 ```
 
 Sale en `publico/` (no se guarda en git: se rehace con un comando). Una
-página por idioma, un `index.html` que manda a cada visitante al suyo, y
+página por idioma, un `index.html` que manda a cada visitante al suyo (ver más
+abajo cómo), y
 `static/` con el CSS, el JavaScript y las imágenes. Las capturas se reducen a
 520 px y se guardan en JPEG, que si no la web pesa setenta megas; el logo y las
 raquetas van en PNG porque necesitan el fondo transparente.
@@ -90,8 +91,27 @@ MOV (ProRes 4444 con transparencia) para montarlo encima de otra cosa. Los MOV
 no se guardan en git —pesan de 100 a 220 MB—, así que en un clon nuevo hay que
 sacarlos con Blender antes de construir la web.
 
-Cloudflare sirve `publico/` tal cual (ver `wrangler.jsonc`), salvo los
-vídeos, que pasan antes por `rangos.js`. El iPhone pide los vídeos a trozos
+Cloudflare sirve `publico/` tal cual (ver `wrangler.jsonc`), salvo dos cosas
+que pasan antes por el Worker, `worker.js`.
+
+**Las entradas sin idioma** —rackers.app/ y /privacidad/, /condiciones/ y
+/soporte/, que son las que van en la app y en App Store Connect— mandan a cada
+uno a su idioma con la regla de `idioma.js`:
+
+- Si ya eligió uno en el selector, ese: lo guarda la galleta `idioma`.
+- Si no, el de su navegador, no el de su país: quien tiene el móvil en inglés
+  y vive en Portugal lee inglés.
+- El país solo decide la variante: portugués en Portugal es pt-PT y en Brasil
+  pt-BR; igual es-ES / es-MX, en-GB / en-US / en-AU / en-CA y fr-FR / fr-CA.
+  El chino va por la escritura que pide el navegador.
+- Si el navegador está en un idioma que no tenemos, el del país; y si tampoco,
+  inglés.
+
+El país lo pone Cloudflare en cada petición, así que en `publico/index.html`
+va la misma regla sin país, por si alguien llega sin pasar por el Worker (en
+local con `--servir`). `build.py` la copia de `idioma.js` tal cual.
+
+**Los vídeos**, que contesta `rangos.js`. El iPhone pide los vídeos a trozos
 (`Range`) y, si le llega el archivo entero en vez del trozo, no reproduce
 ninguno: en el ordenador se mueve todo y en el móvil nada. El servidor de
 ficheros de Cloudflare no hace caso de los trozos, así que los corta ese Worker.

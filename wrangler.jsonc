@@ -1,10 +1,13 @@
 {
-  // La web de rackers.app: ficheros, más un Worker de nada para los vídeos.
+  // La web de rackers.app: ficheros, más un Worker de nada para las entradas
+  // sin idioma y los vídeos.
   //
   // La construye `python3 build.py` en `publico/` (51 idiomas, cada uno con
   // su portada y sus tres páginas legales) y Cloudflare los sirve tal cual.
-  // Los vídeos pasan antes por `rangos.js`, que contesta a los trozos que pide
-  // el iPhone: sin eso no reproduce ninguno (ver ahí por qué).
+  // Pasan antes por `worker.js` dos cosas: las entradas sin idioma, que mandan
+  // a cada uno al suyo según su navegador y su país (ver `idioma.js`), y los
+  // vídeos, que contesta a trozos porque si no el iPhone no reproduce ninguno
+  // (ver `rangos.js`).
   //
   // La API es otro Worker, `racqer-api`, y sigue en `racqer.app`: son dos
   // dominios distintos a propósito, así la web lleva el nombre nuevo y los
@@ -25,12 +28,13 @@
       "custom_domain": true
     }
   ],
-  "main": "rangos.js",
+  "main": "worker.js",
   "assets": {
     "directory": "./publico",
     "binding": "ASSETS",
-    // Solo los vídeos pasan por el Worker. Lo demás lo sirve Cloudflare
-    // directamente, sin gastar peticiones del Worker.
-    "run_worker_first": ["/static/*.mp4", "/static/*.webm"]
+    // Solo las entradas sin idioma y los vídeos pasan por el Worker. Lo demás
+    // lo sirve Cloudflare directamente, sin gastar peticiones del Worker.
+    "run_worker_first": ["/", "/privacidad/", "/condiciones/", "/soporte/",
+                         "/static/*.mp4", "/static/*.webm"]
   }
 }

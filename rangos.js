@@ -1,6 +1,4 @@
-// El Worker de rackers.app. La web son ficheros y los sirve Cloudflare tal
-// cual; por aquí solo pasan los vídeos (ver `run_worker_first` en
-// wrangler.jsonc) y solo para una cosa: contestar a los trozos.
+// Los vídeos de rackers.app, a trozos. Los llama worker.js.
 //
 // El iPhone no pide un vídeo entero de una vez: pide trozos con `Range`
 // —primero `bytes=0-1`, para saber cuánto mide, y luego el resto— y si el
@@ -10,12 +8,6 @@
 // ninguna raqueta. El servidor de ficheros de Workers no hace caso de `Range`,
 // así que el trozo se corta aquí. Los vídeos son de un par de megas como
 // mucho: se leen enteros y se recortan, sin más.
-
-export default {
-  async fetch(peticion, env) {
-    return trozo(peticion, await env.ASSETS.fetch(peticion));
-  },
-};
 
 export async function trozo(peticion, respuesta) {
   const rango = peticion.headers.get('Range');
