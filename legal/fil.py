@@ -2,7 +2,7 @@
 
 TEXTO = {
     "legal_volver": 'Bumalik sa home',
-    "legal_actualizado": 'Na-update noong 23 Setyembre 2026',
+    "legal_actualizado": 'Na-update noong 25 Setyembre 2026',
 
     "privacidad_titulo": 'Privacy',
     "privacidad_entrada": 'Ginawa ang Rackers para maglaro, hindi para mangolekta ng datos. Nakasulat dito nang malinaw kung ano ang naiimbak, saan, at paano ito buburahin.',
@@ -67,6 +67,7 @@ TEXTO = {
         ]),
         ('Ang account mo', [
             'Sa iyo ang account at ikaw ang may pananagutan sa ginagawa rito. Hindi puwedeng magpanggap ang @pangalan bilang iba o maging nakakasakit; kung ganoon, puwede itong bawiin.',
+            'Hindi pinapayagan ang pang-iinsulto, panliligalig, at nakakasakit na nilalaman. Sa app, puwede mong i-block o i-report ang kahit anong account; titingnan ng isang tao ang mga report sa loob ng 24 na oras, at mawawalan ng account ang lalabag sa mga patakarang ito.',
         ]),
         ('Pro at mga bayad', [
             'Libre ang Rackers. Ang Pro ay subscription na sinisingil sa App Store account mo kapag kinumpirma mo ang pagbili.',

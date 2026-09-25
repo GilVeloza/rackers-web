@@ -2,7 +2,7 @@
 
 TEXTO = {
     "legal_volver": "Tillbaka till startsidan",
-    "legal_actualizado": "Uppdaterad 23 september 2026",
+    "legal_actualizado": "Uppdaterad 25 september 2026",
 
     "privacidad_titulo": "Integritet",
     "privacidad_entrada": "Rackers är gjord för att spela, inte för att samla data. Här "
@@ -98,6 +98,7 @@ TEXTO = {
             "Kontot är ditt och du svarar för vad som görs med det. @namnet får inte "
             "utge sig för att vara någon annan eller vara stötande; är det så kan det dras "
             "in.",
+            'Förolämpningar, trakasserier och kränkande innehåll tolereras inte. I appen kan du blockera eller anmäla vilket konto som helst; en människa granskar anmälningar inom 24 timmar, och den som bryter mot reglerna förlorar sitt konto.',
         ]),
         ("Pro och betalningar", [
             "Rackers är gratis. Pro är en prenumeration som debiteras ditt App "

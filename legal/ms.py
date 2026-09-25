@@ -8,7 +8,7 @@ Si eso cambia en la app o en el servidor, esto cambia también.
 
 TEXTO = {
     "legal_volver": "Kembali ke laman utama",
-    "legal_actualizado": "Dikemas kini pada 24 September 2026",
+    "legal_actualizado": "Dikemas kini pada 25 September 2026",
 
     # --- Privacidad ---------------------------------------------------------
     "privacidad_titulo": "Privasi",
@@ -114,6 +114,7 @@ TEXTO = {
             "Akaun itu milik anda dan anda bertanggungjawab atas apa yang dilakukan "
             "dengannya. @nama tidak boleh menyamar sesiapa atau bersifat menghina; jika "
             "ya, ia boleh ditarik.",
+            'Hinaan, gangguan dan kandungan yang menyinggung tidak diterima. Dalam aplikasi, anda boleh menyekat atau melaporkan mana-mana akaun; laporan disemak oleh manusia dalam masa 24 jam, dan sesiapa yang melanggar peraturan ini akan kehilangan akaunnya.',
         ]),
         ("Pro dan pembayaran", [
             "Rackers percuma. Pro ialah langganan yang dicaj melalui akaun App Store "

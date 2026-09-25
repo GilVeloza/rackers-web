@@ -2,7 +2,7 @@
 
 TEXTO = {
     "legal_volver": 'Vissza a főoldalra',
-    "legal_actualizado": 'Frissítve: 2026. szeptember 23.',
+    "legal_actualizado": 'Frissítve: 2026. szeptember 25.',
 
     "privacidad_titulo": 'Adatvédelem',
     "privacidad_entrada": 'A Rackers játékra készült, nem adatgyűjtésre. Itt világosan olvasható, mi tárolódik, hol, és hogyan törölhető.',
@@ -67,6 +67,7 @@ TEXTO = {
         ]),
         ('A fiókod', [
             'A fiók a tiéd, és felelsz azért, amit vele tesznek. A @név nem adhatja ki magát másnak, és nem lehet sértő; ha az, visszavonható.',
+            'A sértegetést, a zaklatást és a sértő tartalmat nem tűrjük. Az appban bármelyik fiókot letilthatod vagy jelentheted; a jelentéseket 24 órán belül egy ember átnézi, és aki megszegi ezeket a szabályokat, elveszíti a fiókját.',
         ]),
         ('A Pro és a fizetés', [
             'A Rackers ingyenes. A Pro előfizetés, amelyet a vásárlás megerősítésekor az App Store-fiókodra terhelünk.',

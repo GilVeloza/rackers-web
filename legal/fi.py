@@ -8,7 +8,7 @@ Si eso cambia en la app o en el servidor, esto cambia también.
 
 TEXTO = {
     "legal_volver": "Takaisin etusivulle",
-    "legal_actualizado": "Päivitetty 24. syyskuuta 2026",
+    "legal_actualizado": "Päivitetty 25. syyskuuta 2026",
 
     # --- Privacidad ---------------------------------------------------------
     "privacidad_titulo": "Tietosuoja",
@@ -109,6 +109,7 @@ TEXTO = {
         ("Tilisi", [
             "Tili on sinun ja vastaat siitä, mitä sillä tehdään. @nimi ei saa esiintyä "
             "toisena eikä olla loukkaava; jos on, se voidaan ottaa pois.",
+            'Loukkauksia, häirintää tai loukkaavaa sisältöä ei suvaita. Sovelluksessa voit estää tai ilmiantaa minkä tahansa tilin; ihminen käy ilmoitukset läpi 24 tunnin kuluessa, ja sääntöjä rikkova menettää tilinsä.',
         ]),
         ("Pro ja maksut", [
             "Rackers on ilmainen. Pro on tilaus, joka veloitetaan App Store -tililtäsi, "

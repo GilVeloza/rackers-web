@@ -2,7 +2,7 @@
 
 TEXTO = {
     "legal_volver": "Zurück zur Startseite",
-    "legal_actualizado": "Aktualisiert am 23. September 2026",
+    "legal_actualizado": "Aktualisiert am 25. September 2026",
 
     "privacidad_titulo": "Datenschutz",
     "privacidad_entrada": "Rackers ist zum Spielen gemacht, nicht zum Sammeln von "
@@ -103,6 +103,7 @@ TEXTO = {
             "Das Konto gehört dir und du stehst für das ein, was damit geschieht. Der "
             "@Name darf niemanden vortäuschen und nicht beleidigend sein; sonst kann "
             "er entzogen werden.",
+            'Beleidigungen, Belästigung und anstößige Inhalte werden nicht geduldet. In der App kannst du jedes Konto blockieren oder melden; ein Mensch prüft Meldungen innerhalb von 24 Stunden, und wer gegen diese Regeln verstößt, verliert sein Konto.',
         ]),
         ("Pro und Zahlungen", [
             "Rackers ist kostenlos. Pro ist ein Abo, das bei Kaufbestätigung über "

@@ -2,7 +2,7 @@
 
 TEXTO = {
     "legal_volver": "Voltar para a página inicial",
-    "legal_actualizado": "Atualizado em 23 de setembro de 2026",
+    "legal_actualizado": "Atualizado em 25 de setembro de 2026",
 
     "privacidad_titulo": "Privacidade",
     "privacidad_entrada": "O Rackers foi feito para jogar, não para coletar dados. Aqui "
@@ -95,6 +95,7 @@ TEXTO = {
         ("Sua conta", [
             "A conta é sua e você responde pelo que for feito com ela. O @nome não pode "
             "se passar por ninguém nem ser ofensivo; se for, pode ser retirado.",
+            'Não toleramos insultos, assédio nem conteúdo ofensivo. Pelo app você pode bloquear ou denunciar qualquer conta; uma pessoa analisa as denúncias em menos de 24 horas, e quem descumprir estas regras perde a conta.',
         ]),
         ("Pro e os pagamentos", [
             "O Rackers é grátis. O Pro é uma assinatura cobrada na sua conta da App Store "

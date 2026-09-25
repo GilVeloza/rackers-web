@@ -2,7 +2,7 @@
 
 TEXTO = {
     "legal_volver": 'Zpět na úvodní stránku',
-    "legal_actualizado": 'Aktualizováno 23. září 2026',
+    "legal_actualizado": 'Aktualizováno 25. září 2026',
 
     "privacidad_titulo": 'Soukromí',
     "privacidad_entrada": 'Rackers vznikl na hraní, ne na sbírání dat. Tady je jasně, co se ukládá, kde a jak to smazat.',
@@ -67,6 +67,7 @@ TEXTO = {
         ]),
         ('Tvůj účet', [
             'Účet je tvůj a odpovídáš za to, co se s ním dělá. @jméno se nesmí za nikoho vydávat ani být urážlivé; pokud je, lze ho odebrat.',
+            'Urážky, obtěžování ani urážlivý obsah se netolerují. V aplikaci můžeš zablokovat nebo nahlásit jakýkoli účet; nahlášení do 24 hodin zkontroluje člověk a kdo tato pravidla poruší, přijde o účet.',
         ]),
         ('Pro a platby', [
             'Rackers je zdarma. Pro je předplatné účtované na tvém účtu App Store při potvrzení nákupu.',

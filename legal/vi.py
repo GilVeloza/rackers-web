@@ -2,7 +2,7 @@
 
 TEXTO = {
     "legal_volver": 'Quay lại trang chủ',
-    "legal_actualizado": 'Cập nhật ngày 23 tháng 9 năm 2026',
+    "legal_actualizado": 'Cập nhật ngày 25 tháng 9 năm 2026',
 
     "privacidad_titulo": 'Quyền riêng tư',
     "privacidad_entrada": 'Rackers được làm ra để chơi, không phải để thu thập dữ liệu. Ở đây ghi rõ cái gì được lưu, ở đâu và xoá thế nào.',
@@ -67,6 +67,7 @@ TEXTO = {
         ]),
         ('Tài khoản của bạn', [
             'Tài khoản là của bạn và bạn chịu trách nhiệm về những gì làm với nó. @tên không được mạo danh ai và không được xúc phạm; nếu có, nó có thể bị thu hồi.',
+            'Không chấp nhận lăng mạ, quấy rối hay nội dung xúc phạm. Trong ứng dụng, bạn có thể chặn hoặc báo cáo bất kỳ tài khoản nào; báo cáo sẽ được một người xem xét trong vòng 24 giờ, và ai vi phạm các quy tắc này sẽ mất tài khoản.',
         ]),
         ('Pro và thanh toán', [
             'Rackers miễn phí. Pro là gói đăng ký được tính vào tài khoản App Store của bạn khi bạn xác nhận mua.',

@@ -2,7 +2,7 @@
 
 TEXTO = {
     "legal_volver": 'Ana sayfaya dön',
-    "legal_actualizado": "23 Eylül 2026'da güncellendi",
+    "legal_actualizado": "25 Eylül 2026'da güncellendi",
 
     "privacidad_titulo": 'Gizlilik',
     "privacidad_entrada": 'Rackers oynamak için yapıldı, veri toplamak için değil. Burada açıkça yazıyor: ne saklanıyor, nerede ve nasıl silinir.',
@@ -67,6 +67,7 @@ TEXTO = {
         ]),
         ('Hesabın', [
             'Hesap senin ve onunla yapılanlardan sen sorumlusun. @ad kimseyi taklit edemez ve saldırgan olamaz; öyleyse geri alınabilir.',
+            'Hakaret, taciz ve saldırgan içeriğe izin verilmez. Uygulamadan herhangi bir hesabı engelleyebilir veya bildirebilirsin; bildirimleri 24 saat içinde bir kişi inceler ve bu kuralları çiğneyen hesabını kaybeder.',
         ]),
         ('Pro ve ödemeler', [
             'Rackers ücretsizdir. Pro, satın almayı onayladığında App Store hesabına tahsil edilen bir aboneliktir.',

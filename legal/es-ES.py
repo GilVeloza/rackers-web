@@ -8,7 +8,7 @@ Si eso cambia en la app o en el servidor, esto cambia también.
 
 TEXTO = {
     "legal_volver": "Volver a la portada",
-    "legal_actualizado": "Actualizado el 23 de septiembre de 2026",
+    "legal_actualizado": "Actualizado el 25 de septiembre de 2026",
 
     # --- Privacidad ---------------------------------------------------------
     "privacidad_titulo": "Privacidad",
@@ -104,6 +104,7 @@ TEXTO = {
         ("Tu cuenta", [
             "La cuenta es tuya y respondes de lo que se haga con ella. El @nombre no "
             "puede suplantar a nadie ni ser ofensivo; si lo es, se puede retirar.",
+            'No se toleran insultos, acoso ni contenido ofensivo. Desde la app puedes bloquear o denunciar cualquier cuenta; las denuncias las revisa una persona en menos de 24 horas, y quien no cumpla estas normas pierde la cuenta.',
         ]),
         ("Pro y los pagos", [
             "Rackers es gratis. Pro es una suscripción que se cobra por tu cuenta de "

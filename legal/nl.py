@@ -2,7 +2,7 @@
 
 TEXTO = {
     "legal_volver": "Terug naar de startpagina",
-    "legal_actualizado": "Bijgewerkt op 23 september 2026",
+    "legal_actualizado": "Bijgewerkt op 25 september 2026",
 
     "privacidad_titulo": "Privacy",
     "privacidad_entrada": "Rackers is gemaakt om te spelen, niet om gegevens te "
@@ -100,6 +100,7 @@ TEXTO = {
             "Het account is van jou en je staat in voor wat ermee gebeurt. De @naam mag "
             "niemand nadoen en niet beledigend zijn; is dat wel zo, dan kan hij worden "
             "ingetrokken.",
+            'Beledigingen, intimidatie en aanstootgevende inhoud worden niet getolereerd. In de app kun je elk account blokkeren of melden; een mens bekijkt meldingen binnen 24 uur, en wie deze regels breekt, raakt zijn account kwijt.',
         ]),
         ("Pro en betalingen", [
             "Rackers is gratis. Pro is een abonnement dat bij bevestiging van de aankoop "

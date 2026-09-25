@@ -2,7 +2,7 @@
 
 TEXTO = {
     "legal_volver": "Back to the home page",
-    "legal_actualizado": "Updated September 23, 2026",
+    "legal_actualizado": "Updated September 25, 2026",
 
     "privacidad_titulo": "Privacy",
     "privacidad_entrada": "Rackers was made for playing, not for collecting data. "
@@ -102,6 +102,7 @@ TEXTO = {
             "The account is yours and you answer for what is done with it. Your @name "
             "may not impersonate anyone or be offensive; if it is, it can be taken "
             "away.",
+            'Insults, harassment and offensive content are not tolerated. You can block or report any account from the app; a person reviews reports within 24 hours, and anyone who breaks these rules loses their account.',
         ]),
         ("Pro and payments", [
             "Rackers is free. Pro is a subscription billed to your App Store account "

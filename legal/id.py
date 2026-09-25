@@ -2,7 +2,7 @@
 
 TEXTO = {
     "legal_volver": 'Kembali ke beranda',
-    "legal_actualizado": 'Diperbarui 23 September 2026',
+    "legal_actualizado": 'Diperbarui 25 September 2026',
 
     "privacidad_titulo": 'Privasi',
     "privacidad_entrada": 'Rackers dibuat untuk bermain, bukan untuk mengumpulkan data. Di sini jelas apa yang disimpan, di mana, dan cara menghapusnya.',
@@ -67,6 +67,7 @@ TEXTO = {
         ]),
         ('Akunmu', [
             'Akun itu milikmu dan kamu bertanggung jawab atas apa yang dilakukan dengannya. @nama tidak boleh menyamar sebagai siapa pun dan tidak boleh menghina; kalau begitu, bisa dicabut.',
+            'Hinaan, pelecehan, dan konten yang menyinggung tidak ditoleransi. Dari aplikasi kamu bisa memblokir atau melaporkan akun mana pun; laporan ditinjau oleh manusia dalam 24 jam, dan siapa pun yang melanggar aturan ini kehilangan akunnya.',
         ]),
         ('Pro dan pembayaran', [
             'Rackers gratis. Pro adalah langganan yang ditagih ke akun App Store-mu saat kamu mengonfirmasi pembelian.',

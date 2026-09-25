@@ -2,7 +2,7 @@
 
 TEXTO = {
     "legal_volver": 'Înapoi la pagina principală',
-    "legal_actualizado": 'Actualizat pe 23 septembrie 2026',
+    "legal_actualizado": 'Actualizat pe 25 septembrie 2026',
 
     "privacidad_titulo": 'Confidențialitate',
     "privacidad_entrada": 'Rackers e făcut ca să joci, nu ca să strângă date. Aici scrie limpede ce se salvează, unde și cum ștergi.',
@@ -67,6 +67,7 @@ TEXTO = {
         ]),
         ('Contul tău', [
             'Contul e al tău și răspunzi de ce se face cu el. @numele nu poate să se dea drept altcineva și nu poate fi jignitor; dacă e, poate fi retras.',
+            'Insultele, hărțuirea și conținutul jignitor nu sunt tolerate. Din aplicație poți bloca sau raporta orice cont; rapoartele le verifică un om în cel mult 24 de ore, iar cine încalcă aceste reguli își pierde contul.',
         ]),
         ('Pro și plățile', [
             'Rackers e gratuit. Pro e un abonament încasat din contul tău App Store la confirmarea cumpărării.',

@@ -8,7 +8,7 @@ Si eso cambia en la app o en el servidor, esto cambia también.
 
 TEXTO = {
     "legal_volver": "Späť na úvod",
-    "legal_actualizado": "Aktualizované 24. septembra 2026",
+    "legal_actualizado": "Aktualizované 25. septembra 2026",
 
     # --- Privacidad ---------------------------------------------------------
     "privacidad_titulo": "Súkromie",
@@ -105,6 +105,7 @@ TEXTO = {
         ("Tvoj účet", [
             "Účet je tvoj a zodpovedáš za to, čo sa s ním robí. @meno nesmie nikoho "
             "predstierať ani byť urážlivé; ak je, môže sa odobrať.",
+            'Urážky, obťažovanie ani urážlivý obsah sa netolerujú. V aplikácii môžeš zablokovať alebo nahlásiť akýkoľvek účet; nahlásenia do 24 hodín skontroluje človek a kto tieto pravidlá poruší, príde o účet.',
         ]),
         ("Pro a platby", [
             "Rackers je zadarmo. Pro je predplatné, ktoré sa účtuje z tvojho účtu v App "

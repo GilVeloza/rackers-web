@@ -8,7 +8,7 @@ Si eso cambia en la app o en el servidor, esto cambia también.
 
 TEXTO = {
     "legal_volver": "Tilbake til forsiden",
-    "legal_actualizado": "Oppdatert 24. september 2026",
+    "legal_actualizado": "Oppdatert 25. september 2026",
 
     # --- Privacidad ---------------------------------------------------------
     "privacidad_titulo": "Personvern",
@@ -107,6 +107,7 @@ TEXTO = {
             "Kontoen er din, og du svarer for hva som gjøres med den. @navnet kan ikke "
             "utgi seg for noen eller være støtende; er det det, kan det trekkes "
             "tilbake.",
+            'Fornærmelser, trakassering og krenkende innhold tolereres ikke. I appen kan du blokkere eller rapportere hvilken som helst konto; et menneske går gjennom rapporter innen 24 timer, og den som bryter reglene, mister kontoen sin.',
         ]),
         ("Pro og betalingene", [
             "Rackers er gratis. Pro er et abonnement som trekkes fra App Store-kontoen "
