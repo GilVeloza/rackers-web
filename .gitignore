@@ -1,0 +1,12 @@
+# La web, que se rehace con python3 build.py
+publico/
+
+# Lo que deja wrangler al publicar o al probar la web en local
+.wrangler/
+
+# Python
+__pycache__/
+*.pyc
+
+# macOS
+.DS_Store

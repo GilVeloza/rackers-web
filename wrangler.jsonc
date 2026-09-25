@@ -1,7 +1,7 @@
 {
   // La web de rackers.app: ficheros, más un Worker de nada para los vídeos.
   //
-  // La construye `python3 web/build.py` en `publico/` (51 idiomas, cada uno con
+  // La construye `python3 build.py` en `publico/` (51 idiomas, cada uno con
   // su portada y sus tres páginas legales) y Cloudflare los sirve tal cual.
   // Los vídeos pasan antes por `rangos.js`, que contesta a los trozos que pide
   // el iPhone: sin eso no reproduce ninguno (ver ahí por qué).
@@ -10,9 +10,9 @@
   // dominios distintos a propósito, así la web lleva el nombre nuevo y los
   // endpoints no se mueven de donde ya estaban.
   //
-  // Para publicar, desde la raíz del repo:
-  //   python3 web/build.py
-  //   npx wrangler@4 deploy --config web/wrangler.jsonc
+  // Para publicar, desde la raíz de este repo:
+  //   python3 build.py
+  //   npx wrangler@4 deploy
   "name": "rackers-web",
   "compatibility_date": "2026-09-01",
   // La cuenta de Cloudflare «racqer-api», la misma que la API.

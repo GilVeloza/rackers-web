@@ -7,7 +7,7 @@ todavía no se publican: la web solo saca las páginas que tienen texto.
 
 Las variantes por país no se escriben dos veces. El inglés británico sale del
 americano, el mexicano del español y el portugués de Portugal del de Brasil,
-con las mismas reglas que usa la app (`tools/loc.py`): así la web dice
+con las mismas reglas que usa la app (`tools/loc.py`, en su repo): así la web dice
 «canchas» donde la app dice «canchas». Lo que una regla no puede saber —los
 precios de cada tienda, sobre todo— se escribe en `PARCHES`.
 
@@ -21,12 +21,20 @@ por URL: la de privacidad es obligatoria y la de soporte también.
 from __future__ import annotations
 
 import importlib.util
+import os
 import re
 import sys
 from pathlib import Path
 
 AQUI = Path(__file__).parent
-sys.path.insert(0, str(AQUI.parent / "tools"))
+# El repo de la app: de ahí salen las capturas, los vídeos y las reglas de las
+# variantes por país. Se busca en `../padelapp`, al lado de este; si está en
+# otro sitio, se dice con RACKERS_APP=/ruta/al/repo.
+APP = Path(os.environ.get("RACKERS_APP", AQUI.parent / "padelapp")).expanduser()
+if not (APP / "tools/loc.py").is_file():
+    sys.exit(f"No encuentro el repo de la app en {APP}: clónalo al lado de este "
+             "o di dónde está con RACKERS_APP=/ruta/al/repo")
+sys.path.insert(0, str(APP / "tools"))
 
 # Qué captura de la app usa cada bloque de funciones.
 CAPTURAS = {

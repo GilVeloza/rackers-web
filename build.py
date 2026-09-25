@@ -4,9 +4,13 @@ Saca una página por idioma en `publico/<idioma>/`, con las capturas de la app
 en ese mismo idioma (las de `design/app-store/idiomas/`, que ya están hechas) y
 los textos de `textos.py`.
 
-    python3 web/build.py             # todos los idiomas que tengan texto
-    python3 web/build.py es-ES en-US # solo esos
-    python3 web/build.py --servir    # los genera y los sirve en localhost:8000
+    python3 build.py             # todos los idiomas que tengan texto
+    python3 build.py es-ES en-US # solo esos
+    python3 build.py --servir    # los genera y los sirve en localhost:8000
+
+Las capturas, el logo, los marcos y los vídeos no están aquí sino en `design/`
+del repo de la app, que es donde se hacen. Se buscan en `../padelapp`, al lado
+de este repo; si está en otro sitio, `RACKERS_APP=/ruta/al/repo python3 build.py`.
 
 Solo usa la librería estándar. Las imágenes se reducen con `sips`, que viene
 con macOS: las capturas de la tienda son de 1320 px de ancho y en la web con
@@ -24,10 +28,11 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
-from textos import CAPTURAS, PASOS, TEXTOS  # noqa: E402
+from textos import APP, CAPTURAS, PASOS, TEXTOS  # noqa: E402
 
 AQUI = Path(__file__).parent
-RAIZ = AQUI.parent
+# El repo de la app, de donde salen las capturas y los vídeos (ver arriba).
+RAIZ = APP
 SALIDA = AQUI / "publico"
 ESTATICO = SALIDA / "static"
 FICHA = RAIZ / "design/app-store/idiomas"
@@ -155,7 +160,7 @@ def preparar_peloteo() -> None:
     cartel = ESTATICO / "peloteo.png"
     if not PELOTEO_ORIGEN.exists():
         sys.exit(f"Falta el peloteo: {PELOTEO_ORIGEN}. "
-                 "Se saca con python3 design/video/peloteo/build.py web")
+                 "Se saca, en el repo de la app, con python3 design/video/peloteo/build.py web")
     hechos = (webm, mp4, cartel)
     if (all(h.exists() for h in hechos)
             and min(h.stat().st_mtime for h in hechos) >= PELOTEO_ORIGEN.stat().st_mtime):
@@ -217,7 +222,7 @@ def preparar_logo() -> None:
     mp4 = ESTATICO / "rackers-logo.mp4"
     if not LOGO_ORIGEN.exists():
         sys.exit(f"Falta el vídeo del logotipo: {LOGO_ORIGEN}. "
-                 "Se saca con python3 design/video/logo/build.py")
+                 "Se saca, en el repo de la app, con python3 design/video/logo/build.py")
     if (webm.exists() and mp4.exists()
             and min(webm.stat().st_mtime, mp4.stat().st_mtime) >= LOGO_ORIGEN.stat().st_mtime):
         return
@@ -1460,7 +1465,7 @@ def main() -> None:
     if faltan:
         sys.exit(f"Sin texto todavía: {', '.join(faltan)}")
     escribir(idiomas)
-    print(f"{len(idiomas)} idiomas en web/publico/")
+    print(f"{len(idiomas)} idiomas en publico/")
     if "--servir" in sys.argv:
         servir()
 
