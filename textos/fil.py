@@ -110,4 +110,6 @@ TEXTO = {
     "footer_idioma": "Wika",
     "footer_legal": ["Privacy", "Mga tuntunin", "Suporta"],
     "footer_nota": "Ginawa para maglaro, hindi para tumitig sa telepono.",
+    "torneo_invitacion": "Inimbitahan ka sa isang torneo",
+    "torneo_pasos": "I-download ang Rackers, pumunta sa Mga torneo, i-tap ang «Gamit ang code» at i-type:",
 }

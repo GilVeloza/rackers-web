@@ -102,4 +102,6 @@ TEXTO = {
     "footer_idioma": "اللغة",
     "footer_legal": ["الخصوصية", "الشروط", "الدعم"],
     "footer_nota": "صُنع لتلعب، لا لتحدّق في هاتفك.",
+    "torneo_invitacion": "دُعيت إلى بطولة",
+    "torneo_pasos": "نزّل Rackers، ثم في البطولات اضغط «بالرمز» واكتب:",
 }

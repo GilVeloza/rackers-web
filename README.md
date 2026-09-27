@@ -117,6 +117,24 @@ local con `--servir`). `build.py` la copia de `idioma.js` tal cual.
 ninguno: en el ordenador se mueve todo y en el móvil nada. El servidor de
 ficheros de Cloudflare no hace caso de los trozos, así que los corta ese Worker.
 
+## Invitaciones a torneos: rackers.app/t/{código}
+
+Es el enlace que manda el organizador desde la app al compartir su torneo. Quien
+tiene Rackers ni ve la página: iOS abre la app directamente en «Apuntarme», con
+el código ya puesto, porque `/.well-known/apple-app-site-association` (lo
+contesta `torneo.js`) dice que `/t/*` es de la app, y la app tiene
+`applinks:rackers.app` en sus permisos. El resto de la web sigue abriéndose en
+Safari.
+
+Quien no la tiene ve el torneo (nombre, deporte, formato, fecha, pista,
+organizador, plazas), el código en grande, cómo apuntarse y el cartel del App
+Store. El torneo sale de la API (`racqer.app/v1/tournaments/code/{código}`, que
+se ve sin cuenta); los textos, de `static/torneo.json`, que escribe `build.py`
+sacando del catálogo de la app lo que ya está traducido allí (formatos,
+«Inscritos», «Organiza…») y de `textos/` lo que es solo de la web
+(`torneo_invitacion` y `torneo_pasos`). Para probarla contra una API en local:
+`npx wrangler@4 dev --var API_TORNEOS:http://127.0.0.1:8787/v1/tournaments/code/`.
+
 ## Publicar
 
 ```sh

@@ -106,4 +106,6 @@ TEXTO = {
     "footer_idioma": "Ngôn ngữ",
     "footer_legal": ["Quyền riêng tư", "Điều khoản", "Hỗ trợ"],
     "footer_nota": "Làm ra để chơi, không phải để nhìn điện thoại.",
+    "torneo_invitacion": "Bạn được mời tham gia một giải đấu",
+    "torneo_pasos": "Tải Rackers, vào Giải đấu, chạm «Bằng mã» rồi nhập:",
 }

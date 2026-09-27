@@ -2,7 +2,7 @@
 
 TEXTO = {
     "legal_volver": "Zurück zur Startseite",
-    "legal_actualizado": "Aktualisiert am 25. September 2026",
+    "legal_actualizado": "Aktualisiert am 27. September 2026",
 
     "privacidad_titulo": "Datenschutz",
     "privacidad_entrada": "Rackers ist zum Spielen gemacht, nicht zum Sammeln von "
@@ -56,6 +56,11 @@ TEXTO = {
             "Wenn du dich mit jemandem verbindest, wird gespeichert, dass ihr "
             "verbunden seid, und die Spiele, die ihr teilt.",
             "Dein @Name ist, wie andere dich finden. Du kannst ihn jederzeit ändern.",
+        ]),
+        ("Turniere", [
+            "Wenn du ein Turnier veröffentlichst, speichern wir seinen Namen, die Sportart, das Format, das Datum, den Ort und den Namen des Veranstalters. Turnierbaum und Ergebnisse bleiben auf deinem iPhone und in deinem Backup.",
+            "Ein öffentliches Turnier sieht jeder unter Turniere › Öffentlich und über seinen Link auf rackers.app, auch ohne Konto. Zu einem privaten kommt nur, wer den Code oder den Link hat.",
+            "Wenn du dich mit deinem Konto anmeldest, sieht der Veranstalter den Namen, mit dem du dich anmeldest, und bekommt eine Mitteilung auf sein iPhone. Du kannst dich jederzeit abmelden, und wenn du jemanden blockierst, werden die Anmeldungen zwischen euch aufgehoben.",
         ]),
         ("Wo es liegt", [
             "Bei Cloudflare, in einer D1-Datenbank. Der Server antwortet nur der App "

@@ -2,7 +2,7 @@
 
 TEXTO = {
     "legal_volver": "Terug naar de startpagina",
-    "legal_actualizado": "Bijgewerkt op 25 september 2026",
+    "legal_actualizado": "Bijgewerkt op 27 september 2026",
 
     "privacidad_titulo": "Privacy",
     "privacidad_entrada": "Rackers is gemaakt om te spelen, niet om gegevens te "
@@ -55,6 +55,11 @@ TEXTO = {
             "Als je je met iemand verbindt, bewaren we dat jullie verbonden zijn en de "
             "wedstrijden die jullie delen.",
             "Je @naam is hoe anderen je vinden. Je kunt hem altijd wijzigen.",
+        ]),
+        ("Toernooien", [
+            "Als je een toernooi publiceert, bewaren we de naam, de sport, het formaat, de datum, de baan en de naam van de organisator. Het schema en de uitslagen blijven op je iPhone en in je back-up.",
+            "Een openbaar toernooi kan iedereen zien bij Toernooien › Openbaar en via de link op rackers.app, ook zonder account. Bij een privétoernooi komt alleen wie de code of de link heeft.",
+            "Als je je met je account inschrijft, ziet de organisator de naam waarmee je je inschrijft en krijgt hij een melding op zijn iPhone. Je kunt je altijd uitschrijven, en als je iemand blokkeert, vervallen de inschrijvingen tussen jullie.",
         ]),
         ("Waar het staat", [
             "Bij Cloudflare, in een D1-database. De server antwoordt alleen de app en "

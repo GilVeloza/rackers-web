@@ -106,4 +106,6 @@ TEXTO = {
     "footer_idioma": "Dil",
     "footer_legal": ["Gizlilik", "Koşullar", "Destek"],
     "footer_nota": "Oynamak için yapıldı, telefona bakmak için değil.",
+    "torneo_invitacion": "Bir turnuvaya davet edildin",
+    "torneo_pasos": "Rackers'ı indir, Turnuvalar'da «Kodla» düğmesine dokun ve şunu yaz:",
 }

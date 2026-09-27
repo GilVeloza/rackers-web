@@ -8,7 +8,7 @@ Si eso cambia en la app o en el servidor, esto cambia también.
 
 TEXTO = {
     "legal_volver": "Natrag na naslovnicu",
-    "legal_actualizado": "Ažurirano 25. rujna 2026.",
+    "legal_actualizado": "Ažurirano 27. rujna 2026.",
 
     # --- Privacidad ---------------------------------------------------------
     "privacidad_titulo": "Privatnost",
@@ -60,6 +60,11 @@ TEXTO = {
             "Ako se povežeš s nekim, sprema se da ste povezani i mečevi koje dijelite.",
             "Tvoje @ime je način na koji te drugi pronalaze. Možeš ga promijeniti kad "
             "god hoćeš.",
+        ]),
+        ("Turniri", [
+            "Ako objaviš turnir, spremamo njegov naziv, sport, format, datum, teren i ime organizatora. Ždrijeb i rezultati ostaju na tvom iPhoneu i u tvojoj sigurnosnoj kopiji.",
+            "Javni turnir može vidjeti bilo tko u Turniri › Javni i na njegovoj poveznici na rackers.app, i bez računa. Do privatnog dolazi samo onaj tko ima kod ili poveznicu.",
+            "Ako se prijaviš sa svojim računom, organizator vidi ime s kojim si se prijavio/la i dobiva obavijest na iPhone. Možeš se odjaviti kad god želiš, a blokiranjem nekoga poništavaju se prijave između vas dvoje.",
         ]),
         ("Gdje se sprema", [
             "Na Cloudflareu, u bazi podataka D1. Poslužitelj odgovara samo aplikaciji i "

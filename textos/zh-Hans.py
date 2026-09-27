@@ -95,4 +95,6 @@ TEXTO = {
     "footer_idioma": "语言",
     "footer_legal": ["隐私", "条款", "支持"],
     "footer_nota": "是拿来打球的，不是拿来盯手机的。",
+    "torneo_invitacion": "你受邀参加一场赛事",
+    "torneo_pasos": "下载 Rackers，在“赛事”中点按“用代码报名”，然后输入：",
 }

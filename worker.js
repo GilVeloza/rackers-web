@@ -6,9 +6,12 @@
 //   /soporte/—, que mandan a cada uno a su idioma con lo que solo sabe el
 //   servidor: el país desde el que entra (ver idioma.js).
 // - Los vídeos, para contestar a los trozos (ver rangos.js).
+// - Las invitaciones a un torneo, rackers.app/t/{código}, y el archivo que le
+//   dice a iOS que esos enlaces abren la app (ver torneo.js).
 
 import { elegirIdioma, idiomasPedidos } from './idioma.js';
 import { trozo } from './rangos.js';
+import { RUTA_TORNEO, asociacion, paginaTorneo } from './torneo.js';
 
 // Con su nombre en inglés también, que son los que van en App Store Connect
 // (ver PAGINAS_EN_INGLES en build.py).
@@ -21,6 +24,9 @@ const ENTRADAS = {
 export default {
   async fetch(peticion, env) {
     const url = new URL(peticion.url);
+    if (url.pathname === '/.well-known/apple-app-site-association') return asociacion();
+    const torneo = RUTA_TORNEO.exec(url.pathname);
+    if (torneo) return paginaTorneo(peticion, env, url, torneo[1]);
     if (Object.hasOwn(ENTRADAS, url.pathname)) {
       const salto = await entrada(peticion, env, url, ENTRADAS[url.pathname]);
       if (salto) return salto;

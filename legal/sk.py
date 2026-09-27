@@ -8,7 +8,7 @@ Si eso cambia en la app o en el servidor, esto cambia también.
 
 TEXTO = {
     "legal_volver": "Späť na úvod",
-    "legal_actualizado": "Aktualizované 25. septembra 2026",
+    "legal_actualizado": "Aktualizované 27. septembra 2026",
 
     # --- Privacidad ---------------------------------------------------------
     "privacidad_titulo": "Súkromie",
@@ -62,6 +62,11 @@ TEXTO = {
             "zdieľate.",
             "Tvoje @meno je to, podľa čoho ťa ostatní nájdu. Môžeš ho kedykoľvek "
             "zmeniť.",
+        ]),
+        ("Turnaje", [
+            "Keď zverejníš turnaj, uložíme jeho názov, šport, formát, dátum, kurt a meno organizátora. Pavúk a výsledky zostávajú v tvojom iPhone a v tvojej zálohe.",
+            "Verejný turnaj uvidí ktokoľvek v Turnaje › Verejné a na jeho odkaze na rackers.app, aj bez účtu. K súkromnému sa dostane len ten, kto má kód alebo odkaz.",
+            "Keď sa prihlásiš zo svojho účtu, organizátor uvidí meno, pod ktorým si sa prihlásil(a), a dostane upozornenie na iPhone. Odhlásiť sa môžeš kedykoľvek a zablokovaním niekoho sa prihlášky medzi vami zrušia.",
         ]),
         ("Kde sa to ukladá", [
             "V Cloudflare, v databáze D1. Server odpovedá len appke a ukladá to, čo mu "

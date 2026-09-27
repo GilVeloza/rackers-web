@@ -2,7 +2,7 @@
 
 TEXTO = {
     "legal_volver": "Voltar para a página inicial",
-    "legal_actualizado": "Atualizado em 25 de setembro de 2026",
+    "legal_actualizado": "Atualizado em 27 de setembro de 2026",
 
     "privacidad_titulo": "Privacidade",
     "privacidad_entrada": "O Rackers foi feito para jogar, não para coletar dados. Aqui "
@@ -53,6 +53,11 @@ TEXTO = {
             "Se você se conectar com alguém, guardamos que vocês estão conectados e as "
             "partidas que compartilham.",
             "Seu @nome é como os outros te encontram. Dá para mudar quando quiser.",
+        ]),
+        ("Torneios", [
+            "Se você publica um torneio, guardamos o nome, o esporte, o formato, a data, a quadra e o nome de quem organiza. A chave e os resultados ficam no seu iPhone e no seu backup.",
+            "Um torneio público pode ser visto por qualquer pessoa em Torneios › Públicos e no link dele em rackers.app, mesmo sem conta. A um privado só chega quem tem o código ou o link.",
+            "Se você se inscreve pela sua conta, quem organiza vê o nome com que você se inscreveu e recebe uma notificação no iPhone. Você pode sair quando quiser, e bloquear alguém desfaz as inscrições entre vocês dois.",
         ]),
         ("Onde fica guardado", [
             "Na Cloudflare, num banco de dados D1. O servidor só responde ao app e só "

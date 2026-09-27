@@ -2,7 +2,7 @@
 
 TEXTO = {
     "legal_volver": "Back to the home page",
-    "legal_actualizado": "Updated September 25, 2026",
+    "legal_actualizado": "Updated September 27, 2026",
 
     "privacidad_titulo": "Privacy",
     "privacidad_entrada": "Rackers was made for playing, not for collecting data. "
@@ -54,6 +54,11 @@ TEXTO = {
             "If you link up with someone, we store that you are linked and the matches "
             "you share.",
             "Your @name is how others find you. You can change it whenever you like.",
+        ]),
+        ("Tournaments", [
+            "If you publish a tournament, we store its name, sport, format, date, venue and the organizer's name. The draw and the results stay on your iPhone and in your backup.",
+            "Anyone can see a public tournament in Tournaments › Public and at its rackers.app link, even without an account. Only people with its code or its link can reach a private one.",
+            "If you sign up from your account, the organizer sees the name you signed up with and gets a notification on their iPhone. You can leave whenever you want, and blocking someone removes any sign-ups between the two of you.",
         ]),
         ("Where it is stored", [
             "On Cloudflare, in a D1 database. The server only answers the app and only "

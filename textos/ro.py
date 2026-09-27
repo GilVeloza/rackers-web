@@ -106,4 +106,6 @@ TEXTO = {
     "footer_idioma": "Limbă",
     "footer_legal": ["Confidențialitate", "Termeni", "Asistență"],
     "footer_nota": "Făcută ca să joci, nu ca să te uiți în telefon.",
+    "torneo_invitacion": "Ești invitat la un turneu",
+    "torneo_pasos": "Descarcă Rackers, intră în Turnee, atinge «Cu cod» și scrie:",
 }

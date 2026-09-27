@@ -115,4 +115,6 @@ TEXTO = {
     "footer_idioma": "Kieli",
     "footer_legal": ["Tietosuoja", "Ehdot", "Tuki"],
     "footer_nota": "Tehty pelaamiseen, ei puhelimen tuijottamiseen.",
+    "torneo_invitacion": "Sinut on kutsuttu turnaukseen",
+    "torneo_pasos": "Lataa Rackers, avaa Turnaukset, napauta «Koodilla» ja kirjoita:",
 }

@@ -105,4 +105,6 @@ TEXTO = {
     "footer_idioma": "Język",
     "footer_legal": ["Prywatność", "Warunki", "Pomoc"],
     "footer_nota": "Zrobione do grania, nie do gapienia się w telefon.",
+    "torneo_invitacion": "Zaproszenie na turniej",
+    "torneo_pasos": "Pobierz Rackers, wejdź w Turnieje, dotknij «Z kodem» i wpisz:",
 }

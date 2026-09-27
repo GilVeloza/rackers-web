@@ -2,7 +2,7 @@
 
 TEXTO = {
     "legal_volver": 'Ana sayfaya dön',
-    "legal_actualizado": "25 Eylül 2026'da güncellendi",
+    "legal_actualizado": "27 Eylül 2026'da güncellendi",
 
     "privacidad_titulo": 'Gizlilik',
     "privacidad_entrada": 'Rackers oynamak için yapıldı, veri toplamak için değil. Burada açıkça yazıyor: ne saklanıyor, nerede ve nasıl silinir.',
@@ -35,6 +35,11 @@ TEXTO = {
         ('Arkadaşlar ve aile', [
             'Biriyle bağlanırsan, bağlı olduğunuz ve paylaştığınız maçlar saklanır.',
             '@adın, başkalarının seni bulma şeklidir. İstediğin zaman değiştirebilirsin.',
+        ]),
+        ("Turnuvalar", [
+            "Bir turnuva yayımlarsan adını, sporu, formatı, tarihi, sahayı ve düzenleyenin adını saklarız. Tablo ve sonuçlar iPhone'unda ve yedeğinde kalır.",
+            "Herkese açık bir turnuvayı, hesabı olmasa bile herkes Turnuvalar › Herkese açık bölümünde ve rackers.app bağlantısında görebilir. Gizli bir turnuvaya yalnızca kodu ya da bağlantısı olan ulaşır.",
+            "Hesabınla kaydolursan düzenleyen, kaydolduğun adı görür ve iPhone'una bildirim gelir. İstediğin zaman kaydını silebilirsin; birini engellediğinde aranızdaki kayıtlar kaldırılır.",
         ]),
         ('Nerede saklanıyor', [
             "Cloudflare'de, bir D1 veritabanında. Sunucu yalnızca uygulamaya yanıt verir ve yalnızca uygulamanın gönderdiğini tutar.",

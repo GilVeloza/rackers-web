@@ -114,4 +114,6 @@ TEXTO = {
     "footer_idioma": "Idioma",
     "footer_legal": ["Privacitat", "Condicions", "Suport"],
     "footer_nota": "Fet per jugar, no per mirar el mòbil.",
+    "torneo_invitacion": "T'han convidat a un torneig",
+    "torneo_pasos": "Baixa't Rackers i, a Tornejos, toca «Amb codi» i escriu:",
 }

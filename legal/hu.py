@@ -2,7 +2,7 @@
 
 TEXTO = {
     "legal_volver": 'Vissza a főoldalra',
-    "legal_actualizado": 'Frissítve: 2026. szeptember 25.',
+    "legal_actualizado": 'Frissítve: 2026. szeptember 27.',
 
     "privacidad_titulo": 'Adatvédelem',
     "privacidad_entrada": 'A Rackers játékra készült, nem adatgyűjtésre. Itt világosan olvasható, mi tárolódik, hol, és hogyan törölhető.',
@@ -35,6 +35,11 @@ TEXTO = {
         ('Barátok és család', [
             'Ha összekapcsolódsz valakivel, eltárolódik, hogy kapcsolatban vagytok, és a közösen játszott meccsek.',
             'A @neved az, ahogyan mások megtalálnak. Bármikor megváltoztathatod.',
+        ]),
+        ("Versenyek", [
+            "Ha közzéteszel egy versenyt, elmentjük a nevét, a sportágat, a formátumot, a dátumot, a pályát és a szervező nevét. A tábla és az eredmények az iPhone-odon és a mentésedben maradnak.",
+            "Egy nyilvános versenyt bárki láthat a Versenyek › Nyilvános részben és a rackers.app-os linkjén, fiók nélkül is. Egy priváthoz csak az jut el, akinél megvan a kódja vagy a linkje.",
+            "Ha a fiókodból nevezel, a szervező látja a nevet, amellyel neveztél, és értesítést kap az iPhone-jára. Bármikor visszaléphetsz, és ha letiltasz valakit, a köztetek lévő nevezések törlődnek.",
         ]),
         ('Hol tárolódik', [
             'A Cloudflare-nél, egy D1 adatbázisban. A szerver csak az alkalmazásnak válaszol, és csak azt őrzi meg, amit az alkalmazás küld neki.',

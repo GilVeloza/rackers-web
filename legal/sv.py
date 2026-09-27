@@ -2,7 +2,7 @@
 
 TEXTO = {
     "legal_volver": "Tillbaka till startsidan",
-    "legal_actualizado": "Uppdaterad 25 september 2026",
+    "legal_actualizado": "Uppdaterad 27 september 2026",
 
     "privacidad_titulo": "Integritet",
     "privacidad_entrada": "Rackers är gjord för att spela, inte för att samla data. Här "
@@ -54,6 +54,11 @@ TEXTO = {
             "Om du länkar ihop dig med någon sparas att ni är länkade och matcherna ni "
             "delar.",
             "Ditt @namn är hur andra hittar dig. Du kan ändra det när du vill.",
+        ]),
+        ("Turneringar", [
+            "Om du publicerar en turnering sparar vi namnet, sporten, formatet, datumet, banan och arrangörens namn. Lottningen och resultaten stannar på din iPhone och i din säkerhetskopia.",
+            "En offentlig turnering kan vem som helst se under Turneringar › Offentliga och via dess länk på rackers.app, även utan konto. En privat når bara den som har koden eller länken.",
+            "Om du anmäler dig med ditt konto ser arrangören namnet du anmälde dig med och får en notis på sin iPhone. Du kan avanmäla dig när du vill, och om du blockerar någon tas anmälningarna mellan er bort.",
         ]),
         ("Var det sparas", [
             "Hos Cloudflare, i en D1-databas. Servern svarar bara appen och behåller bara "

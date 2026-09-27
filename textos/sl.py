@@ -114,4 +114,6 @@ TEXTO = {
     "footer_idioma": "Jezik",
     "footer_legal": ["Zasebnost", "Pogoji", "Podpora"],
     "footer_nota": "Narejeno za igro, ne za gledanje v telefon.",
+    "torneo_invitacion": "Povabilo na turnir",
+    "torneo_pasos": "Prenesi Rackers, v Turnirjih tapni «S kodo» in vpiši:",
 }

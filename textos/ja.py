@@ -105,4 +105,6 @@ TEXTO = {
     "footer_idioma": "言語",
     "footer_legal": ["プライバシー", "利用規約", "サポート"],
     "footer_nota": "スマホを見るためではなく、プレーするために。",
+    "torneo_invitacion": "大会に招待されています",
+    "torneo_pasos": "Rackersをダウンロードして、大会で「コードで参加」をタップし、次のコードを入力してください：",
 }

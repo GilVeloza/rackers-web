@@ -96,4 +96,6 @@ TEXTO = {
     "footer_idioma": "語言",
     "footer_legal": ["隱私", "條款", "支援"],
     "footer_nota": "是拿來打球的，不是拿來盯手機的。",
+    "torneo_invitacion": "你受邀參加一場賽事",
+    "torneo_pasos": "下載 Rackers，在「賽事」中點一下「用代碼報名」，然後輸入：",
 }

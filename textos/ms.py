@@ -120,4 +120,6 @@ TEXTO = {
     "footer_idioma": "Bahasa",
     "footer_legal": ["Privasi", "Terma", "Sokongan"],
     "footer_nota": "Dibuat untuk bermain, bukan untuk melihat telefon.",
+    "torneo_invitacion": "Anda dijemput ke sebuah kejohanan",
+    "torneo_pasos": "Muat turun Rackers, pergi ke Kejohanan, ketik «Guna kod» dan taip:",
 }

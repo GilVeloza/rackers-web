@@ -8,7 +8,7 @@ Si eso cambia en la app o en el servidor, esto cambia también.
 
 TEXTO = {
     "legal_volver": "Tilbage til forsiden",
-    "legal_actualizado": "Opdateret 25. september 2026",
+    "legal_actualizado": "Opdateret 27. september 2026",
 
     # --- Privacidad ---------------------------------------------------------
     "privacidad_titulo": "Privatliv",
@@ -61,6 +61,11 @@ TEXTO = {
             "Hvis du forbinder dig med nogen, gemmes det, at I er forbundet, og de "
             "kampe I deler.",
             "Dit @navn er sådan, andre finder dig. Du kan ændre det når som helst.",
+        ]),
+        ("Turneringer", [
+            "Hvis du offentliggør en turnering, gemmer vi navnet, sporten, formatet, datoen, banen og arrangørens navn. Programmet og resultaterne bliver på din iPhone og i din sikkerhedskopi.",
+            "En offentlig turnering kan alle se under Turneringer › Offentlige og via dens link på rackers.app, også uden konto. En privat kan kun nås af dem, der har koden eller linket.",
+            "Hvis du tilmelder dig med din konto, ser arrangøren det navn, du tilmelder dig med, og får en notifikation på sin iPhone. Du kan afmelde dig, når du vil, og hvis du blokerer nogen, fjernes tilmeldingerne mellem jer.",
         ]),
         ("Hvor det gemmes", [
             "Hos Cloudflare, i en D1-database. Serveren svarer kun appen og gemmer det, "

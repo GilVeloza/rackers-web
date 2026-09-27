@@ -110,4 +110,6 @@ TEXTO = {
     "footer_idioma": "Taal",
     "footer_legal": ["Privacy", "Voorwaarden", "Support"],
     "footer_nota": "Gemaakt om te spelen, niet om naar je telefoon te staren.",
+    "torneo_invitacion": "Je bent uitgenodigd voor een toernooi",
+    "torneo_pasos": "Download Rackers, ga naar Toernooien, tik op «Met code» en typ:",
 }

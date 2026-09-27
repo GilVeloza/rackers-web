@@ -114,4 +114,6 @@ TEXTO = {
     "footer_idioma": "Sprog",
     "footer_legal": ["Privatliv", "Betingelser", "Support"],
     "footer_nota": "Lavet til at spille, ikke til at kigge på telefonen.",
+    "torneo_invitacion": "Du er inviteret til en turnering",
+    "torneo_pasos": "Hent Rackers, gå til Turneringer, tryk på «Med kode», og skriv:",
 }

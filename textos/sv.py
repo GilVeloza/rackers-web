@@ -105,4 +105,6 @@ TEXTO = {
     "footer_idioma": "Språk",
     "footer_legal": ["Integritet", "Villkor", "Support"],
     "footer_nota": "Gjord för att spela, inte för att glo på mobilen.",
+    "torneo_invitacion": "Du är inbjuden till en turnering",
+    "torneo_pasos": "Ladda ned Rackers, gå till Turneringar, tryck på «Med kod» och skriv:",
 }

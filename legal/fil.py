@@ -2,7 +2,7 @@
 
 TEXTO = {
     "legal_volver": 'Bumalik sa home',
-    "legal_actualizado": 'Na-update noong 25 Setyembre 2026',
+    "legal_actualizado": 'Na-update noong 27 Setyembre 2026',
 
     "privacidad_titulo": 'Privacy',
     "privacidad_entrada": 'Ginawa ang Rackers para maglaro, hindi para mangolekta ng datos. Nakasulat dito nang malinaw kung ano ang naiimbak, saan, at paano ito buburahin.',
@@ -35,6 +35,11 @@ TEXTO = {
         ('Mga kaibigan at pamilya', [
             'Kung mag-uugnay ka sa isang tao, naiimbak na magkaugnay kayo at ang mga labang pinagsasaluhan ninyo.',
             'Ang @pangalan mo ang paraan para matagpuan ka ng iba. Puwedeng palitan anumang oras.',
+        ]),
+        ("Mga torneo", [
+            "Kapag naglathala ka ng torneo, sine-save namin ang pangalan nito, ang sport, ang format, ang petsa, ang court at ang pangalan ng organizer. Ang bracket at mga resulta ay nananatili sa iPhone mo at sa backup mo.",
+            "Nakikita ng kahit sino ang pampublikong torneo sa Mga torneo › Pampubliko at sa link nito sa rackers.app, kahit walang account. Sa pribadong torneo, ang may code o link lang ang makakapasok.",
+            "Kapag sumali ka mula sa account mo, nakikita ng organizer ang pangalang ginamit mo sa pagsali at nakakatanggap siya ng notification sa iPhone niya. Puwede kang umalis kahit kailan, at kapag nag-block ka ng isang tao, nabubura ang mga pagsali sa pagitan ninyong dalawa.",
         ]),
         ('Saan naiimbak', [
             'Sa Cloudflare, sa isang D1 database. Sa app lang sumasagot ang server at ang ipinadala lang ng app ang hawak nito.',

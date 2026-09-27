@@ -8,7 +8,7 @@ Si eso cambia en la app o en el servidor, esto cambia también.
 
 TEXTO = {
     "legal_volver": "Takaisin etusivulle",
-    "legal_actualizado": "Päivitetty 25. syyskuuta 2026",
+    "legal_actualizado": "Päivitetty 27. syyskuuta 2026",
 
     # --- Privacidad ---------------------------------------------------------
     "privacidad_titulo": "Tietosuoja",
@@ -64,6 +64,11 @@ TEXTO = {
             "ja jaetut ottelut.",
             "@nimesi on se, jolla muut löytävät sinut. Voit vaihtaa sen milloin "
             "tahansa.",
+        ]),
+        ("Turnaukset", [
+            "Jos julkaiset turnauksen, tallennamme sen nimen, lajin, muodon, päivämäärän, kentän ja järjestäjän nimen. Kaavio ja tulokset pysyvät iPhonessasi ja varmuuskopiossasi.",
+            "Julkisen turnauksen näkee kuka tahansa kohdassa Turnaukset › Julkiset ja sen rackers.app-linkistä, myös ilman tiliä. Yksityiseen pääsee vain se, jolla on koodi tai linkki.",
+            "Jos ilmoittaudut tililläsi, järjestäjä näkee nimen, jolla ilmoittauduit, ja saa ilmoituksen iPhoneensa. Voit perua ilmoittautumisen milloin haluat, ja jonkun estäminen poistaa ilmoittautumiset välillänne.",
         ]),
         ("Missä se säilytetään", [
             "Cloudflaressa, D1-tietokannassa. Palvelin vastaa vain sovellukselle ja "

@@ -738,6 +738,22 @@ body {
 }
 
 img { display: block; max-width: 100%; height: auto; }
+
+/* rackers.app/t/{código}: la invitación a un torneo (la pinta torneo.js). */
+.invitacion { max-width: 560px; margin: 0 auto; padding: 36px 22px 64px; }
+.invitacion .marca { display: inline-block; margin-bottom: 44px; }
+.invitacion .antetitulo { color: var(--lima); font-weight: 700; font-size: 15px; letter-spacing: .02em; }
+.invitacion h1 { font-size: clamp(34px, 8vw, 50px); line-height: 1.05; letter-spacing: -.02em; margin: 8px 0 10px; }
+.invitacion .tipo { color: var(--apagado); font-weight: 600; }
+.invitacion .datos { list-style: none; margin: 26px 0; padding: 18px 20px; border-radius: var(--radio);
+  background: var(--superficie); border: 1px solid var(--borde); display: grid; gap: 8px; }
+.invitacion .datos li { display: flex; align-items: center; gap: 12px; }
+.invitacion .datos svg { flex: none; color: var(--lima); }
+.invitacion .verificado { color: var(--lima); font-weight: 800; }
+.invitacion .pasos { color: var(--apagado); margin-bottom: 10px; }
+.invitacion .codigo { font-size: clamp(40px, 12vw, 58px); font-weight: 800; letter-spacing: .18em;
+  color: var(--crema); text-shadow: 0 0 36px rgba(182, 242, 78, .35); margin: 4px 0 26px; }
+.invitacion .pasos a { color: var(--lima); }
 a { color: inherit; text-decoration: none; }
 
 h1, h2, h3 { line-height: 1.04; letter-spacing: -.03em; font-weight: 800; }
@@ -1434,7 +1450,63 @@ def escribir(idiomas: list[str]) -> None:
     for nombre, slug in PAGINAS_EN_INGLES.items():
         (SALIDA / nombre).mkdir(parents=True, exist_ok=True)
         (SALIDA / nombre / "index.html").write_text(portada(slug), encoding="utf-8")
+    datos_torneo()
 
+
+
+# Lo que torneo.js necesita para pintar rackers.app/t/{código} en cada idioma.
+# Casi todo sale del catálogo de la app, que ya lo tiene traducido: así la web
+# llama a las cosas igual que la app. Lo que es solo de la web (la invitación y
+# los pasos) va en textos/, con el resto de la web.
+FORMATOS_API = {"roundRobin": "Liguilla", "knockout": "Eliminatoria", "americano": "Americano",
+                "mexicano": "Mexicano", "kingOfTheCourt": "Rey de la Pista"}
+DEPORTES_API = ["padel", "tennis", "pickleball", "squash", "tableTennis", "badminton"]
+
+
+def _catalogo(parte: str) -> dict:
+    ruta = {"app": RAIZ / "Padelapp/Padelapp/Localizable.xcstrings",
+            "core": RAIZ / "PadelCore/Sources/PadelCore/Localizable.xcstrings"}[parte]
+    return json.loads(ruta.read_text(encoding="utf-8"))["strings"]
+
+
+def _de_la_app(catalogo: dict, clave: str, idioma: str) -> str:
+    """El texto de la app en el idioma de la web: es-ES y es-MX son «es», en-US es «en»…"""
+    traducciones = catalogo.get(clave, {}).get("localizations", {})
+    for codigo in (idioma, idioma.split("-")[0]):
+        valor = traducciones.get(codigo, {}).get("stringUnit", {}).get("value")
+        if valor:
+            return valor
+    return clave
+
+
+def datos_torneo() -> None:
+    app, core = _catalogo("app"), _catalogo("core")
+    idiomas = {}
+    for idioma, t in TEXTOS.items():
+        if "torneo_invitacion" not in t:
+            continue
+        de_app = lambda clave: _de_la_app(app, clave, idioma)
+        de_core = lambda clave: _de_la_app(core, clave, idioma)
+        idiomas[idioma] = {
+            "dir": "rtl" if idioma in RTL else "ltr",
+            "descripcion": t["descripcion"],
+            "invitacion": t["torneo_invitacion"],
+            "pasos": t["torneo_pasos"],
+            "organiza": de_app("Organiza %@").replace("%@", "{nombre}"),
+            "inscritos": de_app("Inscritos"),
+            "codigo": de_app("El código del torneo"),
+            "no_existe": de_app("No hay ningún torneo con ese código."),
+            "cerrado": de_app("La inscripción ya está cerrada: el torneo ha empezado."),
+            "publico": de_core("Público"),
+            "privado": de_core("Privado"),
+            "deportes": dict(zip(DEPORTES_API, t["deportes"])),
+            "formatos": {api: de_core(clave) for api, clave in FORMATOS_API.items()},
+            # El mismo cartel que el resto de la web: «Pronto» hasta que la app se publique.
+            "boton": boton(t["pronto"]),
+        }
+    (ESTATICO / "torneo.json").write_text(
+        json.dumps({"css": f"/static/rackers.css?v={VERSION_CSS}", "idiomas": idiomas}, ensure_ascii=False),
+        encoding="utf-8")
 
 class ConRangos(http.server.SimpleHTTPRequestHandler):
     """El de la biblioteca estándar sirve el archivo entero y nada más.

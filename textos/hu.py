@@ -107,4 +107,6 @@ TEXTO = {
     "footer_idioma": "Nyelv",
     "footer_legal": ["Adatvédelem", "Feltételek", "Támogatás"],
     "footer_nota": "Játékra készült, nem telefonbámulásra.",
+    "torneo_invitacion": "Meghívást kaptál egy versenyre",
+    "torneo_pasos": "Töltsd le a Rackerst, a Versenyek résznél koppints a «Kóddal» gombra, és írd be:",
 }

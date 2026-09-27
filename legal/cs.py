@@ -2,7 +2,7 @@
 
 TEXTO = {
     "legal_volver": 'Zpět na úvodní stránku',
-    "legal_actualizado": 'Aktualizováno 25. září 2026',
+    "legal_actualizado": 'Aktualizováno 27. září 2026',
 
     "privacidad_titulo": 'Soukromí',
     "privacidad_entrada": 'Rackers vznikl na hraní, ne na sbírání dat. Tady je jasně, co se ukládá, kde a jak to smazat.',
@@ -35,6 +35,11 @@ TEXTO = {
         ('Přátelé a rodina', [
             'Když se s někým propojíš, uloží se, že jste propojení, a zápasy, které sdílíte.',
             'Tvé @jméno je to, podle čeho tě ostatní najdou. Můžeš ho kdykoli změnit.',
+        ]),
+        ("Turnaje", [
+            "Když zveřejníš turnaj, uložíme jeho název, sport, formát, datum, kurt a jméno pořadatele. Pavouk a výsledky zůstávají ve tvém iPhonu a ve tvé záloze.",
+            "Veřejný turnaj uvidí kdokoli v Turnaje › Veřejné a na jeho odkazu na rackers.app, i bez účtu. K soukromému se dostane jen ten, kdo má kód nebo odkaz.",
+            "Když se přihlásíš ze svého účtu, pořadatel uvidí jméno, pod kterým ses přihlásil(a), a dostane upozornění na iPhone. Odhlásit se můžeš kdykoli a zablokováním někoho se přihlášky mezi vámi zruší.",
         ]),
         ('Kde to leží', [
             'U Cloudflare, v databázi D1. Server odpovídá jen aplikaci a drží jen to, co mu aplikace pošle.',
