@@ -95,9 +95,7 @@ TEXTO = {
          "Ja. Deine Matches, Statistiken und Turniere gehören dir und liegen auf deinem iPhone. "
          "Daten brauchst du nur für öffentliche Turniere und für die Videoanalyse."),
         ("Was passiert mit meinen Health-Daten?",
-         "Sie bleiben auf deinem iPhone. Die App liest sie, um dir deine Form von heute zu "
-         "sagen, und schickt sie nirgendwohin. Vom Video gehen nur ein paar Einzelbilder zur "
-         "Analyse; das Video selbst bleibt bei dir."),
+         "Sie bleiben auf deinem iPhone. Die App liest sie, um dir deine Form von heute zu sagen, und schickt sie nirgendwohin. Vom Video gehen nur ein paar Einzelbilder zur Analyse; das Video selbst bleibt bei dir. In dein Konto kommen nur ein paar Sekunden ohne Ton zu jeder Verbesserung, damit du sie auf einem anderen iPhone siehst."),
         ("Geht das auch im Doppel und mit Freunden?",
          "Ja. Du speicherst deine Stammleute einmal und wählst sie bei jedem Match oder Turnier "
          "aus. Wenn sie ihr Profil verknüpfen, landen ihre Matches in ihrer eigenen App."),

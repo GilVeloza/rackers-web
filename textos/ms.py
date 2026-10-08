@@ -104,10 +104,7 @@ TEXTO = {
          "iPhone anda. Data hanya diperlukan untuk kejohanan awam dan untuk analisis "
          "video."),
         ("Bagaimana dengan data Kesihatan saya?",
-         "Ia kekal dalam iPhone anda. Aplikasi membacanya untuk memberitahu keadaan "
-         "anda hari ini dan tidak menghantarnya ke mana-mana. Dari video, hanya "
-         "beberapa gambar berasingan dihantar untuk analisis; video penuh kekal dengan "
-         "anda."),
+         "Ia kekal dalam iPhone anda. Aplikasi membacanya untuk memberitahu keadaan anda hari ini dan tidak menghantarnya ke mana-mana. Dari video, hanya beberapa gambar berasingan dihantar untuk analisis; video penuh kekal dengan anda. Ke akaun anda hanya pergi beberapa saat tanpa bunyi daripada setiap penambahbaikan, supaya anda boleh melihatnya pada iPhone lain."),
         ("Sesuaikah untuk beregu dan bermain dengan kawan?",
          "Ya. Anda simpan rakan tetap sekali sahaja dan pilih mereka dalam setiap "
          "perlawanan atau kejohanan. Jika mereka memautkan profil, mereka menerima "

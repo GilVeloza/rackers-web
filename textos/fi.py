@@ -100,9 +100,7 @@ TEXTO = {
          "Kyllä. Ottelu, tilastot ja turnaukset ovat sinun ja asuvat iPhonessasi. "
          "Dataa tarvitaan vain julkisiin turnauksiin ja videoanalyysiin."),
         ("Entä Terveys-tietoni?",
-         "Ne jäävät iPhoneesi. Sovellus lukee ne kertoakseen kuntosi tänään eikä lähetä "
-         "niitä minnekään. Videosta lähtee vain muutama yksittäinen kuva analyysiin; "
-         "koko video jää sinulle."),
+         "Ne jäävät iPhoneesi. Sovellus lukee ne kertoakseen kuntosi tänään eikä lähetä niitä minnekään. Videosta lähtee vain muutama yksittäinen kuva analyysiin; koko video jää sinulle. Tilillesi tallentuu vain muutama äänetön sekunti jokaisesta parannettavasta asiasta, jotta näet ne toisellakin iPhonella."),
         ("Käykö se nelinpeliin ja kavereiden kanssa pelaamiseen?",
          "Kyllä. Tallennat vakikaverit kerran ja valitset heidät joka otteluun tai "
          "turnaukseen. Jos he liittävät profiilinsa, he saavat ottelunsa omaan "

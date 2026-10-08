@@ -93,9 +93,7 @@ TEXTO = {
          "Igen. A meccsek, a statisztikák és a tornák a tieid, és az iPhone-odon élnek. Net csak "
          "a nyilvános tornákhoz és a videóelemzéshez kell."),
         ("Mi lesz az egészségadataimmal?",
-         "Az iPhone-odon maradnak. Az app elolvassa őket, hogy megmondja, hogy állsz ma, és "
-         "sehová nem küldi tovább. A videóból csak néhány állókép megy el az elemzéshez; maga a "
-         "videó nálad marad."),
+         "Az iPhone-odon maradnak. Az app elolvassa őket, hogy megmondja, hogy állsz ma, és sehová nem küldi tovább. A videóból csak néhány állókép megy el az elemzéshez; maga a videó nálad marad. A fiókodba csak néhány hang nélküli másodperc kerül minden javítandó pontból, hogy egy másik iPhone-on is lásd."),
         ("Jó párosra és baráti játékra is?",
          "Igen. A törzstársaságot egyszer mented el, és minden meccsnél vagy tornánál "
          "kiválasztod őket. Ha összekötik a profiljukat, a meccsek megérkeznek a saját appjukba."),

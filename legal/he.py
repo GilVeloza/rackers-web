@@ -2,13 +2,14 @@
 
 Lo que dice aquí tiene que casar con lo que hace el código: la copia de
 seguridad sube partidos (con el pulso que midió el reloj), la salud de «Cómo
-llegas hoy» no sale del iPhone y del vídeo del entrenador no se guarda nada.
+llegas hoy» no sale del iPhone y del vídeo del entrenador solo se guardan
+unos segundos sin sonido de cada mejora, que se borran con su análisis.
 Si eso cambia en la app o en el servidor, esto cambia también.
 """
 
 TEXTO = {
     "legal_volver": "חזרה לדף הראשי",
-    "legal_actualizado": "עודכן ב‑27 בספטמבר 2026",
+    "legal_actualizado": "עודכן ב‑8 באוקטובר 2026",
 
     # --- Privacidad ---------------------------------------------------------
     "privacidad_titulo": "פרטיות",
@@ -42,7 +43,7 @@ TEXTO = {
         ("המאמן עם AI", [
             "כשמבקשים ניתוח, האפליקציה מוציאה פריימים מהסרטון ושולחת אותם ל‑OpenAI דרך "
             "השרת שלנו, שמחזיר את הדוח.",
-            "מהסרטון לא נשמר כלום בשרת. הדוח חוזר לאפליקציה ונשאר בעותק שלכם.",
+            "מהסרטון המלא לא נשמר כלום בשרת. הדוח חוזר לאפליקציה ונשאר בעותק שלכם, יחד עם כמה שניות בלי קול מכל שיפור, כדי שתוכלו לראות אותן גם ב-iPhone אחר. הן נמחקות כשמוחקים את הניתוח או את החשבון.",
             "כן נשאר רישום של כמה ניתוחים ביקשתם, מאיזה ענף ובאיזה גודל. זה משמש "
             "למגבלות השימוש וכדי לדעת כמה זה עולה.",
         ]),
@@ -64,6 +65,7 @@ TEXTO = {
         ("איפה זה נשמר", [
             "ב‑Cloudflare, במסד נתונים D1. השרת עונה רק לאפליקציה ושומר את מה "
             "שהאפליקציה שולחת לו.",
+            "שניות הווידאו של המאמן נשמרות ב‑Cloudflare R2. מסד הנתונים והסרטונים נמצאים באיחוד האירופי.",
         ]),
         ("בלי פרסומות ובלי מעקב", [
             "אין פרסום. אין מעקב בין אפליקציות או אתרים. שום דבר לא נמכר ולא נמסר לצד "

@@ -2,7 +2,7 @@
 
 TEXTO = {
     "legal_volver": "Zurück zur Startseite",
-    "legal_actualizado": "Aktualisiert am 27. September 2026",
+    "legal_actualizado": "Aktualisiert am 8. Oktober 2026",
 
     "privacidad_titulo": "Datenschutz",
     "privacidad_entrada": "Rackers ist zum Spielen gemacht, nicht zum Sammeln von "
@@ -40,8 +40,7 @@ TEXTO = {
             "Wenn du eine Analyse anforderst, nimmt die App Einzelbilder aus dem Video "
             "und schickt sie über unseren Server an OpenAI, der den Bericht "
             "zurückgibt.",
-            "Vom Video wird auf dem Server nichts gespeichert. Der Bericht kommt zur "
-            "App zurück und bleibt in deiner Sicherung.",
+            "Vom ganzen Video wird auf dem Server nichts gespeichert. Der Bericht kommt zur App zurück und bleibt in deiner Sicherung, zusammen mit ein paar Sekunden ohne Ton zu jeder Verbesserung, damit du sie auch auf einem anderen iPhone siehst. Sie werden gelöscht, wenn du die Analyse oder das Konto löschst.",
             "Was bleibt, ist der Vermerk, wie viele Analysen du angefordert hast, für "
             "welche Sportart und wie groß sie waren. Das dient den Nutzungsgrenzen und "
             "den Kosten.",
@@ -65,6 +64,7 @@ TEXTO = {
         ("Wo es liegt", [
             "Bei Cloudflare, in einer D1-Datenbank. Der Server antwortet nur der App "
             "und behält nur, was die App ihm schickt.",
+            "Die Videosekunden des Trainers liegen in Cloudflare R2. Datenbank und Videos liegen in der Europäischen Union.",
         ]),
         ("Keine Werbung, kein Tracking", [
             "Es gibt keine Werbung. Es gibt kein Tracking über Apps oder Websites "

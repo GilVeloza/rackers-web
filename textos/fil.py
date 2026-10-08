@@ -96,9 +96,7 @@ TEXTO = {
          "Oo. Ang mga laro, istatistika at torneo mo ay sa'yo at nasa iPhone mo. Kailangan lang "
          "ng data para sa pampublikong torneo at sa pagsusuri ng video."),
         ("Paano ang datos ko sa Health?",
-         "Nananatili sa iPhone mo. Binabasa lang ito ng app para sabihin kung kumusta ka ngayon, "
-         "at hindi ito ipinapadala kahit saan. Sa video, iilang still na larawan lang ang "
-         "pinapadala para sa pagsusuri; ang video mismo, nananatili sa'yo."),
+         "Nananatili sa iPhone mo. Binabasa lang ito ng app para sabihin kung kumusta ka ngayon, at hindi ito ipinapadala kahit saan. Sa video, iilang still na larawan lang ang pinapadala para sa pagsusuri; ang video mismo, nananatili sa'yo. Sa account mo, ilang segundong walang tunog lang mula sa bawat dapat pagbutihin ang napupunta, para makita mo ito sa ibang iPhone."),
         ("Pwede ba sa doubles at sa laro kasama ang mga kaibigan?",
          "Oo. I-save mo minsan ang mga palagi mong kalaro at piliin mo sila sa bawat laro o "
          "torneo. Kapag ni-link nila ang profile nila, dadating ang mga laro sa app nila."),

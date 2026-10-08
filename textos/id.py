@@ -94,9 +94,7 @@ TEXTO = {
          "Bisa. Laga, statistik, dan turnamenmu milikmu dan tinggal di iPhone-mu. Internet hanya "
          "perlu untuk turnamen terbuka dan analisis video."),
         ("Bagaimana dengan data Kesehatan saya?",
-         "Tetap di iPhone-mu. Aplikasi membacanya untuk memberi tahu kondisimu hari ini dan "
-         "tidak mengirimnya ke mana pun. Dari video hanya beberapa gambar diam yang dikirim "
-         "untuk analisis; videonya sendiri tetap padamu."),
+         "Tetap di iPhone-mu. Aplikasi membacanya untuk memberi tahu kondisimu hari ini dan tidak mengirimnya ke mana pun. Dari video hanya beberapa gambar diam yang dikirim untuk analisis; videonya sendiri tetap padamu. Ke akunmu hanya masuk beberapa detik tanpa suara dari tiap perbaikan, supaya bisa kamu lihat di iPhone lain."),
         ("Cocok untuk ganda dan main bareng teman?",
          "Cocok. Simpan teman mainmu sekali, lalu tinggal pilih di tiap laga atau turnamen. "
          "Kalau mereka menautkan profil, laganya muncul di aplikasi mereka sendiri."),

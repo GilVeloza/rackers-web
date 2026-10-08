@@ -92,9 +92,7 @@ TEXTO = {
          "Evet. Maçların, istatistiklerin ve turnuvaların senindir ve iPhone'unda durur. "
          "İnternet sadece herkese açık turnuvalar ve video analizi için gerekir."),
         ("Sağlık verilerime ne oluyor?",
-         "iPhone'unda kalıyor. Uygulama bugün nasıl olduğunu söylemek için okuyor ve hiçbir yere "
-         "göndermiyor. Videodan analiz için yalnızca birkaç tek kare çıkıyor; videonun kendisi "
-         "sende kalıyor."),
+         "iPhone'unda kalıyor. Uygulama bugün nasıl olduğunu söylemek için okuyor ve hiçbir yere göndermiyor. Videodan analiz için yalnızca birkaç tek kare çıkıyor; videonun kendisi sende kalıyor. Hesabına yalnızca her gelişimin sessiz birkaç saniyesi gider; böylece onları başka bir iPhone'da da görürsün."),
         ("Çiftler ve arkadaşlarla oynamak için uygun mu?",
          "Evet. Sürekli oynadıklarını bir kez kaydeder, her maç ya da turnuvada seçersin. "
          "Profillerini bağlarlarsa maçlar kendi uygulamalarına düşer."),

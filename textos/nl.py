@@ -96,9 +96,7 @@ TEXTO = {
          "Ja. Je wedstrijden, statistieken en toernooien zijn van jou en staan op je iPhone. "
          "Data heb je alleen nodig voor openbare toernooien en voor de video-analyse."),
         ("Wat gebeurt er met mijn Gezondheid-gegevens?",
-         "Die blijven op je iPhone. De app leest ze om te zeggen hoe je er vandaag voor staat en "
-         "stuurt ze nergens heen. Van een video gaan alleen een paar losse beelden mee voor de "
-         "analyse; de video zelf blijft bij jou."),
+         "Die blijven op je iPhone. De app leest ze om te zeggen hoe je er vandaag voor staat en stuurt ze nergens heen. Van een video gaan alleen een paar losse beelden mee voor de analyse; de video zelf blijft bij jou. Naar je account gaan alleen een paar seconden zonder geluid van elke verbetering, zodat je ze op een andere iPhone kunt zien."),
         ("Werkt het voor dubbel en met vrienden?",
          "Ja. Je slaat je vaste namen één keer op en kiest ze bij elke wedstrijd of elk "
          "toernooi. Koppelen ze hun profiel, dan komen hun wedstrijden in hun eigen app."),

@@ -2,7 +2,7 @@
 
 TEXTO = {
     "legal_volver": 'Kembali ke beranda',
-    "legal_actualizado": 'Diperbarui 27 September 2026',
+    "legal_actualizado": "Diperbarui 8 Oktober 2026",
 
     "privacidad_titulo": 'Privasi',
     "privacidad_entrada": 'Rackers dibuat untuk bermain, bukan untuk mengumpulkan data. Di sini jelas apa yang disimpan, di mana, dan cara menghapusnya.',
@@ -25,7 +25,7 @@ TEXTO = {
         ]),
         ('Pelatih AI', [
             'Saat kamu meminta analisis, aplikasi mengambil bingkai dari video dan mengirimkannya ke OpenAI lewat server kami, yang mengembalikan laporannya.',
-            'Dari video tidak ada yang disimpan di server. Laporan kembali ke aplikasi dan tinggal di cadanganmu.',
+            "Dari video utuh tidak ada yang disimpan di server. Laporan kembali ke aplikasi dan tinggal di cadanganmu, bersama beberapa detik tanpa suara dari tiap perbaikan, supaya kamu juga bisa melihatnya di iPhone lain. Semuanya terhapus saat kamu menghapus analisis atau akunnya.",
             'Yang tersisa hanyalah catatan berapa kali kamu meminta analisis, untuk olahraga apa, dan seberapa besar. Itu untuk batas pemakaian dan untuk tahu biayanya.',
         ]),
         ('Langganan', [
@@ -43,6 +43,7 @@ TEXTO = {
         ]),
         ('Di mana disimpan', [
             'Di Cloudflare, dalam basis data D1. Server hanya menjawab aplikasi dan hanya menyimpan apa yang dikirim aplikasi.',
+            "Detik-detik video pelatih ada di Cloudflare R2. Basis data dan videonya sama-sama di Uni Eropa.",
         ]),
         ('Tanpa iklan, tanpa pelacakan', [
             'Tidak ada iklan. Tidak ada pelacakan antaraplikasi atau antarsitus. Tidak ada yang dijual atau diserahkan ke pihak ketiga untuk kepentingan mereka sendiri.',

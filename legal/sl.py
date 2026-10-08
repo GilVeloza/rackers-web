@@ -2,13 +2,14 @@
 
 Lo que dice aquí tiene que casar con lo que hace el código: la copia de
 seguridad sube partidos (con el pulso que midió el reloj), la salud de «Cómo
-llegas hoy» no sale del iPhone y del vídeo del entrenador no se guarda nada.
+llegas hoy» no sale del iPhone y del vídeo del entrenador solo se guardan
+unos segundos sin sonido de cada mejora, que se borran con su análisis.
 Si eso cambia en la app o en el servidor, esto cambia también.
 """
 
 TEXTO = {
     "legal_volver": "Nazaj na naslovnico",
-    "legal_actualizado": "Posodobljeno 27. septembra 2026",
+    "legal_actualizado": "Posodobljeno 8. oktobra 2026",
 
     # --- Privacidad ---------------------------------------------------------
     "privacidad_titulo": "Zasebnost",
@@ -45,8 +46,7 @@ TEXTO = {
         ("Trener z UI", [
             "Ko zaprosiš za analizo, aplikacija iz videa izlušči posamezne sličice in "
             "jih prek našega strežnika pošlje OpenAI, ki vrne poročilo.",
-            "Od videa se na strežniku ne shrani nič. Poročilo se vrne v aplikacijo in "
-            "ostane v tvoji kopiji.",
+            "Od celotnega videa se na strežniku ne shrani nič. Poročilo se vrne v aplikacijo in ostane v tvoji kopiji, skupaj z nekaj sekundami brez zvoka iz vsake izboljšave, da jih vidiš tudi na drugem iPhonu. Izbrišejo se, ko izbrišeš analizo ali račun.",
             "Ostane pa zapis, koliko analiz si zahteval, iz katerega športa in kako "
             "velike so bile. To služi omejitvam uporabe in temu, da vemo, koliko stane.",
         ]),
@@ -69,6 +69,7 @@ TEXTO = {
         ("Kje se shranjuje", [
             "Pri Cloudflareu, v zbirki podatkov D1. Strežnik odgovarja samo aplikaciji "
             "in shrani tisto, kar mu aplikacija pošlje.",
+            "Sekunde videa od trenerja so v Cloudflare R2. Zbirka podatkov in videi so v Evropski uniji.",
         ]),
         ("Ne oglasov ne sledenja", [
             "Oglasov ni. Ni sledenja med aplikacijami ali spletnimi stranmi. Nič se ne "

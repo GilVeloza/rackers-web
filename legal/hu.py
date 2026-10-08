@@ -2,7 +2,7 @@
 
 TEXTO = {
     "legal_volver": 'Vissza a főoldalra',
-    "legal_actualizado": 'Frissítve: 2026. szeptember 27.',
+    "legal_actualizado": "Frissítve: 2026. október 8.",
 
     "privacidad_titulo": 'Adatvédelem',
     "privacidad_entrada": 'A Rackers játékra készült, nem adatgyűjtésre. Itt világosan olvasható, mi tárolódik, hol, és hogyan törölhető.',
@@ -25,7 +25,7 @@ TEXTO = {
         ]),
         ('Az MI-edző', [
             'Amikor elemzést kérsz, az alkalmazás képkockákat vesz ki a videóból, és a szerverünkön át elküldi az OpenAI-nak, amely visszaküldi a jelentést.',
-            'A videóból semmi nem marad a szerveren. A jelentés visszatér az alkalmazásba, és a te mentésedben marad.',
+            "A teljes videóból semmi nem marad a szerveren. A jelentés visszatér az alkalmazásba, és a te mentésedben marad, néhány hang nélküli másodperccel együtt minden javítandó pontból, hogy egy másik iPhone-on is lásd őket. Az elemzés vagy a fiók törlésekor ezek is törlődnek.",
             'Ami megmarad: hány elemzést kértél, melyik sportra és mekkorát. Ez a használati korlátokhoz és a költség ismeretéhez kell.',
         ]),
         ('Az előfizetés', [
@@ -43,6 +43,7 @@ TEXTO = {
         ]),
         ('Hol tárolódik', [
             'A Cloudflare-nél, egy D1 adatbázisban. A szerver csak az alkalmazásnak válaszol, és csak azt őrzi meg, amit az alkalmazás küld neki.',
+            "Az edző videómásodpercei a Cloudflare R2-ben vannak. Az adatbázis és a videók is az Európai Unióban vannak.",
         ]),
         ('Se hirdetés, se követés', [
             'Nincs hirdetés. Nincs alkalmazások vagy weboldalak közötti követés. Semmit nem adunk el és nem adunk át harmadik félnek saját felhasználásra.',

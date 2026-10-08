@@ -99,9 +99,7 @@ TEXTO = {
          "Ja. Kampen, statistikken og turneringene er dine og bor på iPhonen din. Det "
          "trengs bare data til offentlige turneringer og til videoanalysen."),
         ("Hva skjer med helsedataene mine?",
-         "De blir på iPhonen din. Appen leser dem for å si hvordan du ligger an i dag, "
-         "og sender dem ingen steder. Fra videoen sendes bare noen få enkeltbilder til "
-         "analysen; hele videoen blir hos deg."),
+         "De blir på iPhonen din. Appen leser dem for å si hvordan du ligger an i dag, og sender dem ingen steder. Fra videoen sendes bare noen få enkeltbilder til analysen; hele videoen blir hos deg. Til kontoen din går bare noen sekunder uten lyd fra hver forbedring, så du kan se dem på en annen iPhone."),
         ("Duger den til double og til å spille med venner?",
          "Ja. Du lagrer dem du spiller fast med én gang og velger dem i hver kamp eller "
          "turnering. Hvis de kobler profilen sin, får de kampene sine i sin egen app."),

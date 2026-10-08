@@ -2,7 +2,7 @@
 
 TEXTO = {
     "legal_volver": "Tillbaka till startsidan",
-    "legal_actualizado": "Uppdaterad 27 september 2026",
+    "legal_actualizado": "Uppdaterad 8 oktober 2026",
 
     "privacidad_titulo": "Integritet",
     "privacidad_entrada": "Rackers är gjord för att spela, inte för att samla data. Här "
@@ -38,8 +38,7 @@ TEXTO = {
         ("AI-tränaren", [
             "När du ber om en analys tar appen bildrutor ur videon och skickar dem till "
             "OpenAI via vår server, som skickar tillbaka rapporten.",
-            "Inget från videon sparas på servern. Rapporten kommer tillbaka till appen och "
-            "stannar i din egen kopia.",
+            "Inget från hela videon sparas på servern. Rapporten kommer tillbaka till appen och stannar i din egen kopia, tillsammans med några sekunder utan ljud från varje förbättring, så att du kan se dem på en annan iPhone också. De raderas när du raderar analysen eller kontot.",
             "Det som blir kvar är räkningen av hur många analyser du bett om, för vilken "
             "sport och hur stora de var. Det är för användningsgränserna och för att veta "
             "vad det kostar.",
@@ -63,6 +62,7 @@ TEXTO = {
         ("Var det sparas", [
             "Hos Cloudflare, i en D1-databas. Servern svarar bara appen och behåller bara "
             "det appen skickar.",
+            "Tränarens videosekunder ligger i Cloudflare R2. Både databasen och videorna finns i EU.",
         ]),
         ("Ingen reklam, ingen spårning", [
             "Det finns ingen reklam. Ingen spårning mellan appar eller webbplatser. "

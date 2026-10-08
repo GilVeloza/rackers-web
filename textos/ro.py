@@ -92,9 +92,7 @@ TEXTO = {
          "Da. Meciurile, statisticile și turneele sunt ale tale și stau pe iPhone-ul tău. Ai "
          "nevoie de date doar pentru turneele publice și pentru analiza video."),
         ("Ce se întâmplă cu datele mele din Sănătate?",
-         "Rămân pe iPhone-ul tău. Aplicația le citește ca să-ți spună cum stai azi și nu le "
-         "trimite nicăieri. Din clip pleacă doar câteva cadre pentru analiză; clipul în sine "
-         "rămâne la tine."),
+         "Rămân pe iPhone-ul tău. Aplicația le citește ca să-ți spună cum stai azi și nu le trimite nicăieri. Din clip pleacă doar câteva cadre pentru analiză; clipul în sine rămâne la tine. În contul tău ajung doar câteva secunde fără sunet din fiecare îmbunătățire, ca să le vezi pe alt iPhone."),
         ("Merge la dublu și cu prietenii?",
          "Da. Îi salvezi o dată pe cei cu care joci mereu și îi alegi la fiecare meci sau "
          "turneu. Dacă își leagă profilul, meciurile le ajung în aplicația lor."),

@@ -97,9 +97,7 @@ TEXTO = {
          "Áno. Zápas, štatistiky aj turnaje sú tvoje a žijú v tvojom iPhone. Dáta "
          "treba len na verejné turnaje a na analýzu videa."),
         ("Čo s mojimi údajmi zo Zdravia?",
-         "Ostávajú v tvojom iPhone. Appka ich číta, aby ti povedala, ako si na tom "
-         "dnes, a neposiela ich nikam. Z videa odchádza len pár jednotlivých obrázkov "
-         "na analýzu; celé video ostáva u teba."),
+         "Ostávajú v tvojom iPhone. Appka ich číta, aby ti povedala, ako si na tom dnes, a neposiela ich nikam. Z videa odchádza len pár jednotlivých obrázkov na analýzu; celé video ostáva u teba. Do tvojho účtu ide len pár sekúnd bez zvuku ku každému zlepšeniu, aby si ich videl aj na inom iPhone."),
         ("Hodí sa to na štvorhru a na hranie s kamarátmi?",
          "Áno. Tých, s ktorými hráš pravidelne, uložíš raz a vyberáš ich v každom zápase "
          "alebo turnaji. Ak si prepoja profil, dostanú svoje zápasy do svojej appky."),

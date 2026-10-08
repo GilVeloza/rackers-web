@@ -99,9 +99,7 @@ TEXTO = {
          "Da. Tekma, statistika in turnirji so tvoji in živijo na tvojem iPhonu. Podatki "
          "so potrebni samo za javne turnirje in za analizo videa."),
         ("Kaj pa moji podatki iz Zdravja?",
-         "Ostanejo na tvojem iPhonu. Aplikacija jih bere, da ti pove, kako si danes, in "
-         "jih ne pošilja nikamor. Iz videa gre le nekaj posameznih slik za analizo; cel "
-         "video ostane pri tebi."),
+         "Ostanejo na tvojem iPhonu. Aplikacija jih bere, da ti pove, kako si danes, in jih ne pošilja nikamor. Iz videa gre le nekaj posameznih slik za analizo; cel video ostane pri tebi. V tvoj račun gre le nekaj sekund brez zvoka iz vsake izboljšave, da jih vidiš tudi na drugem iPhonu."),
         ("Ali je dobra za dvojice in za igro s prijatelji?",
          "Da. Tiste, s katerimi redno igraš, shraniš enkrat in jih izbiraš pri vsaki "
          "tekmi ali turnirju. Če povežejo svoj profil, dobijo svoje tekme v svojo "

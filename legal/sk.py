@@ -2,13 +2,14 @@
 
 Lo que dice aquí tiene que casar con lo que hace el código: la copia de
 seguridad sube partidos (con el pulso que midió el reloj), la salud de «Cómo
-llegas hoy» no sale del iPhone y del vídeo del entrenador no se guarda nada.
+llegas hoy» no sale del iPhone y del vídeo del entrenador solo se guardan
+unos segundos sin sonido de cada mejora, que se borran con su análisis.
 Si eso cambia en la app o en el servidor, esto cambia también.
 """
 
 TEXTO = {
     "legal_volver": "Späť na úvod",
-    "legal_actualizado": "Aktualizované 27. septembra 2026",
+    "legal_actualizado": "Aktualizované 8. októbra 2026",
 
     # --- Privacidad ---------------------------------------------------------
     "privacidad_titulo": "Súkromie",
@@ -45,8 +46,7 @@ TEXTO = {
         ("Tréner s AI", [
             "Keď si vypýtaš analýzu, appka vyberie z videa jednotlivé snímky a pošle "
             "ich do OpenAI cez náš server, ktorý vráti správu.",
-            "Z videa sa na serveri neukladá nič. Správa sa vráti do appky a ostane v "
-            "tvojej kópii.",
+            "Z celého videa sa na serveri neukladá nič. Správa sa vráti do appky a ostane v tvojej kópii spolu s niekoľkými sekundami bez zvuku ku každému zlepšeniu, aby si ich videl aj na inom iPhone. Zmažú sa, keď zmažeš analýzu alebo účet.",
             "Ostáva však záznam, koľko analýz si si vypýtal, z akého športu a aké boli "
             "veľké. Slúži to na limity používania a na to, aby sme vedeli, koľko to "
             "stojí.",
@@ -71,6 +71,7 @@ TEXTO = {
         ("Kde sa to ukladá", [
             "V Cloudflare, v databáze D1. Server odpovedá len appke a ukladá to, čo mu "
             "appka pošle.",
+            "Sekundy videa od trénera sú v Cloudflare R2. Databáza aj videá sú v Európskej únii.",
         ]),
         ("Ani reklamy, ani sledovanie", [
             "Žiadna reklama. Žiadne sledovanie medzi appkami ani webmi. Nič sa "

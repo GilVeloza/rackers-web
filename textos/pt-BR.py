@@ -94,9 +94,7 @@ TEXTO = {
          "Funciona. Suas partidas, estatísticas e torneios são seus e ficam no seu iPhone. "
          "Internet só é preciso para os torneios públicos e para a análise de vídeo."),
         ("E os meus dados da Saúde?",
-         "Ficam no seu iPhone. O app lê para dizer como você chega hoje e não manda para lugar "
-         "nenhum. Do vídeo saem só algumas imagens soltas para a análise; o vídeo inteiro fica "
-         "com você."),
+         "Ficam no seu iPhone. O app lê para dizer como você chega hoje e não manda para lugar nenhum. Do vídeo saem só algumas imagens soltas para a análise; o vídeo inteiro fica com você. Para a sua conta vão só alguns segundos sem som de cada melhoria, para você ver em outro iPhone."),
         ("Serve para dupla e para jogar com os amigos?",
          "Serve. Você salva os de sempre uma vez e escolhe em cada partida ou torneio. Se eles "
          "vincularem o perfil, as partidas chegam no app deles."),

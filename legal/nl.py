@@ -2,7 +2,7 @@
 
 TEXTO = {
     "legal_volver": "Terug naar de startpagina",
-    "legal_actualizado": "Bijgewerkt op 27 september 2026",
+    "legal_actualizado": "Bijgewerkt op 8 oktober 2026",
 
     "privacidad_titulo": "Privacy",
     "privacidad_entrada": "Rackers is gemaakt om te spelen, niet om gegevens te "
@@ -39,8 +39,7 @@ TEXTO = {
         ("De AI-coach", [
             "Als je om een analyse vraagt, haalt de app beelden uit de video en stuurt ze "
             "via onze server naar OpenAI, die het rapport terugstuurt.",
-            "Van de video wordt niets op de server bewaard. Het rapport komt terug naar de "
-            "app en blijft in je eigen kopie.",
+            "Van de hele video wordt niets op de server bewaard. Het rapport komt terug naar de app en blijft in je eigen kopie, samen met een paar seconden zonder geluid van elke verbetering, zodat je ze ook op een andere iPhone ziet. Ze worden gewist als je de analyse of je account wist.",
             "Wat wel blijft, is de telling van hoeveel analyses je vroeg, voor welke sport "
             "en hoe groot ze waren. Dat is voor de gebruikslimieten en om de kosten te "
             "kennen.",
@@ -64,6 +63,7 @@ TEXTO = {
         ("Waar het staat", [
             "Bij Cloudflare, in een D1-database. De server antwoordt alleen de app en "
             "bewaart alleen wat de app stuurt.",
+            "De videoseconden van de coach staan op Cloudflare R2. De database en de video's staan allebei in de Europese Unie.",
         ]),
         ("Geen advertenties, geen tracking", [
             "Er is geen reclame. Er is geen tracking tussen apps of websites. Er wordt "

@@ -91,9 +91,7 @@ TEXTO = {
          "Ja. Matcher, statistik och turneringar är dina och ligger i din iPhone. Data behövs "
          "bara för öppna turneringar och för videoanalysen."),
         ("Vad händer med mina Hälsa-data?",
-         "De stannar i din iPhone. Appen läser dem för att säga hur du står i dag och skickar "
-         "dem ingenstans. Från en video går bara några enstaka bilder iväg för analysen; själva "
-         "videon stannar hos dig."),
+         "De stannar i din iPhone. Appen läser dem för att säga hur du står i dag och skickar dem ingenstans. Från en video går bara några enstaka bilder iväg för analysen; själva videon stannar hos dig. Till ditt konto går bara några sekunder utan ljud från varje förbättring, så att du kan se dem på en annan iPhone."),
         ("Funkar det för dubbel och med kompisar?",
          "Ja. Du sparar de vanliga en gång och väljer dem i varje match eller turnering. Länkar "
          "de sin profil får de sina matcher i sin egen app."),

@@ -2,13 +2,14 @@
 
 Lo que dice aquí tiene que casar con lo que hace el código: la copia de
 seguridad sube partidos (con el pulso que midió el reloj), la salud de «Cómo
-llegas hoy» no sale del iPhone y del vídeo del entrenador no se guarda nada.
+llegas hoy» no sale del iPhone y del vídeo del entrenador solo se guardan
+unos segundos sin sonido de cada mejora, que se borran con su análisis.
 Si eso cambia en la app o en el servidor, esto cambia también.
 """
 
 TEXTO = {
     "legal_volver": "Volver a la portada",
-    "legal_actualizado": "Actualizado el 27 de septiembre de 2026",
+    "legal_actualizado": "Actualizado el 8 de octubre de 2026",
 
     # --- Privacidad ---------------------------------------------------------
     "privacidad_titulo": "Privacidad",
@@ -45,8 +46,7 @@ TEXTO = {
         ("El entrenador con IA", [
             "Cuando pides un análisis, la app saca fotogramas del vídeo y los manda a "
             "OpenAI a través de nuestro servidor, que devuelve el informe.",
-            "Del vídeo no se guarda nada en el servidor. El informe vuelve a la app y "
-            "se queda en tu copia.",
+            "Del vídeo entero no se guarda nada en el servidor. El informe vuelve a la app y se queda en tu copia, junto con unos segundos sin sonido de cada mejora, para que los veas también en otro iPhone. Se borran al borrar el análisis o la cuenta.",
             "Sí queda el registro de cuántos análisis has pedido, de qué deporte y "
             "cuánto ocuparon. Sirve para los topes de uso y para saber lo que cuesta.",
         ]),
@@ -70,6 +70,7 @@ TEXTO = {
         ("Dónde se guarda", [
             "En Cloudflare, en una base de datos D1. El servidor solo responde a la "
             "app y guarda lo que la app le manda.",
+            "Los segundos de vídeo del entrenador, en Cloudflare R2. La base de datos y los vídeos están en la Unión Europea.",
         ]),
         ("Ni anuncios ni rastreo", [
             "No hay publicidad. No hay seguimiento entre apps ni webs. No se vende ni "

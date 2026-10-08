@@ -92,9 +92,7 @@ TEXTO = {
          "Được. Trận đấu, thống kê và giải đấu là của bạn và nằm trong iPhone. Chỉ giải công "
          "khai và phân tích video mới cần mạng."),
         ("Dữ liệu Sức khỏe của tôi thì sao?",
-         "Vẫn ở trong iPhone của bạn. Ứng dụng đọc để nói hôm nay bạn thế nào và không gửi đi "
-         "đâu cả. Từ video chỉ vài khung hình rời được gửi đi để phân tích; video thì vẫn ở lại "
-         "với bạn."),
+         "Vẫn ở trong iPhone của bạn. Ứng dụng đọc để nói hôm nay bạn thế nào và không gửi đi đâu cả. Từ video chỉ vài khung hình rời được gửi đi để phân tích; video thì vẫn ở lại với bạn. Tài khoản của bạn chỉ giữ vài giây không tiếng của từng điểm cần cải thiện, để bạn xem được trên iPhone khác."),
         ("Dùng cho đánh đôi và chơi với bạn bè được không?",
          "Được. Lưu nhóm hay chơi một lần rồi chọn lại ở mỗi trận hay mỗi giải. Nếu họ liên kết "
          "hồ sơ, các trận sẽ hiện trong ứng dụng của họ."),

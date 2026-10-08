@@ -94,9 +94,7 @@ TEXTO = {
          "Sì. Partite, statistiche e tornei sono tuoi e stanno sul tuo iPhone. I dati servono "
          "solo per i tornei pubblici e per l'analisi video."),
         ("Cosa succede ai miei dati di Salute?",
-         "Restano sul tuo iPhone. L'app li legge per dirti come arrivi oggi e non li manda da "
-         "nessuna parte. Del video partono solo alcuni fotogrammi per l'analisi; il video resta "
-         "con te."),
+         "Restano sul tuo iPhone. L'app li legge per dirti come arrivi oggi e non li manda da nessuna parte. Del video partono solo alcuni fotogrammi per l'analisi; il video resta con te. Nel tuo account vanno solo pochi secondi senza audio di ogni miglioramento, per rivederli su un altro iPhone."),
         ("Va bene per il doppio e per giocare con gli amici?",
          "Sì. Salvi i soliti una volta e li scegli a ogni partita o torneo. Se collegano il loro "
          "profilo, le partite arrivano nella loro app."),

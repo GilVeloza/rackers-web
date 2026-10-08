@@ -91,9 +91,7 @@ TEXTO = {
          "Ano. Zápasy, statistiky i turnaje jsou tvoje a leží v tvém iPhonu. Data potřebuješ jen "
          "na veřejné turnaje a na rozbor videa."),
         ("Co se stane s mými daty ze Zdraví?",
-         "Zůstanou v tvém iPhonu. Aplikace je čte, aby ti řekla, jak na tom dnes jsi, a nikam je "
-         "neposílá. Z videa odejde jen pár jednotlivých snímků na rozbor; samotné video zůstane "
-         "u tebe."),
+         "Zůstanou v tvém iPhonu. Aplikace je čte, aby ti řekla, jak na tom dnes jsi, a nikam je neposílá. Z videa odejde jen pár jednotlivých snímků na rozbor; samotné video zůstane u tebe. Do tvého účtu jde jen pár sekund bez zvuku ke každému zlepšení, abys je viděl i na jiném iPhonu."),
         ("Hodí se to na čtyřhru a na hraní s kamarády?",
          "Ano. Stálou partu uložíš jednou a vybíráš ji u každého zápasu i turnaje. Když si "
          "propojí profil, zápasy jim dorazí do jejich aplikace."),

@@ -91,9 +91,7 @@ TEXTO = {
          "Tak. Mecze, statystyki i turnieje są twoje i siedzą w twoim iPhonie. Internet jest "
          "potrzebny tylko do turniejów publicznych i do analizy wideo."),
         ("Co z moimi danymi ze Zdrowia?",
-         "Zostają w twoim iPhonie. Aplikacja czyta je, żeby powiedzieć, jak wchodzisz dzisiaj, i "
-         "nigdzie ich nie wysyła. Z wideo wychodzi tylko kilka pojedynczych klatek do analizy; "
-         "samo wideo zostaje u ciebie."),
+         "Zostają w twoim iPhonie. Aplikacja czyta je, żeby powiedzieć, jak wchodzisz dzisiaj, i nigdzie ich nie wysyła. Z wideo wychodzi tylko kilka pojedynczych klatek do analizy; samo wideo zostaje u ciebie. Na twoje konto trafia tylko kilka sekund bez dźwięku z każdej poprawki, żebyś mógł je obejrzeć na innym iPhonie."),
         ("Czy nadaje się do debla i do gry ze znajomymi?",
          "Tak. Stałych zapisujesz raz i wybierasz ich przy każdym meczu albo turnieju. Jeśli "
          "połączą swój profil, mecze trafią do ich aplikacji."),

@@ -95,9 +95,7 @@ TEXTO = {
          "Oui. Vos matchs, vos stats et vos tournois sont à vous et vivent sur votre iPhone. Il "
          "faut du réseau seulement pour les tournois publics et pour l'analyse vidéo."),
         ("Et mes données Santé ?",
-         "Elles restent sur votre iPhone. L'app les lit pour vous dire votre forme du jour et ne "
-         "les envoie nulle part. D'une vidéo, seules quelques images fixes partent pour "
-         "l'analyse ; la vidéo, elle, reste chez vous."),
+         "Elles restent sur votre iPhone. L'app les lit pour vous dire votre forme du jour et ne les envoie nulle part. D'une vidéo, seules quelques images fixes partent pour l'analyse ; la vidéo, elle, reste chez vous. Votre compte ne garde que quelques secondes sans son de chaque point à améliorer, pour les revoir sur un autre iPhone."),
         ("Ça marche en double et entre amis ?",
          "Oui. Vous enregistrez vos habitués une fois et vous les choisissez à chaque match ou "
          "tournoi. S'ils lient leur profil, leurs matchs arrivent dans leur app."),

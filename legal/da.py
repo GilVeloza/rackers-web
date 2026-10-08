@@ -2,13 +2,14 @@
 
 Lo que dice aquí tiene que casar con lo que hace el código: la copia de
 seguridad sube partidos (con el pulso que midió el reloj), la salud de «Cómo
-llegas hoy» no sale del iPhone y del vídeo del entrenador no se guarda nada.
+llegas hoy» no sale del iPhone y del vídeo del entrenador solo se guardan
+unos segundos sin sonido de cada mejora, que se borran con su análisis.
 Si eso cambia en la app o en el servidor, esto cambia también.
 """
 
 TEXTO = {
     "legal_volver": "Tilbage til forsiden",
-    "legal_actualizado": "Opdateret 27. september 2026",
+    "legal_actualizado": "Opdateret 8. oktober 2026",
 
     # --- Privacidad ---------------------------------------------------------
     "privacidad_titulo": "Privatliv",
@@ -45,8 +46,7 @@ TEXTO = {
         ("AI-træneren", [
             "Når du beder om en analyse, trækker appen enkeltbilleder ud af videoen og "
             "sender dem til OpenAI gennem vores server, som sender rapporten tilbage.",
-            "Der gemmes intet af videoen på serveren. Rapporten kommer tilbage til "
-            "appen og bliver i din kopi.",
+            "Der gemmes intet af hele videoen på serveren. Rapporten kommer tilbage til appen og bliver i din kopi sammen med et par sekunder uden lyd fra hver forbedring, så du også kan se dem på en anden iPhone. De slettes, når du sletter analysen eller kontoen.",
             "Der gemmes til gengæld, hvor mange analyser du har bedt om, i hvilken "
             "sportsgren og hvor store de var. Det bruges til brugsgrænserne og til at "
             "vide, hvad det koster.",
@@ -70,6 +70,7 @@ TEXTO = {
         ("Hvor det gemmes", [
             "Hos Cloudflare, i en D1-database. Serveren svarer kun appen og gemmer det, "
             "appen sender den.",
+            "Trænerens videosekunder ligger i Cloudflare R2. Både databasen og videoerne er i EU.",
         ]),
         ("Hverken reklamer eller sporing", [
             "Der er ingen reklamer. Ingen sporing på tværs af apps eller websteder. "

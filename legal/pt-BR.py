@@ -2,7 +2,7 @@
 
 TEXTO = {
     "legal_volver": "Voltar para a página inicial",
-    "legal_actualizado": "Atualizado em 27 de setembro de 2026",
+    "legal_actualizado": "Atualizado em 8 de outubro de 2026",
 
     "privacidad_titulo": "Privacidade",
     "privacidad_entrada": "O Rackers foi feito para jogar, não para coletar dados. Aqui "
@@ -38,8 +38,7 @@ TEXTO = {
         ("O treinador com IA", [
             "Quando você pede uma análise, o app tira quadros do vídeo e manda para a "
             "OpenAI pelo nosso servidor, que devolve o relatório.",
-            "Do vídeo não se guarda nada no servidor. O relatório volta para o app e fica "
-            "no seu backup.",
+            "Do vídeo inteiro não se guarda nada no servidor. O relatório volta para o app e fica no seu backup, junto com alguns segundos sem som de cada melhoria, para você ver também em outro iPhone. Eles são apagados quando você apaga a análise ou a conta.",
             "O que fica é o registro de quantas análises você pediu, de qual esporte e de "
             "que tamanho. Serve para os limites de uso e para saber o custo.",
         ]),
@@ -62,6 +61,7 @@ TEXTO = {
         ("Onde fica guardado", [
             "Na Cloudflare, num banco de dados D1. O servidor só responde ao app e só "
             "guarda o que o app manda.",
+            "Os segundos de vídeo do treinador ficam na Cloudflare R2. O banco de dados e os vídeos ficam na União Europeia.",
         ]),
         ("Sem anúncios e sem rastreamento", [
             "Não há publicidade. Não há rastreamento entre apps ou sites. Nada é vendido "

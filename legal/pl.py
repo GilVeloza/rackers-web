@@ -2,7 +2,7 @@
 
 TEXTO = {
     "legal_volver": "Wróć na stronę główną",
-    "legal_actualizado": "Zaktualizowano 27 września 2026",
+    "legal_actualizado": "Zaktualizowano 8 października 2026",
 
     "privacidad_titulo": "Prywatność",
     "privacidad_entrada": "Rackers powstał do grania, nie do zbierania danych. Tu jasno "
@@ -37,8 +37,7 @@ TEXTO = {
         ("Trener z AI", [
             "Kiedy prosisz o analizę, aplikacja wycina klatki z nagrania i wysyła je do "
             "OpenAI przez nasz serwer, który zwraca raport.",
-            "Z nagrania nic nie zostaje na serwerze. Raport wraca do aplikacji i zostaje w "
-            "twojej kopii.",
+            "Z całego nagrania nic nie zostaje na serwerze. Raport wraca do aplikacji i zostaje w twojej kopii razem z kilkoma sekundami bez dźwięku z każdej poprawki, żebyś mógł je zobaczyć także na innym iPhonie. Usuwają się, gdy usuniesz analizę albo konto.",
             "Zostaje natomiast zapis, ile analiz zamówiłeś, dla jakiego sportu i jak duże "
             "były. Służy limitom użycia i wiedzy o koszcie.",
         ]),
@@ -62,6 +61,7 @@ TEXTO = {
         ("Gdzie to leży", [
             "W Cloudflare, w bazie D1. Serwer odpowiada tylko aplikacji i trzyma tylko "
             "to, co aplikacja mu wyśle.",
+            "Sekundy nagrań trenera są w Cloudflare R2. I baza danych, i nagrania są w Unii Europejskiej.",
         ]),
         ("Bez reklam i bez śledzenia", [
             "Nie ma reklam. Nie ma śledzenia między aplikacjami ani stronami. Nic nie jest "

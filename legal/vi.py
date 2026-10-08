@@ -2,7 +2,7 @@
 
 TEXTO = {
     "legal_volver": 'Quay lại trang chủ',
-    "legal_actualizado": 'Cập nhật ngày 27 tháng 9 năm 2026',
+    "legal_actualizado": "Cập nhật ngày 8 tháng 10 năm 2026",
 
     "privacidad_titulo": 'Quyền riêng tư',
     "privacidad_entrada": 'Rackers được làm ra để chơi, không phải để thu thập dữ liệu. Ở đây ghi rõ cái gì được lưu, ở đâu và xoá thế nào.',
@@ -25,7 +25,7 @@ TEXTO = {
         ]),
         ('Huấn luyện viên AI', [
             'Khi bạn yêu cầu phân tích, ứng dụng lấy các khung hình từ video và gửi tới OpenAI qua máy chủ của chúng tôi; máy chủ trả về báo cáo.',
-            'Không có gì từ video được lưu trên máy chủ. Báo cáo quay về ứng dụng và ở lại trong bản sao của bạn.',
+            "Không có gì từ video đầy đủ được lưu trên máy chủ. Báo cáo quay về ứng dụng và ở lại trong bản sao của bạn, cùng vài giây không tiếng của từng điểm cần cải thiện, để bạn xem được cả trên iPhone khác. Chúng bị xóa khi bạn xóa bài phân tích hoặc tài khoản.",
             'Cái còn lại là ghi chép bạn đã yêu cầu bao nhiêu lần phân tích, cho môn nào và lớn cỡ nào. Dùng cho giới hạn sử dụng và để biết chi phí.',
         ]),
         ('Gói đăng ký', [
@@ -43,6 +43,7 @@ TEXTO = {
         ]),
         ('Lưu ở đâu', [
             'Ở Cloudflare, trong cơ sở dữ liệu D1. Máy chủ chỉ trả lời ứng dụng và chỉ giữ những gì ứng dụng gửi tới.',
+            "Những giây video của huấn luyện viên được lưu ở Cloudflare R2. Cả cơ sở dữ liệu lẫn video đều ở Liên minh châu Âu.",
         ]),
         ('Không quảng cáo, không theo dõi', [
             'Không có quảng cáo. Không có theo dõi giữa các ứng dụng hay trang web. Không bán và không chuyển gì cho bên thứ ba để họ dùng riêng.',

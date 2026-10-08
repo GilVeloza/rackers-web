@@ -2,7 +2,7 @@
 
 TEXTO = {
     "legal_volver": 'Înapoi la pagina principală',
-    "legal_actualizado": 'Actualizat pe 27 septembrie 2026',
+    "legal_actualizado": "Actualizat pe 8 octombrie 2026",
 
     "privacidad_titulo": 'Confidențialitate',
     "privacidad_entrada": 'Rackers e făcut ca să joci, nu ca să strângă date. Aici scrie limpede ce se salvează, unde și cum ștergi.',
@@ -25,7 +25,7 @@ TEXTO = {
         ]),
         ('Antrenorul cu IA', [
             'Când ceri o analiză, aplicația scoate cadre din filmare și le trimite la OpenAI prin serverul nostru, care întoarce raportul.',
-            'Din filmare nu se salvează nimic pe server. Raportul se întoarce în aplicație și rămâne în copia ta.',
+            "Din filmarea întreagă nu se salvează nimic pe server. Raportul se întoarce în aplicație și rămâne în copia ta, împreună cu câteva secunde fără sunet din fiecare îmbunătățire, ca să le vezi și pe alt iPhone. Se șterg când ștergi analiza sau contul.",
             'Rămâne evidența câte analize ai cerut, pentru ce sport și cât de mari au fost. Servește limitelor de folosire și costului.',
         ]),
         ('Abonamentul', [
@@ -43,6 +43,7 @@ TEXTO = {
         ]),
         ('Unde se păstrează', [
             'La Cloudflare, într-o bază de date D1. Serverul răspunde doar aplicației și ține doar ce îi trimite aplicația.',
+            "Secundele video ale antrenorului stau în Cloudflare R2. Baza de date și filmările sunt în Uniunea Europeană.",
         ]),
         ('Fără reclame și fără urmărire', [
             'Nu există publicitate. Nu există urmărire între aplicații sau site-uri. Nimic nu se vinde și nu se dă unor terți pentru folosul lor.',

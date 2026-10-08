@@ -2,7 +2,7 @@
 
 TEXTO = {
     "legal_volver": "Back to the home page",
-    "legal_actualizado": "Updated September 27, 2026",
+    "legal_actualizado": "Updated October 8, 2026",
 
     "privacidad_titulo": "Privacy",
     "privacidad_entrada": "Rackers was made for playing, not for collecting data. "
@@ -38,8 +38,7 @@ TEXTO = {
         ("The AI coach", [
             "When you ask for an analysis, the app takes frames from the video and "
             "sends them to OpenAI through our server, which returns the report.",
-            "Nothing from the video is stored on the server. The report comes back to "
-            "the app and stays in your own copy.",
+            "Nothing from the full video is stored on the server. The report comes back to the app and stays in your own copy, along with a few silent seconds from each improvement, so you can see them on another iPhone too. They're deleted when you delete the analysis or your account.",
             "What does remain is a record of how many analyses you asked for, for "
             "which sport and how large they were. That is for the usage limits and to "
             "know what it costs.",
@@ -63,6 +62,7 @@ TEXTO = {
         ("Where it is stored", [
             "On Cloudflare, in a D1 database. The server only answers the app and only "
             "keeps what the app sends it.",
+            "The coach's video seconds are on Cloudflare R2. Both the database and the videos are in the European Union.",
         ]),
         ("No ads, no tracking", [
             "There is no advertising. There is no tracking across apps or websites. "

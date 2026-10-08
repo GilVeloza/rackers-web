@@ -2,13 +2,14 @@
 
 Lo que dice aquí tiene que casar con lo que hace el código: la copia de
 seguridad sube partidos (con el pulso que midió el reloj), la salud de «Cómo
-llegas hoy» no sale del iPhone y del vídeo del entrenador no se guarda nada.
+llegas hoy» no sale del iPhone y del vídeo del entrenador solo se guardan
+unos segundos sin sonido de cada mejora, que se borran con su análisis.
 Si eso cambia en la app o en el servidor, esto cambia también.
 """
 
 TEXTO = {
     "legal_volver": "મુખ્ય પાના પર પાછા",
-    "legal_actualizado": "27 સપ્ટેમ્બર 2026 ના રોજ અપડેટ",
+    "legal_actualizado": "8 ઑક્ટોબર 2026 ના રોજ અપડેટ",
 
     # --- Privacidad ---------------------------------------------------------
     "privacidad_titulo": "ગોપનીયતા",
@@ -43,8 +44,7 @@ TEXTO = {
         ("AI કોચ", [
             "તમે વિશ્લેષણ માગો ત્યારે એપ વિડિયોમાંથી કેટલીક છબીઓ કાઢીને અમારા સર્વર મારફતે "
             "OpenAI ને મોકલે છે, જે રિપોર્ટ પાછો આપે છે.",
-            "વિડિયોનું કશું સર્વર પર સચવાતું નથી. રિપોર્ટ એપમાં પાછો આવે છે અને તમારી નકલમાં જ "
-            "રહે છે.",
+            "આખા વિડિયોનું કશું સર્વર પર સચવાતું નથી. રિપોર્ટ એપમાં પાછો આવે છે અને તમારી નકલમાં જ રહે છે, સાથે દરેક સુધારાની થોડી સેકન્ડ અવાજ વગર, જેથી તમે બીજા iPhone પર પણ જોઈ શકો. વિશ્લેષણ કે એકાઉન્ટ કાઢી નાખો ત્યારે તે પણ કાઢી નખાય છે.",
             "હા, તમે કેટલાં વિશ્લેષણ માગ્યાં, કઈ રમતનાં અને કેટલાં મોટાં — તેની નોંધ રહે છે. એ "
             "વપરાશની મર્યાદા માટે અને ખર્ચ જાણવા માટે છે.",
         ]),
@@ -66,6 +66,7 @@ TEXTO = {
         ("ક્યાં સચવાય છે", [
             "Cloudflare માં, D1 ડેટાબેઝમાં. સર્વર ફક્ત એપને જવાબ આપે છે અને એપ જે મોકલે તે "
             "સાચવે છે.",
+            "કોચના વિડિયોની સેકન્ડ Cloudflare R2 માં છે. ડેટાબેઝ અને વિડિયો બંને યુરોપિયન યુનિયનમાં છે.",
         ]),
         ("ન જાહેરાત, ન ટ્રેકિંગ", [
             "કોઈ જાહેરાત નથી. એપ કે વેબસાઇટ વચ્ચે કોઈ ટ્રેકિંગ નથી. ત્રીજા પક્ષને પોતાના ઉપયોગ "

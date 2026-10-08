@@ -99,9 +99,7 @@ TEXTO = {
          "Da. Meč, statistika i turniri su tvoji i žive na tvom iPhoneu. Podaci trebaju "
          "samo za javne turnire i za analizu videa."),
         ("Što je s mojim podacima iz Zdravlja?",
-         "Ostaju na tvom iPhoneu. Aplikacija ih čita da ti kaže kako si danas i ne šalje "
-         "ih nikamo. Iz videa izlazi samo nekoliko pojedinačnih slika za analizu; "
-         "cijeli video ostaje kod tebe."),
+         "Ostaju na tvom iPhoneu. Aplikacija ih čita da ti kaže kako si danas i ne šalje ih nikamo. Iz videa izlazi samo nekoliko pojedinačnih slika za analizu; cijeli video ostaje kod tebe. Na tvoj račun ide samo nekoliko sekundi bez zvuka iz svakog poboljšanja, da ih vidiš i na drugom iPhoneu."),
         ("Vrijedi li za parove i za igru s prijateljima?",
          "Da. Spremiš one s kojima redovito igraš jednom i biraš ih u svakom meču ili "
          "turniru. Ako povežu svoj profil, dobivaju svoje mečeve u svojoj aplikaciji."),

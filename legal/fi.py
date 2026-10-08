@@ -2,13 +2,14 @@
 
 Lo que dice aquí tiene que casar con lo que hace el código: la copia de
 seguridad sube partidos (con el pulso que midió el reloj), la salud de «Cómo
-llegas hoy» no sale del iPhone y del vídeo del entrenador no se guarda nada.
+llegas hoy» no sale del iPhone y del vídeo del entrenador solo se guardan
+unos segundos sin sonido de cada mejora, que se borran con su análisis.
 Si eso cambia en la app o en el servidor, esto cambia también.
 """
 
 TEXTO = {
     "legal_volver": "Takaisin etusivulle",
-    "legal_actualizado": "Päivitetty 27. syyskuuta 2026",
+    "legal_actualizado": "Päivitetty 8. lokakuuta 2026",
 
     # --- Privacidad ---------------------------------------------------------
     "privacidad_titulo": "Tietosuoja",
@@ -47,8 +48,7 @@ TEXTO = {
         ("Tekoälyvalmentaja", [
             "Kun pyydät analyysin, sovellus poimii videosta yksittäisiä kuvia ja "
             "lähettää ne OpenAI:lle palvelimemme kautta, joka palauttaa raportin.",
-            "Videosta ei tallenneta mitään palvelimelle. Raportti palaa sovellukseen ja "
-            "jää sinun kopioosi.",
+            "Koko videosta ei tallenneta mitään palvelimelle. Raportti palaa sovellukseen ja jää sinun kopioosi, samoin muutama äänetön sekunti jokaisesta parannettavasta asiasta, jotta näet ne myös toisella iPhonella. Ne poistetaan, kun poistat analyysin tai tilin.",
             "Sen sijaan jää merkintä siitä, montako analyysia olet pyytänyt, mistä "
             "lajista ja kuinka suuria ne olivat. Sitä tarvitaan käyttörajoihin ja "
             "kulujen seurantaan.",
@@ -73,6 +73,7 @@ TEXTO = {
         ("Missä se säilytetään", [
             "Cloudflaressa, D1-tietokannassa. Palvelin vastaa vain sovellukselle ja "
             "tallentaa sen, mitä sovellus sille lähettää.",
+            "Valmentajan videosekunnit ovat Cloudflare R2:ssa. Sekä tietokanta että videot ovat Euroopan unionissa.",
         ]),
         ("Ei mainoksia eikä seurantaa", [
             "Mainoksia ei ole. Ei seurantaa sovellusten tai sivustojen välillä. Mitään "

@@ -2,7 +2,7 @@
 
 TEXTO = {
     "legal_volver": 'Zpět na úvodní stránku',
-    "legal_actualizado": 'Aktualizováno 27. září 2026',
+    "legal_actualizado": "Aktualizováno 8. října 2026",
 
     "privacidad_titulo": 'Soukromí',
     "privacidad_entrada": 'Rackers vznikl na hraní, ne na sbírání dat. Tady je jasně, co se ukládá, kde a jak to smazat.',
@@ -25,7 +25,7 @@ TEXTO = {
         ]),
         ('Trenér s AI', [
             'Když si vyžádáš rozbor, aplikace vezme z videa snímky a pošle je přes náš server do OpenAI, který vrátí zprávu.',
-            'Z videa se na serveru neukládá nic. Zpráva se vrátí do aplikace a zůstane v tvé záloze.',
+            "Z celého videa se na serveru neukládá nic. Zpráva se vrátí do aplikace a zůstane v tvé záloze spolu s několika sekundami bez zvuku ke každému zlepšení, abys je viděl i na jiném iPhonu. Smažou se se smazáním analýzy nebo účtu.",
             'Zůstane záznam o tom, kolik rozborů jsi si vyžádal, pro jaký sport a jak byly velké. Slouží to limitům použití a přehledu o nákladech.',
         ]),
         ('Předplatné', [
@@ -43,6 +43,7 @@ TEXTO = {
         ]),
         ('Kde to leží', [
             'U Cloudflare, v databázi D1. Server odpovídá jen aplikaci a drží jen to, co mu aplikace pošle.',
+            "Sekundy videa od trenéra jsou v Cloudflare R2. Databáze i videa jsou v Evropské unii.",
         ]),
         ('Žádné reklamy, žádné sledování', [
             'Žádná reklama. Žádné sledování napříč aplikacemi ani weby. Nic se neprodává ani nepředává třetím stranám pro jejich vlastní použití.',

@@ -2,7 +2,7 @@
 
 TEXTO = {
     "legal_volver": 'Ana sayfaya dön',
-    "legal_actualizado": "27 Eylül 2026'da güncellendi",
+    "legal_actualizado": "8 Ekim 2026'da güncellendi",
 
     "privacidad_titulo": 'Gizlilik',
     "privacidad_entrada": 'Rackers oynamak için yapıldı, veri toplamak için değil. Burada açıkça yazıyor: ne saklanıyor, nerede ve nasıl silinir.',
@@ -25,7 +25,7 @@ TEXTO = {
         ]),
         ('Yapay zekâ antrenörü', [
             "Bir analiz istediğinde uygulama videodan kareler alır ve sunucumuz üzerinden OpenAI'ye gönderir; o da raporu döndürür.",
-            'Videodan sunucuda hiçbir şey saklanmaz. Rapor uygulamaya döner ve senin yedeğinde kalır.',
+            "Videonun tamamından sunucuda hiçbir şey saklanmaz. Rapor uygulamaya döner ve senin yedeğinde kalır; yanında her gelişimin sessiz birkaç saniyesi de durur, böylece onları başka bir iPhone'da da görürsün. Analizi ya da hesabı sildiğinde bunlar da silinir.",
             'Kalan şey, kaç analiz istediğinin, hangi spor için ve ne kadar büyük olduğunun kaydı. Bu, kullanım sınırları ve maliyeti bilmek için.',
         ]),
         ('Abonelik', [
@@ -43,6 +43,7 @@ TEXTO = {
         ]),
         ('Nerede saklanıyor', [
             "Cloudflare'de, bir D1 veritabanında. Sunucu yalnızca uygulamaya yanıt verir ve yalnızca uygulamanın gönderdiğini tutar.",
+            "Antrenörün video saniyeleri Cloudflare R2'de durur. Veritabanı da videolar da Avrupa Birliği'ndedir.",
         ]),
         ('Ne reklam ne takip', [
             'Reklam yok. Uygulamalar veya siteler arası takip yok. Hiçbir şey satılmaz ve üçüncü taraflara kendi kullanımları için verilmez.',

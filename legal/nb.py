@@ -2,13 +2,14 @@
 
 Lo que dice aquí tiene que casar con lo que hace el código: la copia de
 seguridad sube partidos (con el pulso que midió el reloj), la salud de «Cómo
-llegas hoy» no sale del iPhone y del vídeo del entrenador no se guarda nada.
+llegas hoy» no sale del iPhone y del vídeo del entrenador solo se guardan
+unos segundos sin sonido de cada mejora, que se borran con su análisis.
 Si eso cambia en la app o en el servidor, esto cambia también.
 """
 
 TEXTO = {
     "legal_volver": "Tilbake til forsiden",
-    "legal_actualizado": "Oppdatert 27. september 2026",
+    "legal_actualizado": "Oppdatert 8. oktober 2026",
 
     # --- Privacidad ---------------------------------------------------------
     "privacidad_titulo": "Personvern",
@@ -46,8 +47,7 @@ TEXTO = {
         ("KI-treneren", [
             "Når du ber om en analyse, henter appen enkeltbilder fra videoen og sender "
             "dem til OpenAI via serveren vår, som sender rapporten tilbake.",
-            "Ingenting av videoen lagres på serveren. Rapporten kommer tilbake til "
-            "appen og blir i kopien din.",
+            "Ingenting av hele videoen lagres på serveren. Rapporten kommer tilbake til appen og blir i kopien din, sammen med noen sekunder uten lyd fra hver forbedring, så du kan se dem på en annen iPhone også. De slettes når du sletter analysen eller kontoen.",
             "Derimot lagres det hvor mange analyser du har bedt om, i hvilken idrett og "
             "hvor store de var. Det brukes til bruksgrensene og til å vite hva det "
             "koster.",
@@ -71,6 +71,7 @@ TEXTO = {
         ("Hvor det lagres", [
             "Hos Cloudflare, i en D1-database. Serveren svarer bare appen og lagrer det "
             "appen sender den.",
+            "Trenerens videosekunder ligger i Cloudflare R2. Både databasen og videoene er i EU.",
         ]),
         ("Verken reklame eller sporing", [
             "Det er ingen reklame. Ingen sporing på tvers av apper eller nettsteder. "

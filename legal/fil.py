@@ -2,7 +2,7 @@
 
 TEXTO = {
     "legal_volver": 'Bumalik sa home',
-    "legal_actualizado": 'Na-update noong 27 Setyembre 2026',
+    "legal_actualizado": "Na-update noong 8 Oktubre 2026",
 
     "privacidad_titulo": 'Privacy',
     "privacidad_entrada": 'Ginawa ang Rackers para maglaro, hindi para mangolekta ng datos. Nakasulat dito nang malinaw kung ano ang naiimbak, saan, at paano ito buburahin.',
@@ -25,7 +25,7 @@ TEXTO = {
         ]),
         ('Ang AI coach', [
             'Kapag humingi ka ng pagsusuri, kumukuha ang app ng mga frame mula sa video at ipinapadala ang mga ito sa OpenAI sa pamamagitan ng server namin, na nagbabalik ng ulat.',
-            'Walang naiimbak sa server mula sa video. Bumabalik ang ulat sa app at nananatili sa kopya mo.',
+            "Walang naiimbak sa server mula sa buong video. Bumabalik ang ulat sa app at nananatili sa kopya mo, kasama ang ilang segundong walang tunog mula sa bawat dapat pagbutihin, para makita mo rin ang mga ito sa ibang iPhone. Nabubura ang mga ito kapag binura mo ang analysis o ang account.",
             'Ang natitira ay tala lang kung ilang pagsusuri ang hiniling mo, para sa anong isport at gaano kalaki. Para ito sa limitasyon ng paggamit at para malaman ang gastos.',
         ]),
         ('Ang subscription', [
@@ -43,6 +43,7 @@ TEXTO = {
         ]),
         ('Saan naiimbak', [
             'Sa Cloudflare, sa isang D1 database. Sa app lang sumasagot ang server at ang ipinadala lang ng app ang hawak nito.',
+            "Nasa Cloudflare R2 ang mga segundo ng video ng coach. Nasa European Union ang database at ang mga video.",
         ]),
         ('Walang ad, walang pagsubaybay', [
             'Walang patalastas. Walang pagsubaybay sa pagitan ng mga app o website. Walang ipinagbibili o ibinibigay sa ibang partido para sa sarili nilang gamit.',

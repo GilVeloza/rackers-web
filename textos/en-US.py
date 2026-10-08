@@ -95,9 +95,7 @@ TEXTO = {
          "Yes. Your matches, stats and tournaments are yours and live on your iPhone. You "
          "only need data for public tournaments and for video analysis."),
         ("What happens to my Health data?",
-         "It stays on your iPhone. The app reads it to tell you how you're arriving today "
-         "and sends it nowhere. From a video, only a handful of still frames are sent for "
-         "the analysis; the video itself stays with you."),
+         "It stays on your iPhone. The app reads it to tell you how you're arriving today and sends it nowhere. From a video, only a handful of still frames are sent for the analysis; the video itself stays with you. Your account only keeps a few silent seconds from each improvement, so you can watch them on another iPhone."),
         ("Does it work for doubles and for playing with friends?",
          "Yes. Save your regulars once and pick them for each match or tournament. If they "
          "link their profile, their matches show up in their own app."),

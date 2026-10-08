@@ -2,13 +2,14 @@
 
 Lo que dice aquí tiene que casar con lo que hace el código: la copia de
 seguridad sube partidos (con el pulso que midió el reloj), la salud de «Cómo
-llegas hoy» no sale del iPhone y del vídeo del entrenador no se guarda nada.
+llegas hoy» no sale del iPhone y del vídeo del entrenador solo se guardan
+unos segundos sin sonido de cada mejora, que se borran con su análisis.
 Si eso cambia en la app o en el servidor, esto cambia también.
 """
 
 TEXTO = {
     "legal_volver": "Kembali ke laman utama",
-    "legal_actualizado": "Dikemas kini pada 27 September 2026",
+    "legal_actualizado": "Dikemas kini pada 8 Oktober 2026",
 
     # --- Privacidad ---------------------------------------------------------
     "privacidad_titulo": "Privasi",
@@ -49,8 +50,7 @@ TEXTO = {
             "Apabila anda meminta analisis, aplikasi mengambil bingkai daripada video "
             "dan menghantarnya ke OpenAI melalui pelayan kami, yang memulangkan "
             "laporan.",
-            "Tiada apa daripada video disimpan di pelayan. Laporan kembali ke aplikasi "
-            "dan kekal dalam salinan anda.",
+            "Tiada apa daripada video penuh disimpan di pelayan. Laporan kembali ke aplikasi dan kekal dalam salinan anda, bersama beberapa saat tanpa bunyi daripada setiap penambahbaikan, supaya anda dapat melihatnya pada iPhone lain juga. Ia dipadam apabila anda memadam analisis atau akaun.",
             "Yang kekal ialah rekod berapa analisis anda minta, daripada sukan apa dan "
             "sebesar mana. Ia untuk had penggunaan dan untuk tahu berapa kosnya.",
         ]),
@@ -74,6 +74,7 @@ TEXTO = {
         ("Di mana ia disimpan", [
             "Di Cloudflare, dalam pangkalan data D1. Pelayan hanya menjawab aplikasi "
             "dan menyimpan apa yang aplikasi hantar kepadanya.",
+            "Saat-saat video jurulatih disimpan di Cloudflare R2. Pangkalan data dan video kedua-duanya berada di Kesatuan Eropah.",
         ]),
         ("Tiada iklan, tiada penjejakan", [
             "Tiada pengiklanan. Tiada penjejakan merentas aplikasi atau laman web. "

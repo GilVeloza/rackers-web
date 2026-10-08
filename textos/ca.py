@@ -100,9 +100,7 @@ TEXTO = {
          "iPhone. Només calen dades per als tornejos públics i per a l'anàlisi de "
          "vídeo."),
         ("Què passa amb les meves dades de Salut?",
-         "Es queden al teu iPhone. L'app les llegeix per dir-te com arribes avui i no "
-         "les envia enlloc. Del vídeo només surten unes quantes imatges soltes per a "
-         "l'anàlisi; el vídeo sencer es queda amb tu."),
+         "Es queden al teu iPhone. L'app les llegeix per dir-te com arribes avui i no les envia enlloc. Del vídeo només surten unes quantes imatges soltes per a l'anàlisi; el vídeo sencer es queda amb tu. Al teu compte només hi van uns segons sense so de cada millora, per veure'ls en un altre iPhone."),
         ("Val per a dobles i per jugar amb amics?",
          "Sí. Deses els habituals un cop i els tries a cada partit o torneig. Si "
          "vinculen el seu perfil, reben els seus partits a la seva app."),

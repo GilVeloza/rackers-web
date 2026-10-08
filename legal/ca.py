@@ -2,13 +2,14 @@
 
 Lo que dice aquí tiene que casar con lo que hace el código: la copia de
 seguridad sube partidos (con el pulso que midió el reloj), la salud de «Cómo
-llegas hoy» no sale del iPhone y del vídeo del entrenador no se guarda nada.
+llegas hoy» no sale del iPhone y del vídeo del entrenador solo se guardan
+unos segundos sin sonido de cada mejora, que se borran con su análisis.
 Si eso cambia en la app o en el servidor, esto cambia también.
 """
 
 TEXTO = {
     "legal_volver": "Tornar a la portada",
-    "legal_actualizado": "Actualitzat el 27 de setembre de 2026",
+    "legal_actualizado": "Actualitzat el 8 d'octubre de 2026",
 
     # --- Privacidad ---------------------------------------------------------
     "privacidad_titulo": "Privacitat",
@@ -45,8 +46,7 @@ TEXTO = {
         ("L'entrenador amb IA", [
             "Quan demanes una anàlisi, l'app treu fotogrames del vídeo i els envia a "
             "OpenAI a través del nostre servidor, que retorna l'informe.",
-            "Del vídeo no es desa res al servidor. L'informe torna a l'app i es queda a "
-            "la teva còpia.",
+            "Del vídeo sencer no es desa res al servidor. L'informe torna a l'app i es queda a la teva còpia, juntament amb uns segons sense so de cada millora, perquè també els puguis veure en un altre iPhone. S'esborren quan esborres l'anàlisi o el compte.",
             "Sí que queda el registre de quantes anàlisis has demanat, de quin esport i "
             "quant ocupaven. Serveix per als límits d'ús i per saber què costa.",
         ]),
@@ -69,6 +69,7 @@ TEXTO = {
         ("On es desa", [
             "A Cloudflare, en una base de dades D1. El servidor només respon a l'app i "
             "desa el que l'app li envia.",
+            "Els segons de vídeo de l'entrenador, a Cloudflare R2. La base de dades i els vídeos són a la Unió Europea.",
         ]),
         ("Ni anuncis ni rastreig", [
             "No hi ha publicitat. No hi ha seguiment entre apps ni webs. No es ven ni "
