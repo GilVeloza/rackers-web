@@ -8,8 +8,6 @@ TEXTO = {
                    "und Turniere, die sich selbst organisieren.",
     "nav": ["Was sie kann", "Die Uhr", "Preis", "Fragen"],
     "descargar": "Laden",
-    "pronto": "Bald im App Store",
-    "pronto_corto": "Bald",
     "hero_titulo": ["Eine App,", "sechs Sportarten"],
     "hero_boton": "Im App Store laden",
     "hero_enlace": "Ansehen, was sie kann",

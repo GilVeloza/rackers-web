@@ -8,8 +8,6 @@ TEXTO = {
                    "match après match et vos tournois organisés tout seuls.",
     "nav": ["Ce que ça fait", "La montre", "Prix", "Questions"],
     "descargar": "Télécharger",
-    "pronto": "Bientôt sur l’App Store",
-    "pronto_corto": "Bientôt",
     "hero_titulo": ["Une app,", "six sports"],
     "hero_boton": "Télécharger sur l'App Store",
     "hero_enlace": "Voir ce que ça fait",

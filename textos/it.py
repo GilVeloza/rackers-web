@@ -8,8 +8,6 @@ TEXTO = {
                    "miglioramenti che si vedono e tornei che si montano da soli.",
     "nav": ["Cosa fa", "L'orologio", "Prezzo", "Domande"],
     "descargar": "Scarica",
-    "pronto": "Presto su App Store",
-    "pronto_corto": "Presto",
     "hero_titulo": ["Un'app,", "sei sport"],
     "hero_boton": "Scarica su App Store",
     "hero_enlace": "Guarda cosa fa",

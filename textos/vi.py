@@ -8,8 +8,6 @@ TEXTO = {
                    "đấu tự xếp lịch.",
     "nav": ["Làm được gì", "Đồng hồ", "Giá", "Câu hỏi"],
     "descargar": "Tải về",
-    "pronto": "Sắp có trên App Store",
-    "pronto_corto": "Sắp có",
     "hero_titulo": ["Một ứng dụng,", "sáu môn"],
     "hero_boton": "Tải trên App Store",
     "hero_enlace": "Xem nó làm được gì",

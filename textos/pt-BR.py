@@ -8,8 +8,6 @@ TEXTO = {
                    "ver e torneios que se montam sozinhos.",
     "nav": ["O que ela faz", "O relógio", "Preço", "Perguntas"],
     "descargar": "Baixar",
-    "pronto": "Em breve na App Store",
-    "pronto_corto": "Em breve",
     "hero_titulo": ["Um app,", "seis esportes"],
     "hero_boton": "Baixar na App Store",
     "hero_enlace": "Ver o que ela faz",

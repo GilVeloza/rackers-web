@@ -8,8 +8,6 @@ TEXTO = {
                    "se om du bliver bedre, og arranger turneringer.",
     "nav": ["Hvad den gør", "Uret", "Pris", "Spørgsmål"],
     "descargar": "Hent",
-    "pronto": "Snart i App Store",
-    "pronto_corto": "Snart",
     "hero_titulo": ["Én app,", "seks sportsgrene"],
     "hero_boton": "Hent i App Store",
     "hero_enlace": "Se hvad den gør",

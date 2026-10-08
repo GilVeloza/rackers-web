@@ -8,8 +8,6 @@ TEXTO = {
                    "बन जाने वाले टूर्नामेंट।",
     "nav": ["क्या करता है", "घड़ी", "कीमत", "सवाल"],
     "descargar": "डाउनलोड",
-    "pronto": "जल्द ही App Store पर",
-    "pronto_corto": "जल्द ही",
     "hero_titulo": ["एक ऐप,", "छह खेल"],
     "hero_boton": "App Store से डाउनलोड करें",
     "hero_enlace": "देखिए क्या करता है",

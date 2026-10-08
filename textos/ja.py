@@ -8,8 +8,6 @@ TEXTO = {
                    "組み上がる大会。",
     "nav": ["できること", "Apple Watch", "料金", "よくある質問"],
     "descargar": "入手",
-    "pronto": "近日App Storeに登場",
-    "pronto_corto": "近日公開",
     "hero_titulo": ["ひとつのアプリで、", "六つの競技"],
     "hero_boton": "App Storeで入手",
     "hero_enlace": "できることを見る",

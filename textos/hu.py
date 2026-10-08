@@ -8,8 +8,6 @@ TEXTO = {
                    "fejlődés és tornák, amelyek maguktól állnak össze.",
     "nav": ["Mit tud", "Az óra", "Ár", "Kérdések"],
     "descargar": "Letöltés",
-    "pronto": "Hamarosan az App Store-ban",
-    "pronto_corto": "Hamarosan",
     "hero_titulo": ["Egy app,", "hat sportág"],
     "hero_boton": "Letöltés az App Store-ból",
     "hero_enlace": "Nézd meg, mit tud",

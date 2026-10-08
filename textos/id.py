@@ -8,8 +8,6 @@ TEXTO = {
                    "dan turnamen yang tersusun sendiri.",
     "nav": ["Apa yang bisa", "Jam tangan", "Harga", "Pertanyaan"],
     "descargar": "Unduh",
-    "pronto": "Segera di App Store",
-    "pronto_corto": "Segera",
     "hero_titulo": ["Satu aplikasi,", "enam olahraga"],
     "hero_boton": "Unduh di App Store",
     "hero_enlace": "Lihat apa yang bisa",

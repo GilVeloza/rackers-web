@@ -8,8 +8,6 @@ TEXTO = {
                    "en toernooien die zichzelf indelen.",
     "nav": ["Wat het doet", "De horloge", "Prijs", "Vragen"],
     "descargar": "Download",
-    "pronto": "Binnenkort in de App Store",
-    "pronto_corto": "Binnenkort",
     "hero_titulo": ["Eén app,", "zes sporten"],
     "hero_boton": "Download in de App Store",
     "hero_enlace": "Bekijk wat het doet",

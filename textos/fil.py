@@ -8,8 +8,6 @@ TEXTO = {
                    "kita mo, at mga torneo na kusang nabubuo.",
     "nav": ["Ano'ng kaya", "Ang relo", "Presyo", "Mga tanong"],
     "descargar": "I-download",
-    "pronto": "Malapit nang mapunta sa App Store",
-    "pronto_corto": "Malapit na",
     "hero_titulo": ["Isang app,", "anim na isport"],
     "hero_boton": "I-download sa App Store",
     "hero_enlace": "Tingnan ang kaya nito",

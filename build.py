@@ -39,17 +39,13 @@ ESTATICO = SALIDA / "static"
 FICHA = RAIZ / "design/app-store/idiomas"
 LOGO = RAIZ / "design/logo/final"
 MARCOS = RAIZ / "design/marcos"
-# El corro de «Seis deportes»: las seis raquetas peloteando entre ellas, con la
-# pelota que se convierte en la de cada deporte según va hacia su raqueta.
-RALLY_ORIGEN = RAIZ / "design/video/rally.mp4"
+# Las raquetas de las tarjetas de «Seis deportes», cada una girando con su
+# pelota, una por vídeo. Las saca Blender: design/video/deportes/build.py.
+DEPORTES_ORIGEN = RAIZ / "design/video/deportes"
 
-# Los golpes del corro, medidos sobre el vídeo: el fotograma, a 30 por segundo,
-# en que cada raqueta le da a la pelota. Es cuando cambia el nombre que sale
-# debajo. El bucle son 132 fotogramas y le dan cada 22, en este orden. Si
-# cambia el vídeo, hay que volver a medirlos.
-FPS_RALLY = 30
-GOLPES_RALLY = {"tenis": 10, "padel": 32, "pickleball": 54,
-                "squash": 76, "tenis-de-mesa": 98, "badminton": 120}
+# La ficha de la app. Sin país: apps.apple.com manda a cada uno a la tienda
+# del suyo, y en el iPhone se abre en la app App Store.
+APP_STORE = "https://apps.apple.com/app/rackers-pickleball-tennis/id6812907266"
 
 # El peloteo del hero: dos raquetas que se pasan la pelota y, en cada golpe, la
 # que la recibe se convierte en el deporte siguiente; en medio, el móvil. El
@@ -116,6 +112,11 @@ ANCHO_MARCO_RELOJ = 620
 HUECO_MOVIL = (75 / 1470, 66 / 3000, 1320 / 1470, 2868 / 3000)
 HUECO_RELOJ = (72 / 560, 192 / 880, 416 / 560, 496 / 880)
 
+# El cuadrado de cada deporte se ve a unos 365 px en la rejilla de tres: el
+# vídeo es de 720, el doble, para pantalla retina. Aquí solo se le anuncia al
+# navegador; el tamaño de verdad lo decide LADO en design/video/deportes/build.py.
+ANCHO_DEPORTE = 720
+
 
 # ---------------------------------------------------------------- imágenes
 
@@ -134,22 +135,26 @@ def reducir(origen: Path, destino: Path, ancho: int) -> None:
                    check=True, capture_output=True)
 
 
-def preparar_rally() -> None:
-    """El corro de las seis raquetas, tal cual y con su cartel.
+def preparar_deportes() -> None:
+    """Las seis raquetas, cada una en su vídeo y con su cartel.
 
-    No se recodifica: el original ya viene como lo quiere un navegador
-    —H.264 1920 × 1080, sin pista de sonido y con la cabecera al principio—,
-    así que cualquier pasada por ffmpeg solo le quitaría calidad."""
-    destino = ESTATICO / "rally.mp4"
-    cartel = ESTATICO / "rally.jpg"
-    if not RALLY_ORIGEN.exists():
-        sys.exit(f"Falta el vídeo: {RALLY_ORIGEN}")
-    if (destino.exists() and cartel.exists()
-            and destino.stat().st_mtime >= RALLY_ORIGEN.stat().st_mtime):
-        return
-    destino.parent.mkdir(parents=True, exist_ok=True)
-    shutil.copyfile(RALLY_ORIGEN, destino)
-    primer_fotograma(RALLY_ORIGEN, cartel)
+    Los vídeos no se recodifican a propósito: design/video/deportes/build.py
+    ya los saca como los quiere un navegador —H.264, sin pista de sonido y con
+    la cabecera al principio—, así que cualquier pasada por ffmpeg solo les
+    quitaría calidad. El cartel es lo que se ve mientras cargan, y lo único que
+    ve quien pide menos movimiento."""
+    for nombre in RAQUETAS:
+        origen = DEPORTES_ORIGEN / f"{nombre}.mp4"
+        destino = ESTATICO / f"deportes/{nombre}.mp4"
+        cartel = ESTATICO / f"deportes/{nombre}.jpg"
+        if not origen.exists():
+            sys.exit(f"Falta el vídeo: {origen}. Se saca con python3 design/video/deportes/build.py")
+        if (destino.exists() and cartel.exists()
+                and destino.stat().st_mtime >= origen.stat().st_mtime):
+            continue
+        destino.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copyfile(origen, destino)
+        primer_fotograma(origen, cartel)
 
 
 def preparar_peloteo() -> None:
@@ -464,15 +469,14 @@ def selector(idioma: str) -> str:
 
 
 def boton(texto: str, clase: str = "principal") -> str:
-    """El cartel del App Store. Mientras la app no esté publicada no es un
-    enlace: mandar a una ficha que no existe es peor que no mandar a nada."""
-    return (f'<span class="boton {clase} pronto">'
+    """El botón del App Store, que lleva a la ficha de la app."""
+    return (f'<a class="boton {clase}" href="{APP_STORE}">'
             f'<svg viewBox="0 0 16 20" width="16" height="20" aria-hidden="true">'
             f'<path d="M11.2 10.6c0-2 1.6-3 1.7-3-0.9-1.4-2.4-1.5-2.9-1.6-1.2-0.1-2.4 0.7-3 0.7s-1.6-0.7-2.6-0.7'
             f'c-1.3 0-2.6 0.8-3.3 2-1.4 2.4-0.4 6 1 8 0.7 1 1.5 2.1 2.5 2 1 0 1.4-0.6 2.6-0.6s1.5 0.6 2.6 0.6'
             f'c1.1 0 1.8-1 2.4-2 0.8-1.1 1.1-2.2 1.1-2.3 0 0-2.1-0.8-2.1-3.1zM9.3 4.2c0.5-0.7 0.9-1.6 0.8-2.6'
             f'-0.8 0-1.8 0.5-2.4 1.2-0.5 0.6-0.9 1.6-0.8 2.5 0.9 0.1 1.8-0.4 2.4-1.1z" fill="currentColor"/></svg>'
-            f'{texto}</span>')
+            f'{texto}</a>')
 
 
 def seccion_funcion(idioma: str, indice: int, funcion: tuple) -> str:
@@ -528,10 +532,13 @@ def pagina(idioma: str, t: dict) -> str:
         f'<h3>{titulo}</h3><p>{texto}</p>'
         f'<div class="paso-pieza" aria-hidden="true">{pieza(idioma, PASOS[i])}</div></li>'
         for i, (titulo, texto) in enumerate(t["pasos"]))
-    # Los seis nombres, en el orden de siempre, cada uno con el segundo del
-    # corro en que su raqueta le da a la pelota.
-    nombres = "".join(
-        f'<li data-golpe="{GOLPES_RALLY[RAQUETAS[i]] / FPS_RALLY:.3f}">{nombre}</li>'
+    # Sin autoplay a propósito: las arranca el JavaScript, las seis a la vez.
+    deportes = "".join(
+        f'<li class="deporte reveal" style="--retraso: {i * 70}ms">'
+        f'<video src="../static/deportes/{RAQUETAS[i]}.mp4" poster="../static/deportes/{RAQUETAS[i]}.jpg"'
+        f' width="{ANCHO_DEPORTE}" height="{ANCHO_DEPORTE}" muted loop playsinline preload="none"'
+        f' disablepictureinpicture aria-hidden="true"></video>'
+        f'<h3>{nombre}</h3></li>'
         for i, nombre in enumerate(t["deportes"]))
     funciones = bloque_funciones(idioma, t["funciones"])
     reloj_puntos = "".join(f"<li>{p}</li>" for p in t["reloj_puntos"])
@@ -577,7 +584,7 @@ def pagina(idioma: str, t: dict) -> str:
   <nav>
     {marca(viva=True)}
     <div class="enlaces">{nav}</div>
-    <div class="acciones">{selector(idioma)}{boton(t["pronto_corto"], "pequeno")}</div>
+    <div class="acciones">{selector(idioma)}{boton(t["descargar"], "pequeno")}</div>
   </nav>
 </header>
 
@@ -585,7 +592,7 @@ def pagina(idioma: str, t: dict) -> str:
   <section class="hero">
     <div class="hero-texto">
       <h1>{"<br>".join(t["hero_titulo"])}</h1>
-      <div class="hero-botones">{boton(t["pronto"])}
+      <div class="hero-botones">{boton(t["hero_boton"])}
         <a class="enlace-suave" href="#funciones">{t["hero_enlace"]} <span aria-hidden="true">↓</span></a>
       </div>
       <p class="nota">{t["hero_nota"]}</p>
@@ -606,19 +613,7 @@ def pagina(idioma: str, t: dict) -> str:
 
   <section class="deportes" id="deportes">
     <h2 class="reveal">{t["deportes_titulo"]}</h2>
-    <!-- Las seis raquetas pelotean en corro y debajo sale el nombre del
-         deporte que le da a la pelota, en el mismo fotograma del golpe. Sin
-         autoplay a propósito: lo arranca el JavaScript cuando se ve. Sin él, o
-         para quien pide menos movimiento, el cartel y los seis nombres en
-         fila. -->
-    <div class="corro reveal">
-      <div class="corro-escena">
-        <video class="corro-video" src="../static/rally.mp4" poster="../static/rally.jpg"
-               width="1920" height="1080" muted loop playsinline preload="none"
-               disablepictureinpicture aria-hidden="true"></video>
-      </div>
-      <ul class="corro-nombres">{nombres}</ul>
-    </div>
+    <ul class="rejilla-deportes">{deportes}</ul>
   </section>
 
   <section class="pasos">
@@ -665,7 +660,7 @@ def pagina(idioma: str, t: dict) -> str:
   <section class="cierre reveal">
     <h2>{t["cta_titulo"]}</h2>
     <p class="entrada">{t["cta_texto"]}</p>
-    {boton(t["pronto"])}
+    {boton(t["hero_boton"])}
   </section>
 </main>
 
@@ -821,10 +816,6 @@ section[id] { scroll-margin-top: var(--cabecera); }
 }
 .boton:hover { transform: translateY(-2px) scale(1.02); box-shadow: 0 0 34px rgba(182, 242, 78, .4), 0 18px 40px -14px rgba(182, 242, 78, .8); }
 .boton.pequeno { padding: 9px 18px; font-size: 15px; animation: none; }
-/* Mientras la app no esté publicada, el botón es un cartel: se ve igual pero
-   no lleva a ningún sitio, así que no se comporta como si se pudiera pulsar. */
-.boton.pronto { cursor: default; }
-.boton.pronto:hover { transform: none; box-shadow: 0 0 0 rgba(182, 242, 78, .5), 0 14px 34px -14px rgba(182, 242, 78, .75); }
 @keyframes latido {
   0%, 100% { box-shadow: 0 0 0 rgba(182, 242, 78, 0), 0 14px 34px -14px rgba(182, 242, 78, .75); }
   50% { box-shadow: 0 0 30px rgba(182, 242, 78, .35), 0 14px 34px -14px rgba(182, 242, 78, .75); }
@@ -896,69 +887,35 @@ section[id] { scroll-margin-top: var(--cabecera); }
   width: 100%; height: 100%; pointer-events: none;
 }
 
-/* --- Deportes: el corro de las seis raquetas --- */
-/* El vídeo trae el mismo azul que la página, así que basta con difuminarle
-   los cantos para que las raquetas parezcan estar en el propio fondo. El velo
-   es una elipse que sigue al corro, no un rectángulo: con los cantos rectos
-   se adivinaba el recuadro contra las luces de la página. Está medido sobre
-   los 132 fotogramas: todo lo que se pinta —raquetas, pelota, los aros de
-   cada golpe y el anillo del suelo— queda dentro y fuera solo hay aire.
-   Menos por abajo, donde el anillo llega casi al borde: ahí la elipse aún
-   está opaca y el canto se vería recto, así que los últimos píxeles se
-   apagan aparte. Lo mismo a los lados y arriba: la elipse llega al canto
-   aún medio opaca y se veía el corte contra las luces verdes de la página,
-   así que ahí también se apaga del todo antes del borde. Debajo, el mismo halo azul que trae el vídeo, más grande y
-   más suave.
-
-   Mide 1000 px como mucho y en el móvil va de lado a lado, comiéndose el
-   margen de la sección. */
-.deportes h2 { margin-bottom: clamp(4px, 1.5vw, 16px); }
-.corro {
-  --ancho-corro: min(100% + 48px, 1000px);
-  width: var(--ancho-corro); margin-inline: calc((100% - var(--ancho-corro)) / 2);
+/* --- Deportes: seis cuadrados, uno por raqueta --- */
+/* El vídeo ya trae el fondo azul y el brillo de la app, así que la tarjeta
+   no pinta nada encima: solo lo recorta, lo enmarca y deja sitio al nombre. */
+.rejilla-deportes {
+  list-style: none; padding: 0; margin: 44px 0 0;
+  display: grid; gap: 18px;
+  grid-template-columns: repeat(3, 1fr);
 }
-.corro-escena { position: relative; }
-.corro-escena::before {
-  content: ""; position: absolute; z-index: 0; inset: -10% 0;
-  background: radial-gradient(56% 54% at 50% 52%, rgba(32, 50, 92, .6), transparent 72%);
-  filter: blur(30px); pointer-events: none;
+.deporte {
+  position: relative; overflow: hidden;
+  border: 1px solid var(--borde); border-radius: var(--radio);
+  transition: transform .35s cubic-bezier(.2, .8, .3, 1),
+              box-shadow .35s ease, border-color .35s ease;
 }
-.corro-video {
-  position: relative; z-index: 1;
-  display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: contain;
-  --velo: radial-gradient(56% 60% at 50% 54%, #000 72%, transparent);
-  --suelo: linear-gradient(to top, transparent, #000 4.5%);
-  --lados: linear-gradient(to right, transparent, rgba(0, 0, 0, .35) 5%, #000 13%, #000 87%, rgba(0, 0, 0, .35) 95%, transparent);
-  --cielo: linear-gradient(to bottom, transparent, #000 12%);
-  -webkit-mask-image: var(--velo), var(--lados), var(--cielo), var(--suelo);
-  -webkit-mask-composite: source-in;
-          mask-image: var(--velo), var(--lados), var(--cielo), var(--suelo);
-          mask-composite: intersect;
+.deporte video { display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; }
+/* Un velo de abajo arriba para que el nombre se lea sin tapar la raqueta. */
+.deporte::after {
+  content: ""; position: absolute; inset: auto 0 0; height: 58%;
+  background: linear-gradient(180deg, transparent, rgba(6, 10, 22, .93));
+  pointer-events: none;
 }
-/* Los seis nombres. Quietos —sin JavaScript o para quien pide menos
-   movimiento— van en fila. Con el vídeo en marcha (.en-vivo) van los seis en
-   la misma celda y solo se ve el del último golpe, que entra de un golpe: así
-   el hueco mide lo del nombre más largo y no salta nada al cambiar. */
-.corro-nombres {
-  list-style: none; margin: 6px 0 0; padding: 0 24px;
-  display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 22px;
-  font-size: 17px; font-weight: 700; color: var(--crema);
+.deporte h3 {
+  position: absolute; inset: auto 0 0; z-index: 1; margin: 0;
+  padding: 0 20px 18px; font-size: clamp(18px, 1.6vw, 22px);
 }
-.corro-nombres li::before {
-  content: ""; display: inline-block; width: 7px; height: 7px; border-radius: 50%;
-  margin-inline-end: 9px; vertical-align: middle; background: var(--lima);
-}
-.corro-nombres.en-vivo {
-  display: grid; justify-items: center; text-align: center;
-  font-size: clamp(32px, 5vw, 60px); font-weight: 800; line-height: 1.04; letter-spacing: -.03em;
-  color: var(--lima); text-shadow: 0 0 28px rgba(182, 242, 78, .35);
-}
-.corro-nombres.en-vivo li { grid-area: 1 / 1; opacity: 0; }
-.corro-nombres.en-vivo li::before { content: none; }
-.corro-nombres.en-vivo li.activo { opacity: 1; animation: golpe .45s cubic-bezier(.2, .9, .3, 1.3); }
-@keyframes golpe {
-  from { opacity: 0; transform: scale(.7); }
-  to { opacity: 1; transform: none; }
+.deporte:hover {
+  transform: translateY(-5px);
+  border-color: rgba(182, 242, 78, .45);
+  box-shadow: 0 0 38px rgba(182, 242, 78, .18), 0 24px 48px -20px rgba(0, 0, 0, .85);
 }
 
 /* --- Pasos --- */
@@ -1152,6 +1109,8 @@ footer { border-top: 1px solid var(--borde); padding: 44px 24px 34px; }
   .funcion.derecha .funcion-texto { order: 0; }
   .movil { max-width: 320px; margin: 0 auto; }
   .rejilla-pasos, .funciones-sueltas { grid-template-columns: 1fr; }
+  /* Seis cuadrados: tres columnas en pantalla grande, dos aquí. */
+  .rejilla-deportes { grid-template-columns: repeat(2, 1fr); gap: 14px; }
   .enlaces { display: none; }
   .acciones { margin-inline-start: auto; }
   .idiomas { max-width: 130px; }
@@ -1160,6 +1119,10 @@ footer { border-top: 1px solid var(--borde); padding: 44px 24px 34px; }
   /* Las tres pestañas en una línea: con el relleno de escritorio, «Para
      siempre» partía en dos y dejaba la píldora torcida. */
   .pestana { padding: 9px 13px; font-size: 14px; }
+  /* En dos columnas los nombres largos parten en dos líneas: más velo y
+     menos cuerpo, para que no se echen encima de la raqueta. */
+  .deporte h3 { font-size: 16px; padding: 0 14px 13px; }
+  .deporte::after { height: 70%; }
   .marca img { height: 28px; }
   .marca.viva { height: 40px; }
   .marca video { height: 40px; }
@@ -1311,47 +1274,44 @@ JS = """// Las animaciones de la web: aparecer al llegar, el móvil que flota, l
     mover();
   }
 
-  // El corro de los deportes: las seis raquetas pelotean y, en cada golpe, el
-  // nombre del deporte que le da cambia a la vez. El segundo de cada golpe va
-  // en el HTML (data-golpe). Para ir clavado se mira cada fotograma que pinta
-  // el navegador (requestVideoFrameCallback), no el reloj del vídeo, que
-  // avisa cuando quiere. Arranca cuando el corro está a punto de verse y se
-  // para al salir. Los nombres no se ponen de uno en uno hasta que el vídeo
-  // anda: si no arranca —el iPhone en ahorro de batería, por ejemplo— se
-  // quedan los seis en fila, igual que para quien pide menos movimiento.
-  const corro = document.querySelector('.corro-video');
-  const nombres = [...document.querySelectorAll('.corro-nombres li')];
-  if (suave && corro && nombres.length) {
-    const golpes = nombres.map((li) => ({ li, t: +li.dataset.golpe })).sort((a, b) => a.t - b.t);
-    let activo = null;
-    const marcar = (t) => {
-      // El último golpe que ya ha pasado; antes del primero, el último de la
-      // vuelta anterior.
-      let ultimo = golpes[golpes.length - 1];
-      for (const g of golpes) if (g.t <= t + .005) ultimo = g;
-      if (ultimo === activo) return;
-      if (activo) activo.li.classList.remove('activo');
-      ultimo.li.classList.add('activo');
-      activo = ultimo;
-    };
-    if ('requestVideoFrameCallback' in corro) {
-      const cada = (_, datos) => { marcar(datos.mediaTime); corro.requestVideoFrameCallback(cada); };
-      corro.requestVideoFrameCallback(cada);
-    } else {
-      const cada = () => { if (!corro.paused) { marcar(corro.currentTime); requestAnimationFrame(cada); } };
-      corro.addEventListener('play', () => requestAnimationFrame(cada));
-    }
-    corro.addEventListener('playing', () => {
-      marcar(corro.currentTime);
-      nombres[0].parentElement.classList.add('en-vivo');
-    }, { once: true });
-    corro.muted = true;
-    const jugar = () => corro.play().catch(() => {});
+  // Las raquetas de los deportes. Cada una gira en un momento distinto del
+  // bucle, así que si van a la par el giro pasa de una a otra como una ola.
+  // Arrancan las seis cuando la rejilla está a punto de verse y se paran al
+  // salir. Quien pide menos movimiento se queda con el cartel, que es el
+  // primer fotograma.
+  const raquetas = [...document.querySelectorAll('.deporte video')];
+  if (suave && raquetas.length) {
+    // Cada una echa a andar según le llegan los datos, y el móvil puede
+    // frenar alguna. La que va detrás de la primera acelera un poco y la que
+    // va delante frena, hasta ir a la par. Saltar al segundo exacto no vale:
+    // en un móvil lento el salto tarda más que el desfase que corrige, se
+    // queda otra vez atrás y salta sin parar. Solo salta si se ha ido más de
+    // un segundo, y nunca mientras está saltando.
+    const lider = raquetas[0];
+    lider.addEventListener('timeupdate', () => {
+      const t = lider.currentTime, d = lider.duration;
+      raquetas.forEach((v) => {
+        if (v === lider) return;
+        let atras = t - v.currentTime;
+        // Módulo la duración: si la primera va en 5,99 s y otra ya ha dado
+        // la vuelta y va en 0,01, esa va 0,02 s por delante, no 5,98 detrás.
+        if (atras > d / 2) atras -= d;
+        if (atras < -d / 2) atras += d;
+        if (Math.abs(atras) > 1) {
+          if (!v.seeking) v.currentTime = t;
+        } else {
+          v.playbackRate = Math.abs(atras) < .03 ? 1 : 1 + Math.max(-.25, Math.min(.25, atras));
+        }
+      });
+    });
+    const jugar = () => raquetas.forEach((v) => v.play().catch(() => {}));
+    const parar = () => raquetas.forEach((v) => v.pause());
     if ('IntersectionObserver' in window) {
       // Si llegan varios avisos juntos (entrar y salir con un tirón de
       // scroll), manda el último.
-      new IntersectionObserver((avisos) => (avisos[avisos.length - 1].isIntersecting ? jugar() : corro.pause()),
-                               { rootMargin: '120px 0px' }).observe(corro);
+      new IntersectionObserver((avisos) => (avisos[avisos.length - 1].isIntersecting ? jugar() : parar()),
+                               { rootMargin: '120px 0px' })
+        .observe(document.querySelector('.rejilla-deportes'));
     } else {
       jugar();
     }
@@ -1424,7 +1384,7 @@ def escribir(idiomas: list[str]) -> None:
     (ESTATICO / "rackers.css").write_text(CSS, encoding="utf-8")
     (ESTATICO / "rackers.js").write_text(JS, encoding="utf-8")
     preparar_imagenes(idiomas)
-    preparar_rally()
+    preparar_deportes()
     preparar_peloteo()
     preparar_logo()
     for idioma in idiomas:
@@ -1501,8 +1461,8 @@ def datos_torneo() -> None:
             "privado": de_core("Privado"),
             "deportes": dict(zip(DEPORTES_API, t["deportes"])),
             "formatos": {api: de_core(clave) for api, clave in FORMATOS_API.items()},
-            # El mismo cartel que el resto de la web: «Pronto» hasta que la app se publique.
-            "boton": boton(t["pronto"]),
+            # El mismo botón que el resto de la web.
+            "boton": boton(t["hero_boton"]),
         }
     (ESTATICO / "torneo.json").write_text(
         json.dumps({"css": f"/static/rackers.css?v={VERSION_CSS}", "idiomas": idiomas}, ensure_ascii=False),

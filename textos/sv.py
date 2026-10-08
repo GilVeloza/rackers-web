@@ -8,8 +8,6 @@ TEXTO = {
                    "och turneringar som lägger upp sig själva.",
     "nav": ["Vad den gör", "Klockan", "Pris", "Frågor"],
     "descargar": "Hämta",
-    "pronto": "Snart i App Store",
-    "pronto_corto": "Snart",
     "hero_titulo": ["En app,", "sex sporter"],
     "hero_boton": "Hämta i App Store",
     "hero_enlace": "Se vad den gör",

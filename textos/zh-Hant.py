@@ -7,8 +7,6 @@ TEXTO = {
                    "每一分的心率、看得見的進步，還有自己排好的賽程。",
     "nav": ["能做什麼", "手錶", "價格", "常見問題"],
     "descargar": "下載",
-    "pronto": "即將登陸 App Store",
-    "pronto_corto": "即將推出",
     "hero_titulo": ["一個 App，", "六項運動"],
     "hero_boton": "在 App Store 下載",
     "hero_enlace": "看看能做什麼",

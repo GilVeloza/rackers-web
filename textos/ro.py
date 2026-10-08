@@ -8,8 +8,6 @@ TEXTO = {
                    "turnee care se organizează singure.",
     "nav": ["Ce face", "Ceasul", "Preț", "Întrebări"],
     "descargar": "Descarcă",
-    "pronto": "În curând în App Store",
-    "pronto_corto": "În curând",
     "hero_titulo": ["O aplicație,", "șase sporturi"],
     "hero_boton": "Descarcă din App Store",
     "hero_enlace": "Vezi ce face",

@@ -43,17 +43,11 @@ Quien tenga puesto «reducir movimiento» no ve ninguna animación. No usa
 librerías: el CSS y el JavaScript se escriben enteros en `build.py`, como los
 SVG del logo.
 
-En «Seis deportes» las seis raquetas pelotean en corro —el rally de
-`design/video/rally.mp4`, en el repo de la app, 4,4 s en bucle, con la pelota que se convierte en la
-de cada deporte según va hacia su raqueta— y debajo sale el nombre del deporte
-que le da, cambiando en el mismo fotograma del golpe. Esos fotogramas están
-medidos sobre el vídeo y apuntados en `GOLPES_RALLY`, en `build.py`: si
-cambia el vídeo, hay que volver a medirlos. Quien pide menos movimiento ve el
-primer fotograma y los seis nombres en fila.
-
-Las raquetas sueltas, cada una girando en su cuadrado azul, ya no están en la
-web pero siguen en `design/video/deportes/` del repo de la app: vídeos de 6 s en bucle, con las
-mismas raquetas, materiales y luces que el rally. Las saca Blender:
+En «Seis deportes» va cada raqueta girando con su pelota en su cuadrado azul:
+seis vídeos de 6 s en bucle, de `design/video/deportes/` en el repo de la app,
+que el JavaScript arranca a la vez y lleva a la par, así que el giro pasa de
+una a otra como una ola. Quien pide menos movimiento ve el primer fotograma.
+Los saca Blender:
 
 ```sh
 # en el repo de la app

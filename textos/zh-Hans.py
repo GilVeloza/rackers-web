@@ -7,8 +7,6 @@ TEXTO = {
                    "每一分的心率、看得见的进步，还有自己排好的赛程。",
     "nav": ["能做什么", "手表", "价格", "常见问题"],
     "descargar": "下载",
-    "pronto": "即将登陆 App Store",
-    "pronto_corto": "即将推出",
     "hero_titulo": ["一个 App，", "六项运动"],
     "hero_boton": "在 App Store 下载",
     "hero_enlace": "看看能做什么",

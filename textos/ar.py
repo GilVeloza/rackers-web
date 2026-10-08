@@ -8,8 +8,6 @@ TEXTO = {
                    "وحدها.",
     "nav": ["ماذا تفعل", "الساعة", "السعر", "أسئلة"],
     "descargar": "تنزيل",
-    "pronto": "قريبًا في App Store",
-    "pronto_corto": "قريبًا",
     "hero_titulo": ["تطبيق واحد،", "ست رياضات"],
     "hero_boton": "نزّله من App Store",
     "hero_enlace": "شاهد ماذا تفعل",

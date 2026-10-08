@@ -8,8 +8,6 @@ TEXTO = {
                    "gledaj napreduješ li i organiziraj turnire.",
     "nav": ["Što radi", "Sat", "Cijena", "Pitanja"],
     "descargar": "Preuzmi",
-    "pronto": "Uskoro na App Storeu",
-    "pronto_corto": "Uskoro",
     "hero_titulo": ["Jedna aplikacija,", "šest sportova"],
     "hero_boton": "Preuzmi na App Storeu",
     "hero_enlace": "Pogledaj što radi",

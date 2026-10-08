@@ -8,8 +8,6 @@ TEXTO = {
                    "mejor y organiza torneos.",
     "nav": ["Lo que hace", "El reloj", "Precio", "Preguntas"],
     "descargar": "Descargar",
-    "pronto": "Pronto en el App Store",
-    "pronto_corto": "Pronto",
     "hero_titulo": ["Una app,", "seis deportes"],
     "hero_boton": "Descargar en el App Store",
     "hero_enlace": "Ver lo que hace",

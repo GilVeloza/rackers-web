@@ -8,8 +8,6 @@ TEXTO = {
                    "mata, lihat sama ada anda makin baik dan aturkan kejohanan.",
     "nav": ["Apa yang dibuat", "Jam tangan", "Harga", "Soalan"],
     "descargar": "Muat turun",
-    "pronto": "Akan datang di App Store",
-    "pronto_corto": "Akan datang",
     "hero_titulo": ["Satu aplikasi,", "enam sukan"],
     "hero_boton": "Muat turun di App Store",
     "hero_enlace": "Lihat apa yang dibuat",

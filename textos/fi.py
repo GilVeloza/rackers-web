@@ -8,8 +8,6 @@ TEXTO = {
                    "syke joka pisteellä, katso kehitytkö ja järjestä turnauksia.",
     "nav": ["Mitä se tekee", "Kello", "Hinta", "Kysymykset"],
     "descargar": "Lataa",
-    "pronto": "Pian App Storessa",
-    "pronto_corto": "Pian",
     "hero_titulo": ["Yksi sovellus,", "kuusi lajia"],
     "hero_boton": "Lataa App Storesta",
     "hero_enlace": "Katso mitä se tekee",

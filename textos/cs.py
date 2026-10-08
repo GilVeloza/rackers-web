@@ -8,8 +8,6 @@ TEXTO = {
                    "které se poskládají samy.",
     "nav": ["Co umí", "Hodinky", "Cena", "Otázky"],
     "descargar": "Stáhnout",
-    "pronto": "Brzy v App Storu",
-    "pronto_corto": "Brzy",
     "hero_titulo": ["Jedna aplikace,", "šest sportů"],
     "hero_boton": "Stáhnout v App Storu",
     "hero_enlace": "Podívej se, co umí",

@@ -8,8 +8,6 @@ TEXTO = {
                    "kendini kuran turnuvalar.",
     "nav": ["Neler yapıyor", "Saat", "Fiyat", "Sorular"],
     "descargar": "İndir",
-    "pronto": "Yakında App Store’da",
-    "pronto_corto": "Yakında",
     "hero_titulo": ["Tek uygulama,", "altı spor"],
     "hero_boton": "App Store'dan indir",
     "hero_enlace": "Neler yaptığına bak",

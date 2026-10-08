@@ -7,8 +7,6 @@ TEXTO = {
                    "매 포인트의 심박수, 눈으로 확인하는 성장, 알아서 짜이는 대회까지.",
     "nav": ["무엇을 하나", "애플워치", "가격", "질문"],
     "descargar": "받기",
-    "pronto": "곧 App Store에 출시",
-    "pronto_corto": "출시 예정",
     "hero_titulo": ["하나의 앱,", "여섯 종목"],
     "hero_boton": "App Store에서 받기",
     "hero_enlace": "무엇을 하는지 보기",
