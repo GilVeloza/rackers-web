@@ -21,9 +21,19 @@ const ENTRADAS = {
   '/privacy/': 'privacidad', '/terms/': 'condiciones', '/support/': 'soporte',
 };
 
+// Las verificaciones de dominio: TikTok for Developers pide este archivo para
+// dar por buenas las URL de rackers.app (política, condiciones y web) de la
+// app del publicador. Tiene que seguir aquí mientras exista esa app.
+const VERIFICACIONES = {
+  '/tiktok6AFnWd4LKjN97ZW9LIBq29Gre3m4xwgI.txt': 'tiktok-developers-site-verification=6AFnWd4LKjN97ZW9LIBq29Gre3m4xwgI',
+};
+
 export default {
   async fetch(peticion, env) {
     const url = new URL(peticion.url);
+    if (Object.hasOwn(VERIFICACIONES, url.pathname)) {
+      return new Response(VERIFICACIONES[url.pathname], { headers: { 'Content-Type': 'text/plain; charset=utf-8' } });
+    }
     if (url.pathname === '/.well-known/apple-app-site-association') return asociacion();
     const torneo = RUTA_TORNEO.exec(url.pathname);
     if (torneo) return paginaTorneo(peticion, env, url, torneo[1]);
