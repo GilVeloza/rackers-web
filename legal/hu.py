@@ -2,7 +2,7 @@
 
 TEXTO = {
     "legal_volver": 'Vissza a főoldalra',
-    "legal_actualizado": "Frissítve: 2026. október 8.",
+    "legal_actualizado": "Frissítve: 2026. október 11.",
 
     "privacidad_titulo": 'Adatvédelem',
     "privacidad_entrada": 'A Rackers játékra készült, nem adatgyűjtésre. Itt világosan olvasható, mi tárolódik, hol, és hogyan törölhető.',
@@ -37,7 +37,7 @@ TEXTO = {
             'A @neved az, ahogyan mások megtalálnak. Bármikor megváltoztathatod.',
         ]),
         ("Versenyek", [
-            "Ha közzéteszel egy versenyt, elmentjük a nevét, a sportágat, a formátumot, a dátumot, a pályát és a szervező nevét. A tábla és az eredmények az iPhone-odon és a mentésedben maradnak.",
+            "Ha közzéteszel egy versenyt, elmentjük a nevét, a sportágat, a formátumot, a dátumot, a pályát és a szervező nevét. Amikor elkezdődik, a tabellát és a legutóbbi eredményeket is elmentjük a nevezők nevével együtt, hogy bárki, akinél ott a link, követhesse. A teljes tábla az iPhone-odon és a mentésedben marad.",
             "Egy nyilvános versenyt bárki láthat a Versenyek › Nyilvános részben és a rackers.app-os linkjén, fiók nélkül is. Egy priváthoz csak az jut el, akinél megvan a kódja vagy a linkje.",
             "Ha a fiókodból nevezel, a szervező látja a nevet, amellyel neveztél, és értesítést kap az iPhone-jára. Bármikor visszaléphetsz, és ha letiltasz valakit, a köztetek lévő nevezések törlődnek.",
         ]),

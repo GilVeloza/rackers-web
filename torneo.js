@@ -58,8 +58,9 @@ export async function paginaTorneo(peticion, env, url, codigoCrudo) {
 <meta property="og:title" content="${titulo}">
 <meta property="og:description" content="${resumen}">
 <meta property="og:image" content="https://rackers.app/static/rackers.png">
-<meta name="robots" content="noindex">
+<meta name="robots" content="noindex">${torneo?.status === 'started' && torneo.board ? '\n<meta http-equiv="refresh" content="60">' : ''}
 <meta name="theme-color" content="#0B1322">
+<meta name="apple-itunes-app" content="app-id=6812907266, app-argument=https://rackers.app/t/${codigo}">
 <link rel="icon" href="/static/rackers.png">
 <link rel="stylesheet" href="${css}">
 </head>
@@ -105,12 +106,46 @@ function invitacion(t, torneo, codigo, zona, idioma) {
     ? `<p class="pasos">${escapar(t.pasos)}</p>
   <p class="codigo" aria-label="${escapar(t.codigo)}">${codigo}</p>
   ${t.boton}`
-    : `<p class="pasos">${escapar(t.cerrado)}</p>`;
+    : torneo.board
+      ? `${clasificacion(t, torneo)}
+  ${t.boton}`
+      : `<p class="pasos">${escapar(t.cerrado)}</p>`;
   return `<p class="antetitulo">${escapar(t.invitacion)}</p>
   <h1>${escapar(torneo.name)}</h1>
   <p class="tipo">${escapar(t.deportes[torneo.sport] || '')} · ${escapar(t.formatos[torneo.format] || '')} · ${escapar(torneo.visibility === 'public' ? t.publico : t.privado)}</p>
   <ul class="datos">${datos}</ul>
   ${apuntarse}`;
+}
+
+// La clasificación del torneo que ya se juega, como la tabla del torneo en la
+// app: la manda el iPhone del organizador ya calculada (ver `board` en la API).
+// Con ella, el enlace sirve para seguir el torneo sin tener la app.
+function clasificacion(t, torneo) {
+  const b = torneo.board;
+  const porPuntos = b.scoring !== 'difference';
+  const esRey = b.scoring === 'king';
+  const conSigno = (n) => (n > 0 ? `+${n}` : `${n}`);
+  const campeon = b.champion
+    ? `<p class="campeon"><span>${escapar(t.campeon)}</span>${escapar(b.champion)}</p>`
+    : '';
+  const ronda = b.played_rounds > 0
+    ? `<small>${escapar(t.ronda.replace('{n}', b.played_rounds))}${b.planned_rounds ? ` / ${b.planned_rounds}` : ''}</small>`
+    : '';
+  const filas = b.standings.map((fila, i) => `<tr class="${i === 0 ? 'primero' : ''}${fila.retired ? ' retirado' : ''}">
+      <td>${i + 1}</td><td class="nombre">${escapar(fila.name)}</td>${esRey ? `<td>${fila.kings ?? 0}</td>` : ''}
+      <td>${fila.played}</td><td>${fila.won}</td><td class="valor">${porPuntos ? fila.value : conSigno(fila.value)}</td></tr>`).join('');
+  const resultados = (b.results || []).map((r) => `<li>
+      <span class="${r.winner === 'a' ? 'gana' : 'pierde'}">${escapar(r.a)}</span>
+      <span class="marcador">${escapar(r.score)}</span>
+      <span class="${r.winner === 'b' ? 'gana' : 'pierde'}">${escapar(r.b)}</span></li>`).join('');
+  return `${campeon}
+  <h2>${escapar(t.clasificacion)}${b.champion ? '' : ronda}</h2>
+  <table class="tabla">
+    <thead><tr><th>#</th><th>${escapar(porPuntos ? t.jugador : t.inscrito)}</th>${esRey ? `<th>${escapar(t.rei)}</th>` : ''}
+      <th>PJ</th><th>G</th><th>${porPuntos ? escapar(t.puntos) : 'Dif.'}</th></tr></thead>
+    <tbody>${filas}</tbody>
+  </table>
+  ${resultados ? `<h2>${escapar(t.ultimos)}</h2><ul class="resultados">${resultados}</ul>` : ''}`;
 }
 
 // Los iconos de cada dato, de trazo como los de la app.

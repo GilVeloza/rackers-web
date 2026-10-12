@@ -749,6 +749,27 @@ img { display: block; max-width: 100%; height: auto; }
 .invitacion .codigo { font-size: clamp(40px, 12vw, 58px); font-weight: 800; letter-spacing: .18em;
   color: var(--crema); text-shadow: 0 0 36px rgba(182, 242, 78, .35); margin: 4px 0 26px; }
 .invitacion .pasos a { color: var(--lima); }
+/* La clasificación del torneo en juego: la misma tabla que la app. */
+.invitacion .campeon { margin: 26px 0 0; padding: 16px 20px; border-radius: var(--radio); background: var(--superficie);
+  border: 1px solid var(--lima); color: var(--crema); font-weight: 800; font-size: 20px; }
+.invitacion .campeon span { display: block; color: var(--lima); font-size: 13px; letter-spacing: .06em; text-transform: uppercase; }
+.invitacion h2 { font-size: 22px; letter-spacing: -.01em; margin: 34px 0 12px; display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+.invitacion h2 small { color: var(--apagado); font-size: 14px; font-weight: 600; }
+.invitacion .tabla { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+.invitacion .tabla th { color: var(--apagado); font-size: 12px; font-weight: 700; text-align: end; padding: 0 6px 8px; }
+.invitacion .tabla th:nth-child(2) { text-align: start; }
+.invitacion .tabla td { padding: 12px 6px; border-top: 1px solid var(--borde); text-align: end; color: var(--apagado); }
+.invitacion .tabla td:first-child { color: var(--apagado); width: 2em; text-align: start; }
+.invitacion .tabla td.nombre { text-align: start; color: var(--crema); font-weight: 700; overflow-wrap: anywhere; }
+.invitacion .tabla td.valor { color: var(--crema); font-weight: 800; }
+.invitacion .tabla tr.primero td:first-child, .invitacion .tabla tr.primero td.valor { color: var(--lima); }
+.invitacion .tabla tr.retirado td.nombre { color: var(--apagado); font-weight: 500; }
+.invitacion .resultados { list-style: none; margin: 0 0 30px; padding: 0; display: grid; gap: 8px; }
+.invitacion .resultados li { display: grid; grid-template-columns: 1fr auto; gap: 2px 12px; padding: 12px 16px;
+  border-radius: 16px; background: var(--superficie); border: 1px solid var(--borde); }
+.invitacion .resultados .gana { color: var(--crema); font-weight: 700; }
+.invitacion .resultados .pierde { color: var(--apagado); }
+.invitacion .resultados .marcador { grid-row: span 2; align-self: center; color: var(--crema); font-weight: 800; white-space: nowrap; }
 a { color: inherit; text-decoration: none; }
 
 h1, h2, h3 { line-height: 1.04; letter-spacing: -.03em; font-weight: 800; }
@@ -1457,6 +1478,16 @@ def datos_torneo() -> None:
             "codigo": de_app("El código del torneo"),
             "no_existe": de_app("No hay ningún torneo con ese código."),
             "cerrado": de_app("La inscripción ya está cerrada: el torneo ha empezado."),
+            # La clasificación, cuando el torneo ya se juega: las mismas
+            # palabras que la tabla del torneo en la app.
+            "clasificacion": de_app("Clasificación"),
+            "ultimos": de_app("Últimos partidos"),
+            "campeon": de_app("Campeón"),
+            "jugador": de_app("Jugador"),
+            "inscrito": de_app("Inscrito"),
+            "puntos": de_app("Puntos"),
+            "rei": de_app("Rei"),
+            "ronda": de_core("Ronda %lld").replace("%lld", "{n}"),
             "publico": de_core("Público"),
             "privado": de_core("Privado"),
             "deportes": dict(zip(DEPORTES_API, t["deportes"])),

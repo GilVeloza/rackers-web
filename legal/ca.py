@@ -9,7 +9,7 @@ Si eso cambia en la app o en el servidor, esto cambia también.
 
 TEXTO = {
     "legal_volver": "Tornar a la portada",
-    "legal_actualizado": "Actualitzat el 8 d'octubre de 2026",
+    "legal_actualizado": "Actualitzat l'11 d'octubre de 2026",
 
     # --- Privacidad ---------------------------------------------------------
     "privacidad_titulo": "Privacitat",
@@ -62,7 +62,7 @@ TEXTO = {
             "El teu @nom és com et troben els altres. El pots canviar quan vulguis.",
         ]),
         ("Tornejos", [
-            "Si publiques un torneig, es desa el nom, l'esport, el format, la data, la pista i el nom de qui l'organitza. El quadre i els resultats es queden al teu iPhone i a la teva còpia.",
+            "Si publiques un torneig, es desa el nom, l'esport, el format, la data, la pista i el nom de qui l'organitza. Quan comença, també es guarden la classificació i els darrers resultats, amb els noms dels inscrits, perquè qui tingui l'enllaç el pugui seguir. El quadre complet es queda al teu iPhone i a la teva còpia.",
             "Un torneig públic el pot veure qualsevol a Tornejos › Públics i al seu enllaç de rackers.app, també sense compte. A un de privat només hi arriba qui en tingui el codi o l'enllaç.",
             "Si t'hi apuntes des del teu compte, qui l'organitza veu el nom amb què t'hi apuntes i rep un avís al seu iPhone. Et pots desapuntar quan vulguis, i en bloquejar algú es desfan les inscripcions entre tots dos.",
         ]),

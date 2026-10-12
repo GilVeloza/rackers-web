@@ -2,7 +2,7 @@
 
 TEXTO = {
     "legal_volver": "Torna alla home",
-    "legal_actualizado": "Aggiornato l'8 ottobre 2026",
+    "legal_actualizado": "Aggiornato l'11 ottobre 2026",
 
     "privacidad_titulo": "Privacy",
     "privacidad_entrada": "Rackers è fatta per giocare, non per raccogliere dati. Qui c'è "
@@ -54,7 +54,7 @@ TEXTO = {
             "Il tuo @nome è come ti trovano gli altri. Puoi cambiarlo quando vuoi.",
         ]),
         ("Tornei", [
-            "Se pubblichi un torneo, salviamo il nome, lo sport, il formato, la data, il campo e il nome di chi organizza. Il tabellone e i risultati restano sul tuo iPhone e nel tuo backup.",
+            "Se pubblichi un torneo, salviamo il nome, lo sport, il formato, la data, il campo e il nome di chi organizza. Quando inizia, salviamo anche la classifica e gli ultimi risultati, con i nomi degli iscritti, così chi ha il link può seguirlo. Il tabellone completo resta sul tuo iPhone e nel tuo backup.",
             "Un torneo pubblico lo vede chiunque in Tornei › Pubblici e al suo link su rackers.app, anche senza account. A uno privato arriva solo chi ha il codice o il link.",
             "Se ti iscrivi dal tuo account, chi organizza vede il nome con cui ti iscrivi e riceve una notifica sul suo iPhone. Puoi cancellarti quando vuoi, e bloccare qualcuno annulla le iscrizioni tra voi due.",
         ]),

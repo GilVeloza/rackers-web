@@ -2,7 +2,7 @@
 
 TEXTO = {
     "legal_volver": 'Quay lại trang chủ',
-    "legal_actualizado": "Cập nhật ngày 8 tháng 10 năm 2026",
+    "legal_actualizado": "Cập nhật ngày 11 tháng 10 năm 2026",
 
     "privacidad_titulo": 'Quyền riêng tư',
     "privacidad_entrada": 'Rackers được làm ra để chơi, không phải để thu thập dữ liệu. Ở đây ghi rõ cái gì được lưu, ở đâu và xoá thế nào.',
@@ -37,7 +37,7 @@ TEXTO = {
             '@tên là cách người khác tìm thấy bạn. Bạn đổi được bất cứ lúc nào.',
         ]),
         ("Giải đấu", [
-            "Nếu bạn công khai một giải đấu, chúng tôi lưu tên giải, môn, thể thức, ngày, sân và tên người tổ chức. Nhánh đấu và kết quả nằm trên iPhone và bản sao lưu của bạn.",
+            "Nếu bạn công khai một giải đấu, chúng tôi lưu tên giải, môn, thể thức, ngày, sân và tên người tổ chức. Khi giải bắt đầu, chúng tôi cũng lưu bảng xếp hạng và các kết quả gần nhất, kèm tên người tham gia, để bất kỳ ai có đường liên kết đều có thể theo dõi. Toàn bộ nhánh đấu nằm trên iPhone và bản sao lưu của bạn.",
             "Giải đấu công khai thì ai cũng xem được trong Giải đấu › Công khai và qua liên kết của giải trên rackers.app, kể cả khi không có tài khoản. Giải riêng tư chỉ ai có mã hoặc liên kết mới vào được.",
             "Nếu bạn đăng ký bằng tài khoản của mình, người tổ chức thấy tên bạn dùng để đăng ký và nhận thông báo trên iPhone. Bạn có thể hủy đăng ký bất cứ lúc nào, và khi chặn ai đó, các lượt đăng ký giữa hai người sẽ bị hủy.",
         ]),

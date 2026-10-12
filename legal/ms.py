@@ -9,7 +9,7 @@ Si eso cambia en la app o en el servidor, esto cambia también.
 
 TEXTO = {
     "legal_volver": "Kembali ke laman utama",
-    "legal_actualizado": "Dikemas kini pada 8 Oktober 2026",
+    "legal_actualizado": "Dikemas kini pada 11 Oktober 2026",
 
     # --- Privacidad ---------------------------------------------------------
     "privacidad_titulo": "Privasi",
@@ -67,7 +67,7 @@ TEXTO = {
             "bila-bila masa.",
         ]),
         ("Kejohanan", [
-            "Jika anda menerbitkan kejohanan, kami menyimpan nama, sukan, format, tarikh, gelanggang dan nama penganjurnya. Carta dan keputusan kekal dalam iPhone dan sandaran anda.",
+            "Jika anda menerbitkan kejohanan, kami menyimpan nama, sukan, format, tarikh, gelanggang dan nama penganjurnya. Apabila ia bermula, kami juga menyimpan kedudukan dan keputusan terkini, bersama nama peserta, supaya sesiapa yang ada pautannya boleh mengikutinya. Carta penuh kekal dalam iPhone dan sandaran anda.",
             "Kejohanan awam boleh dilihat oleh sesiapa sahaja dalam Kejohanan › Awam dan melalui pautannya di rackers.app, walaupun tanpa akaun. Kejohanan persendirian hanya boleh dicapai oleh yang ada kod atau pautannya.",
             "Jika anda mendaftar daripada akaun anda, penganjur melihat nama yang anda gunakan untuk mendaftar dan menerima pemberitahuan pada iPhone. Anda boleh membatalkan pendaftaran bila-bila masa, dan menyekat seseorang membatalkan pendaftaran antara anda berdua.",
         ]),

@@ -2,7 +2,7 @@
 
 TEXTO = {
     "legal_volver": 'Kembali ke beranda',
-    "legal_actualizado": "Diperbarui 8 Oktober 2026",
+    "legal_actualizado": "Diperbarui 11 Oktober 2026",
 
     "privacidad_titulo": 'Privasi',
     "privacidad_entrada": 'Rackers dibuat untuk bermain, bukan untuk mengumpulkan data. Di sini jelas apa yang disimpan, di mana, dan cara menghapusnya.',
@@ -37,7 +37,7 @@ TEXTO = {
             '@nama-mu adalah cara orang lain menemukanmu. Bisa diganti kapan saja.',
         ]),
         ("Turnamen", [
-            "Kalau kamu memublikasikan turnamen, kami menyimpan nama, olahraga, format, tanggal, lapangan, dan nama penyelenggaranya. Bagan dan hasilnya tetap di iPhone dan cadanganmu.",
+            "Kalau kamu memublikasikan turnamen, kami menyimpan nama, olahraga, format, tanggal, lapangan, dan nama penyelenggaranya. Saat dimulai, kami juga menyimpan klasemen dan hasil terbaru, beserta nama para peserta, agar siapa pun yang punya tautannya bisa mengikutinya. Bagan lengkapnya tetap di iPhone dan cadanganmu.",
             "Turnamen publik bisa dilihat siapa saja di Turnamen › Publik dan lewat tautannya di rackers.app, bahkan tanpa akun. Turnamen privat hanya bisa dicapai oleh yang punya kode atau tautannya.",
             "Kalau kamu mendaftar dari akunmu, penyelenggara melihat nama yang kamu pakai untuk mendaftar dan menerima notifikasi di iPhone-nya. Kamu bisa membatalkan kapan saja, dan memblokir seseorang membatalkan pendaftaran di antara kalian.",
         ]),

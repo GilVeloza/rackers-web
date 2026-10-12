@@ -9,7 +9,7 @@ Si eso cambia en la app o en el servidor, esto cambia también.
 
 TEXTO = {
     "legal_volver": "Volver a la portada",
-    "legal_actualizado": "Actualizado el 8 de octubre de 2026",
+    "legal_actualizado": "Actualizado el 11 de octubre de 2026",
 
     # --- Privacidad ---------------------------------------------------------
     "privacidad_titulo": "Privacidad",
@@ -63,7 +63,7 @@ TEXTO = {
             "quieras.",
         ]),
         ("Torneos", [
-            "Si publicas un torneo, se guardan su nombre, el deporte, el formato, la fecha, la pista y el nombre de quien organiza. El cuadro y los resultados se quedan en tu iPhone y en tu copia.",
+            "Si publicas un torneo, se guardan su nombre, el deporte, el formato, la fecha, la pista y el nombre de quien organiza. Cuando empieza, también se guardan la clasificación y los últimos resultados, con los nombres de los inscritos, para que quien tenga el enlace pueda seguirlo. El cuadro completo se queda en tu iPhone y en tu copia.",
             "Un torneo público lo ve cualquiera en Torneos › Públicos y en su enlace de rackers.app, también sin cuenta. A uno privado solo llega quien tenga su código o su enlace.",
             "Si te apuntas desde tu cuenta, quien organiza ve el nombre con el que te apuntas y recibe un aviso en su iPhone. Puedes borrarte cuando quieras, y al bloquear a alguien se deshacen las inscripciones entre los dos.",
         ]),

@@ -2,7 +2,7 @@
 
 TEXTO = {
     "legal_volver": 'Înapoi la pagina principală',
-    "legal_actualizado": "Actualizat pe 8 octombrie 2026",
+    "legal_actualizado": "Actualizat pe 11 octombrie 2026",
 
     "privacidad_titulo": 'Confidențialitate',
     "privacidad_entrada": 'Rackers e făcut ca să joci, nu ca să strângă date. Aici scrie limpede ce se salvează, unde și cum ștergi.',
@@ -37,7 +37,7 @@ TEXTO = {
             '@numele tău e felul în care te găsesc ceilalți. Îl poți schimba oricând.',
         ]),
         ("Turnee", [
-            "Dacă publici un turneu, păstrăm numele, sportul, formatul, data, terenul și numele organizatorului. Tabloul și rezultatele rămân pe iPhone-ul tău și în copia ta de rezervă.",
+            "Dacă publici un turneu, păstrăm numele, sportul, formatul, data, terenul și numele organizatorului. Când începe, salvăm și clasamentul și ultimele rezultate, cu numele participanților, ca oricine are linkul să îl poată urmări. Tabloul complet rămâne pe iPhone-ul tău și în copia ta de rezervă.",
             "Un turneu public îl poate vedea oricine în Turnee › Publice și la linkul lui de pe rackers.app, chiar și fără cont. La unul privat ajunge doar cine are codul sau linkul.",
             "Dacă te înscrii din contul tău, organizatorul vede numele cu care te-ai înscris și primește o notificare pe iPhone. Te poți retrage oricând, iar dacă blochezi pe cineva, înscrierile dintre voi se anulează.",
         ]),

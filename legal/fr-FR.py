@@ -2,7 +2,7 @@
 
 TEXTO = {
     "legal_volver": "Retour à l'accueil",
-    "legal_actualizado": "Mis à jour le 8 octobre 2026",
+    "legal_actualizado": "Mis à jour le 11 octobre 2026",
 
     "privacidad_titulo": "Confidentialité",
     "privacidad_entrada": "Rackers est faite pour jouer, pas pour collecter des données. "
@@ -56,7 +56,7 @@ TEXTO = {
             "veux.",
         ]),
         ("Tournois", [
-            "Si vous publiez un tournoi, nous enregistrons son nom, le sport, le format, la date, le lieu et le nom de l'organisateur. Le tableau et les résultats restent sur votre iPhone et dans votre sauvegarde.",
+            "Si vous publiez un tournoi, nous enregistrons son nom, le sport, le format, la date, le lieu et le nom de l'organisateur. Une fois le tournoi commencé, nous enregistrons aussi le classement et les derniers résultats, avec les noms des inscrits, pour que toute personne ayant le lien puisse le suivre. Le tableau complet reste sur votre iPhone et dans votre sauvegarde.",
             "Un tournoi public est visible par tous dans Tournois › Publics et via son lien rackers.app, même sans compte. Un tournoi privé n'est accessible qu'avec son code ou son lien.",
             "Si vous vous inscrivez depuis votre compte, l'organisateur voit le nom sous lequel vous vous inscrivez et reçoit une notification sur son iPhone. Vous pouvez vous désinscrire quand vous voulez, et bloquer quelqu'un annule les inscriptions entre vous deux.",
         ]),

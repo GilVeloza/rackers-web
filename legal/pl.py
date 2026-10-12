@@ -2,7 +2,7 @@
 
 TEXTO = {
     "legal_volver": "Wróć na stronę główną",
-    "legal_actualizado": "Zaktualizowano 8 października 2026",
+    "legal_actualizado": "Zaktualizowano 11 października 2026",
 
     "privacidad_titulo": "Prywatność",
     "privacidad_entrada": "Rackers powstał do grania, nie do zbierania danych. Tu jasno "
@@ -54,7 +54,7 @@ TEXTO = {
             "chcesz.",
         ]),
         ("Turnieje", [
-            "Jeśli publikujesz turniej, zapisujemy jego nazwę, dyscyplinę, format, datę, kort i nazwę organizatora. Drabinka i wyniki zostają na twoim iPhonie i w twojej kopii zapasowej.",
+            "Jeśli publikujesz turniej, zapisujemy jego nazwę, dyscyplinę, format, datę, kort i nazwę organizatora. Gdy się rozpocznie, zapisujemy też tabelę i ostatnie wyniki wraz z imionami uczestników, aby każdy, kto ma link, mógł go śledzić. Pełna drabinka zostaje na twoim iPhonie i w twojej kopii zapasowej.",
             "Turniej publiczny może zobaczyć każdy w Turnieje › Publiczne i pod jego linkiem w rackers.app, także bez konta. Do prywatnego trafia tylko ten, kto ma kod albo link.",
             "Jeśli zapisujesz się ze swojego konta, organizator widzi nazwę, pod którą się zapisujesz, i dostaje powiadomienie na iPhonie. Możesz się wypisać, kiedy chcesz, a zablokowanie kogoś usuwa zapisy między wami.",
         ]),

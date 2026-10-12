@@ -9,7 +9,7 @@ Si eso cambia en la app o en el servidor, esto cambia también.
 
 TEXTO = {
     "legal_volver": "Späť na úvod",
-    "legal_actualizado": "Aktualizované 8. októbra 2026",
+    "legal_actualizado": "Aktualizované 11. októbra 2026",
 
     # --- Privacidad ---------------------------------------------------------
     "privacidad_titulo": "Súkromie",
@@ -64,7 +64,7 @@ TEXTO = {
             "zmeniť.",
         ]),
         ("Turnaje", [
-            "Keď zverejníš turnaj, uložíme jeho názov, šport, formát, dátum, kurt a meno organizátora. Pavúk a výsledky zostávajú v tvojom iPhone a v tvojej zálohe.",
+            "Keď zverejníš turnaj, uložíme jeho názov, šport, formát, dátum, kurt a meno organizátora. Keď sa začne, uložíme aj tabuľku a posledné výsledky s menami prihlásených, aby ho mohol sledovať každý, kto má odkaz. Celý pavúk zostáva v tvojom iPhone a v tvojej zálohe.",
             "Verejný turnaj uvidí ktokoľvek v Turnaje › Verejné a na jeho odkaze na rackers.app, aj bez účtu. K súkromnému sa dostane len ten, kto má kód alebo odkaz.",
             "Keď sa prihlásiš zo svojho účtu, organizátor uvidí meno, pod ktorým si sa prihlásil(a), a dostane upozornenie na iPhone. Odhlásiť sa môžeš kedykoľvek a zablokovaním niekoho sa prihlášky medzi vami zrušia.",
         ]),
