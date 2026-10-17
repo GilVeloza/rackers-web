@@ -55,6 +55,7 @@ TEXTO = {
             "vous partagez.",
             "Ton @nom, c'est ainsi que les autres te trouvent. Tu peux le changer quand tu "
             "veux.",
+            "Si tu envoies une vidéo à un ami par Rackers, elle est conservée sans le son sur Cloudflare R2, dans l'Union européenne, pendant 14 jours au maximum. Seul cet ami peut la voir, chacun de vous deux peut la supprimer, et elle est aussi supprimée avec le compte.",
         ]),
         ("Tournois", [
             "Si vous publiez un tournoi, nous enregistrons son nom, le sport, le format, la date, le lieu et le nom de l'organisateur. Une fois le tournoi commencé, nous enregistrons aussi le classement et les derniers résultats, avec les noms des inscrits, pour que toute personne ayant le lien puisse le suivre. Le tableau complet reste sur votre iPhone et dans votre sauvegarde.",

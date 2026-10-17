@@ -62,6 +62,7 @@ TEXTO = {
             "Hvis du forbinder dig med nogen, gemmes det, at I er forbundet, og de "
             "kampe I deler.",
             "Dit @navn er sådan, andre finder dig. Du kan ændre det når som helst.",
+            "Hvis du sender en video til en ven via Rackers, gemmes den uden lyd i Cloudflare R2 i Den Europæiske Union i højst 14 dage. Kun den ven kan se den, I kan begge slette den, og den slettes også, når kontoen slettes.",
         ]),
         ("Turneringer", [
             "Hvis du offentliggør en turnering, gemmer vi navnet, sporten, formatet, datoen, banen og arrangørens navn. Når den starter, gemmer vi også stillingen og de seneste resultater med deltagernes navne, så alle med linket kan følge med. Hele programmet bliver på din iPhone og i din sikkerhedskopi.",

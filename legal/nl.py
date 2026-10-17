@@ -55,6 +55,7 @@ TEXTO = {
             "Als je je met iemand verbindt, bewaren we dat jullie verbonden zijn en de "
             "wedstrijden die jullie delen.",
             "Je @naam is hoe anderen je vinden. Je kunt hem altijd wijzigen.",
+            "Als je via Rackers een video naar een vriend stuurt, wordt die zonder geluid bewaard in Cloudflare R2, in de Europese Unie, maximaal 14 dagen. Alleen die vriend ziet hem, jullie kunnen hem allebei verwijderen en hij wordt ook verwijderd samen met het account.",
         ]),
         ("Toernooien", [
             "Als je een toernooi publiceert, bewaren we de naam, de sport, het formaat, de datum, de baan en de naam van de organisator. Zodra het begint, bewaren we ook de stand en de laatste uitslagen, met de namen van de deelnemers, zodat iedereen met de link het kan volgen. Het volledige schema blijft op je iPhone en in je back-up.",

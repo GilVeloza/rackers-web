@@ -53,6 +53,7 @@ TEXTO = {
             "które dzielicie.",
             "Twoja @nazwa to sposób, w jaki znajdują cię inni. Możesz ją zmienić, kiedy "
             "chcesz.",
+            "Jeśli wyślesz znajomemu wideo przez Rackers, jest ono przechowywane bez dźwięku w Cloudflare R2, w Unii Europejskiej, najwyżej przez 14 dni. Widzi je tylko ten znajomy, każde z Was może je usunąć, a usuwa się też razem z kontem.",
         ]),
         ("Turnieje", [
             "Jeśli publikujesz turniej, zapisujemy jego nazwę, dyscyplinę, format, datę, kort i nazwę organizatora. Gdy się rozpocznie, zapisujemy też tabelę i ostatnie wyniki wraz z imionami uczestników, aby każdy, kto ma link, mógł go śledzić. Pełna drabinka zostaje na twoim iPhonie i w twojej kopii zapasowej.",

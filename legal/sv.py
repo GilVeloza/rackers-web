@@ -54,6 +54,7 @@ TEXTO = {
             "Om du länkar ihop dig med någon sparas att ni är länkade och matcherna ni "
             "delar.",
             "Ditt @namn är hur andra hittar dig. Du kan ändra det när du vill.",
+            "Om du skickar en video till en vän via Rackers sparas den utan ljud i Cloudflare R2, inom Europeiska unionen, i högst 14 dagar. Bara den vännen ser den, ni kan båda radera den, och den raderas också när kontot raderas.",
         ]),
         ("Turneringar", [
             "Om du publicerar en turnering sparar vi namnet, sporten, formatet, datumet, banan och arrangörens namn. När den börjar sparar vi också tabellen och de senaste resultaten, med deltagarnas namn, så att alla som har länken kan följa den. Hela lottningen stannar på din iPhone och i din säkerhetskopia.",

@@ -36,6 +36,7 @@ TEXTO = {
         ('Barátok és család', [
             'Ha összekapcsolódsz valakivel, eltárolódik, hogy kapcsolatban vagytok, és a közösen játszott meccsek.',
             'A @neved az, ahogyan mások megtalálnak. Bármikor megváltoztathatod.',
+            "Ha a Rackersen keresztül videót küldesz egy barátodnak, hang nélkül tároljuk a Cloudflare R2-ben, az Európai Unióban, legfeljebb 14 napig. Csak az a barátod látja, bármelyikőtök törölheti, és a fiók törlésekor is törlődik.",
         ]),
         ("Versenyek", [
             "Ha közzéteszel egy versenyt, elmentjük a nevét, a sportágat, a formátumot, a dátumot, a pályát és a szervező nevét. Amikor elkezdődik, a tabellát és a legutóbbi eredményeket is elmentjük a nevezők nevével együtt, hogy bárki, akinél ott a link, követhesse. A teljes tábla az iPhone-odon és a mentésedben marad.",

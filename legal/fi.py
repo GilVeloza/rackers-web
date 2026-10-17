@@ -65,6 +65,7 @@ TEXTO = {
             "ja jaetut ottelut.",
             "@nimesi on se, jolla muut löytävät sinut. Voit vaihtaa sen milloin "
             "tahansa.",
+            "Jos lähetät kaverille videon Rackersin kautta, se tallennetaan ilman ääntä Cloudflare R2:een Euroopan unionissa enintään 14 päiväksi. Vain se kaveri näkee sen, kumpi tahansa teistä voi poistaa sen, ja se poistuu myös, kun tili poistetaan.",
         ]),
         ("Turnaukset", [
             "Jos julkaiset turnauksen, tallennamme sen nimen, lajin, muodon, päivämäärän, kentän ja järjestäjän nimen. Kun turnaus alkaa, tallennamme myös sarjataulukon ja viimeisimmät tulokset osallistujien nimineen, jotta kuka tahansa linkin saanut voi seurata sitä. Koko kaavio pysyy iPhonessasi ja varmuuskopiossasi.",

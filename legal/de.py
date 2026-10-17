@@ -56,6 +56,7 @@ TEXTO = {
             "Wenn du dich mit jemandem verbindest, wird gespeichert, dass ihr "
             "verbunden seid, und die Spiele, die ihr teilt.",
             "Dein @Name ist, wie andere dich finden. Du kannst ihn jederzeit ändern.",
+            "Wenn du einem Freund über Rackers ein Video schickst, wird es ohne Ton in Cloudflare R2 in der Europäischen Union gespeichert, höchstens 14 Tage lang. Nur dieser Freund sieht es, ihr könnt es beide löschen, und mit dem Konto wird es ebenfalls gelöscht.",
         ]),
         ("Turniere", [
             "Wenn du ein Turnier veröffentlichst, speichern wir seinen Namen, die Sportart, das Format, das Datum, den Ort und den Namen des Veranstalters. Sobald es beginnt, speichern wir auch die Tabelle und die letzten Ergebnisse mit den Namen der Teilnehmer, damit alle mit dem Link es verfolgen können. Der vollständige Turnierbaum bleibt auf deinem iPhone und in deinem Backup.",

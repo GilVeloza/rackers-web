@@ -62,6 +62,7 @@ TEXTO = {
             "que compartís.",
             "Tu @nombre es cómo te encuentran los demás. Lo puedes cambiar cuando "
             "quieras.",
+            "Si le mandas un vídeo a un amigo por Rackers, se guarda sin sonido en Cloudflare R2, en la Unión Europea, durante 14 días como mucho. Solo lo ve ese amigo, cualquiera de los dos puede borrarlo y se borra también al borrar la cuenta.",
         ]),
         ("Torneos", [
             "Si publicas un torneo, se guardan su nombre, el deporte, el formato, la fecha, la pista y el nombre de quien organiza. Cuando empieza, también se guardan la clasificación y los últimos resultados, con los nombres de los inscritos, para que quien tenga el enlace pueda seguirlo. El cuadro completo se queda en tu iPhone y en tu copia.",

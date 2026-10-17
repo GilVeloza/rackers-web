@@ -63,6 +63,7 @@ TEXTO = {
             "zdieľate.",
             "Tvoje @meno je to, podľa čoho ťa ostatní nájdu. Môžeš ho kedykoľvek "
             "zmeniť.",
+            "Keď pošleš kamarátovi video cez Rackers, uloží sa bez zvuku v Cloudflare R2 v Európskej únii, najviac na 14 dní. Vidí ho len ten kamarát, zmazať ho môže ktokoľvek z vás dvoch a zmaže sa aj so zmazaním účtu.",
         ]),
         ("Turnaje", [
             "Keď zverejníš turnaj, uložíme jeho názov, šport, formát, dátum, kurt a meno organizátora. Keď sa začne, uložíme aj tabuľku a posledné výsledky s menami prihlásených, aby ho mohol sledovať každý, kto má odkaz. Celý pavúk zostáva v tvojom iPhone a v tvojej zálohe.",

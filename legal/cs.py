@@ -36,6 +36,7 @@ TEXTO = {
         ('Přátelé a rodina', [
             'Když se s někým propojíš, uloží se, že jste propojení, a zápasy, které sdílíte.',
             'Tvé @jméno je to, podle čeho tě ostatní najdou. Můžeš ho kdykoli změnit.',
+            "Když pošleš kamarádovi video přes Rackers, uloží se bez zvuku v Cloudflare R2 v Evropské unii, nejdéle na 14 dní. Vidí ho jen ten kamarád, smazat ho může kdokoli z vás dvou a smaže se i se smazáním účtu.",
         ]),
         ("Turnaje", [
             "Když zveřejníš turnaj, uložíme jeho název, sport, formát, datum, kurt a jméno pořadatele. Jakmile začne, uložíme také tabulku a poslední výsledky se jmény přihlášených, aby ho mohl sledovat každý, kdo má odkaz. Celý pavouk zůstává ve tvém iPhonu a ve tvé záloze.",

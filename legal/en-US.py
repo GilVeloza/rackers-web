@@ -54,6 +54,7 @@ TEXTO = {
             "If you link up with someone, we store that you are linked and the matches "
             "you share.",
             "Your @name is how others find you. You can change it whenever you like.",
+            "If you send a friend a video through Rackers, it's stored without sound in Cloudflare R2, in the European Union, for 14 days at most. Only that friend can see it, either of you can delete it, and it's also deleted along with the account.",
         ]),
         ("Tournaments", [
             "If you publish a tournament, we store its name, sport, format, date, venue and the organizer's name. Once it starts, we also store the standings and the latest results, with the entrants' names, so anyone with the link can follow it. The full draw stays on your iPhone and in your backup.",

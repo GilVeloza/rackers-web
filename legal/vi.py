@@ -36,6 +36,7 @@ TEXTO = {
         ('Bạn bè và gia đình', [
             'Nếu bạn liên kết với ai đó, hệ thống lưu việc hai bên đã liên kết và những trận các bạn chia sẻ.',
             '@tên là cách người khác tìm thấy bạn. Bạn đổi được bất cứ lúc nào.',
+            "Nếu bạn gửi video cho một người bạn qua Rackers, video được lưu không có âm thanh trong Cloudflare R2, tại Liên minh châu Âu, tối đa 14 ngày. Chỉ người bạn đó xem được, ai trong hai người cũng có thể xóa, và video cũng bị xóa cùng với tài khoản.",
         ]),
         ("Giải đấu", [
             "Nếu bạn công khai một giải đấu, chúng tôi lưu tên giải, môn, thể thức, ngày, sân và tên người tổ chức. Khi giải bắt đầu, chúng tôi cũng lưu bảng xếp hạng và các kết quả gần nhất, kèm tên người tham gia, để bất kỳ ai có đường liên kết đều có thể theo dõi. Toàn bộ nhánh đấu nằm trên iPhone và bản sao lưu của bạn.",

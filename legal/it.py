@@ -53,6 +53,7 @@ TEXTO = {
             "Se ti colleghi con qualcuno, si salva che siete collegati e le partite che "
             "condividete.",
             "Il tuo @nome è come ti trovano gli altri. Puoi cambiarlo quando vuoi.",
+            "Se mandi un video a un amico tramite Rackers, viene conservato senza audio su Cloudflare R2, nell'Unione europea, per 14 giorni al massimo. Lo vede solo quell'amico, ognuno dei due può cancellarlo e viene cancellato anche insieme all'account.",
         ]),
         ("Tornei", [
             "Se pubblichi un torneo, salviamo il nome, lo sport, il formato, la data, il campo e il nome di chi organizza. Quando inizia, salviamo anche la classifica e gli ultimi risultati, con i nomi degli iscritti, così chi ha il link può seguirlo. Il tabellone completo resta sul tuo iPhone e nel tuo backup.",

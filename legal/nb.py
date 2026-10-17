@@ -63,6 +63,7 @@ TEXTO = {
             "Hvis du kobler deg til noen, lagres det at dere er koblet og kampene dere "
             "deler.",
             "@navnet ditt er slik andre finner deg. Du kan endre det når du vil.",
+            "Hvis du sender en video til en venn via Rackers, lagres den uten lyd i Cloudflare R2 i EU i høyst 14 dager. Bare den vennen ser den, dere kan begge slette den, og den slettes også når kontoen slettes.",
         ]),
         ("Turneringer", [
             "Hvis du publiserer en turnering, lagrer vi navnet, idretten, formatet, datoen, banen og navnet til arrangøren. Når den starter, lagrer vi også tabellen og de siste resultatene, med navnene på deltakerne, slik at alle med lenken kan følge den. Hele oppsettet blir værende på iPhonen din og i sikkerhetskopien din.",

@@ -36,6 +36,7 @@ TEXTO = {
         ('Arkadaşlar ve aile', [
             'Biriyle bağlanırsan, bağlı olduğunuz ve paylaştığınız maçlar saklanır.',
             '@adın, başkalarının seni bulma şeklidir. İstediğin zaman değiştirebilirsin.',
+            "Rackers üzerinden bir arkadaşına video gönderirsen, video sessiz olarak Cloudflare R2'de, Avrupa Birliği'nde, en fazla 14 gün saklanır. Onu yalnızca o arkadaşın görür, ikiniz de silebilirsiniz ve hesap silindiğinde o da silinir.",
         ]),
         ("Turnuvalar", [
             "Bir turnuva yayımlarsan adını, sporu, formatı, tarihi, sahayı ve düzenleyenin adını saklarız. Turnuva başladığında, bağlantıya sahip herkes takip edebilsin diye sıralamayı ve son sonuçları katılımcıların adlarıyla birlikte de saklarız. Tablonun tamamı iPhone'unda ve yedeğinde kalır.",

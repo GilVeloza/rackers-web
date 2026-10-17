@@ -36,6 +36,7 @@ TEXTO = {
         ('Teman dan keluarga', [
             'Kalau kamu terhubung dengan seseorang, tersimpan bahwa kalian terhubung dan pertandingan yang kalian bagi.',
             '@nama-mu adalah cara orang lain menemukanmu. Bisa diganti kapan saja.',
+            "Jika kamu mengirim video ke teman lewat Rackers, video disimpan tanpa suara di Cloudflare R2, di Uni Eropa, paling lama 14 hari. Hanya teman itu yang bisa melihatnya, kalian berdua bisa menghapusnya, dan video juga terhapus bersama akun.",
         ]),
         ("Turnamen", [
             "Kalau kamu memublikasikan turnamen, kami menyimpan nama, olahraga, format, tanggal, lapangan, dan nama penyelenggaranya. Saat dimulai, kami juga menyimpan klasemen dan hasil terbaru, beserta nama para peserta, agar siapa pun yang punya tautannya bisa mengikutinya. Bagan lengkapnya tetap di iPhone dan cadanganmu.",

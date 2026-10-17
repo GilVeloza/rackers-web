@@ -36,6 +36,7 @@ TEXTO = {
         ('Prieteni și familie', [
             'Dacă te legi cu cineva, se salvează că sunteți legați și meciurile pe care le împărțiți.',
             '@numele tău e felul în care te găsesc ceilalți. Îl poți schimba oricând.',
+            "Dacă îi trimiți un video unui prieten prin Rackers, se păstrează fără sunet în Cloudflare R2, în Uniunea Europeană, cel mult 14 zile. Îl vede doar acel prieten, oricare dintre voi îl poate șterge și se șterge și odată cu contul.",
         ]),
         ("Turnee", [
             "Dacă publici un turneu, păstrăm numele, sportul, formatul, data, terenul și numele organizatorului. Când începe, salvăm și clasamentul și ultimele rezultate, cu numele participanților, ca oricine are linkul să îl poată urmări. Tabloul complet rămâne pe iPhone-ul tău și în copia ta de rezervă.",

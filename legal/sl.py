@@ -61,6 +61,7 @@ TEXTO = {
             "Če se s kom povežeš, se shrani, da sta povezana, in tekme, ki jih delita.",
             "Tvoje @ime je tisto, po čemer te drugi najdejo. Lahko ga kadar koli "
             "spremeniš.",
+            "Če prijatelju pošlješ video prek Rackers, se shrani brez zvoka v Cloudflare R2 v Evropski uniji, največ 14 dni. Vidi ga samo ta prijatelj, izbrišeta ga lahko oba in izbriše se tudi ob izbrisu računa.",
         ]),
         ("Turnirji", [
             "Če objaviš turnir, shranimo njegovo ime, šport, format, datum, igrišče in ime organizatorja. Ko se začne, shranimo tudi lestvico in zadnje rezultate z imeni prijavljenih, da ga lahko spremlja vsak, ki ima povezavo. Celoten razpored ostane v tvojem iPhonu in v tvoji varnostni kopiji.",

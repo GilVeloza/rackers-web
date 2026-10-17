@@ -61,6 +61,7 @@ TEXTO = {
             "Ako se povežeš s nekim, sprema se da ste povezani i mečevi koje dijelite.",
             "Tvoje @ime je način na koji te drugi pronalaze. Možeš ga promijeniti kad "
             "god hoćeš.",
+            "Ako prijatelju pošalješ video putem Rackersa, sprema se bez zvuka u Cloudflare R2 u Europskoj uniji, najviše 14 dana. Vidi ga samo taj prijatelj, svatko od vas dvoje može ga izbrisati, a briše se i kad se izbriše račun.",
         ]),
         ("Turniri", [
             "Ako objaviš turnir, spremamo njegov naziv, sport, format, datum, teren i ime organizatora. Kad počne, spremamo i poredak i posljednje rezultate s imenima prijavljenih, kako bi ga svatko s poveznicom mogao pratiti. Cijeli ždrijeb ostaje na tvom iPhoneu i u tvojoj sigurnosnoj kopiji.",

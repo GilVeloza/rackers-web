@@ -53,6 +53,7 @@ TEXTO = {
             "Se você se conectar com alguém, guardamos que vocês estão conectados e as "
             "partidas que compartilham.",
             "Seu @nome é como os outros te encontram. Dá para mudar quando quiser.",
+            "Se você mandar um vídeo para um amigo pelo Rackers, ele fica guardado sem som no Cloudflare R2, na União Europeia, por no máximo 14 dias. Só esse amigo vê o vídeo, qualquer um dos dois pode apagá-lo, e ele também é apagado junto com a conta.",
         ]),
         ("Torneios", [
             "Se você publica um torneio, guardamos o nome, o esporte, o formato, a data, a quadra e o nome de quem organiza. Quando ele começa, também guardamos a classificação e os últimos resultados, com os nomes dos inscritos, para que quem tiver o link possa acompanhar. A chave completa fica no seu iPhone e no seu backup.",

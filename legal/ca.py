@@ -61,6 +61,7 @@ TEXTO = {
             "Si t'enllaces amb algú, es desa que esteu enllaçats i els partits que "
             "compartiu.",
             "El teu @nom és com et troben els altres. El pots canviar quan vulguis.",
+            "Si li envies un vídeo a un amic per Rackers, es guarda sense so a Cloudflare R2, a la Unió Europea, durant 14 dies com a molt. Només el veu aquest amic, qualsevol dels dos el pot esborrar i també s'esborra en esborrar el compte.",
         ]),
         ("Tornejos", [
             "Si publiques un torneig, es desa el nom, l'esport, el format, la data, la pista i el nom de qui l'organitza. Quan comença, també es guarden la classificació i els darrers resultats, amb els noms dels inscrits, perquè qui tingui l'enllaç el pugui seguir. El quadre complet es queda al teu iPhone i a la teva còpia.",

@@ -36,6 +36,7 @@ TEXTO = {
         ('Mga kaibigan at pamilya', [
             'Kung mag-uugnay ka sa isang tao, naiimbak na magkaugnay kayo at ang mga labang pinagsasaluhan ninyo.',
             'Ang @pangalan mo ang paraan para matagpuan ka ng iba. Puwedeng palitan anumang oras.',
+            "Kung magpapadala ka ng video sa kaibigan sa Rackers, itinatago ito nang walang tunog sa Cloudflare R2, sa European Union, nang hanggang 14 na araw lang. Ang kaibigang iyon lang ang makakakita nito, puwede itong burahin ng sinuman sa inyong dalawa, at nabubura rin ito kasama ng account.",
         ]),
         ("Mga torneo", [
             "Kapag naglathala ka ng torneo, sine-save namin ang pangalan nito, ang sport, ang format, ang petsa, ang court at ang pangalan ng organizer. Kapag nagsimula na ito, sine-save din namin ang standings at ang mga pinakabagong resulta, kasama ang mga pangalan ng mga kalahok, para masundan ito ng sinumang may link. Ang buong bracket ay nananatili sa iPhone mo at sa backup mo.",

@@ -66,6 +66,7 @@ TEXTO = {
             "dan perlawanan yang dikongsi.",
             "@nama anda ialah cara orang lain menemui anda. Anda boleh mengubahnya "
             "bila-bila masa.",
+            "Jika anda menghantar video kepada kawan melalui Rackers, video disimpan tanpa bunyi dalam Cloudflare R2, di Kesatuan Eropah, paling lama 14 hari. Hanya kawan itu yang boleh melihatnya, kedua-dua anda boleh memadamnya, dan video turut dipadam bersama akaun.",
         ]),
         ("Kejohanan", [
             "Jika anda menerbitkan kejohanan, kami menyimpan nama, sukan, format, tarikh, gelanggang dan nama penganjurnya. Apabila ia bermula, kami juga menyimpan kedudukan dan keputusan terkini, bersama nama peserta, supaya sesiapa yang ada pautannya boleh mengikutinya. Carta penuh kekal dalam iPhone dan sandaran anda.",
