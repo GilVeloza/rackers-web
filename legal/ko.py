@@ -2,7 +2,7 @@
 
 TEXTO = {
     "legal_volver": '첫 화면으로 돌아가기',
-    "legal_actualizado": "2026년 10월 11일 업데이트",
+    "legal_actualizado": "2026년 10월 17일 업데이트",
 
     "privacidad_titulo": '개인정보',
     "privacidad_entrada": 'Rackers는 경기를 하려고 만들었지 데이터를 모으려고 만든 게 아닙니다. 무엇이 저장되고 어디에 있으며 어떻게 지우는지 분명히 적었습니다.',

@@ -2,7 +2,7 @@
 
 TEXTO = {
     "legal_volver": "Voltar para a página inicial",
-    "legal_actualizado": "Atualizado em 11 de outubro de 2026",
+    "legal_actualizado": "Atualizado em 17 de outubro de 2026",
 
     "privacidad_titulo": "Privacidade",
     "privacidad_entrada": "O Rackers foi feito para jogar, não para coletar dados. Aqui "

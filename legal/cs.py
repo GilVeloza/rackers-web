@@ -2,7 +2,7 @@
 
 TEXTO = {
     "legal_volver": 'Zpět na úvodní stránku',
-    "legal_actualizado": "Aktualizováno 11. října 2026",
+    "legal_actualizado": "Aktualizováno 17. října 2026",
 
     "privacidad_titulo": 'Soukromí',
     "privacidad_entrada": 'Rackers vznikl na hraní, ne na sbírání dat. Tady je jasně, co se ukládá, kde a jak to smazat.',

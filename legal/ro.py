@@ -2,7 +2,7 @@
 
 TEXTO = {
     "legal_volver": 'Înapoi la pagina principală',
-    "legal_actualizado": "Actualizat pe 11 octombrie 2026",
+    "legal_actualizado": "Actualizat pe 17 octombrie 2026",
 
     "privacidad_titulo": 'Confidențialitate',
     "privacidad_entrada": 'Rackers e făcut ca să joci, nu ca să strângă date. Aici scrie limpede ce se salvează, unde și cum ștergi.',

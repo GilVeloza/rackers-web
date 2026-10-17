@@ -2,7 +2,7 @@
 
 TEXTO = {
     "legal_volver": 'Ana sayfaya dön',
-    "legal_actualizado": "11 Ekim 2026'da güncellendi",
+    "legal_actualizado": "17 Ekim 2026'da güncellendi",
 
     "privacidad_titulo": 'Gizlilik',
     "privacidad_entrada": 'Rackers oynamak için yapıldı, veri toplamak için değil. Burada açıkça yazıyor: ne saklanıyor, nerede ve nasıl silinir.',

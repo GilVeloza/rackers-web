@@ -9,7 +9,7 @@ Si eso cambia en la app o en el servidor, esto cambia también.
 
 TEXTO = {
     "legal_volver": "Tilbage til forsiden",
-    "legal_actualizado": "Opdateret 11. oktober 2026",
+    "legal_actualizado": "Opdateret 17. oktober 2026",
 
     # --- Privacidad ---------------------------------------------------------
     "privacidad_titulo": "Privatliv",

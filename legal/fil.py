@@ -2,7 +2,7 @@
 
 TEXTO = {
     "legal_volver": 'Bumalik sa home',
-    "legal_actualizado": "Na-update noong 11 Oktubre 2026",
+    "legal_actualizado": "Na-update noong 17 Oktubre 2026",
 
     "privacidad_titulo": 'Privacy',
     "privacidad_entrada": 'Ginawa ang Rackers para maglaro, hindi para mangolekta ng datos. Nakasulat dito nang malinaw kung ano ang naiimbak, saan, at paano ito buburahin.',

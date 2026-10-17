@@ -9,7 +9,7 @@ Si eso cambia en la app o en el servidor, esto cambia también.
 
 TEXTO = {
     "legal_volver": "મુખ્ય પાના પર પાછા",
-    "legal_actualizado": "11 ઑક્ટોબર 2026 ના રોજ અપડેટ",
+    "legal_actualizado": "17 ઑક્ટોબર 2026 ના રોજ અપડેટ",
 
     # --- Privacidad ---------------------------------------------------------
     "privacidad_titulo": "ગોપનીયતા",

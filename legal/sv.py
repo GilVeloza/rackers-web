@@ -2,7 +2,7 @@
 
 TEXTO = {
     "legal_volver": "Tillbaka till startsidan",
-    "legal_actualizado": "Uppdaterad 11 oktober 2026",
+    "legal_actualizado": "Uppdaterad 17 oktober 2026",
 
     "privacidad_titulo": "Integritet",
     "privacidad_entrada": "Rackers är gjord för att spela, inte för att samla data. Här "

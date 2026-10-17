@@ -2,7 +2,7 @@
 
 TEXTO = {
     "legal_volver": 'Kembali ke beranda',
-    "legal_actualizado": "Diperbarui 11 Oktober 2026",
+    "legal_actualizado": "Diperbarui 17 Oktober 2026",
 
     "privacidad_titulo": 'Privasi',
     "privacidad_entrada": 'Rackers dibuat untuk bermain, bukan untuk mengumpulkan data. Di sini jelas apa yang disimpan, di mana, dan cara menghapusnya.',

@@ -2,7 +2,7 @@
 
 TEXTO = {
     "legal_volver": 'العودة إلى الصفحة الرئيسية',
-    "legal_actualizado": "آخر تحديث في 11 أكتوبر 2026",
+    "legal_actualizado": "آخر تحديث في 17 أكتوبر 2026",
 
     "privacidad_titulo": 'الخصوصية',
     "privacidad_entrada": 'صُنع Rackers للعب، لا لجمع البيانات. هنا مكتوب بوضوح ما الذي يُحفظ، وأين، وكيف تحذفه.',

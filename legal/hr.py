@@ -9,7 +9,7 @@ Si eso cambia en la app o en el servidor, esto cambia también.
 
 TEXTO = {
     "legal_volver": "Natrag na naslovnicu",
-    "legal_actualizado": "Ažurirano 11. listopada 2026.",
+    "legal_actualizado": "Ažurirano 17. listopada 2026.",
 
     # --- Privacidad ---------------------------------------------------------
     "privacidad_titulo": "Privatnost",

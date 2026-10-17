@@ -2,7 +2,7 @@
 
 TEXTO = {
     "legal_volver": 'Vissza a főoldalra',
-    "legal_actualizado": "Frissítve: 2026. október 11.",
+    "legal_actualizado": "Frissítve: 2026. október 17.",
 
     "privacidad_titulo": 'Adatvédelem',
     "privacidad_entrada": 'A Rackers játékra készült, nem adatgyűjtésre. Itt világosan olvasható, mi tárolódik, hol, és hogyan törölhető.',

@@ -2,7 +2,7 @@
 
 TEXTO = {
     "legal_volver": '返回首頁',
-    "legal_actualizado": "2026 年 10 月 11 日更新",
+    "legal_actualizado": "2026 年 10 月 17 日更新",
 
     "privacidad_titulo": '隱私',
     "privacidad_entrada": 'Rackers 是為了打球做的，不是為了收集資料。這裡清楚寫明儲存了什麼、在哪裡、怎麼刪除。',

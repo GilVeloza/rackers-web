@@ -2,7 +2,7 @@
 
 TEXTO = {
     "legal_volver": "Back to the home page",
-    "legal_actualizado": "Updated October 11, 2026",
+    "legal_actualizado": "Updated October 17, 2026",
 
     "privacidad_titulo": "Privacy",
     "privacidad_entrada": "Rackers was made for playing, not for collecting data. "

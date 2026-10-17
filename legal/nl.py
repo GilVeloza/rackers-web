@@ -2,7 +2,7 @@
 
 TEXTO = {
     "legal_volver": "Terug naar de startpagina",
-    "legal_actualizado": "Bijgewerkt op 11 oktober 2026",
+    "legal_actualizado": "Bijgewerkt op 17 oktober 2026",
 
     "privacidad_titulo": "Privacy",
     "privacidad_entrada": "Rackers is gemaakt om te spelen, niet om gegevens te "

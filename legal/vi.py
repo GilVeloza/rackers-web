@@ -2,7 +2,7 @@
 
 TEXTO = {
     "legal_volver": 'Quay lại trang chủ',
-    "legal_actualizado": "Cập nhật ngày 11 tháng 10 năm 2026",
+    "legal_actualizado": "Cập nhật ngày 17 tháng 10 năm 2026",
 
     "privacidad_titulo": 'Quyền riêng tư',
     "privacidad_entrada": 'Rackers được làm ra để chơi, không phải để thu thập dữ liệu. Ở đây ghi rõ cái gì được lưu, ở đâu và xoá thế nào.',
