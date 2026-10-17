@@ -9,7 +9,7 @@ Si eso cambia en la app o en el servidor, esto cambia también.
 
 TEXTO = {
     "legal_volver": "Volver a la portada",
-    "legal_actualizado": "Actualizado el 11 de octubre de 2026",
+    "legal_actualizado": "Actualizado el 17 de octubre de 2026",
 
     # --- Privacidad ---------------------------------------------------------
     "privacidad_titulo": "Privacidad",
@@ -46,6 +46,7 @@ TEXTO = {
         ("El entrenador con IA", [
             "Cuando pides un análisis, la app saca fotogramas del vídeo y los manda a "
             "OpenAI a través de nuestro servidor, que devuelve el informe.",
+            "Si marcas la pista, tu iPhone mide dónde está cada jugador y por dónde va la pelota. Con los fotogramas se manda también un resumen en texto de esas posiciones, ninguna imagen más, y con el análisis se guardan en tu copia las de cada momento y tu mapa de calor.",
             "Del vídeo entero no se guarda nada en el servidor. El informe vuelve a la app y se queda en tu copia, junto con unos segundos sin sonido de cada mejora, para que los veas también en otro iPhone. Se borran al borrar el análisis o la cuenta.",
             "Sí queda el registro de cuántos análisis has pedido, de qué deporte y "
             "cuánto ocuparon. Sirve para los topes de uso y para saber lo que cuesta.",
@@ -61,6 +62,7 @@ TEXTO = {
             "que compartís.",
             "Tu @nombre es cómo te encuentran los demás. Lo puedes cambiar cuando "
             "quieras.",
+            "Si le mandas un vídeo a un amigo por Rackers, se guarda sin sonido en Cloudflare R2, en la Unión Europea, durante 14 días como mucho. Solo lo ve ese amigo, cualquiera de los dos puede borrarlo y se borra también al borrar la cuenta.",
         ]),
         ("Torneos", [
             "Si publicas un torneo, se guardan su nombre, el deporte, el formato, la fecha, la pista y el nombre de quien organiza. Cuando empieza, también se guardan la clasificación y los últimos resultados, con los nombres de los inscritos, para que quien tenga el enlace pueda seguirlo. El cuadro completo se queda en tu iPhone y en tu copia.",

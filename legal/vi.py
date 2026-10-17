@@ -2,7 +2,7 @@
 
 TEXTO = {
     "legal_volver": 'Quay lại trang chủ',
-    "legal_actualizado": "Cập nhật ngày 11 tháng 10 năm 2026",
+    "legal_actualizado": "Cập nhật ngày 17 tháng 10 năm 2026",
 
     "privacidad_titulo": 'Quyền riêng tư',
     "privacidad_entrada": 'Rackers được làm ra để chơi, không phải để thu thập dữ liệu. Ở đây ghi rõ cái gì được lưu, ở đâu và xoá thế nào.',
@@ -25,6 +25,7 @@ TEXTO = {
         ]),
         ('Huấn luyện viên AI', [
             'Khi bạn yêu cầu phân tích, ứng dụng lấy các khung hình từ video và gửi tới OpenAI qua máy chủ của chúng tôi; máy chủ trả về báo cáo.',
+            "Nếu bạn đánh dấu sân, iPhone của bạn đo vị trí của từng người chơi và đường đi của bóng. Cùng với các khung hình còn có một bản tóm tắt dạng văn bản về các vị trí đó, không có hình ảnh nào khác, và cùng với bài phân tích, vị trí ở từng thời điểm và bản đồ nhiệt của bạn được lưu trong bản sao của bạn.",
             "Không có gì từ video đầy đủ được lưu trên máy chủ. Báo cáo quay về ứng dụng và ở lại trong bản sao của bạn, cùng vài giây không tiếng của từng điểm cần cải thiện, để bạn xem được cả trên iPhone khác. Chúng bị xóa khi bạn xóa bài phân tích hoặc tài khoản.",
             'Cái còn lại là ghi chép bạn đã yêu cầu bao nhiêu lần phân tích, cho môn nào và lớn cỡ nào. Dùng cho giới hạn sử dụng và để biết chi phí.',
         ]),
@@ -35,6 +36,7 @@ TEXTO = {
         ('Bạn bè và gia đình', [
             'Nếu bạn liên kết với ai đó, hệ thống lưu việc hai bên đã liên kết và những trận các bạn chia sẻ.',
             '@tên là cách người khác tìm thấy bạn. Bạn đổi được bất cứ lúc nào.',
+            "Nếu bạn gửi video cho một người bạn qua Rackers, video được lưu không có âm thanh trong Cloudflare R2, tại Liên minh châu Âu, tối đa 14 ngày. Chỉ người bạn đó xem được, ai trong hai người cũng có thể xóa, và video cũng bị xóa cùng với tài khoản.",
         ]),
         ("Giải đấu", [
             "Nếu bạn công khai một giải đấu, chúng tôi lưu tên giải, môn, thể thức, ngày, sân và tên người tổ chức. Khi giải bắt đầu, chúng tôi cũng lưu bảng xếp hạng và các kết quả gần nhất, kèm tên người tham gia, để bất kỳ ai có đường liên kết đều có thể theo dõi. Toàn bộ nhánh đấu nằm trên iPhone và bản sao lưu của bạn.",

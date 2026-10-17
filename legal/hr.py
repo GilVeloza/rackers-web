@@ -9,7 +9,7 @@ Si eso cambia en la app o en el servidor, esto cambia también.
 
 TEXTO = {
     "legal_volver": "Natrag na naslovnicu",
-    "legal_actualizado": "Ažurirano 11. listopada 2026.",
+    "legal_actualizado": "Ažurirano 17. listopada 2026.",
 
     # --- Privacidad ---------------------------------------------------------
     "privacidad_titulo": "Privatnost",
@@ -46,6 +46,7 @@ TEXTO = {
         ("AI trener", [
             "Kad zatražiš analizu, aplikacija izvuče pojedinačne sličice iz videa i "
             "pošalje ih OpenAI-ju preko našeg poslužitelja, koji vraća izvještaj.",
+            "Ako označiš teren, tvoj iPhone mjeri gdje je koji igrač i kamo ide loptica. Uz sličice se šalje i tekstualni sažetak tih položaja, bez drugih slika, a uz analizu se u tvoju kopiju spremaju položaji iz svakog trenutka i tvoja toplinska karta.",
             "Od cijelog videa ništa se ne sprema na poslužitelju. Izvještaj se vraća u aplikaciju i ostaje u tvojoj kopiji, zajedno s nekoliko sekundi bez zvuka iz svakog poboljšanja, da ih vidiš i na drugom iPhoneu. Brišu se kad izbrišeš analizu ili račun.",
             "Ostaje zapis koliko si analiza zatražio, iz kojeg sporta i koliko su "
             "zauzimale. To služi za ograničenja korištenja i da znamo koliko košta.",
@@ -60,6 +61,7 @@ TEXTO = {
             "Ako se povežeš s nekim, sprema se da ste povezani i mečevi koje dijelite.",
             "Tvoje @ime je način na koji te drugi pronalaze. Možeš ga promijeniti kad "
             "god hoćeš.",
+            "Ako prijatelju pošalješ video putem Rackersa, sprema se bez zvuka u Cloudflare R2 u Europskoj uniji, najviše 14 dana. Vidi ga samo taj prijatelj, svatko od vas dvoje može ga izbrisati, a briše se i kad se izbriše račun.",
         ]),
         ("Turniri", [
             "Ako objaviš turnir, spremamo njegov naziv, sport, format, datum, teren i ime organizatora. Kad počne, spremamo i poredak i posljednje rezultate s imenima prijavljenih, kako bi ga svatko s poveznicom mogao pratiti. Cijeli ždrijeb ostaje na tvom iPhoneu i u tvojoj sigurnosnoj kopiji.",

@@ -2,7 +2,7 @@
 
 TEXTO = {
     "legal_volver": 'Vissza a főoldalra',
-    "legal_actualizado": "Frissítve: 2026. október 11.",
+    "legal_actualizado": "Frissítve: 2026. október 17.",
 
     "privacidad_titulo": 'Adatvédelem',
     "privacidad_entrada": 'A Rackers játékra készült, nem adatgyűjtésre. Itt világosan olvasható, mi tárolódik, hol, és hogyan törölhető.',
@@ -25,6 +25,7 @@ TEXTO = {
         ]),
         ('Az MI-edző', [
             'Amikor elemzést kérsz, az alkalmazás képkockákat vesz ki a videóból, és a szerverünkön át elküldi az OpenAI-nak, amely visszaküldi a jelentést.',
+            "Ha kijelölöd a pályát, az iPhone-od megméri, hol áll az egyes játékos és merre megy a labda. A képkockákkal együtt ezeknek a pozícióknak egy szöveges összefoglalója is elmegy, más kép nem, és az elemzéssel együtt a másolatodba kerülnek az egyes pillanatok pozíciói és a hőtérképed.",
             "A teljes videóból semmi nem marad a szerveren. A jelentés visszatér az alkalmazásba, és a te mentésedben marad, néhány hang nélküli másodperccel együtt minden javítandó pontból, hogy egy másik iPhone-on is lásd őket. Az elemzés vagy a fiók törlésekor ezek is törlődnek.",
             'Ami megmarad: hány elemzést kértél, melyik sportra és mekkorát. Ez a használati korlátokhoz és a költség ismeretéhez kell.',
         ]),
@@ -35,6 +36,7 @@ TEXTO = {
         ('Barátok és család', [
             'Ha összekapcsolódsz valakivel, eltárolódik, hogy kapcsolatban vagytok, és a közösen játszott meccsek.',
             'A @neved az, ahogyan mások megtalálnak. Bármikor megváltoztathatod.',
+            "Ha a Rackersen keresztül videót küldesz egy barátodnak, hang nélkül tároljuk a Cloudflare R2-ben, az Európai Unióban, legfeljebb 14 napig. Csak az a barátod látja, bármelyikőtök törölheti, és a fiók törlésekor is törlődik.",
         ]),
         ("Versenyek", [
             "Ha közzéteszel egy versenyt, elmentjük a nevét, a sportágat, a formátumot, a dátumot, a pályát és a szervező nevét. Amikor elkezdődik, a tabellát és a legutóbbi eredményeket is elmentjük a nevezők nevével együtt, hogy bárki, akinél ott a link, követhesse. A teljes tábla az iPhone-odon és a mentésedben marad.",

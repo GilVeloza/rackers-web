@@ -9,7 +9,7 @@ Si eso cambia en la app o en el servidor, esto cambia también.
 
 TEXTO = {
     "legal_volver": "Takaisin etusivulle",
-    "legal_actualizado": "Päivitetty 11. lokakuuta 2026",
+    "legal_actualizado": "Päivitetty 17. lokakuuta 2026",
 
     # --- Privacidad ---------------------------------------------------------
     "privacidad_titulo": "Tietosuoja",
@@ -48,6 +48,7 @@ TEXTO = {
         ("Tekoälyvalmentaja", [
             "Kun pyydät analyysin, sovellus poimii videosta yksittäisiä kuvia ja "
             "lähettää ne OpenAI:lle palvelimemme kautta, joka palauttaa raportin.",
+            "Jos merkitset kentän, iPhonesi mittaa, missä kukin pelaaja on ja minne pallo menee. Kuvien mukana lähetetään tekstitiivistelmä sijainneista, ei muita kuvia, ja analyysin mukana kopioosi tallennetaan kunkin hetken sijainnit ja lämpökarttasi.",
             "Koko videosta ei tallenneta mitään palvelimelle. Raportti palaa sovellukseen ja jää sinun kopioosi, samoin muutama äänetön sekunti jokaisesta parannettavasta asiasta, jotta näet ne myös toisella iPhonella. Ne poistetaan, kun poistat analyysin tai tilin.",
             "Sen sijaan jää merkintä siitä, montako analyysia olet pyytänyt, mistä "
             "lajista ja kuinka suuria ne olivat. Sitä tarvitaan käyttörajoihin ja "
@@ -64,6 +65,7 @@ TEXTO = {
             "ja jaetut ottelut.",
             "@nimesi on se, jolla muut löytävät sinut. Voit vaihtaa sen milloin "
             "tahansa.",
+            "Jos lähetät kaverille videon Rackersin kautta, se tallennetaan ilman ääntä Cloudflare R2:een Euroopan unionissa enintään 14 päiväksi. Vain se kaveri näkee sen, kumpi tahansa teistä voi poistaa sen, ja se poistuu myös, kun tili poistetaan.",
         ]),
         ("Turnaukset", [
             "Jos julkaiset turnauksen, tallennamme sen nimen, lajin, muodon, päivämäärän, kentän ja järjestäjän nimen. Kun turnaus alkaa, tallennamme myös sarjataulukon ja viimeisimmät tulokset osallistujien nimineen, jotta kuka tahansa linkin saanut voi seurata sitä. Koko kaavio pysyy iPhonessasi ja varmuuskopiossasi.",

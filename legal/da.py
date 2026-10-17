@@ -9,7 +9,7 @@ Si eso cambia en la app o en el servidor, esto cambia también.
 
 TEXTO = {
     "legal_volver": "Tilbage til forsiden",
-    "legal_actualizado": "Opdateret 11. oktober 2026",
+    "legal_actualizado": "Opdateret 17. oktober 2026",
 
     # --- Privacidad ---------------------------------------------------------
     "privacidad_titulo": "Privatliv",
@@ -46,6 +46,7 @@ TEXTO = {
         ("AI-træneren", [
             "Når du beder om en analyse, trækker appen enkeltbilleder ud af videoen og "
             "sender dem til OpenAI gennem vores server, som sender rapporten tilbage.",
+            "Hvis du markerer banen, måler din iPhone, hvor hver spiller står, og hvor bolden bevæger sig hen. Sammen med billederne sendes et tekstresumé af positionerne, ingen andre billeder, og med analysen gemmes positionerne for hvert øjeblik og dit varmekort i din kopi.",
             "Der gemmes intet af hele videoen på serveren. Rapporten kommer tilbage til appen og bliver i din kopi sammen med et par sekunder uden lyd fra hver forbedring, så du også kan se dem på en anden iPhone. De slettes, når du sletter analysen eller kontoen.",
             "Der gemmes til gengæld, hvor mange analyser du har bedt om, i hvilken "
             "sportsgren og hvor store de var. Det bruges til brugsgrænserne og til at "
@@ -61,6 +62,7 @@ TEXTO = {
             "Hvis du forbinder dig med nogen, gemmes det, at I er forbundet, og de "
             "kampe I deler.",
             "Dit @navn er sådan, andre finder dig. Du kan ændre det når som helst.",
+            "Hvis du sender en video til en ven via Rackers, gemmes den uden lyd i Cloudflare R2 i Den Europæiske Union i højst 14 dage. Kun den ven kan se den, I kan begge slette den, og den slettes også, når kontoen slettes.",
         ]),
         ("Turneringer", [
             "Hvis du offentliggør en turnering, gemmer vi navnet, sporten, formatet, datoen, banen og arrangørens navn. Når den starter, gemmer vi også stillingen og de seneste resultater med deltagernes navne, så alle med linket kan følge med. Hele programmet bliver på din iPhone og i din sikkerhedskopi.",

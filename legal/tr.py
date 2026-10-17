@@ -2,7 +2,7 @@
 
 TEXTO = {
     "legal_volver": 'Ana sayfaya dön',
-    "legal_actualizado": "11 Ekim 2026'da güncellendi",
+    "legal_actualizado": "17 Ekim 2026'da güncellendi",
 
     "privacidad_titulo": 'Gizlilik',
     "privacidad_entrada": 'Rackers oynamak için yapıldı, veri toplamak için değil. Burada açıkça yazıyor: ne saklanıyor, nerede ve nasıl silinir.',
@@ -25,6 +25,7 @@ TEXTO = {
         ]),
         ('Yapay zekâ antrenörü', [
             "Bir analiz istediğinde uygulama videodan kareler alır ve sunucumuz üzerinden OpenAI'ye gönderir; o da raporu döndürür.",
+            "Kortu işaretlersen iPhone'un her oyuncunun nerede olduğunu ve topun nereye gittiğini ölçer. Karelerle birlikte bu konumların metin özeti de gönderilir, başka görüntü gönderilmez; analizle birlikte her anın konumları ve ısı haritan kopyana kaydedilir.",
             "Videonun tamamından sunucuda hiçbir şey saklanmaz. Rapor uygulamaya döner ve senin yedeğinde kalır; yanında her gelişimin sessiz birkaç saniyesi de durur, böylece onları başka bir iPhone'da da görürsün. Analizi ya da hesabı sildiğinde bunlar da silinir.",
             'Kalan şey, kaç analiz istediğinin, hangi spor için ve ne kadar büyük olduğunun kaydı. Bu, kullanım sınırları ve maliyeti bilmek için.',
         ]),
@@ -35,6 +36,7 @@ TEXTO = {
         ('Arkadaşlar ve aile', [
             'Biriyle bağlanırsan, bağlı olduğunuz ve paylaştığınız maçlar saklanır.',
             '@adın, başkalarının seni bulma şeklidir. İstediğin zaman değiştirebilirsin.',
+            "Rackers üzerinden bir arkadaşına video gönderirsen, video sessiz olarak Cloudflare R2'de, Avrupa Birliği'nde, en fazla 14 gün saklanır. Onu yalnızca o arkadaşın görür, ikiniz de silebilirsiniz ve hesap silindiğinde o da silinir.",
         ]),
         ("Turnuvalar", [
             "Bir turnuva yayımlarsan adını, sporu, formatı, tarihi, sahayı ve düzenleyenin adını saklarız. Turnuva başladığında, bağlantıya sahip herkes takip edebilsin diye sıralamayı ve son sonuçları katılımcıların adlarıyla birlikte de saklarız. Tablonun tamamı iPhone'unda ve yedeğinde kalır.",

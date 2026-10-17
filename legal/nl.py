@@ -2,7 +2,7 @@
 
 TEXTO = {
     "legal_volver": "Terug naar de startpagina",
-    "legal_actualizado": "Bijgewerkt op 11 oktober 2026",
+    "legal_actualizado": "Bijgewerkt op 17 oktober 2026",
 
     "privacidad_titulo": "Privacy",
     "privacidad_entrada": "Rackers is gemaakt om te spelen, niet om gegevens te "
@@ -39,6 +39,7 @@ TEXTO = {
         ("De AI-coach", [
             "Als je om een analyse vraagt, haalt de app beelden uit de video en stuurt ze "
             "via onze server naar OpenAI, die het rapport terugstuurt.",
+            "Als je de baan markeert, meet je iPhone waar elke speler staat en waar de bal heen gaat. Met de beelden wordt een tekstsamenvatting van die posities meegestuurd, geen andere beelden, en met de analyse worden de posities van elk moment en je heatmap in je kopie bewaard.",
             "Van de hele video wordt niets op de server bewaard. Het rapport komt terug naar de app en blijft in je eigen kopie, samen met een paar seconden zonder geluid van elke verbetering, zodat je ze ook op een andere iPhone ziet. Ze worden gewist als je de analyse of je account wist.",
             "Wat wel blijft, is de telling van hoeveel analyses je vroeg, voor welke sport "
             "en hoe groot ze waren. Dat is voor de gebruikslimieten en om de kosten te "
@@ -54,6 +55,7 @@ TEXTO = {
             "Als je je met iemand verbindt, bewaren we dat jullie verbonden zijn en de "
             "wedstrijden die jullie delen.",
             "Je @naam is hoe anderen je vinden. Je kunt hem altijd wijzigen.",
+            "Als je via Rackers een video naar een vriend stuurt, wordt die zonder geluid bewaard in Cloudflare R2, in de Europese Unie, maximaal 14 dagen. Alleen die vriend ziet hem, jullie kunnen hem allebei verwijderen en hij wordt ook verwijderd samen met het account.",
         ]),
         ("Toernooien", [
             "Als je een toernooi publiceert, bewaren we de naam, de sport, het formaat, de datum, de baan en de naam van de organisator. Zodra het begint, bewaren we ook de stand en de laatste uitslagen, met de namen van de deelnemers, zodat iedereen met de link het kan volgen. Het volledige schema blijft op je iPhone en in je back-up.",

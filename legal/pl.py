@@ -2,7 +2,7 @@
 
 TEXTO = {
     "legal_volver": "Wróć na stronę główną",
-    "legal_actualizado": "Zaktualizowano 11 października 2026",
+    "legal_actualizado": "Zaktualizowano 17 października 2026",
 
     "privacidad_titulo": "Prywatność",
     "privacidad_entrada": "Rackers powstał do grania, nie do zbierania danych. Tu jasno "
@@ -37,6 +37,7 @@ TEXTO = {
         ("Trener z AI", [
             "Kiedy prosisz o analizę, aplikacja wycina klatki z nagrania i wysyła je do "
             "OpenAI przez nasz serwer, który zwraca raport.",
+            "Jeśli zaznaczysz kort, Twój iPhone mierzy, gdzie stoi każdy gracz i dokąd leci piłka. Razem z klatkami wysyłane jest tekstowe podsumowanie tych pozycji, żadnych innych obrazów, a z analizą w Twojej kopii zapisują się pozycje z każdego momentu i Twoja mapa cieplna.",
             "Z całego nagrania nic nie zostaje na serwerze. Raport wraca do aplikacji i zostaje w twojej kopii razem z kilkoma sekundami bez dźwięku z każdej poprawki, żebyś mógł je zobaczyć także na innym iPhonie. Usuwają się, gdy usuniesz analizę albo konto.",
             "Zostaje natomiast zapis, ile analiz zamówiłeś, dla jakiego sportu i jak duże "
             "były. Służy limitom użycia i wiedzy o koszcie.",
@@ -52,6 +53,7 @@ TEXTO = {
             "które dzielicie.",
             "Twoja @nazwa to sposób, w jaki znajdują cię inni. Możesz ją zmienić, kiedy "
             "chcesz.",
+            "Jeśli wyślesz znajomemu wideo przez Rackers, jest ono przechowywane bez dźwięku w Cloudflare R2, w Unii Europejskiej, najwyżej przez 14 dni. Widzi je tylko ten znajomy, każde z Was może je usunąć, a usuwa się też razem z kontem.",
         ]),
         ("Turnieje", [
             "Jeśli publikujesz turniej, zapisujemy jego nazwę, dyscyplinę, format, datę, kort i nazwę organizatora. Gdy się rozpocznie, zapisujemy też tabelę i ostatnie wyniki wraz z imionami uczestników, aby każdy, kto ma link, mógł go śledzić. Pełna drabinka zostaje na twoim iPhonie i w twojej kopii zapasowej.",

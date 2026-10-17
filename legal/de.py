@@ -2,7 +2,7 @@
 
 TEXTO = {
     "legal_volver": "Zurück zur Startseite",
-    "legal_actualizado": "Aktualisiert am 11. Oktober 2026",
+    "legal_actualizado": "Aktualisiert am 17. Oktober 2026",
 
     "privacidad_titulo": "Datenschutz",
     "privacidad_entrada": "Rackers ist zum Spielen gemacht, nicht zum Sammeln von "
@@ -40,6 +40,7 @@ TEXTO = {
             "Wenn du eine Analyse anforderst, nimmt die App Einzelbilder aus dem Video "
             "und schickt sie über unseren Server an OpenAI, der den Bericht "
             "zurückgibt.",
+            "Wenn du den Platz markierst, misst dein iPhone, wo jeder Spieler steht und wohin der Ball fliegt. Mit den Einzelbildern wird eine Textzusammenfassung dieser Positionen gesendet, keine weiteren Bilder, und die Positionen jedes Moments sowie deine Heatmap werden mit der Analyse in deiner Kopie gespeichert.",
             "Vom ganzen Video wird auf dem Server nichts gespeichert. Der Bericht kommt zur App zurück und bleibt in deiner Sicherung, zusammen mit ein paar Sekunden ohne Ton zu jeder Verbesserung, damit du sie auch auf einem anderen iPhone siehst. Sie werden gelöscht, wenn du die Analyse oder das Konto löschst.",
             "Was bleibt, ist der Vermerk, wie viele Analysen du angefordert hast, für "
             "welche Sportart und wie groß sie waren. Das dient den Nutzungsgrenzen und "
@@ -55,6 +56,7 @@ TEXTO = {
             "Wenn du dich mit jemandem verbindest, wird gespeichert, dass ihr "
             "verbunden seid, und die Spiele, die ihr teilt.",
             "Dein @Name ist, wie andere dich finden. Du kannst ihn jederzeit ändern.",
+            "Wenn du einem Freund über Rackers ein Video schickst, wird es ohne Ton in Cloudflare R2 in der Europäischen Union gespeichert, höchstens 14 Tage lang. Nur dieser Freund sieht es, ihr könnt es beide löschen, und mit dem Konto wird es ebenfalls gelöscht.",
         ]),
         ("Turniere", [
             "Wenn du ein Turnier veröffentlichst, speichern wir seinen Namen, die Sportart, das Format, das Datum, den Ort und den Namen des Veranstalters. Sobald es beginnt, speichern wir auch die Tabelle und die letzten Ergebnisse mit den Namen der Teilnehmer, damit alle mit dem Link es verfolgen können. Der vollständige Turnierbaum bleibt auf deinem iPhone und in deinem Backup.",

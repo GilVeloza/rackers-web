@@ -9,7 +9,7 @@ Si eso cambia en la app o en el servidor, esto cambia también.
 
 TEXTO = {
     "legal_volver": "Kembali ke laman utama",
-    "legal_actualizado": "Dikemas kini pada 11 Oktober 2026",
+    "legal_actualizado": "Dikemas kini pada 17 Oktober 2026",
 
     # --- Privacidad ---------------------------------------------------------
     "privacidad_titulo": "Privasi",
@@ -50,6 +50,7 @@ TEXTO = {
             "Apabila anda meminta analisis, aplikasi mengambil bingkai daripada video "
             "dan menghantarnya ke OpenAI melalui pelayan kami, yang memulangkan "
             "laporan.",
+            "Jika anda menanda gelanggang, iPhone anda mengukur di mana setiap pemain berada dan ke mana bola pergi. Bersama bingkai turut dihantar ringkasan teks kedudukan itu, tiada imej lain, dan bersama analisis, kedudukan setiap saat dan peta haba anda disimpan dalam salinan anda.",
             "Tiada apa daripada video penuh disimpan di pelayan. Laporan kembali ke aplikasi dan kekal dalam salinan anda, bersama beberapa saat tanpa bunyi daripada setiap penambahbaikan, supaya anda dapat melihatnya pada iPhone lain juga. Ia dipadam apabila anda memadam analisis atau akaun.",
             "Yang kekal ialah rekod berapa analisis anda minta, daripada sukan apa dan "
             "sebesar mana. Ia untuk had penggunaan dan untuk tahu berapa kosnya.",
@@ -65,6 +66,7 @@ TEXTO = {
             "dan perlawanan yang dikongsi.",
             "@nama anda ialah cara orang lain menemui anda. Anda boleh mengubahnya "
             "bila-bila masa.",
+            "Jika anda menghantar video kepada kawan melalui Rackers, video disimpan tanpa bunyi dalam Cloudflare R2, di Kesatuan Eropah, paling lama 14 hari. Hanya kawan itu yang boleh melihatnya, kedua-dua anda boleh memadamnya, dan video turut dipadam bersama akaun.",
         ]),
         ("Kejohanan", [
             "Jika anda menerbitkan kejohanan, kami menyimpan nama, sukan, format, tarikh, gelanggang dan nama penganjurnya. Apabila ia bermula, kami juga menyimpan kedudukan dan keputusan terkini, bersama nama peserta, supaya sesiapa yang ada pautannya boleh mengikutinya. Carta penuh kekal dalam iPhone dan sandaran anda.",

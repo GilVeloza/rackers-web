@@ -2,7 +2,7 @@
 
 TEXTO = {
     "legal_volver": "Retour à l'accueil",
-    "legal_actualizado": "Mis à jour le 11 octobre 2026",
+    "legal_actualizado": "Mis à jour le 17 octobre 2026",
 
     "privacidad_titulo": "Confidentialité",
     "privacidad_entrada": "Rackers est faite pour jouer, pas pour collecter des données. "
@@ -39,6 +39,7 @@ TEXTO = {
         ("L'entraîneur IA", [
             "Quand tu demandes une analyse, l'app extrait des images de la vidéo et les "
             "envoie à OpenAI via notre serveur, qui renvoie le rapport.",
+            "Si tu marques le terrain, ton iPhone mesure où se trouve chaque joueur et où va la balle. Un résumé texte de ces positions est envoyé avec les images, aucune autre image, et les positions de chaque moment ainsi que ta carte de chaleur sont enregistrées dans ta copie avec l'analyse.",
             "Rien de la vidéo entière n'est conservé sur le serveur. Le rapport revient à l'app et reste dans ta sauvegarde, avec quelques secondes sans son de chaque point à améliorer, pour que tu les voies aussi sur un autre iPhone. Elles sont effacées quand tu supprimes l'analyse ou le compte.",
             "Ce qui reste, c'est le décompte des analyses demandées, pour quel sport et de "
             "quelle taille. Cela sert aux limites d'usage et à connaître le coût.",
@@ -54,6 +55,7 @@ TEXTO = {
             "vous partagez.",
             "Ton @nom, c'est ainsi que les autres te trouvent. Tu peux le changer quand tu "
             "veux.",
+            "Si tu envoies une vidéo à un ami par Rackers, elle est conservée sans le son sur Cloudflare R2, dans l'Union européenne, pendant 14 jours au maximum. Seul cet ami peut la voir, chacun de vous deux peut la supprimer, et elle est aussi supprimée avec le compte.",
         ]),
         ("Tournois", [
             "Si vous publiez un tournoi, nous enregistrons son nom, le sport, le format, la date, le lieu et le nom de l'organisateur. Une fois le tournoi commencé, nous enregistrons aussi le classement et les derniers résultats, avec les noms des inscrits, pour que toute personne ayant le lien puisse le suivre. Le tableau complet reste sur votre iPhone et dans votre sauvegarde.",

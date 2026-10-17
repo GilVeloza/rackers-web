@@ -9,7 +9,7 @@ Si eso cambia en la app o en el servidor, esto cambia también.
 
 TEXTO = {
     "legal_volver": "Späť na úvod",
-    "legal_actualizado": "Aktualizované 11. októbra 2026",
+    "legal_actualizado": "Aktualizované 17. októbra 2026",
 
     # --- Privacidad ---------------------------------------------------------
     "privacidad_titulo": "Súkromie",
@@ -46,6 +46,7 @@ TEXTO = {
         ("Tréner s AI", [
             "Keď si vypýtaš analýzu, appka vyberie z videa jednotlivé snímky a pošle "
             "ich do OpenAI cez náš server, ktorý vráti správu.",
+            "Keď označíš kurt, tvoj iPhone zmeria, kde stojí každý hráč a kam letí loptička. So snímkami sa posiela aj textové zhrnutie týchto pozícií, žiadne ďalšie obrázky, a s rozborom sa do tvojej kópie uložia pozície z každého okamihu a tvoja teplotná mapa.",
             "Z celého videa sa na serveri neukladá nič. Správa sa vráti do appky a ostane v tvojej kópii spolu s niekoľkými sekundami bez zvuku ku každému zlepšeniu, aby si ich videl aj na inom iPhone. Zmažú sa, keď zmažeš analýzu alebo účet.",
             "Ostáva však záznam, koľko analýz si si vypýtal, z akého športu a aké boli "
             "veľké. Slúži to na limity používania a na to, aby sme vedeli, koľko to "
@@ -62,6 +63,7 @@ TEXTO = {
             "zdieľate.",
             "Tvoje @meno je to, podľa čoho ťa ostatní nájdu. Môžeš ho kedykoľvek "
             "zmeniť.",
+            "Keď pošleš kamarátovi video cez Rackers, uloží sa bez zvuku v Cloudflare R2 v Európskej únii, najviac na 14 dní. Vidí ho len ten kamarát, zmazať ho môže ktokoľvek z vás dvoch a zmaže sa aj so zmazaním účtu.",
         ]),
         ("Turnaje", [
             "Keď zverejníš turnaj, uložíme jeho názov, šport, formát, dátum, kurt a meno organizátora. Keď sa začne, uložíme aj tabuľku a posledné výsledky s menami prihlásených, aby ho mohol sledovať každý, kto má odkaz. Celý pavúk zostáva v tvojom iPhone a v tvojej zálohe.",

@@ -2,7 +2,7 @@
 
 TEXTO = {
     "legal_volver": 'Kembali ke beranda',
-    "legal_actualizado": "Diperbarui 11 Oktober 2026",
+    "legal_actualizado": "Diperbarui 17 Oktober 2026",
 
     "privacidad_titulo": 'Privasi',
     "privacidad_entrada": 'Rackers dibuat untuk bermain, bukan untuk mengumpulkan data. Di sini jelas apa yang disimpan, di mana, dan cara menghapusnya.',
@@ -25,6 +25,7 @@ TEXTO = {
         ]),
         ('Pelatih AI', [
             'Saat kamu meminta analisis, aplikasi mengambil bingkai dari video dan mengirimkannya ke OpenAI lewat server kami, yang mengembalikan laporannya.',
+            "Jika kamu menandai lapangan, iPhone-mu mengukur di mana tiap pemain berada dan ke mana bola pergi. Bersama bingkai dikirim juga ringkasan teks posisi tersebut, tanpa gambar lain, dan bersama analisis, posisi tiap momen dan peta panasmu disimpan di salinanmu.",
             "Dari video utuh tidak ada yang disimpan di server. Laporan kembali ke aplikasi dan tinggal di cadanganmu, bersama beberapa detik tanpa suara dari tiap perbaikan, supaya kamu juga bisa melihatnya di iPhone lain. Semuanya terhapus saat kamu menghapus analisis atau akunnya.",
             'Yang tersisa hanyalah catatan berapa kali kamu meminta analisis, untuk olahraga apa, dan seberapa besar. Itu untuk batas pemakaian dan untuk tahu biayanya.',
         ]),
@@ -35,6 +36,7 @@ TEXTO = {
         ('Teman dan keluarga', [
             'Kalau kamu terhubung dengan seseorang, tersimpan bahwa kalian terhubung dan pertandingan yang kalian bagi.',
             '@nama-mu adalah cara orang lain menemukanmu. Bisa diganti kapan saja.',
+            "Jika kamu mengirim video ke teman lewat Rackers, video disimpan tanpa suara di Cloudflare R2, di Uni Eropa, paling lama 14 hari. Hanya teman itu yang bisa melihatnya, kalian berdua bisa menghapusnya, dan video juga terhapus bersama akun.",
         ]),
         ("Turnamen", [
             "Kalau kamu memublikasikan turnamen, kami menyimpan nama, olahraga, format, tanggal, lapangan, dan nama penyelenggaranya. Saat dimulai, kami juga menyimpan klasemen dan hasil terbaru, beserta nama para peserta, agar siapa pun yang punya tautannya bisa mengikutinya. Bagan lengkapnya tetap di iPhone dan cadanganmu.",

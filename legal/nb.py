@@ -9,7 +9,7 @@ Si eso cambia en la app o en el servidor, esto cambia también.
 
 TEXTO = {
     "legal_volver": "Tilbake til forsiden",
-    "legal_actualizado": "Oppdatert 11. oktober 2026",
+    "legal_actualizado": "Oppdatert 17. oktober 2026",
 
     # --- Privacidad ---------------------------------------------------------
     "privacidad_titulo": "Personvern",
@@ -47,6 +47,7 @@ TEXTO = {
         ("KI-treneren", [
             "Når du ber om en analyse, henter appen enkeltbilder fra videoen og sender "
             "dem til OpenAI via serveren vår, som sender rapporten tilbake.",
+            "Hvis du markerer banen, måler iPhonen din hvor hver spiller står og hvor ballen går. Sammen med bildene sendes et tekstsammendrag av posisjonene, ingen andre bilder, og med analysen lagres posisjonene for hvert øyeblikk og varmekartet ditt i kopien din.",
             "Ingenting av hele videoen lagres på serveren. Rapporten kommer tilbake til appen og blir i kopien din, sammen med noen sekunder uten lyd fra hver forbedring, så du kan se dem på en annen iPhone også. De slettes når du sletter analysen eller kontoen.",
             "Derimot lagres det hvor mange analyser du har bedt om, i hvilken idrett og "
             "hvor store de var. Det brukes til bruksgrensene og til å vite hva det "
@@ -62,6 +63,7 @@ TEXTO = {
             "Hvis du kobler deg til noen, lagres det at dere er koblet og kampene dere "
             "deler.",
             "@navnet ditt er slik andre finner deg. Du kan endre det når du vil.",
+            "Hvis du sender en video til en venn via Rackers, lagres den uten lyd i Cloudflare R2 i EU i høyst 14 dager. Bare den vennen ser den, dere kan begge slette den, og den slettes også når kontoen slettes.",
         ]),
         ("Turneringer", [
             "Hvis du publiserer en turnering, lagrer vi navnet, idretten, formatet, datoen, banen og navnet til arrangøren. Når den starter, lagrer vi også tabellen og de siste resultatene, med navnene på deltakerne, slik at alle med lenken kan følge den. Hele oppsettet blir værende på iPhonen din og i sikkerhetskopien din.",

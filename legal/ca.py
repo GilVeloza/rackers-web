@@ -9,7 +9,7 @@ Si eso cambia en la app o en el servidor, esto cambia también.
 
 TEXTO = {
     "legal_volver": "Tornar a la portada",
-    "legal_actualizado": "Actualitzat l'11 d'octubre de 2026",
+    "legal_actualizado": "Actualitzat el 17 d'octubre de 2026",
 
     # --- Privacidad ---------------------------------------------------------
     "privacidad_titulo": "Privacitat",
@@ -46,6 +46,7 @@ TEXTO = {
         ("L'entrenador amb IA", [
             "Quan demanes una anàlisi, l'app treu fotogrames del vídeo i els envia a "
             "OpenAI a través del nostre servidor, que retorna l'informe.",
+            "Si marques la pista, el teu iPhone mesura on és cada jugador i per on va la bola. Amb els fotogrames també s'envia un resum en text d'aquestes posicions, cap altra imatge, i amb l'anàlisi es desen a la teva còpia les de cada moment i el teu mapa de calor.",
             "Del vídeo sencer no es desa res al servidor. L'informe torna a l'app i es queda a la teva còpia, juntament amb uns segons sense so de cada millora, perquè també els puguis veure en un altre iPhone. S'esborren quan esborres l'anàlisi o el compte.",
             "Sí que queda el registre de quantes anàlisis has demanat, de quin esport i "
             "quant ocupaven. Serveix per als límits d'ús i per saber què costa.",
@@ -60,6 +61,7 @@ TEXTO = {
             "Si t'enllaces amb algú, es desa que esteu enllaçats i els partits que "
             "compartiu.",
             "El teu @nom és com et troben els altres. El pots canviar quan vulguis.",
+            "Si li envies un vídeo a un amic per Rackers, es guarda sense so a Cloudflare R2, a la Unió Europea, durant 14 dies com a molt. Només el veu aquest amic, qualsevol dels dos el pot esborrar i també s'esborra en esborrar el compte.",
         ]),
         ("Tornejos", [
             "Si publiques un torneig, es desa el nom, l'esport, el format, la data, la pista i el nom de qui l'organitza. Quan comença, també es guarden la classificació i els darrers resultats, amb els noms dels inscrits, perquè qui tingui l'enllaç el pugui seguir. El quadre complet es queda al teu iPhone i a la teva còpia.",

@@ -2,7 +2,7 @@
 
 TEXTO = {
     "legal_volver": "Back to the home page",
-    "legal_actualizado": "Updated October 11, 2026",
+    "legal_actualizado": "Updated October 17, 2026",
 
     "privacidad_titulo": "Privacy",
     "privacidad_entrada": "Rackers was made for playing, not for collecting data. "
@@ -38,6 +38,7 @@ TEXTO = {
         ("The AI coach", [
             "When you ask for an analysis, the app takes frames from the video and "
             "sends them to OpenAI through our server, which returns the report.",
+            "If you mark the court, your iPhone measures where each player is and where the ball goes. A text summary of those positions is sent along with the frames, no other images, and the positions for each moment and your heat map are saved in your copy with the analysis.",
             "Nothing from the full video is stored on the server. The report comes back to the app and stays in your own copy, along with a few silent seconds from each improvement, so you can see them on another iPhone too. They're deleted when you delete the analysis or your account.",
             "What does remain is a record of how many analyses you asked for, for "
             "which sport and how large they were. That is for the usage limits and to "
@@ -53,6 +54,7 @@ TEXTO = {
             "If you link up with someone, we store that you are linked and the matches "
             "you share.",
             "Your @name is how others find you. You can change it whenever you like.",
+            "If you send a friend a video through Rackers, it's stored without sound in Cloudflare R2, in the European Union, for 14 days at most. Only that friend can see it, either of you can delete it, and it's also deleted along with the account.",
         ]),
         ("Tournaments", [
             "If you publish a tournament, we store its name, sport, format, date, venue and the organizer's name. Once it starts, we also store the standings and the latest results, with the entrants' names, so anyone with the link can follow it. The full draw stays on your iPhone and in your backup.",

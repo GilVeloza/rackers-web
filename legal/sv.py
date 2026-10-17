@@ -2,7 +2,7 @@
 
 TEXTO = {
     "legal_volver": "Tillbaka till startsidan",
-    "legal_actualizado": "Uppdaterad 11 oktober 2026",
+    "legal_actualizado": "Uppdaterad 17 oktober 2026",
 
     "privacidad_titulo": "Integritet",
     "privacidad_entrada": "Rackers är gjord för att spela, inte för att samla data. Här "
@@ -38,6 +38,7 @@ TEXTO = {
         ("AI-tränaren", [
             "När du ber om en analys tar appen bildrutor ur videon och skickar dem till "
             "OpenAI via vår server, som skickar tillbaka rapporten.",
+            "Om du markerar banan mäter din iPhone var varje spelare står och vart bollen tar vägen. Tillsammans med bildrutorna skickas en textsammanfattning av positionerna, inga andra bilder, och med analysen sparas positionerna för varje ögonblick och din värmekarta i din kopia.",
             "Inget från hela videon sparas på servern. Rapporten kommer tillbaka till appen och stannar i din egen kopia, tillsammans med några sekunder utan ljud från varje förbättring, så att du kan se dem på en annan iPhone också. De raderas när du raderar analysen eller kontot.",
             "Det som blir kvar är räkningen av hur många analyser du bett om, för vilken "
             "sport och hur stora de var. Det är för användningsgränserna och för att veta "
@@ -53,6 +54,7 @@ TEXTO = {
             "Om du länkar ihop dig med någon sparas att ni är länkade och matcherna ni "
             "delar.",
             "Ditt @namn är hur andra hittar dig. Du kan ändra det när du vill.",
+            "Om du skickar en video till en vän via Rackers sparas den utan ljud i Cloudflare R2, inom Europeiska unionen, i högst 14 dagar. Bara den vännen ser den, ni kan båda radera den, och den raderas också när kontot raderas.",
         ]),
         ("Turneringar", [
             "Om du publicerar en turnering sparar vi namnet, sporten, formatet, datumet, banan och arrangörens namn. När den börjar sparar vi också tabellen och de senaste resultaten, med deltagarnas namn, så att alla som har länken kan följa den. Hela lottningen stannar på din iPhone och i din säkerhetskopia.",

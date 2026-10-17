@@ -9,7 +9,7 @@ Si eso cambia en la app o en el servidor, esto cambia también.
 
 TEXTO = {
     "legal_volver": "Nazaj na naslovnico",
-    "legal_actualizado": "Posodobljeno 11. oktobra 2026",
+    "legal_actualizado": "Posodobljeno 17. oktobra 2026",
 
     # --- Privacidad ---------------------------------------------------------
     "privacidad_titulo": "Zasebnost",
@@ -46,6 +46,7 @@ TEXTO = {
         ("Trener z UI", [
             "Ko zaprosiš za analizo, aplikacija iz videa izlušči posamezne sličice in "
             "jih prek našega strežnika pošlje OpenAI, ki vrne poročilo.",
+            "Če označiš igrišče, tvoj iPhone izmeri, kje je vsak igralec in kam gre žogica. S sličicami se pošlje tudi besedilni povzetek teh položajev, nobena druga slika, z analizo pa se v tvojo kopijo shranijo položaji iz vsakega trenutka in tvoj toplotni zemljevid.",
             "Od celotnega videa se na strežniku ne shrani nič. Poročilo se vrne v aplikacijo in ostane v tvoji kopiji, skupaj z nekaj sekundami brez zvoka iz vsake izboljšave, da jih vidiš tudi na drugem iPhonu. Izbrišejo se, ko izbrišeš analizo ali račun.",
             "Ostane pa zapis, koliko analiz si zahteval, iz katerega športa in kako "
             "velike so bile. To služi omejitvam uporabe in temu, da vemo, koliko stane.",
@@ -60,6 +61,7 @@ TEXTO = {
             "Če se s kom povežeš, se shrani, da sta povezana, in tekme, ki jih delita.",
             "Tvoje @ime je tisto, po čemer te drugi najdejo. Lahko ga kadar koli "
             "spremeniš.",
+            "Če prijatelju pošlješ video prek Rackers, se shrani brez zvoka v Cloudflare R2 v Evropski uniji, največ 14 dni. Vidi ga samo ta prijatelj, izbrišeta ga lahko oba in izbriše se tudi ob izbrisu računa.",
         ]),
         ("Turnirji", [
             "Če objaviš turnir, shranimo njegovo ime, šport, format, datum, igrišče in ime organizatorja. Ko se začne, shranimo tudi lestvico in zadnje rezultate z imeni prijavljenih, da ga lahko spremlja vsak, ki ima povezavo. Celoten razpored ostane v tvojem iPhonu in v tvoji varnostni kopiji.",

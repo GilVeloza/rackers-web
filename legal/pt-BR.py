@@ -2,7 +2,7 @@
 
 TEXTO = {
     "legal_volver": "Voltar para a página inicial",
-    "legal_actualizado": "Atualizado em 11 de outubro de 2026",
+    "legal_actualizado": "Atualizado em 17 de outubro de 2026",
 
     "privacidad_titulo": "Privacidade",
     "privacidad_entrada": "O Rackers foi feito para jogar, não para coletar dados. Aqui "
@@ -38,6 +38,7 @@ TEXTO = {
         ("O treinador com IA", [
             "Quando você pede uma análise, o app tira quadros do vídeo e manda para a "
             "OpenAI pelo nosso servidor, que devolve o relatório.",
+            "Se você marcar a quadra, seu iPhone mede onde está cada jogador e por onde vai a bola. Junto com os quadros é enviado um resumo em texto dessas posições, nenhuma imagem a mais, e com a análise ficam salvas na sua cópia as posições de cada momento e o seu mapa de calor.",
             "Do vídeo inteiro não se guarda nada no servidor. O relatório volta para o app e fica no seu backup, junto com alguns segundos sem som de cada melhoria, para você ver também em outro iPhone. Eles são apagados quando você apaga a análise ou a conta.",
             "O que fica é o registro de quantas análises você pediu, de qual esporte e de "
             "que tamanho. Serve para os limites de uso e para saber o custo.",
@@ -52,6 +53,7 @@ TEXTO = {
             "Se você se conectar com alguém, guardamos que vocês estão conectados e as "
             "partidas que compartilham.",
             "Seu @nome é como os outros te encontram. Dá para mudar quando quiser.",
+            "Se você mandar um vídeo para um amigo pelo Rackers, ele fica guardado sem som no Cloudflare R2, na União Europeia, por no máximo 14 dias. Só esse amigo vê o vídeo, qualquer um dos dois pode apagá-lo, e ele também é apagado junto com a conta.",
         ]),
         ("Torneios", [
             "Se você publica um torneio, guardamos o nome, o esporte, o formato, a data, a quadra e o nome de quem organiza. Quando ele começa, também guardamos a classificação e os últimos resultados, com os nomes dos inscritos, para que quem tiver o link possa acompanhar. A chave completa fica no seu iPhone e no seu backup.",

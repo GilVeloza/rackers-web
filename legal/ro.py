@@ -2,7 +2,7 @@
 
 TEXTO = {
     "legal_volver": 'Înapoi la pagina principală',
-    "legal_actualizado": "Actualizat pe 11 octombrie 2026",
+    "legal_actualizado": "Actualizat pe 17 octombrie 2026",
 
     "privacidad_titulo": 'Confidențialitate',
     "privacidad_entrada": 'Rackers e făcut ca să joci, nu ca să strângă date. Aici scrie limpede ce se salvează, unde și cum ștergi.',
@@ -25,6 +25,7 @@ TEXTO = {
         ]),
         ('Antrenorul cu IA', [
             'Când ceri o analiză, aplicația scoate cadre din filmare și le trimite la OpenAI prin serverul nostru, care întoarce raportul.',
+            "Dacă marchezi terenul, iPhone-ul tău măsoară unde e fiecare jucător și pe unde merge mingea. Odată cu cadrele se trimite și un rezumat text al acestor poziții, nicio altă imagine, iar odată cu analiza se salvează în copia ta pozițiile din fiecare moment și harta ta termică.",
             "Din filmarea întreagă nu se salvează nimic pe server. Raportul se întoarce în aplicație și rămâne în copia ta, împreună cu câteva secunde fără sunet din fiecare îmbunătățire, ca să le vezi și pe alt iPhone. Se șterg când ștergi analiza sau contul.",
             'Rămâne evidența câte analize ai cerut, pentru ce sport și cât de mari au fost. Servește limitelor de folosire și costului.',
         ]),
@@ -35,6 +36,7 @@ TEXTO = {
         ('Prieteni și familie', [
             'Dacă te legi cu cineva, se salvează că sunteți legați și meciurile pe care le împărțiți.',
             '@numele tău e felul în care te găsesc ceilalți. Îl poți schimba oricând.',
+            "Dacă îi trimiți un video unui prieten prin Rackers, se păstrează fără sunet în Cloudflare R2, în Uniunea Europeană, cel mult 14 zile. Îl vede doar acel prieten, oricare dintre voi îl poate șterge și se șterge și odată cu contul.",
         ]),
         ("Turnee", [
             "Dacă publici un turneu, păstrăm numele, sportul, formatul, data, terenul și numele organizatorului. Când începe, salvăm și clasamentul și ultimele rezultate, cu numele participanților, ca oricine are linkul să îl poată urmări. Tabloul complet rămâne pe iPhone-ul tău și în copia ta de rezervă.",

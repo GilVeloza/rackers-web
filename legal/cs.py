@@ -2,7 +2,7 @@
 
 TEXTO = {
     "legal_volver": 'Zpět na úvodní stránku',
-    "legal_actualizado": "Aktualizováno 11. října 2026",
+    "legal_actualizado": "Aktualizováno 17. října 2026",
 
     "privacidad_titulo": 'Soukromí',
     "privacidad_entrada": 'Rackers vznikl na hraní, ne na sbírání dat. Tady je jasně, co se ukládá, kde a jak to smazat.',
@@ -25,6 +25,7 @@ TEXTO = {
         ]),
         ('Trenér s AI', [
             'Když si vyžádáš rozbor, aplikace vezme z videa snímky a pošle je přes náš server do OpenAI, který vrátí zprávu.',
+            "Když označíš kurt, tvůj iPhone změří, kde stojí každý hráč a kam letí míček. Se snímky se posílá i textové shrnutí těchto pozic, žádné další obrázky, a s rozborem se do tvé kopie uloží pozice z každého okamžiku a tvoje teplotní mapa.",
             "Z celého videa se na serveru neukládá nic. Zpráva se vrátí do aplikace a zůstane v tvé záloze spolu s několika sekundami bez zvuku ke každému zlepšení, abys je viděl i na jiném iPhonu. Smažou se se smazáním analýzy nebo účtu.",
             'Zůstane záznam o tom, kolik rozborů jsi si vyžádal, pro jaký sport a jak byly velké. Slouží to limitům použití a přehledu o nákladech.',
         ]),
@@ -35,6 +36,7 @@ TEXTO = {
         ('Přátelé a rodina', [
             'Když se s někým propojíš, uloží se, že jste propojení, a zápasy, které sdílíte.',
             'Tvé @jméno je to, podle čeho tě ostatní najdou. Můžeš ho kdykoli změnit.',
+            "Když pošleš kamarádovi video přes Rackers, uloží se bez zvuku v Cloudflare R2 v Evropské unii, nejdéle na 14 dní. Vidí ho jen ten kamarád, smazat ho může kdokoli z vás dvou a smaže se i se smazáním účtu.",
         ]),
         ("Turnaje", [
             "Když zveřejníš turnaj, uložíme jeho název, sport, formát, datum, kurt a jméno pořadatele. Jakmile začne, uložíme také tabulku a poslední výsledky se jmény přihlášených, aby ho mohl sledovat každý, kdo má odkaz. Celý pavouk zůstává ve tvém iPhonu a ve tvé záloze.",

@@ -2,7 +2,7 @@
 
 TEXTO = {
     "legal_volver": "Torna alla home",
-    "legal_actualizado": "Aggiornato l'11 ottobre 2026",
+    "legal_actualizado": "Aggiornato il 17 ottobre 2026",
 
     "privacidad_titulo": "Privacy",
     "privacidad_entrada": "Rackers è fatta per giocare, non per raccogliere dati. Qui c'è "
@@ -38,6 +38,7 @@ TEXTO = {
         ("L'allenatore con IA", [
             "Quando chiedi un'analisi, l'app estrae fotogrammi dal video e li manda a "
             "OpenAI attraverso il nostro server, che restituisce il referto.",
+            "Se segni il campo, il tuo iPhone misura dove si trova ogni giocatore e dove va la palla. Insieme ai fotogrammi si invia un riepilogo testuale di queste posizioni, nessun'altra immagine, e con l'analisi si salvano nella tua copia le posizioni di ogni momento e la tua mappa di calore.",
             "Del video intero non si salva nulla sul server. Il referto torna all'app e resta nella tua copia, insieme a qualche secondo senza audio di ogni miglioramento, così li vedi anche su un altro iPhone. Si cancellano quando cancelli l'analisi o l'account.",
             "Resta invece il conto di quante analisi hai chiesto, per quale sport e quanto "
             "erano grandi. Serve per i limiti d'uso e per sapere quanto costa.",
@@ -52,6 +53,7 @@ TEXTO = {
             "Se ti colleghi con qualcuno, si salva che siete collegati e le partite che "
             "condividete.",
             "Il tuo @nome è come ti trovano gli altri. Puoi cambiarlo quando vuoi.",
+            "Se mandi un video a un amico tramite Rackers, viene conservato senza audio su Cloudflare R2, nell'Unione europea, per 14 giorni al massimo. Lo vede solo quell'amico, ognuno dei due può cancellarlo e viene cancellato anche insieme all'account.",
         ]),
         ("Tornei", [
             "Se pubblichi un torneo, salviamo il nome, lo sport, il formato, la data, il campo e il nome di chi organizza. Quando inizia, salviamo anche la classifica e gli ultimi risultati, con i nomi degli iscritti, così chi ha il link può seguirlo. Il tabellone completo resta sul tuo iPhone e nel tuo backup.",

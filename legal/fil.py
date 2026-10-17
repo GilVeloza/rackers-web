@@ -2,7 +2,7 @@
 
 TEXTO = {
     "legal_volver": 'Bumalik sa home',
-    "legal_actualizado": "Na-update noong 11 Oktubre 2026",
+    "legal_actualizado": "Na-update noong 17 Oktubre 2026",
 
     "privacidad_titulo": 'Privacy',
     "privacidad_entrada": 'Ginawa ang Rackers para maglaro, hindi para mangolekta ng datos. Nakasulat dito nang malinaw kung ano ang naiimbak, saan, at paano ito buburahin.',
@@ -25,6 +25,7 @@ TEXTO = {
         ]),
         ('Ang AI coach', [
             'Kapag humingi ka ng pagsusuri, kumukuha ang app ng mga frame mula sa video at ipinapadala ang mga ito sa OpenAI sa pamamagitan ng server namin, na nagbabalik ng ulat.',
+            "Kung mamarkahan mo ang court, sinusukat ng iPhone mo kung nasaan ang bawat manlalaro at kung saan papunta ang bola. Kasama ng mga frame, ipinapadala rin ang isang text na buod ng mga posisyong iyon, walang ibang larawan, at kasama ng pagsusuri, nase-save sa kopya mo ang mga posisyon ng bawat sandali at ang heat map mo.",
             "Walang naiimbak sa server mula sa buong video. Bumabalik ang ulat sa app at nananatili sa kopya mo, kasama ang ilang segundong walang tunog mula sa bawat dapat pagbutihin, para makita mo rin ang mga ito sa ibang iPhone. Nabubura ang mga ito kapag binura mo ang analysis o ang account.",
             'Ang natitira ay tala lang kung ilang pagsusuri ang hiniling mo, para sa anong isport at gaano kalaki. Para ito sa limitasyon ng paggamit at para malaman ang gastos.',
         ]),
@@ -35,6 +36,7 @@ TEXTO = {
         ('Mga kaibigan at pamilya', [
             'Kung mag-uugnay ka sa isang tao, naiimbak na magkaugnay kayo at ang mga labang pinagsasaluhan ninyo.',
             'Ang @pangalan mo ang paraan para matagpuan ka ng iba. Puwedeng palitan anumang oras.',
+            "Kung magpapadala ka ng video sa kaibigan sa Rackers, itinatago ito nang walang tunog sa Cloudflare R2, sa European Union, nang hanggang 14 na araw lang. Ang kaibigang iyon lang ang makakakita nito, puwede itong burahin ng sinuman sa inyong dalawa, at nabubura rin ito kasama ng account.",
         ]),
         ("Mga torneo", [
             "Kapag naglathala ka ng torneo, sine-save namin ang pangalan nito, ang sport, ang format, ang petsa, ang court at ang pangalan ng organizer. Kapag nagsimula na ito, sine-save din namin ang standings at ang mga pinakabagong resulta, kasama ang mga pangalan ng mga kalahok, para masundan ito ng sinumang may link. Ang buong bracket ay nananatili sa iPhone mo at sa backup mo.",
