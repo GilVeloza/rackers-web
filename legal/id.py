@@ -25,6 +25,7 @@ TEXTO = {
         ]),
         ('Pelatih AI', [
             'Saat kamu meminta analisis, aplikasi mengambil bingkai dari video dan mengirimkannya ke OpenAI lewat server kami, yang mengembalikan laporannya.',
+            "Jika kamu menandai lapangan, iPhone-mu mengukur di mana tiap pemain berada dan ke mana bola pergi. Bersama bingkai dikirim juga ringkasan teks posisi tersebut, tanpa gambar lain, dan bersama analisis, posisi tiap momen dan peta panasmu disimpan di salinanmu.",
             "Dari video utuh tidak ada yang disimpan di server. Laporan kembali ke aplikasi dan tinggal di cadanganmu, bersama beberapa detik tanpa suara dari tiap perbaikan, supaya kamu juga bisa melihatnya di iPhone lain. Semuanya terhapus saat kamu menghapus analisis atau akunnya.",
             'Yang tersisa hanyalah catatan berapa kali kamu meminta analisis, untuk olahraga apa, dan seberapa besar. Itu untuk batas pemakaian dan untuk tahu biayanya.',
         ]),

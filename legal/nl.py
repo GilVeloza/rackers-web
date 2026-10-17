@@ -39,6 +39,7 @@ TEXTO = {
         ("De AI-coach", [
             "Als je om een analyse vraagt, haalt de app beelden uit de video en stuurt ze "
             "via onze server naar OpenAI, die het rapport terugstuurt.",
+            "Als je de baan markeert, meet je iPhone waar elke speler staat en waar de bal heen gaat. Met de beelden wordt een tekstsamenvatting van die posities meegestuurd, geen andere beelden, en met de analyse worden de posities van elk moment en je heatmap in je kopie bewaard.",
             "Van de hele video wordt niets op de server bewaard. Het rapport komt terug naar de app en blijft in je eigen kopie, samen met een paar seconden zonder geluid van elke verbetering, zodat je ze ook op een andere iPhone ziet. Ze worden gewist als je de analyse of je account wist.",
             "Wat wel blijft, is de telling van hoeveel analyses je vroeg, voor welke sport "
             "en hoe groot ze waren. Dat is voor de gebruikslimieten en om de kosten te "

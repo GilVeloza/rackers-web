@@ -25,6 +25,7 @@ TEXTO = {
         ]),
         ('Yapay zekâ antrenörü', [
             "Bir analiz istediğinde uygulama videodan kareler alır ve sunucumuz üzerinden OpenAI'ye gönderir; o da raporu döndürür.",
+            "Kortu işaretlersen iPhone'un her oyuncunun nerede olduğunu ve topun nereye gittiğini ölçer. Karelerle birlikte bu konumların metin özeti de gönderilir, başka görüntü gönderilmez; analizle birlikte her anın konumları ve ısı haritan kopyana kaydedilir.",
             "Videonun tamamından sunucuda hiçbir şey saklanmaz. Rapor uygulamaya döner ve senin yedeğinde kalır; yanında her gelişimin sessiz birkaç saniyesi de durur, böylece onları başka bir iPhone'da da görürsün. Analizi ya da hesabı sildiğinde bunlar da silinir.",
             'Kalan şey, kaç analiz istediğinin, hangi spor için ve ne kadar büyük olduğunun kaydı. Bu, kullanım sınırları ve maliyeti bilmek için.',
         ]),

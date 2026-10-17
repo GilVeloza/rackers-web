@@ -46,6 +46,7 @@ TEXTO = {
         ("AI trener", [
             "Kad zatražiš analizu, aplikacija izvuče pojedinačne sličice iz videa i "
             "pošalje ih OpenAI-ju preko našeg poslužitelja, koji vraća izvještaj.",
+            "Ako označiš teren, tvoj iPhone mjeri gdje je koji igrač i kamo ide loptica. Uz sličice se šalje i tekstualni sažetak tih položaja, bez drugih slika, a uz analizu se u tvoju kopiju spremaju položaji iz svakog trenutka i tvoja toplinska karta.",
             "Od cijelog videa ništa se ne sprema na poslužitelju. Izvještaj se vraća u aplikaciju i ostaje u tvojoj kopiji, zajedno s nekoliko sekundi bez zvuka iz svakog poboljšanja, da ih vidiš i na drugom iPhoneu. Brišu se kad izbrišeš analizu ili račun.",
             "Ostaje zapis koliko si analiza zatražio, iz kojeg sporta i koliko su "
             "zauzimale. To služi za ograničenja korištenja i da znamo koliko košta.",

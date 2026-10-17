@@ -39,6 +39,7 @@ TEXTO = {
         ("L'entraîneur IA", [
             "Quand tu demandes une analyse, l'app extrait des images de la vidéo et les "
             "envoie à OpenAI via notre serveur, qui renvoie le rapport.",
+            "Si tu marques le terrain, ton iPhone mesure où se trouve chaque joueur et où va la balle. Un résumé texte de ces positions est envoyé avec les images, aucune autre image, et les positions de chaque moment ainsi que ta carte de chaleur sont enregistrées dans ta copie avec l'analyse.",
             "Rien de la vidéo entière n'est conservé sur le serveur. Le rapport revient à l'app et reste dans ta sauvegarde, avec quelques secondes sans son de chaque point à améliorer, pour que tu les voies aussi sur un autre iPhone. Elles sont effacées quand tu supprimes l'analyse ou le compte.",
             "Ce qui reste, c'est le décompte des analyses demandées, pour quel sport et de "
             "quelle taille. Cela sert aux limites d'usage et à connaître le coût.",

@@ -25,6 +25,7 @@ TEXTO = {
         ]),
         ('Ang AI coach', [
             'Kapag humingi ka ng pagsusuri, kumukuha ang app ng mga frame mula sa video at ipinapadala ang mga ito sa OpenAI sa pamamagitan ng server namin, na nagbabalik ng ulat.',
+            "Kung mamarkahan mo ang court, sinusukat ng iPhone mo kung nasaan ang bawat manlalaro at kung saan papunta ang bola. Kasama ng mga frame, ipinapadala rin ang isang text na buod ng mga posisyong iyon, walang ibang larawan, at kasama ng pagsusuri, nase-save sa kopya mo ang mga posisyon ng bawat sandali at ang heat map mo.",
             "Walang naiimbak sa server mula sa buong video. Bumabalik ang ulat sa app at nananatili sa kopya mo, kasama ang ilang segundong walang tunog mula sa bawat dapat pagbutihin, para makita mo rin ang mga ito sa ibang iPhone. Nabubura ang mga ito kapag binura mo ang analysis o ang account.",
             'Ang natitira ay tala lang kung ilang pagsusuri ang hiniling mo, para sa anong isport at gaano kalaki. Para ito sa limitasyon ng paggamit at para malaman ang gastos.',
         ]),

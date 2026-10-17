@@ -38,6 +38,7 @@ TEXTO = {
         ("The AI coach", [
             "When you ask for an analysis, the app takes frames from the video and "
             "sends them to OpenAI through our server, which returns the report.",
+            "If you mark the court, your iPhone measures where each player is and where the ball goes. A text summary of those positions is sent along with the frames, no other images, and the positions for each moment and your heat map are saved in your copy with the analysis.",
             "Nothing from the full video is stored on the server. The report comes back to the app and stays in your own copy, along with a few silent seconds from each improvement, so you can see them on another iPhone too. They're deleted when you delete the analysis or your account.",
             "What does remain is a record of how many analyses you asked for, for "
             "which sport and how large they were. That is for the usage limits and to "

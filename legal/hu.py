@@ -25,6 +25,7 @@ TEXTO = {
         ]),
         ('Az MI-edző', [
             'Amikor elemzést kérsz, az alkalmazás képkockákat vesz ki a videóból, és a szerverünkön át elküldi az OpenAI-nak, amely visszaküldi a jelentést.',
+            "Ha kijelölöd a pályát, az iPhone-od megméri, hol áll az egyes játékos és merre megy a labda. A képkockákkal együtt ezeknek a pozícióknak egy szöveges összefoglalója is elmegy, más kép nem, és az elemzéssel együtt a másolatodba kerülnek az egyes pillanatok pozíciói és a hőtérképed.",
             "A teljes videóból semmi nem marad a szerveren. A jelentés visszatér az alkalmazásba, és a te mentésedben marad, néhány hang nélküli másodperccel együtt minden javítandó pontból, hogy egy másik iPhone-on is lásd őket. Az elemzés vagy a fiók törlésekor ezek is törlődnek.",
             'Ami megmarad: hány elemzést kértél, melyik sportra és mekkorát. Ez a használati korlátokhoz és a költség ismeretéhez kell.',
         ]),

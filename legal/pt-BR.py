@@ -38,6 +38,7 @@ TEXTO = {
         ("O treinador com IA", [
             "Quando você pede uma análise, o app tira quadros do vídeo e manda para a "
             "OpenAI pelo nosso servidor, que devolve o relatório.",
+            "Se você marcar a quadra, seu iPhone mede onde está cada jogador e por onde vai a bola. Junto com os quadros é enviado um resumo em texto dessas posições, nenhuma imagem a mais, e com a análise ficam salvas na sua cópia as posições de cada momento e o seu mapa de calor.",
             "Do vídeo inteiro não se guarda nada no servidor. O relatório volta para o app e fica no seu backup, junto com alguns segundos sem som de cada melhoria, para você ver também em outro iPhone. Eles são apagados quando você apaga a análise ou a conta.",
             "O que fica é o registro de quantas análises você pediu, de qual esporte e de "
             "que tamanho. Serve para os limites de uso e para saber o custo.",

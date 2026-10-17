@@ -40,6 +40,7 @@ TEXTO = {
             "Wenn du eine Analyse anforderst, nimmt die App Einzelbilder aus dem Video "
             "und schickt sie über unseren Server an OpenAI, der den Bericht "
             "zurückgibt.",
+            "Wenn du den Platz markierst, misst dein iPhone, wo jeder Spieler steht und wohin der Ball fliegt. Mit den Einzelbildern wird eine Textzusammenfassung dieser Positionen gesendet, keine weiteren Bilder, und die Positionen jedes Moments sowie deine Heatmap werden mit der Analyse in deiner Kopie gespeichert.",
             "Vom ganzen Video wird auf dem Server nichts gespeichert. Der Bericht kommt zur App zurück und bleibt in deiner Sicherung, zusammen mit ein paar Sekunden ohne Ton zu jeder Verbesserung, damit du sie auch auf einem anderen iPhone siehst. Sie werden gelöscht, wenn du die Analyse oder das Konto löschst.",
             "Was bleibt, ist der Vermerk, wie viele Analysen du angefordert hast, für "
             "welche Sportart und wie groß sie waren. Das dient den Nutzungsgrenzen und "

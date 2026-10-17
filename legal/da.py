@@ -46,6 +46,7 @@ TEXTO = {
         ("AI-træneren", [
             "Når du beder om en analyse, trækker appen enkeltbilleder ud af videoen og "
             "sender dem til OpenAI gennem vores server, som sender rapporten tilbage.",
+            "Hvis du markerer banen, måler din iPhone, hvor hver spiller står, og hvor bolden bevæger sig hen. Sammen med billederne sendes et tekstresumé af positionerne, ingen andre billeder, og med analysen gemmes positionerne for hvert øjeblik og dit varmekort i din kopi.",
             "Der gemmes intet af hele videoen på serveren. Rapporten kommer tilbage til appen og bliver i din kopi sammen med et par sekunder uden lyd fra hver forbedring, så du også kan se dem på en anden iPhone. De slettes, når du sletter analysen eller kontoen.",
             "Der gemmes til gengæld, hvor mange analyser du har bedt om, i hvilken "
             "sportsgren og hvor store de var. Det bruges til brugsgrænserne og til at "

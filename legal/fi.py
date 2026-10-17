@@ -48,6 +48,7 @@ TEXTO = {
         ("Tekoälyvalmentaja", [
             "Kun pyydät analyysin, sovellus poimii videosta yksittäisiä kuvia ja "
             "lähettää ne OpenAI:lle palvelimemme kautta, joka palauttaa raportin.",
+            "Jos merkitset kentän, iPhonesi mittaa, missä kukin pelaaja on ja minne pallo menee. Kuvien mukana lähetetään tekstitiivistelmä sijainneista, ei muita kuvia, ja analyysin mukana kopioosi tallennetaan kunkin hetken sijainnit ja lämpökarttasi.",
             "Koko videosta ei tallenneta mitään palvelimelle. Raportti palaa sovellukseen ja jää sinun kopioosi, samoin muutama äänetön sekunti jokaisesta parannettavasta asiasta, jotta näet ne myös toisella iPhonella. Ne poistetaan, kun poistat analyysin tai tilin.",
             "Sen sijaan jää merkintä siitä, montako analyysia olet pyytänyt, mistä "
             "lajista ja kuinka suuria ne olivat. Sitä tarvitaan käyttörajoihin ja "

@@ -38,6 +38,7 @@ TEXTO = {
         ("AI-tränaren", [
             "När du ber om en analys tar appen bildrutor ur videon och skickar dem till "
             "OpenAI via vår server, som skickar tillbaka rapporten.",
+            "Om du markerar banan mäter din iPhone var varje spelare står och vart bollen tar vägen. Tillsammans med bildrutorna skickas en textsammanfattning av positionerna, inga andra bilder, och med analysen sparas positionerna för varje ögonblick och din värmekarta i din kopia.",
             "Inget från hela videon sparas på servern. Rapporten kommer tillbaka till appen och stannar i din egen kopia, tillsammans med några sekunder utan ljud från varje förbättring, så att du kan se dem på en annan iPhone också. De raderas när du raderar analysen eller kontot.",
             "Det som blir kvar är räkningen av hur många analyser du bett om, för vilken "
             "sport och hur stora de var. Det är för användningsgränserna och för att veta "

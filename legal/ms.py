@@ -50,6 +50,7 @@ TEXTO = {
             "Apabila anda meminta analisis, aplikasi mengambil bingkai daripada video "
             "dan menghantarnya ke OpenAI melalui pelayan kami, yang memulangkan "
             "laporan.",
+            "Jika anda menanda gelanggang, iPhone anda mengukur di mana setiap pemain berada dan ke mana bola pergi. Bersama bingkai turut dihantar ringkasan teks kedudukan itu, tiada imej lain, dan bersama analisis, kedudukan setiap saat dan peta haba anda disimpan dalam salinan anda.",
             "Tiada apa daripada video penuh disimpan di pelayan. Laporan kembali ke aplikasi dan kekal dalam salinan anda, bersama beberapa saat tanpa bunyi daripada setiap penambahbaikan, supaya anda dapat melihatnya pada iPhone lain juga. Ia dipadam apabila anda memadam analisis atau akaun.",
             "Yang kekal ialah rekod berapa analisis anda minta, daripada sukan apa dan "
             "sebesar mana. Ia untuk had penggunaan dan untuk tahu berapa kosnya.",

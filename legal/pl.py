@@ -37,6 +37,7 @@ TEXTO = {
         ("Trener z AI", [
             "Kiedy prosisz o analizę, aplikacja wycina klatki z nagrania i wysyła je do "
             "OpenAI przez nasz serwer, który zwraca raport.",
+            "Jeśli zaznaczysz kort, Twój iPhone mierzy, gdzie stoi każdy gracz i dokąd leci piłka. Razem z klatkami wysyłane jest tekstowe podsumowanie tych pozycji, żadnych innych obrazów, a z analizą w Twojej kopii zapisują się pozycje z każdego momentu i Twoja mapa cieplna.",
             "Z całego nagrania nic nie zostaje na serwerze. Raport wraca do aplikacji i zostaje w twojej kopii razem z kilkoma sekundami bez dźwięku z każdej poprawki, żebyś mógł je zobaczyć także na innym iPhonie. Usuwają się, gdy usuniesz analizę albo konto.",
             "Zostaje natomiast zapis, ile analiz zamówiłeś, dla jakiego sportu i jak duże "
             "były. Służy limitom użycia i wiedzy o koszcie.",

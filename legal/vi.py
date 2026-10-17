@@ -25,6 +25,7 @@ TEXTO = {
         ]),
         ('Huấn luyện viên AI', [
             'Khi bạn yêu cầu phân tích, ứng dụng lấy các khung hình từ video và gửi tới OpenAI qua máy chủ của chúng tôi; máy chủ trả về báo cáo.',
+            "Nếu bạn đánh dấu sân, iPhone của bạn đo vị trí của từng người chơi và đường đi của bóng. Cùng với các khung hình còn có một bản tóm tắt dạng văn bản về các vị trí đó, không có hình ảnh nào khác, và cùng với bài phân tích, vị trí ở từng thời điểm và bản đồ nhiệt của bạn được lưu trong bản sao của bạn.",
             "Không có gì từ video đầy đủ được lưu trên máy chủ. Báo cáo quay về ứng dụng và ở lại trong bản sao của bạn, cùng vài giây không tiếng của từng điểm cần cải thiện, để bạn xem được cả trên iPhone khác. Chúng bị xóa khi bạn xóa bài phân tích hoặc tài khoản.",
             'Cái còn lại là ghi chép bạn đã yêu cầu bao nhiêu lần phân tích, cho môn nào và lớn cỡ nào. Dùng cho giới hạn sử dụng và để biết chi phí.',
         ]),

@@ -47,6 +47,7 @@ TEXTO = {
         ("KI-treneren", [
             "Når du ber om en analyse, henter appen enkeltbilder fra videoen og sender "
             "dem til OpenAI via serveren vår, som sender rapporten tilbake.",
+            "Hvis du markerer banen, måler iPhonen din hvor hver spiller står og hvor ballen går. Sammen med bildene sendes et tekstsammendrag av posisjonene, ingen andre bilder, og med analysen lagres posisjonene for hvert øyeblikk og varmekartet ditt i kopien din.",
             "Ingenting av hele videoen lagres på serveren. Rapporten kommer tilbake til appen og blir i kopien din, sammen med noen sekunder uten lyd fra hver forbedring, så du kan se dem på en annen iPhone også. De slettes når du sletter analysen eller kontoen.",
             "Derimot lagres det hvor mange analyser du har bedt om, i hvilken idrett og "
             "hvor store de var. Det brukes til bruksgrensene og til å vite hva det "

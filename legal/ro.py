@@ -25,6 +25,7 @@ TEXTO = {
         ]),
         ('Antrenorul cu IA', [
             'Când ceri o analiză, aplicația scoate cadre din filmare și le trimite la OpenAI prin serverul nostru, care întoarce raportul.',
+            "Dacă marchezi terenul, iPhone-ul tău măsoară unde e fiecare jucător și pe unde merge mingea. Odată cu cadrele se trimite și un rezumat text al acestor poziții, nicio altă imagine, iar odată cu analiza se salvează în copia ta pozițiile din fiecare moment și harta ta termică.",
             "Din filmarea întreagă nu se salvează nimic pe server. Raportul se întoarce în aplicație și rămâne în copia ta, împreună cu câteva secunde fără sunet din fiecare îmbunătățire, ca să le vezi și pe alt iPhone. Se șterg când ștergi analiza sau contul.",
             'Rămâne evidența câte analize ai cerut, pentru ce sport și cât de mari au fost. Servește limitelor de folosire și costului.',
         ]),

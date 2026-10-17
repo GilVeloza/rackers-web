@@ -46,6 +46,7 @@ TEXTO = {
         ("L'entrenador amb IA", [
             "Quan demanes una anàlisi, l'app treu fotogrames del vídeo i els envia a "
             "OpenAI a través del nostre servidor, que retorna l'informe.",
+            "Si marques la pista, el teu iPhone mesura on és cada jugador i per on va la bola. Amb els fotogrames també s'envia un resum en text d'aquestes posicions, cap altra imatge, i amb l'anàlisi es desen a la teva còpia les de cada moment i el teu mapa de calor.",
             "Del vídeo sencer no es desa res al servidor. L'informe torna a l'app i es queda a la teva còpia, juntament amb uns segons sense so de cada millora, perquè també els puguis veure en un altre iPhone. S'esborren quan esborres l'anàlisi o el compte.",
             "Sí que queda el registre de quantes anàlisis has demanat, de quin esport i "
             "quant ocupaven. Serveix per als límits d'ús i per saber què costa.",

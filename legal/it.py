@@ -38,6 +38,7 @@ TEXTO = {
         ("L'allenatore con IA", [
             "Quando chiedi un'analisi, l'app estrae fotogrammi dal video e li manda a "
             "OpenAI attraverso il nostro server, che restituisce il referto.",
+            "Se segni il campo, il tuo iPhone misura dove si trova ogni giocatore e dove va la palla. Insieme ai fotogrammi si invia un riepilogo testuale di queste posizioni, nessun'altra immagine, e con l'analisi si salvano nella tua copia le posizioni di ogni momento e la tua mappa di calore.",
             "Del video intero non si salva nulla sul server. Il referto torna all'app e resta nella tua copia, insieme a qualche secondo senza audio di ogni miglioramento, così li vedi anche su un altro iPhone. Si cancellano quando cancelli l'analisi o l'account.",
             "Resta invece il conto di quante analisi hai chiesto, per quale sport e quanto "
             "erano grandi. Serve per i limiti d'uso e per sapere quanto costa.",

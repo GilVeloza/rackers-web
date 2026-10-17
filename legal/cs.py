@@ -25,6 +25,7 @@ TEXTO = {
         ]),
         ('Trenér s AI', [
             'Když si vyžádáš rozbor, aplikace vezme z videa snímky a pošle je přes náš server do OpenAI, který vrátí zprávu.',
+            "Když označíš kurt, tvůj iPhone změří, kde stojí každý hráč a kam letí míček. Se snímky se posílá i textové shrnutí těchto pozic, žádné další obrázky, a s rozborem se do tvé kopie uloží pozice z každého okamžiku a tvoje teplotní mapa.",
             "Z celého videa se na serveru neukládá nic. Zpráva se vrátí do aplikace a zůstane v tvé záloze spolu s několika sekundami bez zvuku ke každému zlepšení, abys je viděl i na jiném iPhonu. Smažou se se smazáním analýzy nebo účtu.",
             'Zůstane záznam o tom, kolik rozborů jsi si vyžádal, pro jaký sport a jak byly velké. Slouží to limitům použití a přehledu o nákladech.',
         ]),

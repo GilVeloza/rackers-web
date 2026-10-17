@@ -46,6 +46,7 @@ TEXTO = {
         ("Trener z UI", [
             "Ko zaprosiš za analizo, aplikacija iz videa izlušči posamezne sličice in "
             "jih prek našega strežnika pošlje OpenAI, ki vrne poročilo.",
+            "Če označiš igrišče, tvoj iPhone izmeri, kje je vsak igralec in kam gre žogica. S sličicami se pošlje tudi besedilni povzetek teh položajev, nobena druga slika, z analizo pa se v tvojo kopijo shranijo položaji iz vsakega trenutka in tvoj toplotni zemljevid.",
             "Od celotnega videa se na strežniku ne shrani nič. Poročilo se vrne v aplikacijo in ostane v tvoji kopiji, skupaj z nekaj sekundami brez zvoka iz vsake izboljšave, da jih vidiš tudi na drugem iPhonu. Izbrišejo se, ko izbrišeš analizo ali račun.",
             "Ostane pa zapis, koliko analiz si zahteval, iz katerega športa in kako "
             "velike so bile. To služi omejitvam uporabe in temu, da vemo, koliko stane.",
